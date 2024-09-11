@@ -123,7 +123,7 @@
                                                     <p class="text-sm font-weight-bold mb-0" title="<?= $p->plataforma ?>"><?= $p->plataforma ?></p>
                                                 </td>
                                                 <td>
-                                                    <p class="text-sm text-uppercase font-weight-bold mb-0" ><?php if ($p->plataforma == 1) { echo "ATIVO";} else if ($p->plataforma == 0) { echo "INATIVO";} ?></p>
+                                                    <p class="text-sm text-uppercase font-weight-bold mb-0" ><?php if ($p->status == 1) { echo "ATIVO";} else if ($p->status == 0) { echo "INATIVO";} ?></p>
                                                 </td>
                                                 <td>
                                                     <p class="text-sm font-weight-bold mb-0" title="R$ <?= $p->preco ?>">R$ <?= $p->preco ?></p>
