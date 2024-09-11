@@ -19,6 +19,7 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 
 application/models/Brevo_model.php
 
+index.php
 
 # IDE Files
 #-------------------------

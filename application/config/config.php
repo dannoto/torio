@@ -28,7 +28,7 @@ if (ENVIRONMENT == "development") {
     $config['base_url'] = 'http://localhost/torio/';
 
 } else  if (ENVIRONMENT == "production") {
-    $config['base_url'] = 'https://ccoanalitica.com/hassio/';
+    $config['base_url'] = 'https://ccoanalitica.com/torio/';
 
 }
 // $config['base_url'] = 'https://votoparlamentar.com.br';
