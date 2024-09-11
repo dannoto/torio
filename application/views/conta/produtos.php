@@ -94,6 +94,8 @@
                                         <tr>
                                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">NOME</th>
                                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">PLATAFORMA</th>
+                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">STATUS</th>
+
                                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">PREÇO</th>
                                             <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">URL</th>
 
@@ -119,6 +121,9 @@
                                                 </td>
                                                 <td>
                                                     <p class="text-sm font-weight-bold mb-0" title="<?= $p->plataforma ?>"><?= $p->plataforma ?></p>
+                                                </td>
+                                                <td>
+                                                    <p class="text-sm text-uppercase font-weight-bold mb-0" ><?php if ($p->plataforma == 1) { echo "ATIVO";} else if ($p->plataforma == 0) { echo "INATIVO";} ?></p>
                                                 </td>
                                                 <td>
                                                     <p class="text-sm font-weight-bold mb-0" title="R$ <?= $p->preco ?>">R$ <?= $p->preco ?></p>
@@ -205,6 +210,21 @@
 
                         </div>
                         <br>
+                        <div class="row">
+                         
+                         <div class="col-md-6">
+                             <label for="">STATUS</label>
+                             <select name="status" class="form-control" required id="">
+                                 <option value="">SELECIONAR</option>
+                                 <option value="1">ATIVO</option>
+                                 <option value="0">INATIVO</option>
+                                
+                             </select>
+
+                         </div>
+
+                     </div>
+
 
                 </div>
                 <div class="modal-footer">
@@ -274,6 +294,21 @@
 
                         </div>
                         <br>
+                        <div class="row">
+                         
+                            <div class="col-md-6">
+                                <label for="">STATUS</label>
+                                <select name="status" class="form-control" required id="update_status">
+                                    <option value="">SELECIONAR</option>
+                                    <option value="1">ATIVO</option>
+                                    <option value="0">INATIVO</option>
+                                   
+
+                                </select>
+
+                            </div>
+
+                        </div>
 
                 </div>
                 <div class="modal-footer">

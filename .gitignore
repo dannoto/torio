@@ -8,6 +8,7 @@ application/logs/*
 
 !application/*/.htaccess
 
+index.php
 composer.lock
 tests/mocks/database/ci_test.sqlite
 
@@ -17,10 +18,10 @@ user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
 /vendor/
 
-application/models/Brevo_model.php
-application/controllers/Brevo.php
 
-index.php
+application/models/Brevo_model.php
+
+
 
 # IDE Files
 #-------------------------

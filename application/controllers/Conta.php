@@ -566,6 +566,7 @@ class Conta extends CI_Controller
         $data['imagem'] = htmlspecialchars($this->input->post('imagem'));
         $data['preco'] = htmlspecialchars($this->input->post('preco'));
         $data['plataforma'] = htmlspecialchars($this->input->post('plataforma'));
+        $data['status'] = htmlspecialchars($this->input->post('status'));
 
         $data['categoria'] = htmlspecialchars($this->input->post('categoria'));
         $data['pagina_de_vendas'] = htmlspecialchars($this->input->post('pagina_de_vendas'));
@@ -595,6 +596,7 @@ class Conta extends CI_Controller
         $data['imagem'] = htmlspecialchars($this->input->post('imagem'));
         $data['preco'] = htmlspecialchars($this->input->post('preco'));
         $data['plataforma'] = htmlspecialchars($this->input->post('plataforma'));
+        $data['status'] = htmlspecialchars($this->input->post('status'));
 
         $data['categoria'] = htmlspecialchars($this->input->post('categoria'));
         $data['pagina_de_vendas'] = htmlspecialchars($this->input->post('pagina_de_vendas'));
