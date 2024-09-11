@@ -457,6 +457,8 @@
                         $('#update_imagem').val(resp.response.imagem)
                         $('#update_preco').val(resp.response.preco)
                         $('#update_plataforma').val(resp.response.plataforma)
+                        $('#update_status').val(resp.response.status)
+
                         // $('#update_categoria').val(resp.response.categoria)
                         $('#update_pagina_de_vendas').val(resp.response.pagina_de_vendas)
                         $('#update_descricao').val(resp.response.descricao)
