@@ -9,6 +9,16 @@ class Conta_model extends CI_Model
         parent::__construct();
     }
 
+    // FUNCTIONS
+
+    function formatar_data($date)
+    {
+        $dateTime = new DateTime($date);
+        return $dateTime->format('d-m-Y');
+    }
+
+    // FUNCTIONS
+
     // TAGS
     public function add_tag($tag_data)
     {
@@ -443,5 +453,197 @@ class Conta_model extends CI_Model
     }
 
     // DEMANDAS
+
+
+    // CAMPANHA
+    public function add_campanha($campanha_data)
+    {
+        return $this->db->insert('campanhas', $campanha_data);
+    }
+
+    public function get_campanha($campanha_id)
+    {
+        $this->db->where('id', $campanha_id);
+        return $this->db->get('campanhas')->row();
+    }
+
+    public function get_campanhas($limit = null, $start = null)
+    {
+        $this->db->where('is_deleted', 0);
+        $this->db->order_by('id', 'desc');
+        $this->db->limit($limit, $start);
+        return $this->db->get('campanhas')->result();
+    }
+
+    public function count_campanhas()
+    {
+        $this->db->where('is_deleted', 0);
+        return count($this->db->get('campanhas')->result());
+    }
+
+    public function get_search_campanhas($f_data, $limit, $start)
+    {
+        if (strlen($f_data['campanha_interacao_tipo']) > 0) {
+            $this->db->where('campanha_status', $f_data['campanha_interacao_tipo']);
+        }
+
+
+        if (strlen($f_data['campanha_tag_id']) > 0) {
+            $this->db->where('campanha_tag_id', $f_data['campanha_tag_id']);
+        }
+
+
+
+        $this->db->limit($limit, $start);
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('campanhas')->result();
+    }
+
+    public function count_search_campanhas($f_data)
+    {
+
+
+        if (strlen($f_data['campanha_interacao_tipo']) > 0) {
+            $this->db->where('campanha_status', $f_data['campanha_interacao_tipo']);
+        }
+
+
+        if (strlen($f_data['campanha_tag_id']) > 0) {
+            $this->db->where('campanha_tag_id', $f_data['campanha_tag_id']);
+        }
+
+        $this->db->where('is_deleted', 0);
+
+
+        return count($this->db->get('campanhas')->result());
+    }
+
+    public function update_campanha($campanha_id, $campanha_data)
+    {
+        $this->db->where('id', $campanha_id);
+
+        return $this->db->update('campanhas', $campanha_data);
+    }
+
+    public function delete_campanha($campanha_id)
+    {
+        $this->db->where('id', $campanha_id);
+        $campanha_data = array(
+            'is_deleted' => 1
+        );
+        return $this->db->update('campanhas', $campanha_data);
+    }
+
+    public function check_campanha($nome)
+    {
+
+        $this->db->where('nome', $nome);
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('campanhas')->result();
+    }
+
+    // CAMPANHA
+
+
+      // CAMPANHA
+      public function add_campanhas_ofertas($campanhas_ofertas_data)
+      {
+          return $this->db->insert('campanhas_ofertas', $campanhas_ofertas_data);
+      }
+  
+      public function get_campanha_ofertas($campanhas_ofertas_id)
+      {
+          $this->db->where('id', $campanhas_ofertas_id);
+          return $this->db->get('campanhas_ofertas')->row();
+      }
+  
+      public function get_campanhas_ofertas($campanhas_ofertas_id, $limit = null, $start = null)
+      {
+          $this->db->where('is_deleted', 0);
+          $this->db->where('oferta_campanha_id', $campanhas_ofertas_id);
+
+          $this->db->order_by('id', 'desc');
+        //   $this->db->limit($limit, $start);
+          return $this->db->get('campanhas_ofertas')->result();
+      }
+  
+      public function count_campanhas_ofertas($campanhas_ofertas_id)
+      {
+          $this->db->where('is_deleted', 0);
+          $this->db->where('oferta_campanha_id', $campanhas_ofertas_id);
+
+          return count($this->db->get('campanhas_ofertas')->result());
+      }
+  
+      public function get_search_campanhas_ofertas($campanhas_ofertas_id, $f_data, $limit, $start)
+      {
+        //   if (strlen($f_data['campanhas_ofertas_interacao_tipo']) > 0) {
+        //       $this->db->where('campanhas_ofertas_status', $f_data['campanhas_ofertas_interacao_tipo']);
+        //   }
+  
+  
+        //   if (strlen($f_data['campanhas_ofertas_tag_id']) > 0) {
+        //       $this->db->where('campanhas_ofertas_tag_id', $f_data['campanhas_ofertas_tag_id']);
+        //   }
+  
+        $this->db->where('oferta_campanha_id', $campanhas_ofertas_id);
+
+  
+          $this->db->limit($limit, $start);
+          $this->db->where('is_deleted', 0);
+  
+          return $this->db->get('campanhas_ofertas')->result();
+      }
+  
+      public function count_search_campanhas_ofertas($campanhas_ofertas_id, $f_data)
+      {
+  
+  
+        //   if (strlen($f_data['campanhas_ofertas_interacao_tipo']) > 0) {
+        //       $this->db->where('campanhas_ofertas_status', $f_data['campanhas_ofertas_interacao_tipo']);
+        //   }
+  
+  
+        //   if (strlen($f_data['campanhas_ofertas_tag_id']) > 0) {
+        //       $this->db->where('campanhas_ofertas_tag_id', $f_data['campanhas_ofertas_tag_id']);
+        //   }
+        $this->db->where('oferta_campanha_id', $campanhas_ofertas_id);
+
+  
+          $this->db->where('is_deleted', 0);
+  
+  
+          return count($this->db->get('campanhas_ofertas')->result());
+      }
+  
+      public function update_campanhas_ofertas($campanhas_ofertas_id, $campanhas_ofertas_data)
+      {
+          $this->db->where('id', $campanhas_ofertas_id);
+  
+          return $this->db->update('campanhas_ofertas', $campanhas_ofertas_data);
+      }
+  
+      public function delete_campanhas_ofertas($campanhas_ofertas_id)
+      {
+          $this->db->where('id', $campanhas_ofertas_id);
+          $campanhas_ofertas_data = array(
+              'is_deleted' => 1
+          );
+          return $this->db->update('campanhas_ofertas', $campanhas_ofertas_data);
+      }
+  
+      public function check_campanhas_ofertas($nome)
+      {
+  
+          $this->db->where('nome', $nome);
+          $this->db->where('is_deleted', 0);
+  
+          return $this->db->get('campanhas_ofertas')->result();
+      }
+  
+      // CAMPANHA
+  
 
 }

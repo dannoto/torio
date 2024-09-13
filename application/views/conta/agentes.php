@@ -69,7 +69,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <form action="">
-                                        <label for="">NOME DO AGENTEx</label>
+                                        <label for="">NOME DO AGENTE</label>
                                         <input type="text" name="agente_nome" value="<?= $this->input->get('agente_nome') ?>" class="form-control">
                                 </div>
                                 <div class="col-md-4">

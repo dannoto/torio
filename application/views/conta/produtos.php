@@ -114,7 +114,16 @@
                                                             <img src="<?= $p->imagem ?>" style="object-fit:cover" class="avatar avatar-sm rounded-circle me-2" alt="webdev">
                                                         </div>
                                                         <div class="my-auto">
-                                                            <h6 class="mb-0 text-sm" title="<?= $p->nome ?>"> <?= $p->nome ?></h6>
+                                                            <h6 class="mb-0 text-sm" title="<?= $p->nome ?>"> 
+
+                                                            <?php if (strlen($p->nome) > 20) {
+                                                                                        echo substr($p->nome, 0, 20) . "...";
+                                                                                      } else {
+                                                                                        echo $p->nome;
+                                                                                      } ?>
+                                                                
+                                                            
+                                                          
 
                                                         </div>
                                                     </div>

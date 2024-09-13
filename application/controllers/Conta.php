@@ -315,7 +315,155 @@ class Conta extends CI_Controller
 
     public function campanhas()
     {
-        $this->load->view('conta/campanhas');
+        if ($this->input->get()) {
+
+            $f_data = $this->input->get();
+            $base_url = base_url('conta/campanhas');
+            $query_string = http_build_query($f_data);
+
+            $config['base_url'] = $base_url;
+            $config['total_rows'] = $this->conta_model->count_search_campanhas($f_data);
+            $config['per_page'] = 50;
+            $config['uri_segment'] = 3;
+
+            $config['full_tag_open'] = '<ul class="pagination">';
+            $config['full_tag_close'] = '</ul>';
+            $config['first_link'] = 'Primeira';
+            $config['last_link'] = 'Última';
+            $config['next_link'] = '&gt;';
+            $config['prev_link'] = '&lt;';
+            $config['num_tag_open'] = '<li>';
+            $config['num_tag_close'] = '</li>';
+            $config['cur_tag_open'] = '<li class="active"><a href="#">';
+            $config['cur_tag_close'] = '</a></li>';
+
+
+
+            $this->pagination->initialize($config);
+
+            $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+
+            $data = array(
+                'campanhas' => $this->conta_model->get_search_campanhas($f_data, $config['per_page'], $page),
+                'pagination' => $this->pagination->create_links()
+            );
+
+
+            $data['pagination'] = preg_replace('/href="([^"]+)"/', 'href="$1?' . $query_string . '"', $data['pagination']);
+
+            $this->load->view('conta/campanhas',  $data);
+        } else {
+
+            $config['base_url'] = base_url('conta/campanhas');
+            $config['total_rows'] = $this->conta_model->count_campanhas(); // Total de registros
+            $config['per_page'] = 50; // Quantidade de imóveis por página
+            $config['uri_segment'] = 3; // Segmento da URL onde a página está indicada
+
+            $config['full_tag_open'] = '<ul class="pagination">';
+            $config['full_tag_close'] = '</ul>';
+            $config['first_link'] = 'Primeira';
+            $config['last_link'] = 'Última';
+            $config['next_link'] = '&gt;';
+            $config['prev_link'] = '&lt;';
+            $config['num_tag_open'] = '<li>';
+            $config['num_tag_close'] = '</li>';
+            $config['cur_tag_open'] = '<li class="active"><a href="#">';
+            $config['cur_tag_close'] = '</a></li>';
+
+
+            $this->pagination->initialize($config);
+
+            $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+
+            $data = array(
+                'campanhas' => $this->conta_model->get_campanhas($config['per_page'], $page),
+                'pagination' => $this->pagination->create_links()
+            );
+
+
+            $this->load->view('conta/campanhas',  $data);
+        }
+    }
+
+    public function campanhas_ofertas($campanha_id)
+
+
+
+    {
+
+        if ($this->input->get()) {
+
+            $f_data = $this->input->get();
+            $base_url = base_url('conta/campanhas_ofertas');
+            $query_string = http_build_query($f_data);
+
+            $config['base_url'] = $base_url;
+            $config['total_rows'] = $this->conta_model->count_search_campanhas_ofertas($campanha_id, $f_data);
+            $config['per_page'] = 100;
+            $config['uri_segment'] = 3;
+
+            $config['full_tag_open'] = '<ul class="pagination">';
+            $config['full_tag_close'] = '</ul>';
+            $config['first_link'] = 'Primeira';
+            $config['last_link'] = 'Última';
+            $config['next_link'] = '&gt;';
+            $config['prev_link'] = '&lt;';
+            $config['num_tag_open'] = '<li>';
+            $config['num_tag_close'] = '</li>';
+            $config['cur_tag_open'] = '<li class="active"><a href="#">';
+            $config['cur_tag_close'] = '</a></li>';
+
+
+
+            $this->pagination->initialize($config);
+
+            $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+
+            $data = array(
+                'ofertas' => $this->conta_model->get_search_campanhas_ofertas($campanha_id, $f_data, $config['per_page'], $page),
+                'pagination' => $this->pagination->create_links(),
+                'campanha_id' => $campanha_id
+
+            );
+
+
+            $data['pagination'] = preg_replace('/href="([^"]+)"/', 'href="$1?' . $query_string . '"', $data['pagination']);
+
+            $this->load->view('conta/campanhas_ofertas',  $data);
+        } else {
+
+            $config['base_url'] = base_url('conta/campanhas_ofertas');
+            $config['total_rows'] = $this->conta_model->count_campanhas_ofertas($campanha_id); // Total de registros
+            $config['per_page'] = 100; // Quantidade de imóveis por página
+            $config['uri_segment'] = 3; // Segmento da URL onde a página está indicada
+
+            $config['full_tag_open'] = '<ul class="pagination">';
+            $config['full_tag_close'] = '</ul>';
+            $config['first_link'] = 'Primeira';
+            $config['last_link'] = 'Última';
+            $config['next_link'] = '&gt;';
+            $config['prev_link'] = '&lt;';
+            $config['num_tag_open'] = '<li>';
+            $config['num_tag_close'] = '</li>';
+            $config['cur_tag_open'] = '<li class="active"><a href="#">';
+            $config['cur_tag_close'] = '</a></li>';
+
+
+            $this->pagination->initialize($config);
+
+            $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+
+            $data = array(
+                'ofertas' => $this->conta_model->get_campanhas_ofertas($campanha_id, $config['per_page'], $page),
+                'pagination' => $this->pagination->create_links(),
+                'campanha_id' => $campanha_id
+            );
+
+
+
+
+            $this->load->view('conta/campanhas_ofertas',  $data);
+        }
     }
 
     public function tags()
@@ -481,18 +629,17 @@ class Conta extends CI_Controller
         $response = array();
 
 
-        if ($this->conta_model->check_tarefa( $data['tarefa_url'])) {
+        if ($this->conta_model->check_tarefa($data['tarefa_url'])) {
 
             $response = array("status" => false, "message" => "Esta URL já existe.");
-
-        } else  {
+        } else {
             if ($this->conta_model->add_tarefa($data)) {
                 $response = array("status" => true, "message" => "Tarefa adicionada com sucesso");
             } else {
                 $response = array("status" => false, "message" => "Erro ao adicionar Tarefa");
             }
         }
-      
+
 
 
         return print_r(json_encode($response));
@@ -743,6 +890,173 @@ class Conta extends CI_Controller
         return print_r(json_encode($response));
     }
     // AGENTES
+
+
+
+
+    // CAMPANHA
+    public function act_add_campanha()
+    {
+        $data['campanha_nome'] =  htmlspecialchars($this->input->post('campanha_nome'));
+        $data['campanha_descricao'] = htmlspecialchars($this->input->post('campanha_descricao'));
+        $data['campanha_tag_id'] = htmlspecialchars($this->input->post('campanha_tag_id'));
+        $data['campanha_produto_id'] = htmlspecialchars($this->input->post('campanha_produto_id'));
+        $data['campanha_data'] = date('Y-m-d H:i:s');
+        $data['campanha_status'] = htmlspecialchars($this->input->post('campanha_status'));
+        $data['is_deleted'] = 0;
+
+        $response = array();
+
+        if ($this->conta_model->add_campanha($data)) {
+            $response = array("status" => true, "message" => "Campanha adicionada com sucesso");
+        } else {
+            $response = array("status" => false, "message" => "Erro ao adicionar Campanha");
+        }
+
+        return print_r(json_encode($response));
+    }
+
+    public function act_update_campanha()
+    {
+
+        $campanha_id = htmlspecialchars($this->input->post('campanha_id'));
+        $data['campanha_nome'] =  htmlspecialchars($this->input->post('campanha_nome'));
+        $data['campanha_descricao'] = htmlspecialchars($this->input->post('campanha_descricao'));
+        $data['campanha_tag_id'] = htmlspecialchars($this->input->post('campanha_tag_id'));
+        $data['campanha_produto_id'] = htmlspecialchars($this->input->post('campanha_produto_id'));
+        $data['campanha_data'] = date('Y-m-d H:i:s');
+        $data['campanha_status'] = htmlspecialchars($this->input->post('campanha_status'));
+        $data['is_deleted'] = 0;
+
+        $response = array();
+
+        if ($this->conta_model->update_campanha($campanha_id, $data)) {
+            $response = array("status" => true, "message" => "Campanha atualizada com sucesso");
+        } else {
+            $response = array("status" => false, "message" => "Erro ao atualizar Campanha");
+        }
+
+
+        return print_r(json_encode($response));
+    }
+
+    public function act_delete_campanha()
+    {
+
+        $campanha_id = htmlspecialchars($this->input->post('campanha_id'));
+
+        $response = array();
+
+        if ($this->conta_model->delete_campanha($campanha_id)) {
+            $response = array("status" => true, "message" => "Campanha excluida com sucesso");
+        } else {
+            $response = array("status" => false, "message" => "Erro ao excluir Campanha");
+        }
+
+        return print_r(json_encode($response));
+    }
+
+    public function act_get_campanha()
+    {
+        $campanha_id =  htmlspecialchars($this->input->post('campanha_id'));
+
+
+        $response = array();
+
+        if ($res = $this->conta_model->get_campanha($campanha_id)) {
+
+            $response = array("status" => true, "message" => "Campanha pega com sucesso", "response" => $res);
+        } else {
+
+
+            $response = array("status" => false, "message" => "Erro ao pegar Campanha");
+        }
+
+        return print_r(json_encode($response));
+    }
+    // CAMPANHA
+
+
+    // CAMPANHA OFERTA
+    public function act_add_campanhas_ofertas()
+    {
+        $data['oferta_nome'] =  htmlspecialchars($this->input->post('oferta_nome'));
+        $data['oferta_conteudo'] = htmlspecialchars($this->input->post('oferta_conteudo'));
+        $data['oferta_campanha_id'] = htmlspecialchars($this->input->post('oferta_campanha_id'));
+        $data['oferta_tipo'] = htmlspecialchars($this->input->post('oferta_tipo'));
+        $data['oferta_data'] = date('Y-m-d H:i:s');
+        $data['is_deleted'] = 0;
+
+        $response = array();
+
+        if ($this->conta_model->add_campanhas_ofertas($data)) {
+            $response = array("status" => true, "message" => "Campanha adicionada com sucesso");
+        } else {
+            $response = array("status" => false, "message" => "Erro ao adicionar Campanha");
+        }
+
+        return print_r(json_encode($response));
+    }
+
+    public function act_update_campanhas_ofertas()
+    {
+
+        $oferta_id = htmlspecialchars($this->input->post('oferta_id'));
+        $data['oferta_nome'] =  htmlspecialchars($this->input->post('oferta_nome'));
+        $data['oferta_conteudo'] = htmlspecialchars($this->input->post('oferta_conteudo'));
+        $data['oferta_campanha_id'] = htmlspecialchars($this->input->post('oferta_campanha_id'));
+        $data['oferta_tipo'] = htmlspecialchars($this->input->post('oferta_tipo'));
+        // $data['oferta_data'] = date('Y-m-d H:i:s');
+        // $data['is_deleted'] = 0;
+
+        $response = array();
+
+        if ($this->conta_model->update_campanhas_ofertas($oferta_id, $data)) {
+            $response = array("status" => true, "message" => "Campanha atualizada com sucesso");
+        } else {
+            $response = array("status" => false, "message" => "Erro ao atualizar Campanha");
+        }
+
+
+        return print_r(json_encode($response));
+    }
+
+    public function act_delete_campanhas_ofertas()
+    {
+
+        $oferta_id = htmlspecialchars($this->input->post('oferta_id'));
+
+        $response = array();
+
+        if ($this->conta_model->delete_campanhas_ofertas($oferta_id)) {
+            $response = array("status" => true, "message" => "Campanha excluida com sucesso");
+        } else {
+            $response = array("status" => false, "message" => "Erro ao excluir Campanha");
+        }
+
+        return print_r(json_encode($response));
+    }
+
+    public function act_get_campanhas_ofertas()
+    {
+        $oferta_id =  htmlspecialchars($this->input->post('oferta_id'));
+
+
+        $response = array();
+
+        if ($res = $this->conta_model->get_campanha_ofertas($oferta_id)) {
+
+            $response = array("status" => true, "message" => "Campanha pega com sucesso", "response" => $res);
+        } else {
+
+
+            $response = array("status" => false, "message" => "Erro ao pegar Campanha");
+        }
+
+        return print_r(json_encode($response));
+    }
+    // CAMPANHA OFERTA
+
 
 
 }

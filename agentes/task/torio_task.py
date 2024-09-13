@@ -25,14 +25,14 @@ class Scraper:
 
     def __init__(self):
 
-        base_url = "http://localhost/torio/api/torio/"
+        base_url = "https://ccoanalitica.com/torio/api/torio/"
 
         headers = {
                 'Accept': '*/*',
                 'Accept-Encoding': 'gzip, deflate, br',
                 'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
                 # 'Cookie': self.header_data[self.header_current]['agente_cookie'],
-                'Cookie': 'ig_did=1E36CBE8-F02A-49AA-BD2B-E1A5C0111ED0; datr=i-UrZsTnMEkNQqCkeoO2UKJu; ig_nrcb=1; fbm_124024574287414=base_domain=.instagram.com; ps_n=1; ps_l=1; mid=Zm4XgQALAAEMoTlQzk2A2V8ajQLo; ds_user_id=61013886138; csrftoken=KulxTVBQm4ZXlfevpBUdlDCL66rhSowm; sessionid=61013886138%3ASNwAqCSxJMoLkV%3A4%3AAYeb_qL_5cYiLYga4uC6fXwiodmlDuLqXNTqTKlkQyU; shbid="7447\05461013886138\0541757548722:01f78bf3a52ac7e8d91b9e689702b31408fcf39f9b6f136dcff6dd4135ff969cb11b167a"; shbts="1726012722\05461013886138\0541757548722:01f7dad7d5c1f872674f2d4b0012d02fa38a402f61aeba50bbc1f9a8f91cf63f4c1853b0"; fbsr_124024574287414=RCcPZE9l3UID61Ri83I0Y7A_roXatfFjjFy2cDHXUXo.eyJ1c2VyX2lkIjoiMTAwMDg5NDAyNTYzMTE3IiwiY29kZSI6IkFRQnlhNUEwbDdJYW14NkVCSG9fT3pOVGlRR3YtekJBNnJQLTc2aGFYVzFaZDdPZ1BpT0ptRE5zdFJ4MGVnQjNDNVBXYllqaVdCcGxmVDFSVmJaWTNzY0FhWDlqOHJ1ZjlmZ20tOHk0TDVtOGlmXzh3U2E5UjFGUHBNOFN6ME5BZTcwcFVYaWlaZmJ6aGtxRE9FdG1Ia1czUHpaUHh0NzQzcEc5bkhQSmk3X1p3YTBrMmt5d2lWX3M2ckxVU3ZnZjJzcEw5cEdpb3pLalpfS1lEdkI4dnI0Ym9iQkc4MkVENTZ3QkdvUFh3aXBkUEpDY0JQOC1YdTZ3LTJjNm5rY3hSNkVDZmVOclc4MlJXVUpRN3RYM19YY3A1UlNzVEZyd1RmcXhMLTZ0ZzVjQzZoOS1vcTNKTFBwazltbllWcXljeUNSWmt0M3NmSjZhTmhtbUJwRmNRS1R3OWJUMmpXbldNMGUtY1ZGSU9va2p5USIsIm9hdXRoX3Rva2VuIjoiRUFBQnd6TGl4bmpZQk84UFJwancwYkREeFRGd2tkeDhkaWdjb1E3Q1NUdWt1SlpDTVdqQlNnMmI1MFBJY3BYRnFNemVmQzRwNzhLWWN0MExNek1zOEFjNElaQUlIVGFYeE1VdEVqQzdlcU91ck1COThkOGZ6RVRrTVhhaGdrVHFPWkJEOU1Uc0l0WkIxbTZOOHZScTBuOGxOS04wVFpBcXVzM2Y2dXVYOEh5UlNYWkFhVVkxNmwwZHU0UjdQSzBXT25URzVZWkQiLCJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTcyNjAyNzIyNn0; wd=1312x150; rur="RVA\05461013886138\0541757563259:01f7cfd23e14c2f78cef301ec36ec0e32d7398b935872e7e816cd6176d6e3520d09ffec0"',
+                'Cookie': 'ig_did=1E36CBE8-F02A-49AA-BD2B-E1A5C0111ED0; datr=i-UrZsTnMEkNQqCkeoO2UKJu; ig_nrcb=1; fbm_124024574287414=base_domain=.instagram.com; ps_n=1; ps_l=1; mid=Zm4XgQALAAEMoTlQzk2A2V8ajQLo; shbid="7447\05461013886138\0541757548722:01f78bf3a52ac7e8d91b9e689702b31408fcf39f9b6f136dcff6dd4135ff969cb11b167a"; shbts="1726012722\05461013886138\0541757548722:01f7dad7d5c1f872674f2d4b0012d02fa38a402f61aeba50bbc1f9a8f91cf63f4c1853b0"; fbsr_124024574287414=IZ-Owrgw6Tszd4vkumZtdSMXUWZ-bBfx9-FdfqGyfJM.eyJ1c2VyX2lkIjoiMTAwMDg5NDAyNTYzMTE3IiwiY29kZSI6IkFRQzRrM0EwRTR6RDdqbVV1NC14dlNwb3lwcW9iYmVlWUd0SHVEelp5WjNFd3FaR2Vyc3B3cXU5cFhGWW9EbUtGbU56QTEzR2Q4VWd3OVkyWnBBVHF4Y0RpblRDdzJFUkw3Uzc1Yk5iWmZiRGE3d0k0V1hJOTBjUUlZTjJ6S3lXaHpvNW0xcnNSaURfd2MtcTJOLXlJRTN3ME1Pdmd5UzJJVEFGQ2d1c3ZCbUdlTUN6V1Z5SGhtUVBCVHg5TGs1Nl9MNlNTQzRJX3d6QUFSSjNIRXRZRE5jMTJJZHcyVVBnX3N3Q3lzVzBGSFJqTkoyaGh4VW10Sk5DbEl3dW5mYmtxYUhQNmlMeFRFTHhQeDBVV1pTZ2d6NzFmQ3l3RzN5b0kwVHJlcEpMV2xzTVVpdTRNQUhHYV84cWFSaHdJYW9iaXY0cHk5b0JjUFVwdFUteV9oUXJfS0UxNzRZMFZiNm9mb1NTYjNMelZRaE81USIsIm9hdXRoX3Rva2VuIjoiRUFBQnd6TGl4bmpZQk83MTkxWkIxWUZhWkJ6bDZ3NVYyWWVXbVpCVTEyNk5aQjJaQ0RCTXhhYlRDbmppWkFPRlpCSHJSR0ExWWZ0SjNhWHZXUXhQb1JycmlVRnFwdGFaQjlWRGJkcVpBN0w5bmNITHVGZDlYR0tjVjhKOFJsOHVrSDZxTzJkeXhxSHZFcjhvQVJDblA2aW41SzlOUXU0cHR6dGMzbXJRd0d2cnE2NTBaQ3VDNXZzbkpSOGdibjZqb2lRTjZKRThMb1pEIiwiYWxnb3JpdGhtIjoiSE1BQy1TSEEyNTYiLCJpc3N1ZWRfYXQiOjE3MjYxNzUyNTZ9; csrftoken=MdfuEb6AgQafEWU6wekb7o88q82DlDqQ; ds_user_id=61013886138; sessionid=61013886138%3AFKdbqMaIgZdXrW%3A19%3AAYcZkANphZeFOzAyhDRsc2lv-zDcDJrK07FRvRRLLQ; fbsr_124024574287414=IZ-Owrgw6Tszd4vkumZtdSMXUWZ-bBfx9-FdfqGyfJM.eyJ1c2VyX2lkIjoiMTAwMDg5NDAyNTYzMTE3IiwiY29kZSI6IkFRQzRrM0EwRTR6RDdqbVV1NC14dlNwb3lwcW9iYmVlWUd0SHVEelp5WjNFd3FaR2Vyc3B3cXU5cFhGWW9EbUtGbU56QTEzR2Q4VWd3OVkyWnBBVHF4Y0RpblRDdzJFUkw3Uzc1Yk5iWmZiRGE3d0k0V1hJOTBjUUlZTjJ6S3lXaHpvNW0xcnNSaURfd2MtcTJOLXlJRTN3ME1Pdmd5UzJJVEFGQ2d1c3ZCbUdlTUN6V1Z5SGhtUVBCVHg5TGs1Nl9MNlNTQzRJX3d6QUFSSjNIRXRZRE5jMTJJZHcyVVBnX3N3Q3lzVzBGSFJqTkoyaGh4VW10Sk5DbEl3dW5mYmtxYUhQNmlMeFRFTHhQeDBVV1pTZ2d6NzFmQ3l3RzN5b0kwVHJlcEpMV2xzTVVpdTRNQUhHYV84cWFSaHdJYW9iaXY0cHk5b0JjUFVwdFUteV9oUXJfS0UxNzRZMFZiNm9mb1NTYjNMelZRaE81USIsIm9hdXRoX3Rva2VuIjoiRUFBQnd6TGl4bmpZQk83MTkxWkIxWUZhWkJ6bDZ3NVYyWWVXbVpCVTEyNk5aQjJaQ0RCTXhhYlRDbmppWkFPRlpCSHJSR0ExWWZ0SjNhWHZXUXhQb1JycmlVRnFwdGFaQjlWRGJkcVpBN0w5bmNITHVGZDlYR0tjVjhKOFJsOHVrSDZxTzJkeXhxSHZFcjhvQVJDblA2aW41SzlOUXU0cHR6dGMzbXJRd0d2cnE2NTBaQ3VDNXZzbkpSOGdibjZqb2lRTjZKRThMb1pEIiwiYWxnb3JpdGhtIjoiSE1BQy1TSEEyNTYiLCJpc3N1ZWRfYXQiOjE3MjYxNzUyNTZ9; rur="NHA\05461013886138\0541757711266:01f71f40a5eb418bf8698926cf28dedb02cef6ca5d39f32682853f9e509cfbfae6e54e2c"; wd=1312x150',
                 'Dpr': '1',
                 'Referer': 'https://www.instagram.com/p/C07F4jjrEy2/?img_index=1',
                 'Sec-Ch-Prefers-Color-Scheme': 'light',
@@ -49,11 +49,12 @@ class Scraper:
                 'Viewport-Width': '1312',
                 'X-Asbd-Id': '129477',
                 # 'X-Csrftoken': self.header_data[self.header_current]['agente_crsf'],
-                'X-Csrftoken': 'KulxTVBQm4ZXlfevpBUdlDCL66rhSowm',
+                'X-Csrftoken': 'MdfuEb6AgQafEWU6wekb7o88q82DlDqQ',
                 'X-Ig-App-Id': '936619743392459',
                 'X-Ig-Www-Claim': 'hmac.AR2kovJ4-DcOAF0d43NiUcqAx69DUcqPe2rRZLMjoHsdi9v6',
                 'X-Requested-With': 'XMLHttpRequest'
         }
+        
         
         while True:
                
@@ -162,6 +163,7 @@ class Scraper:
         
         try:
 
+            
             self.updateTarefaStatus(base_url, tarefa_id, 1)
             
             media_id = self.getPostId(headers, post_url)
@@ -183,13 +185,24 @@ class Scraper:
                     is_private =like['is_private']
                     text = ""
                     interacao_tipo = "like"
-                    interacao_data = self.time_stamp_to_date_time(post_dados['caption']['created_at_utc'])
                 
                     post_id = post_dados['pk']
                     post_slug = post_dados['code']
-                    post_data = self.time_stamp_to_date_time(post_dados['caption']['created_at_utc'])
+
+                    try:
+
+                        interacao_data = self.time_stamp_to_date_time(post_dados['caption']['created_at_utc'])
+                        post_data = self.time_stamp_to_date_time(post_dados['caption']['created_at_utc'])
+                        post_descricao = post_dados['caption']['text']
+
+                    except Exception as e:
+                        
+                        print(f'\n Erro POST DADOS, RECOVERYING', e)
+                        interacao_data = ""
+                        post_data = ""
+                        post_descricao = ""
+
                     
-                    post_descricao = post_dados['caption']['text']
                     post_imagem = post_dados['image_versions2']['candidates'][0]['url']
                     
                     # Verifica se o username já existe no user_data
@@ -240,9 +253,20 @@ class Scraper:
                     
                     post_id = post_dados['pk']
                     post_slug = post_dados['code']
-                    post_data = self.time_stamp_to_date_time(post_dados['caption']['created_at_utc'])
-                    
-                    post_descricao = post_dados['caption']['text']
+
+                   
+                    try:
+
+                        post_data = self.time_stamp_to_date_time(post_dados['caption']['created_at_utc'])
+                        post_descricao = post_dados['caption']['text']
+
+                    except Exception as e:
+
+                        print(f'\n Erro POST DADOS, RECOVERYING', e)
+
+                        post_data = ""
+                        post_descricao = ""
+
                     post_imagem = post_dados['image_versions2']['candidates'][0]['url']
 
                     
@@ -294,10 +318,113 @@ class Scraper:
 
         except Exception as e:
             self.updateTarefaStatus(base_url, tarefa_id, 3)
+            print(e)
             print(f'\n\n ERRO EXTRAIR POST  \n')
             
-         
+    # def get_instagram_media_id(self, instagram_url):
+
+    #     print('PEGANDO MEDIA ID, MÉTODO SECUNDÁRIO: '+instagram_url)
+    #     # Send a request to the Instagram URL
+    #     response = requests.get(instagram_url)
+        
+    #     # Parse the HTML content using BeautifulSoup
+    #     soup = BeautifulSoup(response.text, 'html.parser')
+        
+    #     # Look for the meta tag that contains the media ID
+    #     media_id_tag = soup.find('meta', {'property': 'al:ios:url'})
+        
+    #     if media_id_tag and 'content' in media_id_tag.attrs:
+    #         # Extract the media ID from the content attribute
+    #         media_id = media_id_tag['content'].split('media?id=')[-1]
+    #         print('MEDIA ID ENCONTRADO: ', media_id)
+    #         return media_id
+    #     else:
+    #         return False
     
+    def instagram_code_to_media_id(self, code):
+
+        charmap = {
+            'A': '0',
+            'B': '1',
+            'C': '2',
+            'D': '3',
+            'E': '4',
+            'F': '5',
+            'G': '6',
+            'H': '7',
+            'I': '8',
+            'J': '9',
+            'K': 'a',
+            'L': 'b',
+            'M': 'c',
+            'N': 'd',
+            'O': 'e',
+            'P': 'f',
+            'Q': 'g',
+            'R': 'h',
+            'S': 'i',
+            'T': 'j',
+            'U': 'k',
+            'V': 'l',
+            'W': 'm',
+            'X': 'n',
+            'Y': 'o',
+            'Z': 'p',
+            'a': 'q',
+            'b': 'r',
+            'c': 's',
+            'd': 't',
+            'e': 'u',
+            'f': 'v',
+            'g': 'w',
+            'h': 'x',
+            'i': 'y',
+            'j': 'z',
+            'k': 'A',
+            'l': 'B',
+            'm': 'C',
+            'n': 'D',
+            'o': 'E',
+            'p': 'F',
+            'q': 'G',
+            'r': 'H',
+            's': 'I',
+            't': 'J',
+            'u': 'K',
+            'v': 'L',
+            'w': 'M',
+            'x': 'N',
+            'y': 'O',
+            'z': 'P',
+            '0': 'Q',
+            '1': 'R',
+            '2': 'S',
+            '3': 'T',
+            '4': 'U',
+            '5': 'V',
+            '6': 'W',
+            '7': 'X',
+            '8': 'Y',
+            '9': 'Z',
+            '-': '$',
+            '_': '_'
+        }
+
+        id = ""
+        for letter in code:
+            id += charmap[letter]
+    
+        alphabet = list(charmap.values())
+        number = 0
+        for char in id:
+            number = number * 64 + alphabet.index(char)
+
+
+        print('POST ID DECIFRADO: ', number)
+
+
+        return str(number)
+  
     def getURLPostSlug(self, url):
         # Extrai a slu
         parsed_url = urlparse(url)
@@ -309,31 +436,38 @@ class Scraper:
         
         
         url_extracted = self.getURLPostSlug(url)
+        code = url_extracted.replace('/reel/', '').strip('/')
+        code = url_extracted.replace('/p/', '').strip('/')
+        code = url_extracted.replace('p/', '').strip('/')
+
+        print('code' ,  code)
         
-        params={'route_urls[0]': url_extracted, }
+
+        return self.instagram_code_to_media_id(code)
+
+
+        # params={'route_urls[0]': url_extracted, }
         
        
-        response = requests.get(url, data=params, headers=headers)
+        # response = requests.get(url, data=params, headers=headers)
 
-        if response.status_code == 200:
+        # if response.status_code == 200:
             
-       
-            
-            pattern = r'"media_id":"(\d+)"'
-            match = re.search(pattern, response.content.decode('utf-8'))
+        #     pattern = r'"media_id":"(\d+)"'
+        #     match = re.search(pattern, response.content.decode('utf-8'))
 
-            if match:
-                media_id = match.group(1)  # Obtendo o valor do media_id capturado pelo grupo (\d+)
-                print("[!] Media ID encontrado:", media_id)
-                return media_id
-            else:
-                print("[?] Nenhuma correspondência para media_id encontrada.")
-                return False
+        #     if match:
+        #         media_id = match.group(1)  # Obtendo o valor do media_id capturado pelo grupo (\d+)
+        #         print("[!] Media ID encontrado:", media_id)
+        #         return media_id
+        #     else:
+        #         print("[?] Nenhuma correspondência para media_id encontrada.")
+        #         # return self.get_instagram_media_id(url)
             
 
-        else:
-            print("[!] Erro na requisição getPostId:", response.status_code)
-            return False
+        # else:
+        #     print("[!] Erro na requisição getPostId:", response.status_code)
+        #     return False
     
     def getPost(self, headers, post_id):
         
@@ -411,6 +545,8 @@ class Scraper:
         # }
         url = 'https://www.instagram.com/api/v1/media/'+media_id+'/likers/'
         response = requests.get(url, headers=headers)
+
+        # print(response.content)
 
         if response.status_code == 200:
             print("Requisição getLikes bem-sucedida!")
