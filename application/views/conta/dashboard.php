@@ -59,7 +59,7 @@
                     <p class="text-sm mb-0 text-capitalize font-weight-bold">Ofertas Hoje</p>
                     <h5 class="font-weight-bolder mb-0">
                       <?=count($this->conta_model->report_get_ofertas_today())?>
-                      <!-- <span class="text-success text-sm font-weight-bolder">+55%</span> -->
+                      <span class="text-success text-sm font-weight-bolder"><i class="fa fa-arrow-up"></i></span>
                     </h5>
                   </div>
                 </div>
