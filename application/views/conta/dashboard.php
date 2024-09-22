@@ -126,7 +126,7 @@
                   <div class="numbers">
                     <p class="text-sm mb-0 text-capitalize font-weight-bold">Faturamento Hoje</p>
                     <h5 class="font-weight-bolder mb-0">
-                    R$ <?=count($this->conta_model->report_get_faturamento_today())?>
+                    R$ <?=$this->conta_model->report_get_faturamento_today()?>
                       <!-- <span class="text-success text-sm font-weight-bolder">+5%</span> -->
                     </h5>
                   </div>

@@ -767,7 +767,18 @@ class Conta_model extends CI_Model
 
     public function report_get_faturamento_today() {
 
-        return true;
+        $this->db->like('venda_data', date('Y-m-d'));
+		$vendas =  $this->db->get('vendas')->result();
+
+        $total = 0;
+
+        foreach ($vendas as $v) {
+
+            $total = ($total + $v->venda_valor );
+
+        }
+
+        return round( $total, 2);
 
     }
 
