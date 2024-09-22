@@ -16,26 +16,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="<?= base_url() ?>assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="<?= base_url() ?>assets/img/favicon.png">
-  <title>
-    Soft UI Dashboard by Creative Tim
-  </title>
-  <!--     Fonts and icons     -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-  <!-- Nucleo Icons -->
-  <link href="<?= base_url() ?>assets/css/nucleo-icons.css" rel="stylesheet" />
-  <link href="<?= base_url() ?>assets/css/nucleo-svg.css" rel="stylesheet" />
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <link href="<?= base_url() ?>assets/css/nucleo-svg.css" rel="stylesheet" />
-  <!-- CSS Files -->
-  <link id="pagestyle" href="<?= base_url() ?>assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
-  <!-- Nepcha Analytics (nepcha.com) -->
-  <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
-  <!-- <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script> -->
+  <title>Dashboard - Tório </title>
+  <?php $this->load->view('comp/css'); ?>
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">
@@ -43,9 +25,9 @@
   <?php $this->load->view('comp/sidebar'); ?>
 
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
-    
+
     <!-- Navbar -->
-     <?php $this->load->view('comp/navbar'); ?>
+    <?php $this->load->view('comp/navbar'); ?>
     <!-- End Navbar -->
 
     <div class="container-fluid py-4">
@@ -58,7 +40,7 @@
                   <div class="numbers">
                     <p class="text-sm mb-0 text-capitalize font-weight-bold">Ofertas Hoje</p>
                     <h5 class="font-weight-bolder mb-0">
-                      <?=count($this->conta_model->report_get_ofertas_today())?>
+                      <?= count($this->conta_model->report_get_ofertas_today()) ?>
                       <span class="text-success text-sm font-weight-bolder"><i class="fa fa-arrow-up"></i></span>
                     </h5>
                   </div>
@@ -80,9 +62,9 @@
                   <div class="numbers">
                     <p class="text-sm mb-0 text-capitalize font-weight-bold">Visitas Hoje</p>
                     <h5 class="font-weight-bolder mb-0">
-                    <?=count($this->conta_model->report_get_cliques_today())?>
+                      <?= count($this->conta_model->report_get_cliques_today()) ?>
 
-                    <span class="text-success text-sm font-weight-bolder"><i class="fa fa-arrow-up"></i></span>
+                      <span class="text-success text-sm font-weight-bolder"><i class="fa fa-arrow-up"></i></span>
                     </h5>
                   </div>
                 </div>
@@ -103,9 +85,9 @@
                   <div class="numbers">
                     <p class="text-sm mb-0 text-capitalize font-weight-bold">Vendas Hoje</p>
                     <h5 class="font-weight-bolder mb-0">
-                    <?=count($this->conta_model->report_get_vendas_today())?>
+                      <?= count($this->conta_model->report_get_vendas_today()) ?>
 
-                    <span class="text-success text-sm font-weight-bolder"><i class="fa fa-arrow-up"></i></span>
+                      <span class="text-success text-sm font-weight-bolder"><i class="fa fa-arrow-up"></i></span>
                     </h5>
                   </div>
                 </div>
@@ -126,8 +108,8 @@
                   <div class="numbers">
                     <p class="text-sm mb-0 text-capitalize font-weight-bold">Faturamento Hoje</p>
                     <h5 class="font-weight-bolder mb-0">
-                    R$ <?=$this->conta_model->report_get_faturamento_today()?>
-                    <span class="text-success text-sm font-weight-bolder"><i class="fa fa-arrow-up"></i></span>
+                      R$ <?= $this->conta_model->report_get_faturamento_today() ?>
+                      <span class="text-success text-sm font-weight-bolder"><i class="fa fa-arrow-up"></i></span>
                     </h5>
                   </div>
                 </div>
