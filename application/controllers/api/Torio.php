@@ -264,10 +264,10 @@ class Torio extends CI_Controller
         if ($this->input->get('oferta_key')) {
 
         
-            if ($this->api_model->off_get_oferta_by_key($this->input->get('code'))) {
-                $response = $this->api_model->off_get_oferta_by_key($this->input->get('code'));
+            if ($this->api_model->off_get_oferta_by_key($this->input->get('oferta_key'))) {
+                $response = $this->api_model->off_get_oferta_by_key($this->input->get('oferta_key'));
             } else {
-                echo "ai papai";
+                // echo "ai papai";
                 $response = false;
             }
            
@@ -313,7 +313,7 @@ class Torio extends CI_Controller
             $data['clique_origem'] = $this->input->get('clique_origem');
             $data['clique_tag_id'] = $this->input->get('clique_tag_id');
 
-            if ($this->admin_model->off_add_clique($data)) {
+            if ($this->api_model->off_add_clique($data)) {
                 $response = array("status" => "true");
             } else {
                 $response = array("status" => "false");
