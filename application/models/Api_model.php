@@ -33,7 +33,7 @@ class api_model extends CI_Model
 
 
     public function update_agente_ocupado($agente_id, $agente_data) {
-        
+
         $this->db->where('id', $agente_id);
         return $this->db->update('agentes', $agente_data);
     }
@@ -303,4 +303,22 @@ class api_model extends CI_Model
     {
         return $this->db->insert('insta_leads', $data);
     }
+
+
+    public function off_get_oferta_by_key($oferta_key){
+        $this->db->where('oferta_key', $oferta_key);
+       return $this->db->get('ofertas')->row_array();
+       
+   }
+   
+   public function off_get_produto($produto_id){
+        $this->db->where('id', $produto_id);
+       return $this->db->get('produtos')->row_array();
+       
+   }
+   
+    public function off_add_clique($clique_data){
+        return $this->db->insert('cliques',$clique_data);
+       
+   }
 }
