@@ -730,4 +730,15 @@ class Conta_model extends CI_Model
 
     // OFERTA
 
+
+
+    
+	// PERSONAS
+	public function get_persona($persona_id) {
+		$this->db->where('id', $persona_id);
+		return $this->db->get('personas')->row();
+	}
+	// PERSONAS
+
+
 }
