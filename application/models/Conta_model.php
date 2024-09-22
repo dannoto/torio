@@ -741,4 +741,37 @@ class Conta_model extends CI_Model
 	// PERSONAS
 
 
+    // DASHBOARD
+
+    public function report_get_ofertas_today() {
+
+        $this->db->where('oferta_data', date('Y-m-d'));
+        $this->db->where('oferta_status',1);
+		return $this->db->get('ofertas')->row();
+    }
+
+    public function report_get_cliques_today() {
+
+        $this->db->like('clique_data_id', date('Y-m-d'));
+		return $this->db->get('cliques')->row();
+
+    }
+
+    public function report_get_vendas_today() {
+
+        $this->db->like('venda_data', date('Y-m-d'));
+		return $this->db->get('vendas')->row();
+
+
+    }
+
+    public function report_get_faturamento_today() {
+
+        return true;
+
+    }
+
+    // DASHBOARD    
+
+
 }
