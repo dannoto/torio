@@ -58,7 +58,7 @@
                   <div class="numbers">
                     <p class="text-sm mb-0 text-capitalize font-weight-bold">Ofertas Hoje</p>
                     <h5 class="font-weight-bolder mb-0">
-                      <?=$this->conta_model-> report_get_ofertas_today()?>
+                      <?=$this->conta_model->report_get_ofertas_today()?>
                       <!-- <span class="text-success text-sm font-weight-bolder">+55%</span> -->
                     </h5>
                   </div>
@@ -80,7 +80,7 @@
                   <div class="numbers">
                     <p class="text-sm mb-0 text-capitalize font-weight-bold">Visitas Hoje</p>
                     <h5 class="font-weight-bolder mb-0">
-                    <?=$this->conta_model-> report_get_cliques_today()?>
+                    <?=$this->conta_model->report_get_cliques_today()?>
 
                       <!-- <span class="text-success text-sm font-weight-bolder">+3%</span> -->
                     </h5>
@@ -103,7 +103,7 @@
                   <div class="numbers">
                     <p class="text-sm mb-0 text-capitalize font-weight-bold">Vendas Hoje</p>
                     <h5 class="font-weight-bolder mb-0">
-                    <?=$this->conta_model-> report_get_vendas_today()?>
+                    <?=$this->conta_model->report_get_vendas_today()?>
 
                       <!-- <span class="text-danger text-sm font-weight-bolder">-2%</span> -->
                     </h5>
@@ -126,7 +126,7 @@
                   <div class="numbers">
                     <p class="text-sm mb-0 text-capitalize font-weight-bold">Faturamento Hoje</p>
                     <h5 class="font-weight-bolder mb-0">
-                    R$ <?=$this->conta_model-> report_get_faturamento_today()?>
+                    R$ <?=$this->conta_model->report_get_faturamento_today()?>
                       <!-- <span class="text-success text-sm font-weight-bolder">+5%</span> -->
                     </h5>
                   </div>
