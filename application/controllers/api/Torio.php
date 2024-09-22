@@ -314,9 +314,9 @@ class Torio extends CI_Controller
             $data['clique_tag_id'] = $this->input->get('clique_tag_id');
 
             if ($this->api_model->off_add_clique($data)) {
-                $response = array("status" => "true");
+                $response = true;
             } else {
-                $response = array("status" => "false");
+                $response = false;
             }
            
         }

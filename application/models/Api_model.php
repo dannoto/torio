@@ -318,7 +318,7 @@ class api_model extends CI_Model
    }
    
     public function off_add_clique($clique_data){
-        return $this->db->insert('cliques',$clique_data);
+        return $this->db->insert('cliques', $clique_data);
        
    }
 }
