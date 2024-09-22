@@ -372,6 +372,8 @@ class Conta extends CI_Controller
 
             $this->load->view('conta/ofertas',  $data);
         }
+
+        print_r($data['ofertas']);
     }
     
 
