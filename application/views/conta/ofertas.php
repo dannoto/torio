@@ -111,7 +111,7 @@
                         <td>
                           <div class="d-flex px-2">
                             <div>
-                              <img src="<?= $p->imagem ?>" style="object-fit:cover" class="avatar avatar-sm rounded-circle me-2" alt="webdev">
+                              <img src="https://images.vexels.com/content/129616/preview/businessman-avatar-silhouette-ae719c.png" style="object-fit:cover" class="avatar avatar-sm rounded-circle me-2" alt="webdev">
                             </div>
                             <div class="my-auto">
                               <a href="<?= base_url() ?>contas/personas_detalhes/<?= $p->oferta_persona_id ?>">
