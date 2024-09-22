@@ -155,7 +155,7 @@
                                   } ?></p>
                         </td>
                         <td>
-                          <p><?=$p->oferta_data?></p>
+                          <p><?=$p->oferta_data_creation?></p>
                         </td>
                       
                       </tr>
