@@ -1984,3 +1984,535 @@ console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://oferta.r
 JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 Exiting due to channel error.
 Exiting due to channel error.
+1726995082497	geckodriver	INFO	Listening on 127.0.0.1:56268
+1726995085531	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56269" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileuhSqUW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1726995086013	Marionette	INFO	Marionette enabled
+1726995086303	Marionette	INFO	Listening on port 56278
+WebDriver BiDi listening on ws://127.0.0.1:56269
+Read port: 56278
+1726995086591	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1726995535717	geckodriver	INFO	Listening on 127.0.0.1:56493
+1726995538779	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56494" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofiler0ZwPj"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1726995539222	Marionette	INFO	Marionette enabled
+1726995539490	Marionette	INFO	Listening on port 56501
+Read port: 56501
+WebDriver BiDi listening on ws://127.0.0.1:56494
+1726995539620	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1726996058047	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-3897BJ0B95&l=dataLayer&cx=c, line 198: Script terminated by timeout at:
+Ra@https://www.googletagmanager.com/gtag/js?id=G-3897BJ0B95&l=dataLayer&cx=c:198:70
+tm@https://www.googletagmanager.com/gtag/js?id=G-3897BJ0B95&l=dataLayer&cx=c:392:440
+sm.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-3897BJ0B95&l=dataLayer&cx=c:396:336
+sm.prototype.push@https://www.googletagmanager.com/gtag/js?id=G-3897BJ0B95&l=dataLayer&cx=c:394:403
+lm@https://www.googletagmanager.com/gtag/js?id=G-3897BJ0B95&l=dataLayer&cx=c:391:785
+mH/<@https://www.googletagmanager.com/gtag/js?id=G-3897BJ0B95&l=dataLayer&cx=c:696:187
+aa.Jk/<@https://www.googletagmanager.com/gtag/js?id=G-3897BJ0B95&l=dataLayer&cx=c:639:126
+aa.Jk/c/<@https://www.googletagmanager.com/gtag/js?id=G-3897BJ0B95&l=dataLayer&cx=c:638:420
+
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://www.instagram.com/_valeria.castro" ({})
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ cache is not supported
+[ERROR webrender_bindings::program_cache] shader-cache: Shader disk cache is not supported
+1726997410454	geckodriver	INFO	Listening on 127.0.0.1:57244
+1726997413561	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57245" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilec2jbLw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1726997413981	Marionette	INFO	Marionette enabled
+1726997414208	Marionette	INFO	Listening on port 57252
+WebDriver BiDi listening on ws://127.0.0.1:57245
+Read port: 57252
+1726997414532	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+1726997442452	Marionette	INFO	Stopped listening on port 57252
+Dynamically enable window occlusion 1
+1726997469018	geckodriver	INFO	Listening on 127.0.0.1:57331
+1726997472080	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57332" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilexNWiUI"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1726997472809	Marionette	INFO	Marionette enabled
+1726997473046	Marionette	INFO	Listening on port 57339
+WebDriver BiDi listening on ws://127.0.0.1:57332
+Read port: 57339
+1726997473317	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1726997774179	geckodriver	INFO	Listening on 127.0.0.1:57512
+1726997777230	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57513" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilew6N0uE"
+console.warn: services.settings: Ignoring preference overrid1726997780348	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57520" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileaYCxT9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETconsole.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+Exiting due to channel error.
+ated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3ijn04/yP/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB92d2EbvfZpgzIZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCU44gd1u871dTA-5w75lYVnGXVfENllKeluT9qooQU-PG4A8C1SKxZ5Ep4STH6u186JGOgfMGhwsQvuXT6AUqs15ooA_tMxBBf_jn8qVK4Tlw0eK.js?_nc_x=Ij3Wp8lg5Kz, line 1562: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3ijn04/yP/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB92d2EbvfZpgzIZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCU44gd1u871dTA-5w75lYVnGXVfENllKeluT9qooQU-PG4A8C1SKxZ5Ep4STH6u186JGOgfMGhwsQvuXT6AUqs15ooA_tMxBBf_jn8qVK4Tlw0eK.js?_nc_x=Ij3Wp8lg5Kz, line 1562: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3ijn04/yP/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB92d2EbvfZpgzIZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCU44gd1u871dTA-5w75lYVnGXVfENllKeluT9qooQU-PG4A8C1SKxZ5Ep4STH6u186JGOgfMGhwsQvuXT6AUqs15ooA_tMxBBf_jn8qVK4Tlw0eK.js?_nc_x=Ij3Wp8lg5Kz, line 1562: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3ijn04/yP/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB92d2EbvfZpgzIZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCU44gd1u871dTA-5w75lYVnGXVfENllKeluT9qooQU-PG4A8C1SKxZ5Ep4STH6u186JGOgfMGhwsQvuXT6AUqs15ooA_tMxBBf_jn8qVK4Tlw0eK.js?_nc_x=Ij3Wp8lg5Kz, line 1562: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3ijn04/yP/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB92d2EbvfZpgzIZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCU44gd1u871dTA-5w75lYVnGXVfENllKeluT9qooQU-PG4A8C1SKxZ5Ep4STH6u186JGOgfMGhwsQvuXT6AUqs15ooA_tMxBBf_jn8qVK4Tlw0eK.js?_nc_x=Ij3Wp8lg5Kz, line 1562: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3ijn04/yP/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB92d2EbvfZpgzIZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCU44gd1u871dTA-5w75lYVnGXVfENllKeluT9qooQU-PG4A8C1SKxZ5Ep4STH6u186JGOgfMGhwsQvuXT6AUqs15ooA_tMxBBf_jn8qVK4Tlw0eK.js?_nc_x=Ij3Wp8lg5Kz, line 1562: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+Exiting due to channel error.
+1726999704943	geckodriver	INFO	Listening on 127.0.0.1:58151
+1726999707982	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58152" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilet41DLy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1726999708418	Marionette	INFO	Marionette enabled
+1726999708633	Marionette	INFO	Listening on port 58159
+WebDriver BiDi listening on ws://127.0.0.1:58152
+Read port: 58159
+1726999708877	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+Exiting due to channel error.
+1726999805399	geckodriver	INFO	Listening on 127.0.0.1:58261
+1726999808442	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58262" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileR2689q"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1726999808861	Marionette	INFO	Marionette enabled
+1726999809138	Marionette	INFO	Listening on port 58269
+WebDriver BiDi listening on ws://127.0.0.1:58262
+Read port: 58269
+1726999809847	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/s8FQObXwNaD.js?_nc_x=Ij3Wp8lg5Kz, line 80: Script terminated by timeout at:
+c.__emitToSubscription@https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/s8FQObXwNaD.js?_nc_x=Ij3Wp8lg5Kz:80:1424
+c.emit@https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/s8FQObXwNaD.js?_nc_x=Ij3Wp8lg5Kz:80:1303
+@https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/s8FQObXwNaD.js?_nc_x=Ij3Wp8lg5Kz:294:1059
+applyWithGuard@https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/s8FQObXwNaD.js?_nc_x=Ij3Wp8lg5Kz:71:10432
+c@https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/s8FQObXwNaD.js?_nc_x=Ij3Wp8lg5Kz:71:11166
+
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iRdn4/yW/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB9IZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCUXVfENllKelu.js?_nc_x=Ij3Wp8lg5Kz, line 161: Script terminated by timeout at:
+i.canUseNavigatorBeacon@https://static.cdninstagram.com/rsrc.php/v3iRdn4/yW/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB9IZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCUXVfENllKelu.js?_nc_x=Ij3Wp8lg5Kz:161:4276
+C@https://static.cdninstagram.com/rsrc.php/v3iRdn4/yW/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB9IZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCUXVfENllKelu.js?_nc_x=Ij3Wp8lg5Kz:161:1597
+i._initialize/<@https://static.cdninstagram.com/rsrc.php/v3iRdn4/yW/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB9IZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCUXVfENllKelu.js?_nc_x=Ij3Wp8lg5Kz:161:4912
+d@https://static.cdninstagram.com/rsrc.php/v3iRdn4/yW/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB9IZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCUXVfENllKelu.js?_nc_x=Ij3Wp8lg5Kz:151:158
+
+1727021699632	Marionette	INFO	Stopped listening on port 58269
+Dynamically enable window occlusion 1
+1727021821063	geckodriver	INFO	Listening on 127.0.0.1:65263
+1727021824213	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65264" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilemLpWCW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727021825106	Marionette	INFO	Marionette enabled
+1727021825490	Marionette	INFO	Listening on port 65271
+WebDriver BiDi listening on ws://127.0.0.1:65264
+Read port: 65271
+1727021825726	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3if1r4/yN/l/rt/FevxKzQGeYc.js?_nc_x=Ij3Wp8lg5Kz, line 103: IndexSizeError: Index or size is negative or greater than the allowed amount
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3i9RR4/yf/l/rt/QLp8RRf35qHYcBoimiySJQg80cL-YoGJUFevxKzQGeYcqUqLoD1I6oERclyF-KYC6kNDZEYiafjQxTiSY7OUZU6AIGyh6FUuJwYeFLgKRUJcTsRZ7mDudk45-WEyt5QK9BmZb7h8VnUFrKX15LgBBjXacYAnyyURKhXcaohP_-qgrf6SNE86nRnXOhgt8gacXFfJl8s0ZdrdnugiV5CJoYyqjZfbJFCvsFcZAIKWDzI4Kze8hen8ReVJO9XfpLRWFkhYOC-gppZeLTKmfiu1HnGyks3PcZx08A4LT28_b.js?_nc_x=Ij3Wp8lg5Kz, line 516: IndexSizeError: Index or size is negative or greater than the allowed amount
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/s8FQObXwNaD.js?_nc_x=Ij3Wp8lg5Kz, line 235: Script terminated by timeout at:
+a@https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/s8FQObXwNaD.js?_nc_x=Ij3Wp8lg5Kz:235:107
+p@https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/s8FQObXwNaD.js?_nc_x=Ij3Wp8lg5Kz:237:882
+m/<@https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/s8FQObXwNaD.js?_nc_x=Ij3Wp8lg5Kz:237:418
+
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1727023546960	geckodriver	INFO	Listening on 127.0.0.1:49660
+1727023550081	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49661" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileOZcp2o"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727023550985	Marionette	INFO	Marionette enabled
+1727023551307	Marionette	INFO	Listening on port 49674
+WebDriver BiDi listening on ws://127.0.0.1:49661
+Read port: 49674
+1727023551616	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3it2G4/yg/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB92d2EbvfZpgzIZ8lDi7TwjEWUH7iTdWbNOArnyigddkhBfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCUXVfENllKeluA8C1SKxZ5Ep.js?_nc_x=Ij3Wp8lg5Kz, line 1298: NetworkRequestError: Network request encountered error HTTP 400 HTTP_CLIENT_ERROR: {"message":"checkpoint_required","status":"fail"}
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+1727023695593	geckodriver	INFO	Listening on 127.0.0.1:49813
+1727023698645	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49814" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilejkgs4F"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727023699056	Marionette	INFO	Marionette enabled
+1727023699306	Marionette	INFO	Listening on port 49821
+WebDriver BiDi listening on ws://127.0.0.1:49814
+Read port: 49821
+1727023699557	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+1727023834360	geckodriver	INFO	Listening on 127.0.0.1:49918
+1727023837414	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49919" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilexdsD9J"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727023837989	Marionette	INFO	Marionette enabled
+1727023838260	Marionette	INFO	Listening on port 49926
+WebDriver BiDi listening on ws://127.0.0.1:49919
+Read port: 49926
+1727023838497	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+Exiting due to channel error.
+1727025126912	geckodriver	INFO	Listening on 127.0.0.1:50339
+1727025129979	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50340" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofile12zCsw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727025130942	Marionette	INFO	Marionette enabled
+1727025131298	Marionette	INFO	Listening on port 50353
+WebDriver BiDi listening on ws://127.0.0.1:50340
+Read port: 50353
+1727025131577	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/s8FQObXwNaD.js?_nc_x=Ij3Wp8lg5Kz, line 71: Script terminated by timeout at:
+c@https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/s8FQObXwNaD.js?_nc_x=Ij3Wp8lg5Kz:71:11082
+
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727027024567	Marionette	INFO	Stopped listening on port 50353
+Dynamically enable window occlusion 1
+1727027027600	geckodriver	INFO	Listening on 127.0.0.1:50987
+1727027030755	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50988" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileHDFZqU"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727027033788	Marionette	INFO	Marionette enabled
+1727027034014	Marionette	INFO	Listening on port 50995
+WebDriver BiDi listening on ws://127.0.0.1:50988
+Read port: 50995
+1727027034399	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1727027448856	geckodriver	INFO	Listening on 127.0.0.1:51080
+1727027451922	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51081" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileNH3091"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727027452362	Marionette	INFO	Marionette enabled
+1727027452596	Marionette	INFO	Listening on port 51088
+WebDriver BiDi listening on ws://127.0.0.1:51081
+Read port: 51088
+1727027452837	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1727027459296	Marionette	INFO	Stopped listening on port 51088
+Dynamically enable window occlusion 1
+1727027462310	geckodriver	INFO	Listening on 127.0.0.1:51126
+1727027465351	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51127" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofile5xaQbY"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727027465901	Marionette	INFO	Marionette enabled
+1727027466213	Marionette	INFO	Listening on port 51134
+WebDriver BiDi listening on ws://127.0.0.1:51127
+Read port: 51134
+1727027466513	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iYlb4/yE/l/rt/QLp8RRf35qHYcBoimiySJQg80cL-YoGJUFevxKzQGeYcqUqLoD1I6oERclyF-KYC6kNDZEYiafjQxTiSY7OUZU6AIGyh6FUuJwYeFLgKRUJcTsRZ7mDudk45-WEyt5QK9BmZb7h8VnUFrKX15LgBBjXacYAnyyURKhXcaohP_-qgrf6SNE86nRnXOhgt8gacXFfJl8s0ZdrdnugiV5CJoYyqjZfbJFCvsFcZAIKWDzI4Kze8hen8ReVJO9XfpLRWFkhYOC-g.js?_nc_x=Ij3Wp8lg5Kz, line 516: IndexSizeError: Index or size is negative or greater than the allowed amount
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3ijn04/yP/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB92d2EbvfZpgzIZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCU44gd1u871dTA-5w75lYVnGXVfENllKeluT9qooQU-PG4A8C1SKxZ5Ep4STH6u186JGOgfMGhwsQvuXT6AUqs15ooA_tMxBBf_jn8qVK4Tlw0eK.js?_nc_x=Ij3Wp8lg5Kz, line 1562: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3ijn04/yP/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB92d2EbvfZpgzIZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCU44gd1u871dTA-5w75lYVnGXVfENllKeluT9qooQU-PG4A8C1SKxZ5Ep4STH6u186JGOgfMGhwsQvuXT6AUqs15ooA_tMxBBf_jn8qVK4Tlw0eK.js?_nc_x=Ij3Wp8lg5Kz, line 1562: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3ijn04/yP/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB92d2EbvfZpgzIZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCU44gd1u871dTA-5w75lYVnGXVfENllKeluT9qooQU-PG4A8C1SKxZ5Ep4STH6u186JGOgfMGhwsQvuXT6AUqs15ooA_tMxBBf_jn8qVK4Tlw0eK.js?_nc_x=Ij3Wp8lg5Kz, line 1562: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+console.error: "Unable to find target with innerWindowId:6442450992"
+console.error: "Unable to find target with innerWindowId:6442450992"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: "Unable to find target with innerWindowId:6442450995"
+console.error: "Unable to find target with innerWindowId:6442450995"
+console.error: "Error while calling actor 'domwalker's method 'documentElement'" "this.rawNode is null"
+console.error: (new TypeError("this.rawNode is null", "resource://devtools/server/actors/inspector/node.js", 416))
+console.error: (new Error("Protocol error (TypeError): this.rawNode is null from: server0.conn0.process3//domwalker606 (resource://devtools/server/actors/inspector/node.js:416:33)", "resource://devtools/shared/protocol/Front.js", 382))
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3ijn04/yP/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB92d2EbvfZpgzIZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCU44gd1u871dTA-5w75lYVnGXVfENllKeluT9qooQU-PG4A8C1SKxZ5Ep4STH6u186JGOgfMGhwsQvuXT6AUqs15ooA_tMxBBf_jn8qVK4Tlw0eK.js?_nc_x=Ij3Wp8lg5Kz, line 1562: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+console.error: "Unable to find target with innerWindowId:6442450998"
+console.error: "Unable to find target with innerWindowId:6442450998"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: "Unable to find target with innerWindowId:6442451001"
+console.error: "Unable to find target with innerWindowId:6442451001"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: (new TypeError("state.hideToggleDeferredTask is null", "resource://gre/actors/PictureInPictureChild.sys.mjs", 1509))
+console.error: "Unable to find target with innerWindowId:6442451004"
+console.error: "Unable to find target with innerWindowId:6442451004"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: "Unable to find target with innerWindowId:6442451007"
+console.error: "Unable to find target with innerWindowId:6442451007"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: "Unable to find target with innerWindowId:6442451010"
+console.error: "Unable to find target with innerWindowId:6442451010"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: "Listener for event 'frame' did not return a promise."
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3ijn04/yP/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB92d2EbvfZpgzIZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCU44gd1u871dTA-5w75lYVnGXVfENllKeluT9qooQU-PG4A8C1SKxZ5Ep4STH6u186JGOgfMGhwsQvuXT6AUqs15ooA_tMxBBf_jn8qVK4Tlw0eK.js?_nc_x=Ij3Wp8lg5Kz, line 1562: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+console.error: "Unable to find target with innerWindowId:6442451013"
+console.error: "Unable to find target with innerWindowId:6442451013"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: "Listener for event 'frame' did not return a promise."
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript error: , line 0: NotFoundError: No such JSProcessActor 'DevToolsProcess'
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3ijn04/yP/l/rt/tpdxhv20QczggJejdDFnvZmP5S4leeBDfpjJ3tDFSgNeWp7zl53HhB92d2EbvfZpgzIZ8lDi7TwjEWUH7iTdWbNOfxEgUKxKmwLpwKd5-NVl4T3vA7-EqqL8ov1Zg26LUF-4UtSshCDUOCU44gd1u871dTA-5w75lYVnGXVfENllKeluT9qooQU-PG4A8C1SKxZ5Ep4STH6u186JGOgfMGhwsQvuXT6AUqs15ooA_tMxBBf_jn8qVK4Tlw0eK.js?_nc_x=Ij3Wp8lg5Kz, line 1562: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727030721822	geckodriver	INFO	Listening on 127.0.0.1:52016
+1727030724908	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52017" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofile1GQ9px"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727030725971	Marionette	INFO	Marionette enabled
+1727030726918	Marionette	INFO	Listening on port 52024
+WebDriver BiDi listening on ws://127.0.0.1:52017
+Read port: 52024
+1727030727094	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1727030735103	Marionette	INFO	Stopped listening on port 52024
+Dynamically enable window occlusion 1
+1727030738255	geckodriver	INFO	Listening on 127.0.0.1:52068

@@ -66,7 +66,7 @@ def login(driver, agente_data, demanda):
 
     # ocupando agente
 
-    update_agente_ocupado(agente_data['id'], 1)
+    
 
     # ocupando agente
 
@@ -274,10 +274,10 @@ def get_ofertas_pendentes(agente_id) :
 
 def update_agente_ocupado(agente_id, agente_ocupado):
 
-    print('UPDATE AGENTE: ', agente_id)
+    print('UPDATE AGENTE OCUPADO: ', agente_id)
 
     url = base_url+"/update_agente_ocupado?agente_id="+str(agente_id)+"&agente_ocupado="+str(agente_ocupado)+""
-    print(url)        
+    # print(url)        
     response = requests.get(url)
 
     if response.status_code == 200:
@@ -362,7 +362,8 @@ def add_persona(agente_data, campanha_data, demanda):
 def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_data, driver) :
    
     # ==================================
-    
+
+  
     time.sleep(10)
 
     # acessando perfil
@@ -445,6 +446,12 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
             btn_stories.click()
         except:
             print('   [**] ERRO NO BTN STORIES')
+
+            try:
+                btn_stories_dois = driver.find_element(By.CSS_SELECTOR, ".x1hq5gj4 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > ul:nth-child(1) > li:nth-child(3) > div:nth-child(1) > button:nth-child(1) > div:nth-child(1)")
+                btn_stories_dois.click()
+            except:
+                print('   [**] ERRO NO BTN STORIES 2')
         # stories
         # time.sleep(120)
         return False
@@ -505,12 +512,19 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
             btn_stories.click()
         except:
             print('   [**] ERRO NO BTN STORIES')
+
+            try:
+                btn_stories_dois = driver.find_element(By.CSS_SELECTOR, ".x1hq5gj4 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > ul:nth-child(1) > li:nth-child(3) > div:nth-child(1) > button:nth-child(1) > div:nth-child(1)")
+                btn_stories_dois.click()
+            except:
+                print('   [**] ERRO NO BTN STORIES 2')
         # stories
         # time.sleep(120)
         return False
     # btn clicar input
 
-    time.sleep(5)
+
+
 
     # possivel poupup
 
@@ -544,6 +558,12 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
             btn_stories.click()
         except:
             print('   [**] ERRO NO BTN STORIES')
+
+            try:
+                btn_stories_dois = driver.find_element(By.CSS_SELECTOR, ".x1hq5gj4 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > ul:nth-child(1) > li:nth-child(3) > div:nth-child(1) > button:nth-child(1) > div:nth-child(1)")
+                btn_stories_dois.click()
+            except:
+                print('   [**] ERRO NO BTN STORIES 2')
         # stories
         # time.sleep(120)
         return False
@@ -567,6 +587,7 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
         btn_home = driver.find_element(By.CSS_SELECTOR, "div.x1iyjqo2:nth-child(2) > div:nth-child(1) > div:nth-child(1) > span:nth-child(1) > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > span:nth-child(1) > span:nth-child(1)")
         btn_home.click()
     except:
+        driver.get('https://instagram.com/')
         print('   [**] ERRO NO BTN HOME')
     # home
     time.sleep(5)
@@ -581,6 +602,68 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
     # time.sleep(120)
 
     
+    time.sleep(120)
+      # salvar post main.xvbhtw8 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > article:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > section:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
+    #  like primeiro post main.xvbhtw8 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > article:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > section:nth-child(1) > div:nth-child(1) > span:nth-child(1) > div:nth-child(1) > div:nth-child(1)
+    # clica no botao reeels 
+    # stories
+    try:
+        btn_reels = driver.find_element(By.CSS_SELECTOR, ".x1xgvd2v > div:nth-child(2) > div:nth-child(4) > span:nth-child(1) > div:nth-child(1) > a:nth-child(1) > div:nth-child(1)")
+        btn_reels.click()
+    except:
+        print('   [**] ERRO NO BTN REELS')
+
+        try:
+            driver.get('https://instagram.com/reels')
+        except:
+                print('   [**] ERRO NO BTN REELS 2')
+
+    count = 0
+    max_iterations = 3  # Número máximo de vezes que o loop deve rodar
+
+    try:
+
+        while count < max_iterations:
+            # Gera um intervalo de tempo aleatório entre 1 e 40 segundos
+            wait_time = random.randint(1, 40)
+            print(f"Aguardando por {wait_time} segundos...")
+
+            # Espera pelo tempo gerado
+            time.sleep(wait_time)
+
+            # 
+            try:
+                
+                like_reels = driver.find_element(By.CSS_SELECTOR, ".focus-visible")
+                like_reels.click()
+                
+            except:
+
+                print('   [**] ERRO AO CURTIR REELS')
+
+                try:
+                    like_reels = driver.find_element(By.CSS_SELECTOR, "div.xg7h5cd:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)")
+                    like_reels.click()
+                except:
+                    print('   [**] ERRO AO CURTIR REELS DOIS')
+
+               
+
+            # Simula o pressionar da tecla para baixo
+            body = driver.find_element(By.TAG_NAME ,'body')
+            body.send_keys(Keys.ARROW_DOWN)
+
+            print(f"Pressionando tecla para baixo. Iteração {count + 1}")
+
+            # Incrementa o contador
+            count += 1
+
+    except:
+        print('    [*] ERRO NO WHILE REELS')
+
+    # Sai do while e continua o código aqui
+    print("Loop completado 3 vezes. Continuando o código...")
+    # stories
 
 
     return True
@@ -620,7 +703,7 @@ def run_oferta(base_url, agente_data, campanha_data, campanha_ofertas_data, dema
 
 
             runof = send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_data, driver)
-            time.sleep(120)
+            time.sleep(40)
 
             if runof:
 
@@ -639,7 +722,7 @@ def run_oferta(base_url, agente_data, campanha_data, campanha_ofertas_data, dema
             oferta_data = criar_oferta_pendente(agente_data, campanha_data, template_oferta, demanda, persona_id)
 
             runof = send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_data, driver)
-            time.sleep(120)
+            time.sleep(40)
 
             if runof:
 
@@ -657,6 +740,19 @@ def run_oferta(base_url, agente_data, campanha_data, campanha_ofertas_data, dema
 
         print('  [!] NENHUM OFERTA DISPONÍVEL NA CAMPANHA : '+campanha_data['campanha_nome'])
 
+def setup_selenium_firefox():
+
+    geckodriver_path = os.path.join(os.getcwd(), 'geckodriver')
+
+    # Cria um novo perfil temporário automaticamente
+    profile = webdriver.FirefoxProfile()
+
+    # Configura o Selenium para usar o Firefox com o perfil temporário
+    service = Service(geckodriver_path)
+    driver = webdriver.Firefox(service=service, firefox_profile=profile)
+
+    return driver
+
 if __name__ == "__main__":
 
     driverx = False
@@ -665,15 +761,7 @@ if __name__ == "__main__":
 
     try:
 
-        setup_selenium_firefox()
-
-        # Encontra o caminho do geckodriver
-        geckodriver_path = os.path.join(os.getcwd(), 'geckodriver')
-        
-        # Configura o Selenium para usar o Firefox
-        service = Service(geckodriver_path)
-        driver = webdriver.Firefox(service=service)
-
+        driver = setup_selenium_firefox()
         driverx = True
 
     except:
@@ -697,6 +785,8 @@ if __name__ == "__main__":
             print('[!] [ '+campanha_data['campanha_nome']+' ] DEMANDAS PENDENTES: ', len(demandas_pendentes))
 
             if len(demandas_pendentes) > 0 :
+
+                demandas_pendentes = get_demandas_por_campanha(base_url, campanha_data['id'])
 
                 agente_index = 0
                 logged = False
@@ -724,6 +814,7 @@ if __name__ == "__main__":
 
                             if logged == False:
                                 logged = login(driver, agente_data, demanda)
+                                update_agente_ocupado(agente_data['id'], 1)
                             else:
                                 print('JÁ ESTÁ LOGADO')
 
@@ -733,17 +824,13 @@ if __name__ == "__main__":
 
                         else:
 
-                            print('  [!] AGENTE [ '+agente_data['agente_nome']+' ] AINGITIU O LIMITE DIÁRIO 30')
-                            agentes_qtd = len(agentes_data)
-                            print('  TOTAL AGENTES LIVRES: ', agentes_qtd)
+                            print('========================** TROCANDO AGENTE INDEX **====================')
 
-                            update_agente_ocupado(agente_data['id'], 0)
-
+                            winsound.Beep(1000, 500)  # 1000 Hz por 500 ms
 
                             # Deslogando
                             driverx = False
-                            logged = False  
-
+                            logged = False 
 
                             if driverx == False:
 
@@ -751,25 +838,20 @@ if __name__ == "__main__":
 
                                 try:
 
-                                    setup_selenium_firefox()
-
-                                    # Encontra o caminho do geckodriver
-                                    geckodriver_path = os.path.join(os.getcwd(), 'geckodriver')
-                                    
-                                    # Configura o Selenium para usar o Firefox
-                                    service = Service(geckodriver_path)
-                                    driver = webdriver.Firefox(service=service)
-
+                                    driver = setup_selenium_firefox()
                                     driverx = True
 
                                 except:
 
                                     print('PROBLEMA AO ABRIR NAVEGADOR')
 
-                            
-                            # Deslogadndo
 
-                            
+                            update_agente_ocupado(agente_data['id'], 0)
+
+                            print('  [!] AGENTE [ '+agente_data['agente_nome']+' ] AINGITIU O LIMITE DIÁRIO 30')
+                            agentes_qtd = len(agentes_data)
+                            print('  TOTAL AGENTES LIVRES: ', agentes_qtd)
+
                             if agentes_qtd > 0:
 
                                 if agente_index < (agentes_qtd-1):
@@ -780,7 +862,20 @@ if __name__ == "__main__":
                             else:
 
                                 print('  [!] NENHUM AGENTE DISPONÍVEL NO MOMENTO - STEP 2 ** ESPERANDO 10 MINUTOS')
-                                time.sleep(600)
+                                time.sleep(30)
+
+
+                             
+
+
+                            
+
+                            
+                            # Deslogadndo
+
+                            
+
+                            
                     
                     else:
 
