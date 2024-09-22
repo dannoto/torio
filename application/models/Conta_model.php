@@ -747,20 +747,20 @@ class Conta_model extends CI_Model
 
         $this->db->where('oferta_data', date('Y-m-d'));
         $this->db->where('oferta_status',1);
-		return $this->db->get('ofertas')->row();
+		return $this->db->get('ofertas')->result();
     }
 
     public function report_get_cliques_today() {
 
         $this->db->like('clique_data_id', date('Y-m-d'));
-		return $this->db->get('cliques')->row();
+		return $this->db->get('cliques')->result();
 
     }
 
     public function report_get_vendas_today() {
 
         $this->db->like('venda_data', date('Y-m-d'));
-		return $this->db->get('vendas')->row();
+		return $this->db->get('vendas')->result();
 
 
     }
