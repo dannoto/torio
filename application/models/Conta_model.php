@@ -646,4 +646,88 @@ class Conta_model extends CI_Model
       // CAMPANHA
   
 
+
+      
+    // OFERTA
+    public function add_oferta($oferta_data)
+    {
+        return $this->db->insert('ofertas', $oferta_data);
+    }
+
+    public function get_oferta($oferta_id)
+    {
+        $this->db->where('id', $oferta_id);
+        return $this->db->get('ofertas')->row();
+    }
+
+    public function get_ofertas($limit = null, $start = null)
+    {
+        $this->db->where('is_deleted', 0);
+        $this->db->order_by('id', 'desc');
+        $this->db->limit($limit, $start);
+        return $this->db->get('ofertas')->result();
+    }
+
+    public function count_ofertas()
+    {
+        $this->db->where('is_deleted', 0);
+        return count($this->db->get('ofertas')->result());
+    }
+
+    public function get_search_ofertas($f_data, $limit, $start)
+    {
+
+        if (strlen($f_data['nome']) > 0) {
+            $this->db->like('nome', $f_data['nome']);
+        }
+
+
+
+        $this->db->limit($limit, $start);
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('ofertas')->result();
+    }
+
+    public function count_search_ofertas($f_data)
+    {
+
+
+        if (strlen($f_data['nome']) > 0) {
+            $this->db->like('nome', $f_data['nome']);
+        }
+
+        $this->db->where('is_deleted', 0);
+
+
+        return count($this->db->get('ofertas')->result());
+    }
+
+    public function update_oferta($oferta_id, $oferta_data)
+    {
+        $this->db->where('id', $oferta_id);
+
+        return $this->db->update('ofertas', $oferta_data);
+    }
+
+    public function delete_oferta($oferta_id)
+    {
+        $this->db->where('id', $oferta_id);
+        $oferta_data = array(
+            'is_deleted' => 1
+        );
+        return $this->db->update('ofertas', $oferta_data);
+    }
+
+    public function check_oferta($nome)
+    {
+
+        $this->db->where('nome', $nome);
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('ofertas')->result();
+    }
+
+    // OFERTA
+
 }
