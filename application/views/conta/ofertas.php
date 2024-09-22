@@ -148,10 +148,10 @@
                                   } ?></p>
                         </td>
                         <td>
-                        <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?=$this->conta_model->get_campanha_oferta($p->oferta_oferta_id)->oferta_nome?>"> <?php if (strlen($this->conta_model->get_campanha_oferta($p->oferta_oferta_id)->oferta_nome) > 20) {
-                                    echo substr($this->conta_model->get_campanha_oferta($p->oferta_oferta_id)->oferta_nome, 0, 20) . "...";
+                        <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?=$this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome?>"> <?php if (strlen($this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome) > 20) {
+                                    echo substr($this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome, 0, 20) . "...";
                                   } else {
-                                    echo $this->conta_model->get_campanha_oferta($p->oferta_oferta_id)->oferta_nome;
+                                    echo $this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome;
                                   } ?></p>
                         </td>
                         <td>
