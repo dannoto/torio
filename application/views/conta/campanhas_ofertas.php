@@ -170,7 +170,7 @@
                         <input type="text" class="form-control" name="oferta_nome" id="oferta_nome" required>
                         <br>
                         <label for="">DESCRIÇÃO</label>
-                        <textarea maxlength="200" style="height:250px;" name="oferta_conteudo" required class="form-control" id="oferta_conteudo"></textarea>
+                        <textarea style="height:250px;" name="oferta_conteudo" required class="form-control" id="oferta_conteudo"></textarea>
                         <br>
                         <div class="row">
                             <div class="col-md-6">
@@ -217,7 +217,7 @@
                         <input type="text" class="form-control" name="oferta_nome" id="update_oferta_nome" required>
                         <br>
                         <label for="">DESCRIÇÃO</label>
-                        <textarea maxlength="200" style="height:250px;" name="oferta_conteudo" required class="form-control" id="update_oferta_conteudo"></textarea>
+                        <textarea  style="height:250px;" name="oferta_conteudo" required class="form-control" id="update_oferta_conteudo"></textarea>
                         <br>
                         <div class="row">
                             <div class="col-md-6">

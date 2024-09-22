@@ -31,6 +31,13 @@ class api_model extends CI_Model
         return $this->db->update('tarefas', $data);
     }
 
+
+    public function update_agente_ocupado($agente_id, $agente_data) {
+        
+        $this->db->where('id', $agente_id);
+        return $this->db->update('agentes', $agente_data);
+    }
+
     public function check_lead_demanda($username, $post_id, $tarefa_id, $tag_id)
     {
 
@@ -48,6 +55,142 @@ class api_model extends CI_Model
     }
 
 
+    public function get_campanhas_ativas()
+    {
+
+        $this->db->where('campanha_status', 1);
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('campanhas')->result();
+    }
+
+    public function count_agentes_oferta($agente_id)
+    {
+        $this->db->where('oferta_agente_id', $agente_id);
+        $this->db->like('oferta_data', date('Y-m-d'));
+        // $this->db->where('oferta_status', 1);
+
+        $this->db->where('is_deleted', 0);
+        return $this->db->get('ofertas')->result();
+    }
+
+    public function get_templates_oferta($campanha_id)
+    {
+        $this->db->where('oferta_campanha_id', $campanha_id);
+        $this->db->where('is_deleted', 0);
+        return $this->db->get('campanhas_ofertas')->result();
+    }
+
+
+
+
+    public function get_demandas_abertas($campanha_tag_id)
+    {
+
+        $this->db->where('tag_id', $campanha_tag_id);
+
+        $this->db->where('processado', 0);
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('demandas')->result();
+    }
+
+
+    public function get_agentes_livres()
+    {
+
+        $this->db->where('agente_ocupado', 0);
+        $this->db->where('agente_status', 1);
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('agentes')->result();
+    }
+
+
+    public function get_campanha_ofertas($campanha_id)
+    {
+        $this->db->where('oferta_campanha_id', $campanha_id);
+        $this->db->where('is_delete', 0);
+        return $this->db->get('campanhas_ofertas')->result();
+    }
+
+
+    public function add_oferta($oferta_data)
+    {
+        return $this->db->insert('ofertas', $oferta_data);
+    }
+
+    public function criar_oferta_pendente($oferta_data)
+    {
+         $this->db->insert('ofertas', $oferta_data);
+         return $this->db->insert_id();
+    }
+    public function update_oferta($oferta_id, $oferta_data)
+    {
+        $this->db->where('id', $oferta_id);
+        return $this->db->update('ofertas', $oferta_data);
+    }
+
+   
+    public function get_ofertas()
+    {
+        $this->db->where('is_delete', 0);
+        return $this->db->get('ofertas')->result();
+    }
+
+    public function get_ofertas_pendentes($agente_id)
+    {
+        $this->db->where('oferta_agente_id', $agente_id);
+        $this->db->where('oferta_data !=', date('Y-m-d'));
+        $this->db->where('oferta_status', 0);
+        $this->db->where('is_deleted', 0);
+        return $this->db->get('ofertas')->result();
+    }
+
+    public function get_oferta($oferta_id)
+    {
+        $this->db->where('id', $oferta_id);
+        return $this->db->get('ofertas')->row_array();
+    }
+
+
+    // ==========
+
+
+    public function add_persona($persona_data)
+    {
+        $this->db->insert('personas', $persona_data);
+        return $this->db->insert_id();
+    }
+
+    public function check_persona($persona_username)
+    {
+        $this->db->where('persona_username', $persona_username);
+        $this->db->where('is_deleted', 0);
+        $data =  $this->db->get('personas')->row();
+
+        if ($data) {
+            return $data->id;
+        } else {
+            return false;
+        }
+    }
+
+    public function add_persona_tag($persona_data)
+    {
+        return $this->db->insert('personas_tags', $persona_data);
+    }
+
+    public function check_persona_tag($persona_username, $persona_tag_id)
+    {
+
+        $this->db->where('persona_username', $persona_username);
+        $this->db->where('persona_tag_id', $persona_tag_id);
+
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('personas_tags')->row();
+    }
 
 
 
@@ -60,12 +203,6 @@ class api_model extends CI_Model
 
 
 
-
-
-
-
-
-    
 
 
     public function get_headers()
@@ -110,7 +247,7 @@ class api_model extends CI_Model
         return $this->db->get('persona_tarefas')->result();
     }
 
-   
+
     public function check_lead($username, $tarefa_id, $tag_id)
     {
 
@@ -130,7 +267,7 @@ class api_model extends CI_Model
 
     public function update_demanda_offline($demanda_id)
     {
-        
+
         $this->db->where('id', $demanda_id);
 
         $data = array(
@@ -142,7 +279,7 @@ class api_model extends CI_Model
 
     public function update_demanda_pendente($demanda_id)
     {
-        
+
         $this->db->where('id', $demanda_id);
 
         $data = array(
@@ -150,6 +287,14 @@ class api_model extends CI_Model
         );
 
         return $this->db->update('insta_leads_demandas', $data);
+    }
+
+
+    public function update_demanda($demanda_id, $demanda_data)
+    {
+
+        $this->db->where('id', $demanda_id);
+        return $this->db->update('demandas', $demanda_data);
     }
 
 

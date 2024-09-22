@@ -32,7 +32,7 @@ class Scraper:
                 'Accept-Encoding': 'gzip, deflate, br',
                 'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
                 # 'Cookie': self.header_data[self.header_current]['agente_cookie'],
-                'Cookie': 'ig_did=1E36CBE8-F02A-49AA-BD2B-E1A5C0111ED0; datr=i-UrZsTnMEkNQqCkeoO2UKJu; ig_nrcb=1; fbm_124024574287414=base_domain=.instagram.com; ps_n=1; ps_l=1; mid=Zm4XgQALAAEMoTlQzk2A2V8ajQLo; shbid="7447\05461013886138\0541757548722:01f78bf3a52ac7e8d91b9e689702b31408fcf39f9b6f136dcff6dd4135ff969cb11b167a"; shbts="1726012722\05461013886138\0541757548722:01f7dad7d5c1f872674f2d4b0012d02fa38a402f61aeba50bbc1f9a8f91cf63f4c1853b0"; fbsr_124024574287414=IZ-Owrgw6Tszd4vkumZtdSMXUWZ-bBfx9-FdfqGyfJM.eyJ1c2VyX2lkIjoiMTAwMDg5NDAyNTYzMTE3IiwiY29kZSI6IkFRQzRrM0EwRTR6RDdqbVV1NC14dlNwb3lwcW9iYmVlWUd0SHVEelp5WjNFd3FaR2Vyc3B3cXU5cFhGWW9EbUtGbU56QTEzR2Q4VWd3OVkyWnBBVHF4Y0RpblRDdzJFUkw3Uzc1Yk5iWmZiRGE3d0k0V1hJOTBjUUlZTjJ6S3lXaHpvNW0xcnNSaURfd2MtcTJOLXlJRTN3ME1Pdmd5UzJJVEFGQ2d1c3ZCbUdlTUN6V1Z5SGhtUVBCVHg5TGs1Nl9MNlNTQzRJX3d6QUFSSjNIRXRZRE5jMTJJZHcyVVBnX3N3Q3lzVzBGSFJqTkoyaGh4VW10Sk5DbEl3dW5mYmtxYUhQNmlMeFRFTHhQeDBVV1pTZ2d6NzFmQ3l3RzN5b0kwVHJlcEpMV2xzTVVpdTRNQUhHYV84cWFSaHdJYW9iaXY0cHk5b0JjUFVwdFUteV9oUXJfS0UxNzRZMFZiNm9mb1NTYjNMelZRaE81USIsIm9hdXRoX3Rva2VuIjoiRUFBQnd6TGl4bmpZQk83MTkxWkIxWUZhWkJ6bDZ3NVYyWWVXbVpCVTEyNk5aQjJaQ0RCTXhhYlRDbmppWkFPRlpCSHJSR0ExWWZ0SjNhWHZXUXhQb1JycmlVRnFwdGFaQjlWRGJkcVpBN0w5bmNITHVGZDlYR0tjVjhKOFJsOHVrSDZxTzJkeXhxSHZFcjhvQVJDblA2aW41SzlOUXU0cHR6dGMzbXJRd0d2cnE2NTBaQ3VDNXZzbkpSOGdibjZqb2lRTjZKRThMb1pEIiwiYWxnb3JpdGhtIjoiSE1BQy1TSEEyNTYiLCJpc3N1ZWRfYXQiOjE3MjYxNzUyNTZ9; csrftoken=MdfuEb6AgQafEWU6wekb7o88q82DlDqQ; ds_user_id=61013886138; sessionid=61013886138%3AFKdbqMaIgZdXrW%3A19%3AAYcZkANphZeFOzAyhDRsc2lv-zDcDJrK07FRvRRLLQ; fbsr_124024574287414=IZ-Owrgw6Tszd4vkumZtdSMXUWZ-bBfx9-FdfqGyfJM.eyJ1c2VyX2lkIjoiMTAwMDg5NDAyNTYzMTE3IiwiY29kZSI6IkFRQzRrM0EwRTR6RDdqbVV1NC14dlNwb3lwcW9iYmVlWUd0SHVEelp5WjNFd3FaR2Vyc3B3cXU5cFhGWW9EbUtGbU56QTEzR2Q4VWd3OVkyWnBBVHF4Y0RpblRDdzJFUkw3Uzc1Yk5iWmZiRGE3d0k0V1hJOTBjUUlZTjJ6S3lXaHpvNW0xcnNSaURfd2MtcTJOLXlJRTN3ME1Pdmd5UzJJVEFGQ2d1c3ZCbUdlTUN6V1Z5SGhtUVBCVHg5TGs1Nl9MNlNTQzRJX3d6QUFSSjNIRXRZRE5jMTJJZHcyVVBnX3N3Q3lzVzBGSFJqTkoyaGh4VW10Sk5DbEl3dW5mYmtxYUhQNmlMeFRFTHhQeDBVV1pTZ2d6NzFmQ3l3RzN5b0kwVHJlcEpMV2xzTVVpdTRNQUhHYV84cWFSaHdJYW9iaXY0cHk5b0JjUFVwdFUteV9oUXJfS0UxNzRZMFZiNm9mb1NTYjNMelZRaE81USIsIm9hdXRoX3Rva2VuIjoiRUFBQnd6TGl4bmpZQk83MTkxWkIxWUZhWkJ6bDZ3NVYyWWVXbVpCVTEyNk5aQjJaQ0RCTXhhYlRDbmppWkFPRlpCSHJSR0ExWWZ0SjNhWHZXUXhQb1JycmlVRnFwdGFaQjlWRGJkcVpBN0w5bmNITHVGZDlYR0tjVjhKOFJsOHVrSDZxTzJkeXhxSHZFcjhvQVJDblA2aW41SzlOUXU0cHR6dGMzbXJRd0d2cnE2NTBaQ3VDNXZzbkpSOGdibjZqb2lRTjZKRThMb1pEIiwiYWxnb3JpdGhtIjoiSE1BQy1TSEEyNTYiLCJpc3N1ZWRfYXQiOjE3MjYxNzUyNTZ9; rur="NHA\05461013886138\0541757711266:01f71f40a5eb418bf8698926cf28dedb02cef6ca5d39f32682853f9e509cfbfae6e54e2c"; wd=1312x150',
+                'Cookie': 'ig_did=1E36CBE8-F02A-49AA-BD2B-E1A5C0111ED0; datr=i-UrZsTnMEkNQqCkeoO2UKJu; ig_nrcb=1; fbm_124024574287414=base_domain=.instagram.com; ps_n=1; ps_l=1; mid=Zm4XgQALAAEMoTlQzk2A2V8ajQLo; ds_user_id=61013886138; csrftoken=lU8tORh2GrANXWVYjCIuwqt0xyGLfe1E; ig_direct_region_hint="CLN\05461013886138\0541757802030:01f7143cd0487f9a7380c9b9d7daf68a76a3d3b01dd904e3f852810299526ccab8d28771"; shbid="7447\05461013886138\0541757808448:01f7f700dd1e1e994a8c7a05e25bf3ff60f6a28caff41f2d7724f5f25128f1402c406d43"; shbts="1726272448\05461013886138\0541757808448:01f70e22c18c006698f5ba785fa24ffa3854b8edce8ce6cefe6fb7c3695f02241ff15eae"; wd=1312x549; rur="NHA\05461013886138\0541758038928:01f7e8a71479fd3e58742eef92bbe0e14475a0b9a57626f0fbfdbdb2050661adb97c2d0f"; sessionid=61013886138%3ArISif6y4GDWNpD%3A13%3AAYciSvcK_-YXlFVtrp7S01WwltixcSor-qvPpApVsQ',
                 'Dpr': '1',
                 'Referer': 'https://www.instagram.com/p/C07F4jjrEy2/?img_index=1',
                 'Sec-Ch-Prefers-Color-Scheme': 'light',
@@ -49,7 +49,7 @@ class Scraper:
                 'Viewport-Width': '1312',
                 'X-Asbd-Id': '129477',
                 # 'X-Csrftoken': self.header_data[self.header_current]['agente_crsf'],
-                'X-Csrftoken': 'MdfuEb6AgQafEWU6wekb7o88q82DlDqQ',
+                'X-Csrftoken': 'lU8tORh2GrANXWVYjCIuwqt0xyGLfe1E',
                 'X-Ig-App-Id': '936619743392459',
                 'X-Ig-Www-Claim': 'hmac.AR2kovJ4-DcOAF0d43NiUcqAx69DUcqPe2rRZLMjoHsdi9v6',
                 'X-Requested-With': 'XMLHttpRequest'
@@ -433,7 +433,7 @@ class Scraper:
         return path
     
     def getPostId(self, headers, url):
-        
+        ''
         
         url_extracted = self.getURLPostSlug(url)
         code = url_extracted.replace('/reel/', '').strip('/')
