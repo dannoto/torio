@@ -172,7 +172,7 @@
           <div class="card z-index-2">
             <div class="card-body p-3">
 
-              <h6 class="ms-2 mt-4 mb-0"> Relatório <small style="font-size: 10px;"><?=date('m-Y')?></small> </h6>
+              <h6 class="ms-2 mt-4 mb-0"> Relatório <?=date('m-Y')?> </h6>
               <!-- <p class="text-sm ms-2"> (<span class="font-weight-bolder">+23%</span>) than last week </p> -->
               <div class="container border-radius-lg">
                 <div class="row">
