@@ -210,9 +210,9 @@
                 </div>
               </div>
               <br><br>
-              <div class="bg-gradient-dark border-radius-lg py-3 pe-1 mb-3">
+              <div class="bg-gradient-dark border-radius-lg py-3 pe-1 mb-3" style="display:none">
 
-                <div class="chart" style="margin-top: 30px;display:none">
+                <div class="chart" style="margin-top: 30px;">
                   <canvas id="chart-bars" class="chart-canvas" height="170"></canvas>
                 </div>
               </div>
