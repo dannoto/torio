@@ -212,7 +212,7 @@
               <br><br>
               <div class="bg-gradient-dark border-radius-lg py-3 pe-1 mb-3">
 
-                <div class="chart" style="margin-top: 30px;">
+                <div class="chart" style="margin-top: 30px;display:none">
                   <canvas id="chart-bars" class="chart-canvas" height="170"></canvas>
                 </div>
               </div>
@@ -228,7 +228,7 @@
                 <!-- <span class="font-weight-bold">4% mais</span> do que Setembro -->
               </p>
             </div>
-            <div class="card-body p-3" style="display: none;">
+            <div class="card-body p-3" >
               <div class="chart">
                 <canvas id="chart-line" class="chart-canvas" height="300"></canvas>
               </div>
