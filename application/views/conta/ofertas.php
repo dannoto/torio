@@ -155,7 +155,7 @@
                                                                                                                                                                                     } ?></small></p>
                         </td>
                         <td>
-                          <p><small><?= $p->oferta_data ?></small></p>
+                          <p><small><?= $p->oferta_data ?> <?= $p->oferta_time ?> </small></p>
                         </td>
 
                       </tr>
