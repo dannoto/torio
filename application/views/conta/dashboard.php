@@ -60,7 +60,7 @@
               <div class="row">
                 <div class="col-8">
                   <div class="numbers">
-                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Visitas Hoje</p>
+                    <p class="text-sm mb-0 text-capitalize font-weight-bold">Cliques Hoje</p>
                     <h5 class="font-weight-bolder mb-0">
                       <?= count($this->conta_model->report_get_cliques_today()) ?>
 
@@ -195,7 +195,7 @@
                       </div>
                       <p class="text-xs mt-1 mb-0 font-weight-bold">Ofertas</p>
                     </div>
-                    <h4 class="font-weight-bolder">156780</h4>
+                    <h4 class="font-weight-bolder"> <small> <?= count($this->conta_model->report_get_ofertas_month()) ?></small></h4>
                     <div class="progress w-75">
                       <div class="progress-bar bg-dark w-30" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -219,9 +219,9 @@
                           </g>
                         </svg>
                       </div>
-                      <p class="text-xs mt-1 mb-0 font-weight-bold">Visitas</p>
+                      <p class="text-xs mt-1 mb-0 font-weight-bold">Cliques</p>
                     </div>
-                    <h4 class="font-weight-bolder">50.708</h4>
+                    <h4 class="font-weight-bolder"><small> <?= count($this->conta_model->report_get_cliques_month()) ?></small></h4>
                     <div class="progress w-75">
                       <div class="progress-bar bg-dark w-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -245,7 +245,7 @@
                       </div>
                       <p class="text-xs mt-1 mb-0 font-weight-bold">Vendas</p>
                     </div>
-                    <h4 class="font-weight-bolder">507</h4>
+                    <h4 class="font-weight-bolder"><small> <?= count($this->conta_model->report_get_vendas_month()) ?></small></h4>
                     <div class="progress w-75">
                       <div class="progress-bar bg-dark w-60" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>

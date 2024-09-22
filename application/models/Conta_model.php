@@ -782,6 +782,45 @@ class Conta_model extends CI_Model
 
     }
 
+    public function report_get_ofertas_month() {
+
+        $this->db->like('oferta_data', date('Y-m-d'));
+        $this->db->where('oferta_status',1);
+		return $this->db->get('ofertas')->result();
+    }
+
+    public function report_get_cliques_month() {
+
+        $this->db->like('clique_data_id', date('Y-m'));
+		return $this->db->get('cliques')->result();
+
+    }
+
+    public function report_get_vendas_month() {
+
+        $this->db->like('venda_data', date('Y-m'));
+		return $this->db->get('vendas')->result();
+
+
+    }
+
+    public function report_get_faturamento_month() {
+
+        $this->db->like('venda_data', date('Y-m'));
+		$vendas =  $this->db->get('vendas')->result();
+
+        $total = 0;
+
+        foreach ($vendas as $v) {
+
+            $total = ($total + $v->venda_valor );
+
+        }
+
+        return round( $total, 2);
+
+    }
+
     // DASHBOARD    
 
 
