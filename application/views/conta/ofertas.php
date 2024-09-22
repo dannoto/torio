@@ -131,33 +131,33 @@
                           </div>
                         </td>
                         <td>
-                          <p class="text-sm font-weight-bold mb-0" title="<?= $p->oferta_status ?>"><?= $p->oferta_status == 1 ? "ENVIADA" : "PENDENTE"; ?></p>
+                          <p class="text-sm font-weight-bold mb-0" title="<?= $p->oferta_status ?>"><small><?= $p->oferta_status == 1 ? "ENVIADA" : "PENDENTE"; ?></small></p>
                         </td>
                         <td>
-                          <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?=$this->conta_model->get_produto($p->oferta_produto_id)->nome?>"> <?php if (strlen($this->conta_model->get_produto($p->oferta_produto_id)->nome) > 20) {
-                                    echo substr($this->conta_model->get_produto($p->oferta_produto_id)->nome, 0, 20) . "...";
-                                  } else {
-                                    echo $this->conta_model->get_produto($p->oferta_produto_id)->nome;
-                                  } ?></p>
+                          <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?= $this->conta_model->get_produto($p->oferta_produto_id)->nome ?>"> <small><?php if (strlen($this->conta_model->get_produto($p->oferta_produto_id)->nome) > 20) {
+                                                                                                                                                                      echo substr($this->conta_model->get_produto($p->oferta_produto_id)->nome, 0, 20) . "...";
+                                                                                                                                                                    } else {
+                                                                                                                                                                      echo $this->conta_model->get_produto($p->oferta_produto_id)->nome;
+                                                                                                                                                                    } ?></small></p>
                         </td>
                         <td>
-                        <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?=$this->conta_model->get_campanha($p->oferta_campanha_id)->campanha_nome?>"> <?php if (strlen($this->conta_model->get_campanha($p->oferta_campanha_id)->campanha_nome) > 20) {
-                                    echo substr($this->conta_model->get_campanha($p->oferta_campanha_id)->campanha_nome, 0, 20) . "...";
-                                  } else {
-                                    echo $this->conta_model->get_campanha($p->oferta_campanha_id)->campanha_nome;
-                                  } ?></p>
+                          <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?= $this->conta_model->get_campanha($p->oferta_campanha_id)->campanha_nome ?>"><small> <?php if (strlen($this->conta_model->get_campanha($p->oferta_campanha_id)->campanha_nome) > 20) {
+                                                                                                                                                                                  echo substr($this->conta_model->get_campanha($p->oferta_campanha_id)->campanha_nome, 0, 20) . "...";
+                                                                                                                                                                                } else {
+                                                                                                                                                                                  echo $this->conta_model->get_campanha($p->oferta_campanha_id)->campanha_nome;
+                                                                                                                                                                                } ?></small></p>
                         </td>
                         <td>
-                        <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?=$this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome?>"> <?php if (strlen($this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome) > 20) {
-                                    echo substr($this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome, 0, 20) . "...";
-                                  } else {
-                                    echo $this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome;
-                                  } ?></p>
+                          <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?= $this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome ?>"> <small><?php if (strlen($this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome) > 20) {
+                                                                                                                                                                                      echo substr($this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome, 0, 20) . "...";
+                                                                                                                                                                                    } else {
+                                                                                                                                                                                      echo $this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome;
+                                                                                                                                                                                    } ?></small></p>
                         </td>
                         <td>
-                          <p><?=$p->oferta_data_creation?></p>
+                          <p><small><?= $this->conta_model->formatar_data($p->oferta_data_creation) ?></small></p>
                         </td>
-                      
+
                       </tr>
                     <?php } ?>
                   </tbody>
