@@ -265,10 +265,10 @@
         <div class="col-lg-7">
           <div class="card z-index-2">
             <div class="card-header pb-0">
-              <h6>Performance em vendas <small style="font-size: 10px;">OUTUBRO</small></h6>
+              <h6>Performance em vendas <small style="font-size: 10px;"><?=date('m-Y')?></small></h6>
               <p class="text-sm">
                 <i class="fa fa-arrow-up text-success"></i>
-                <span class="font-weight-bold">4% mais</span> do que Setembro
+                <!-- <span class="font-weight-bold">4% mais</span> do que Setembro -->
               </p>
             </div>
             <div class="card-body p-3">
