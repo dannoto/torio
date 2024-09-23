@@ -3443,4 +3443,12 @@ Dynamically enable window occlusion 0
 1727062462485	Marionette	INFO	Listening on port 49943
 WebDriver BiDi listening on ws://127.0.0.1:49934
 Read port: 49943
-1727062462752	RemoteAgent	WARN	TLS certificate 
+1727062462752	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/y2/l/rt/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
