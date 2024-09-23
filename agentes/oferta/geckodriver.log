@@ -3170,3 +3170,18 @@ WebDriver BiDi listening on ws://127.0.0.1:64295
 Read port: 64302
 1727058698207	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 Exiting due to channel error.
+1727058818495	geckodriver	INFO	Listening on 127.0.0.1:64404
+1727058821560	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64405" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofile61wtpm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727058821982	Marionette	INFO	Marionette enabled
+1727058822230	Marionette	INFO	Listening on port 64412
+WebDriver BiDi listening on ws://127.0.0.1:64405
+Read port: 64412
+1727058822440	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+Exiting due to channel error.
+Exiting due to channel error.

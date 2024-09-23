@@ -1217,6 +1217,8 @@ if __name__ == "__main__":
                             time.sleep(600)
 
                         time.sleep(3)
+
+                    time.sleep(30)
             else:
 
                 print('   [!] NÃO EXISTEM DEMANDAS PENDENTES: ', len(demandas_pendentes))

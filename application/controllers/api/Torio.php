@@ -98,7 +98,7 @@ class Torio extends CI_Controller
 
     public function get_agente()
     {
-        $data['agente_email'] = htmlspecialchars($this->input->post('agente_email'));
+        $data['agente_email'] = htmlspecialchars($this->input->get('agente_email'));
 
         if ($this->api_model->get_agente($data['agente_email'])) {
             $response = array('status' => 'true', 'message' => 'Concluido');
@@ -112,14 +112,14 @@ class Torio extends CI_Controller
     
     public function add_agente()
     {
-        $data['agente_email'] = htmlspecialchars($this->input->post('agente_email'));
-        $data['agente_senha'] = htmlspecialchars($this->input->post('agente_senha'));
-        $data['agente_nome'] = htmlspecialchars($this->input->post('agente_nome'));
-        $data['agente_username'] = htmlspecialchars($this->input->post('agente_email'));
+        $data['agente_email'] = htmlspecialchars($this->input->get('agente_email'));
+        $data['agente_senha'] = htmlspecialchars($this->input->get('agente_senha'));
+        $data['agente_nome'] = htmlspecialchars($this->input->get('agente_nome'));
+        $data['agente_username'] = htmlspecialchars($this->input->get('agente_email'));
         $data['agente_ocupado'] = 0;
         $data['agente_status'] = 0;
-        $data['agente_sexo'] = htmlspecialchars($this->input->post('agente_sexo'));
-        $data['agente_data'] = htmlspecialchars($this->input->post('agente_data'));
+        $data['agente_sexo'] = htmlspecialchars($this->input->get('agente_sexo'));
+        $data['agente_data'] = htmlspecialchars($this->input->get('agente_data'));
         $data['is_deleted'] = 0;
 
 
