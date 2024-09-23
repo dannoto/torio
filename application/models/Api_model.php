@@ -334,6 +334,6 @@ class api_model extends CI_Model
     public function add_agente($data)
     {
 
-        return $this->db->insert($data);
+        return $this->db->insert('agentes',$data);
     }
 }
