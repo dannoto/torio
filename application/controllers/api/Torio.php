@@ -101,7 +101,7 @@ class Torio extends CI_Controller
         $data['agente_email'] = htmlspecialchars($this->input->get('agente_email'));
 
         if ($this->api_model->get_agente($data['agente_email'])) {
-            $response = array('status' => 'true', 'message' => 'Concluido');
+            $response = $this->api_model->get_agente($data['agente_email']);
         } else {
             $response = array('status' => 'false', 'message' => 'Erro');
         }
