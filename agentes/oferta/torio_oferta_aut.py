@@ -1,3 +1,7 @@
+# proxima melhoria
+# colocar update_oferta(oferta_data['id'], 1, demanda['id']) 
+# logo após input de enviar mensagem pra evitar possiveis erros e deixar a demanda como nao-processada
+
 import requests
 import tarfile
 import os

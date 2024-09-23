@@ -58,7 +58,7 @@
       <div class="row">
         <div class="col-md-6"></div>
         <div class="col-md-6 d-flex justify-content-end">
-          <button type="button" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#modal_add_produto"><i class="fa fa-plus mr-2"></i> Adicionar Produto</button>
+          <!-- <button type="button" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#modal_add_produto"><i class="fa fa-plus mr-2"></i> Adicionar Produto</button> -->
           <button type="button" id="trigger_update_btn" style="display: none;" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#modal_update_produto">Editar Produto</button>
         </div>
       </div>
