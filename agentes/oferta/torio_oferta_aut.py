@@ -315,7 +315,7 @@ def update_agente_ocupado(agente_id, agente_ocupado):
 
 def update_oferta(oferta_id, oferta_status, demanda_id) :
        
-    url = base_url+"/update_oferta?oferta_id="+str(oferta_id)+"&oferta_status="+str(oferta_status)+"&demanda_id="+str(demanda_id)+""
+    url = base_url+"update_oferta?oferta_id="+str(oferta_id)+"&oferta_status="+str(oferta_status)+"&demanda_id="+str(demanda_id)+""
     # print(url)        
     response = requests.get(url)
 
@@ -443,11 +443,11 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
 
     except:
         print('FALHA skip poup follow')
-        return False
+        # return False
     
     time.sleep(5)
 
-        # possivel poupup
+    # possivel poupup
     try:
         poupup = driver.find_element(By.CSS_SELECTOR, "button._a9--:nth-child(2)")
         poupup.click()
@@ -814,6 +814,8 @@ def temp_get_instagram_code(md5):
 
             if len(json_data) > 0:
                 
+                print(json_data)
+
                 string = json_data[0]['mail_subject']
                 print(string)
                 code = re.findall(r'\d+', string)
@@ -923,7 +925,7 @@ def temp_add_agente(base_url, email, email_md5, nome):
 
         return False 
 
-def temp_register_agente(driver, email, nome, senha):
+def temp_register_agente(driver, email, nome, senha, email_md5):
 
     driver.get('https://www.instagram.com/accounts/emailsignup/')
 
@@ -1060,17 +1062,26 @@ def temp_register_agente(driver, email, nome, senha):
 
         try:
             while True:
-                code = temp_get_instagram_code(senha)  # Chama a função
-                if code:  # Se não for False, encerra o loop
 
-                    insta_code = code
+                try:
+                    code = temp_get_instagram_code(email_md5)  # Chama a função
+                    if code:  # Se não for False, encerra o loop
 
-                    break
+                        insta_code = code
 
-                print('Aguardando  10 segundos.')
-                time.sleep(10)  # Espera 10 segundos antes de tentar novamente
-        except:
-            print('ERRO while')
+                        break
+
+                    print('Aguardando  10 segundos.')
+                    time.sleep(10)  # Espera 10 segundos antes de tentar novamente
+                    
+                except Exception as e:
+                    print(f'ERRO while: {str(e)}')
+                    print('Aguardando  10 segundos.')
+                    time.sleep(10)  # Espera 10 segundos antes de tentar novamente
+                    return False
+
+        except Exception as e:
+            print(f'ERRO while: {str(e)}')
             return False
         
         time.sleep(5)
@@ -1109,6 +1120,16 @@ def temp_register_agente(driver, email, nome, senha):
             return False
         
         # sndanien@cpav3.com
+        time.sleep(30)
+
+        # possivel poupup
+        try:
+            poupup = driver.find_element(By.CSS_SELECTOR, "button._a9--:nth-child(2)")
+            poupup.click()
+        except:
+            print('   [**] ERRO NO POUPUP')
+
+        # possivel poupup
 
         try:
 
@@ -1117,7 +1138,7 @@ def temp_register_agente(driver, email, nome, senha):
 
         except:
             print('FALHA btn_suggest')
-            return False
+            # return False
 
 
         return True
@@ -1146,7 +1167,7 @@ def temp_create_agente(driver):
 
         if temp_add_agente(base_url, email, email_md5, nome):
 
-            register = temp_register_agente(driver, email, nome, 'Torio142536*')
+            register = temp_register_agente(driver, email, nome, 'Torio142536*', email_md5)
 
             if register:
 
@@ -1213,7 +1234,7 @@ if __name__ == "__main__":
 
                     if agente_create:
 
-                        logged == True
+                        logged = True
 
                         agente_data = get_agente_by_email(base_url, agente_create)
                         agente_ofertas = len(count_agentes_oferta(agente_data['id']))
@@ -1221,6 +1242,8 @@ if __name__ == "__main__":
                         if (len(agente_data) > 0 ):
 
                             if (agente_ofertas < 50):
+
+                                print('  [!] '+agente_data['agente_email']+'JÁ REALIZOU '+str(len(agente_ofertas))+' PROPOSTAS')
 
                                 update_agente_ocupado(agente_data['id'], 1)
 

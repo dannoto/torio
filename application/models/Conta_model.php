@@ -746,7 +746,7 @@ class Conta_model extends CI_Model
     public function report_get_ofertas_today() {
 
         $this->db->where('oferta_data', date('Y-m-d'));
-        $this->db->where('oferta_status',1);
+        $this->db->where('oferta_status', 1);
 		return $this->db->get('ofertas')->result();
     }
 
@@ -784,7 +784,7 @@ class Conta_model extends CI_Model
 
     public function report_get_ofertas_month() {
 
-        $this->db->like('oferta_data', date('Y-m-d'));
+        $this->db->like('oferta_data', date('Y-m'));
         $this->db->where('oferta_status',1);
 		return $this->db->get('ofertas')->result();
     }
