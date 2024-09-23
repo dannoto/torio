@@ -32,7 +32,8 @@ class api_model extends CI_Model
     }
 
 
-    public function update_agente_ocupado($agente_id, $agente_data) {
+    public function update_agente_ocupado($agente_id, $agente_data)
+    {
 
         $this->db->where('id', $agente_id);
         return $this->db->update('agentes', $agente_data);
@@ -123,8 +124,8 @@ class api_model extends CI_Model
 
     public function criar_oferta_pendente($oferta_data)
     {
-         $this->db->insert('ofertas', $oferta_data);
-         return $this->db->insert_id();
+        $this->db->insert('ofertas', $oferta_data);
+        return $this->db->insert_id();
     }
     public function update_oferta($oferta_id, $oferta_data)
     {
@@ -132,7 +133,7 @@ class api_model extends CI_Model
         return $this->db->update('ofertas', $oferta_data);
     }
 
-   
+
     public function get_ofertas()
     {
         $this->db->where('is_delete', 0);
@@ -306,20 +307,33 @@ class api_model extends CI_Model
     }
 
 
-    public function off_get_oferta_by_key($oferta_key){
+    public function off_get_oferta_by_key($oferta_key)
+    {
         $this->db->where('oferta_key', $oferta_key);
-       return $this->db->get('ofertas')->row_array();
-       
-   }
-   
-   public function off_get_produto($produto_id){
+        return $this->db->get('ofertas')->row_array();
+    }
+
+    public function off_get_produto($produto_id)
+    {
         $this->db->where('id', $produto_id);
-       return $this->db->get('produtos')->row_array();
-       
-   }
-   
-    public function off_add_clique($clique_data){
+        return $this->db->get('produtos')->row_array();
+    }
+
+    public function off_add_clique($clique_data)
+    {
         return $this->db->insert('cliques', $clique_data);
-       
-   }
+    }
+
+    public function get_agente($agente_email)
+    {
+
+        $this->db->where('agente_email', $agente_email);
+        return $this->db->get('agentes')->row_array();
+    }
+
+    public function add_agente($data)
+    {
+
+        return $this->db->insert($data);
+    }
 }

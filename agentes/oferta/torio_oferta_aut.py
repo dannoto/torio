@@ -6,6 +6,13 @@ from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
+
+from faker import Faker
+
+import http.client
+
+import hashlib
 
 import time
 import json
@@ -62,7 +69,6 @@ def setup_selenium_firefox():
     # Extrai o geckodriver
     extract_geckodriver(file_name)
 
-
 def login(driver, agente_data, demanda): 
 
 
@@ -78,7 +84,6 @@ def login(driver, agente_data, demanda):
         driver.get("https://www.instagram.com/accounts/login/?next=%2Flogin%2F&source=desktop_nav")
 
     # trigger to login
-
 
 def login_old(driver, agente_data, demanda): 
 
@@ -431,6 +436,17 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
 
     time.sleep(5)
 
+    try:
+
+        btn_suggest = driver.find_element(By.CSS_SELECTOR, ".x1iorvi4 > div:nth-child(1)")
+        btn_suggest.click()
+
+    except:
+        print('FALHA skip poup follow')
+        return False
+    
+    time.sleep(5)
+
         # possivel poupup
     try:
         poupup = driver.find_element(By.CSS_SELECTOR, "button._a9--:nth-child(2)")
@@ -771,6 +787,360 @@ def setup_selenium_firefox():
 
     return driver
 
+def temp_get_instagram_code():
+
+    conn = http.client.HTTPSConnection("privatix-temp-mail-v1.p.rapidapi.com")
+
+    headers = {
+        'x-rapidapi-key': "59676de38dmshc3ef26892aa3735p15c5e7jsn87eb55dc67d4",
+        'x-rapidapi-host': "privatix-temp-mail-v1.p.rapidapi.com"
+    }
+
+    conn.request("GET", "/request/mail/id/7cd6127ab1e1d7c3da8d560e728ad2eb/", headers=headers)
+
+    res = conn.getresponse()
+    status = res.status
+    data = res.read()
+
+    # Verificar se o status é 200 (sucesso)
+    if status == 200:
+        # Tentar carregar os dados como JSON
+        try:
+
+            json_data = json.loads(data.decode("utf-8"))
+
+            print('EMAIL ENCONTRADOS: ', len(json_data))
+
+
+            if len(json_data) > 0:
+                
+                string = json_data[0]['mail_subject']
+                print(string)
+                code = re.findall(r'\d+', string)
+                code = ''.join(code)
+
+                print(code)
+
+                return code
+
+            
+            else:
+                print('NENHUM E-MAIL CHEGOU')
+                return False
+
+
+            
+        
+        except json.JSONDecodeError:
+
+            print("Erro ao decodificar a resposta em JSON.")
+            
+            return False
+    else:
+
+        print(f"Erro na requisição. Status: {status}")
+        return False
+
+def temp_get_domains():
+
+    conn = http.client.HTTPSConnection("privatix-temp-mail-v1.p.rapidapi.com")
+
+    headers = {
+        'x-rapidapi-key': "59676de38dmshc3ef26892aa3735p15c5e7jsn87eb55dc67d4",
+        'x-rapidapi-host': "privatix-temp-mail-v1.p.rapidapi.com"
+    }
+
+    conn.request("GET", "/request/domains/", headers=headers)
+
+    res = conn.getresponse()
+    status = res.status
+    data = res.read()
+
+    # Verificar se o status é 200 (sucesso)
+    if status == 200:
+        # Tentar carregar os dados como JSON
+        try:
+
+            json_data = json.loads(data.decode("utf-8"))
+            return json_data[0]
+        
+        except json.JSONDecodeError:
+
+            print("Erro ao decodificar a resposta em JSON.")
+            return False
+    else:
+
+        print(f"Erro na requisição. Status: {status}")
+        return False
+
+def temp_create_nome():
+
+    # Criar uma instância do Faker para o Brasil
+    fake = Faker('pt_BR')
+
+    # Gerar nome e sobrenome aleatórios
+    def gerar_nome_brasileiro():
+        nome = fake.first_name()  # Nome aleatório
+        sobrenome = fake.last_name()  # Sobrenome aleatório
+        nome_completo = f"{nome} {sobrenome}"
+        return nome_completo
+
+    # Exemplo de uso
+    nome_aleatorio = gerar_nome_brasileiro()
+
+    print(f"Nome gerado: {nome_aleatorio}")
+    return nome_aleatorio
+
+def get_agente_by_email(base_url, agente_email):
+
+    url = base_url+"get_agente?agente_email="+str(agente_email)+""
+    
+ 
+    response = requests.get(url)
+
+    if response.status_code == 200:
+
+        data = json.loads(response.content)
+        return data
+        
+    else:
+
+        return False 
+    
+def temp_add_agente(base_url, email, email_md5, nome):
+
+    url = base_url+"add_agente?agente_email="+str(email)+"&agente_senha="+str(email_md5)+"&agente_nome="+nome
+    
+ 
+    response = requests.get(url)
+
+    if response.status_code == 200:
+
+        data = json.loads(response.content)
+        return True
+        
+    else:
+
+        return False 
+
+def temp_register_agente(driver, email, nome, senha):
+
+    driver.get('https://www.instagram.com/accounts/emailsignup/')
+
+    try:
+
+        try:
+            input_email = driver.find_element(By.CSS_SELECTOR, "div._aahy:nth-child(4) > div:nth-child(1) > label:nth-child(1) > input:nth-child(2)")
+            input_email.clear()
+            input_email.send_keys(email)
+        except:
+            print('FALHA input_email ')
+            return False
+        
+        time.sleep(5)
+        
+        try:
+            input_nome = driver.find_element(By.CSS_SELECTOR, "div._aahy:nth-child(5) > div:nth-child(1) > label:nth-child(1) > input:nth-child(2)")
+            input_nome.clear()
+            input_nome.send_keys(nome)
+        except:
+            print('FALHA input_nome ')
+            return False
+        
+        time.sleep(5)
+
+        try:
+            input_username_sugestao = driver.find_element(By.CSS_SELECTOR, "div.x1i10hfl")
+            input_username_sugestao.click()
+        except:
+
+            print('FALHA input_username_sugestao ')
+
+            try:
+
+                random_name = ''.join(random.choices('0ABCDEFGHIJKLMNOPQRSTUVWXYZ543216789', k=7))
+
+                input_username = driver.find_element(By.CSS_SELECTOR, "div._aahy:nth-child(6) > div:nth-child(1) > label:nth-child(1) > input:nth-child(2)")
+                input_username.clear()
+                input_username.send_keys(random_name)
+
+            except:
+                print('FALHA input_username ')
+                return False
+            
+        time.sleep(5)
+
+        try:
+            input_senha = driver.find_element(By.CSS_SELECTOR, "div._aahy:nth-child(7) > div:nth-child(1) > label:nth-child(1) > input:nth-child(2)")
+            input_senha.clear()
+            input_senha.send_keys(senha)
+        except:
+            print('FALHA input_senha ')
+            return False
+        
+        time.sleep(5)
+        
+        try:
+            btn_cadastro = driver.find_element(By.CSS_SELECTOR, "div.x1xmf6yo:nth-child(1) > button:nth-child(1)")
+            btn_cadastro.click()
+        except:
+            print('FALHA btn_cadastro ')
+            return False
+        
+        time.sleep(5)
+        
+        # ========================
+
+        try:
+
+            select_mes = driver.find_element(By.CSS_SELECTOR, "span._aav3:nth-child(1) > select:nth-child(2)")
+            select_mesx = Select(select_mes)
+            select_mesx.select_by_index(2) 
+
+        except:
+            print('FALHA select_mes')
+            return False
+        
+        time.sleep(5)
+        
+        try:
+
+            selectdia = driver.find_element(By.CSS_SELECTOR, "span._aav3:nth-child(2) > select:nth-child(2)")
+            selectdiax = Select(selectdia)
+            selectdiax.select_by_index(22) 
+
+        except:
+            print('FALHA selectdia')
+            return False
+        
+        time.sleep(5)
+        
+        
+        try:
+
+            select_ano = driver.find_element(By.CSS_SELECTOR, "span._aav3:nth-child(3) > select:nth-child(2)")
+            select_anox = Select(select_ano)
+            select_anox.select_by_index(25) 
+
+        except:
+            print('FALHA select_ano')
+            return False
+        
+        time.sleep(5)
+        
+        
+        try:
+
+            btn_next = driver.find_element(By.CSS_SELECTOR, "._acap")
+            btn_next.click()
+
+        except:
+            print('FALHA btn_next')
+            return False
+        
+        time.sleep(5)
+        
+        
+        # =============================
+
+        insta_code = ""
+
+        try:
+            while True:
+                code = temp_get_instagram_code()  # Chama a função
+                if code:  # Se não for False, encerra o loop
+
+                    insta_code = code
+
+                    break
+
+                print('Aguardando  10 segundos.')
+                time.sleep(10)  # Espera 10 segundos antes de tentar novamente
+        except:
+            print('ERRO while')
+            return False
+        
+        time.sleep(5)
+        
+        try:
+
+            input_code = driver.find_element(By.CSS_SELECTOR, "span._aav3:nth-child(3) > select:nth-child(2)")
+            input_code.clear()
+            input_code.send_keys(insta_code)
+
+        except:
+            print('FALHA inpu_code')
+            return False
+        
+        time.sleep(5)
+        
+        
+        try:
+
+            btn_cadastro_code = driver.find_element(By.CSS_SELECTOR, ".x1lq5wgf")
+            btn_cadastro_code.click()
+
+        except:
+            print('FALHA btn_cadastro_code')
+            return False
+        
+        # sndanien@cpav3.com
+
+        try:
+
+            btn_suggest = driver.find_element(By.CSS_SELECTOR, "div.x1i10hfl")
+            btn_suggest.click()
+
+        except:
+            print('FALHA btn_suggest')
+            return False
+
+
+        return True
+
+    except:
+
+        return False
+
+
+def temp_create_agente(driver):
+
+    demain = temp_get_domains()
+
+    if demain:
+
+        # Gerar nome aleatório de 7 dígitos
+        random_name = ''.join(random.choices('0123456789', k=7))
+        email = f"{random_name}@{demain}"
+        print(f"Email gerado: {email}")
+
+        # Converter o email para MD5
+        email_md5 = hashlib.md5(email.encode()).hexdigest()
+        print(f"MD5 Hash: {email_md5}")
+
+        nome = temp_create_nome()
+
+        if temp_add_agente(base_url, email, email_md5, nome):
+
+            register = temp_register_agente(driver, email, nome, 'Torio142536*')
+
+            if register:
+
+                return email
+            
+            else :
+
+                print('FAIL: temp_register_agente')
+        else:
+
+            print('FAIL: temp_add_agente')
+            return False
+
+    else:
+        print('FAIL: temp_get_domains')
+        return False
+
+
 if __name__ == "__main__":
 
     driverx = False
@@ -793,117 +1163,63 @@ if __name__ == "__main__":
 
         for campanha_data in campanhas_ativas:
 
+            print('[!] TOTAL DE CAMPANHAS ATIVAS: ', len(campanhas_ativas))
+
             # Pegando ofertas da campanha
             campanha_ofertas_data = get_campanha_ofertas(campanha_data['id'])
-            
-            print('[!] CAMPANHAS ATIVAS: ', len(campanhas_ativas))
+
+            print(' [!] CAMPANHA ATUAL: ', campanha_data['campanha_nome'])
+
 
             demandas_pendentes = get_demandas_por_campanha(base_url, campanha_data['id'])
 
-            print('[!] [ '+campanha_data['campanha_nome']+' ] DEMANDAS PENDENTES: ', len(demandas_pendentes))
+            print('  [!] DEMANDAS PENDENTES: ', len(demandas_pendentes))
+
+
+            logged = False
 
             if len(demandas_pendentes) > 0 :
 
-                demandas_pendentes = get_demandas_por_campanha(base_url, campanha_data['id'])
-
-                agente_index = 0
-                logged = False
-
                 for demanda in demandas_pendentes:
 
+                    if logged == False:
 
-                    # {'id': '35207', 'tarefa_id': '92', 'tag_id': '20', 'username': 'dgzinxz.wz', 'is_private': 'False', 'full_name': 'dgzinn', 'interacao_tipo': 'like', 'interacao_conteudo': '', 'interacao_data': '2024-07-23 11:19:41', 'post_id': '3418558052924988026', 'post_slug': 'C9xKG_UpRp6', 'post_data': '2024-07-23 11:19:41', 'post_descricao': 'Canta essa comigo? \nQue Ruja o Leão ???? ❤️\u200d???? \n\n#louvor #brasil #bomdia #boanoite #god #vida #jesus #musica #paz #church #cover #deus #deusnocomando #worship #gospel #biblia #igreja #jesuscristo #espiritosanto #cristo #deusnocontrole #miriansilva', 'post_imagem': 'https://instagram.fgyn18-1.fna.fbcdn.net/v/t51.29350-15/452644869_3796491517337562_8303082051071527339_n.jpg?stp=dst-jpg_e15&amp;efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi41NzR4MTAyMC5zZHIuZjI5MzUwLmRlZmF1bHRfY292ZXJfZnJhbWUifQ&amp;_nc_ht=instagram.fgyn18-1.fna.fbcdn.net&amp;_nc_cat=106&amp;_nc_ohc=JV-mvRsBk6IQ7kNvgGpAtaR&amp;edm=ALQROFkBAAAA&amp;ccb=7-5&amp;ig_cache_key=MzQxODU1ODA1MjkyNDk4ODAyNg%3D%3D.3-ccb7-5&amp;oh=00_AYBIjRROhlerBCAz_l6t2CqjxAtYW1A8-iuEVy9Zcy_ZMg&amp;oe=66E6DD70&amp;_nc_sid=fc8dfb', 'processado': '0', 'is_deleted': '0'}
-                    agentes_data = get_agentes(base_url)
-                    agente_data = agentes_data[agente_index]
-                    agente_ofertas = len(count_agentes_oferta(agente_data['id']))
+                        print('  [!] CRIANDO NOVO AGENTE')
+                        agente_create = temp_create_agente(driver)
 
-                    
-                    
+                    if agente_create:
 
-                    if (len(agente_data) > 0 ):
+                        logged == True
 
-                        if (agente_ofertas < 30):
+                        agente_data = get_agente_by_email(base_url, agente_create)
+                        agente_ofertas = len(count_agentes_oferta(agente_data['id']))
 
-                            
+                        if (len(agente_data) > 0 ):
 
-                            print('  [!] NOVO AGENTE [ '+agente_data['agente_nome']+' ] JÁ REALIZOU '+str(agente_ofertas)+' OFERTAS HOJE')
+                            if (agente_ofertas < 50):
 
-                            # Logando
-
-                            if logged == False:
-                                logged = login(driver, agente_data, demanda)
                                 update_agente_ocupado(agente_data['id'], 1)
+
+                                run_oferta(base_url, agente_data, campanha_data, campanha_ofertas_data, demanda, driver)
+
                             else:
-                                print('JÁ ESTÁ LOGADO')
 
-                            # Logando
+                                print('  [!] '+agente_data['agente_email']+' ATINGIU O LIMITE DE 50 PROPOSTAS')
+                                winsound.Beep(1000, 500)  
 
-                            run_oferta(base_url, agente_data, campanha_data, campanha_ofertas_data, demanda, driver)
+                                update_agente_ocupado(agente_data['id'], 0)
+
+                                logged = False
 
                         else:
 
-                            print('========================** TROCANDO AGENTE INDEX **====================')
+                            print('  [!] NENHUM AGENTE DISPONÍVEL NO MOMENTO - STEP 1 ** ESPERANDO 10 MINUTOS')
+                            time.sleep(600)
 
-                            winsound.Beep(1000, 500)  # 1000 Hz por 500 ms
-
-                            # Deslogando
-                            driverx = False
-                            logged = False 
-
-                            if driverx == False:
-
-                                driver.quit()
-
-                                try:
-
-                                    driver = setup_selenium_firefox()
-                                    driverx = True
-
-                                except:
-
-                                    print('PROBLEMA AO ABRIR NAVEGADOR')
-
-
-                            update_agente_ocupado(agente_data['id'], 0)
-
-                            print('  [!] AGENTE [ '+agente_data['agente_nome']+' ] AINGITIU O LIMITE DIÁRIO 30')
-                            agentes_qtd = len(agentes_data)
-                            print('  TOTAL AGENTES LIVRES: ', agentes_qtd)
-
-                            if agentes_qtd > 0:
-
-                                if agente_index < (agentes_qtd-1):
-                                    agente_index = agente_index + 1
-                                    print('  [!] MUDANDO AGENTE, NOVA INDEX: '+str(agente_index))
-                                else:
-                                    agente_index = 0   
-                            else:
-
-                                print('  [!] NENHUM AGENTE DISPONÍVEL NO MOMENTO - STEP 2 ** ESPERANDO 10 MINUTOS')
-                                time.sleep(30)
-
-
-                             
-
-
-                            
-
-                            
-                            # Deslogadndo
-
-                            
-
-                            
-                    
-                    else:
-
-                        print('  [!] NENHUM AGENTE DISPONÍVEL NO MOMENTO - STEP 1 ** ESPERANDO 10 MINUTOS')
-                        time.sleep(600)
-
-                    time.sleep(3)
+                        time.sleep(3)
             else:
 
-                print('  [!] [ '+campanha_data['campanha_nome']+' ] NÃO EXISTEM DEMANDAS PENDENTES: ', len(demandas_pendentes))
+                print('   [!] NÃO EXISTEM DEMANDAS PENDENTES: ', len(demandas_pendentes))
             
             time.sleep(10)
 

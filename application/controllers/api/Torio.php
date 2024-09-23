@@ -93,7 +93,45 @@ class Torio extends CI_Controller
 
         print_r(json_encode($response));
     }
+    
+    
 
+    public function get_agente()
+    {
+        $data['agente_email'] = htmlspecialchars($this->input->post('agente_email'));
+
+        if ($this->api_model->get_agente($data['agente_email'])) {
+            $response = array('status' => 'true', 'message' => 'Concluido');
+        } else {
+            $response = array('status' => 'false', 'message' => 'Erro');
+        }
+
+        print_r(json_encode($response));
+    }
+
+    
+    public function add_agente()
+    {
+        $data['agente_email'] = htmlspecialchars($this->input->post('agente_email'));
+        $data['agente_senha'] = htmlspecialchars($this->input->post('agente_senha'));
+        $data['agente_nome'] = htmlspecialchars($this->input->post('agente_nome'));
+        $data['agente_username'] = htmlspecialchars($this->input->post('agente_email'));
+        $data['agente_ocupado'] = 0;
+        $data['agente_status'] = 0;
+        $data['agente_sexo'] = htmlspecialchars($this->input->post('agente_sexo'));
+        $data['agente_data'] = htmlspecialchars($this->input->post('agente_data'));
+        $data['is_deleted'] = 0;
+
+
+
+        if ($this->api_model->add_agente($data)) {
+            $response = array('status' => 'true', 'message' => 'Concluido');
+        } else {
+            $response = array('status' => 'false', 'message' => 'Erro');
+        }
+
+        print_r(json_encode($response));
+    }
 
     public function get_campanhas_ativas()
     {
