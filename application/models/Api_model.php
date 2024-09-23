@@ -31,7 +31,12 @@ class api_model extends CI_Model
         return $this->db->update('tarefas', $data);
     }
 
+    public function update_agente_banido($agente_id, $agente_data)
+    {
 
+        $this->db->where('id', $agente_id);
+        return $this->db->update('agentes', $agente_data);
+    }
     public function update_agente_ocupado($agente_id, $agente_data)
     {
 

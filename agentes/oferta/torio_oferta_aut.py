@@ -11,13 +11,9 @@ from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
-
 from faker import Faker
-
 import http.client
-
 import hashlib
-
 import time
 import json
 import re
@@ -316,6 +312,24 @@ def update_agente_ocupado(agente_id, agente_ocupado):
     else:
 
         return False 
+    
+def update_agente_banido(agente_id, agente_status):
+
+    print('UPDATE AGENTE BANIDO: ', agente_id)
+
+    url = base_url+"/update_agente_banido?agente_id="+str(agente_id)+"&agente_status="+str(agente_status)+""
+    # print(url)        
+    response = requests.get(url)
+
+    if response.status_code == 200:
+            
+        data = json.loads(response.content)
+   
+        return data
+        
+    else:
+
+        return False 
 
 def update_oferta(oferta_id, oferta_status, demanda_id) :
        
@@ -387,48 +401,96 @@ def add_persona(agente_data, campanha_data, demanda):
         return False 
 
 def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_data, driver) :
-   
-    # ==================================
 
+
+    time.sleep(15)
+
+    try:
+    # Verificar se o elemento com o CSS selector '.wbloks_98' existe
+        element = driver.find_element(By.CSS_SELECTOR, ".wbloks_98")
+        winsound.Beep(1500, 800) 
+        print("Sua conta foi banida")
+    except:
+        print("Sua conta não foi banida")
+   
+
+    driver.get('https://instagram.com/explore')
+
+    county = 0
+    max_iterationsj = 10  # Número máximo de vezes que o loop deve rodar
+
+    try:
+
+        while county < max_iterationsj:
+            # Gera um intervalo de tempo aleatório entre 1 e 40 segundos
+            wait_time = random.randint(1, 40)
+            print(f"Aguardando por {wait_time} segundos...")
+
+            # Espera pelo tempo gerado
+            time.sleep(wait_time)               
+
+            # Simula o pressionar da tecla para baixo
+            body = driver.find_element(By.TAG_NAME ,'body')
+            body.send_keys(Keys.ARROW_DOWN)
+
+            print(f"Pressionando tecla para baixo. Iteração {count + 1}")
+
+            # Incrementa o contador
+            count += 1
+
+    except:
+        print('    [*] ERRO NO WHILE REELS')
+
+
+# =========================================
+     # # search button
+    try:
+
+        search_button = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div/div/div/div[2]/div[2]/span/div/a")
+        search_button.click()
+
+    except:
+        print('   [***] PROVAVELMENTE NÃO LOGOU '+agente_data['agente_nome'])
+        # return False
+    # search button
+
+    time.sleep(5)
+
+     # input_search
+
+
+    try:
+        input_search = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[1]/div/div/input")
+        input_search.clear()  # Limpa o campo de texto, caso haja algum valor anterior
+        input_search.send_keys(demanda['username'])  # Insere o valor no campo de input
+    # input_search
+
+        time.sleep(5)
+
+    # click result
+        click_result = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[2]/div/a")
+        click_result.click()
+
+    except:
+        print('olkdlskd')
+
+
+    # click result
+
+    time.sleep(5)
   
-    time.sleep(10)
+    time.sleep(60)
 
     # acessando perfil
     driver.get('https://instagram.com/'+demanda['username'])
 
     print('    [**] PROCESSANDO DEMANDA: '+demanda['username'])
 
-    # driver.get('https://www.instagram.com/fabiolamelooficial/')
-    # acessando perfil
+ 
 
     time.sleep(10)
-    # # search button
-    # try:
 
-    #     search_button = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div/div/div/div[2]/div[2]/span/div/a")
-    #     search_button.click()
-
-    # except:
-    #     print('   [***] PROVAVELMENTE NÃO LOGOU '+agente_data['agente_nome'])
-    #     return False
-    # # search button
-
-    # time.sleep(5)
-
-    #  # input_search
-    # input_search = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[1]/div/div/input")
-    # input_search.clear()  # Limpa o campo de texto, caso haja algum valor anterior
-    # input_search.send_keys(demanda['username'])  # Insere o valor no campo de input
-    # # input_search
-
-    # time.sleep(5)
-
-    # # click result
-    # click_result = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div/div[2]/div/div/div[2]/div/div/div[2]/div/a")
-    # click_result.click()
-    # # click result
-
-    # time.sleep(5)
+    
 
     # seguir
     try:
@@ -486,7 +548,7 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
             print('   [**] ERRO NO BTN STORIES')
 
             try:
-                btn_stories_dois = driver.find_element(By.CSS_SELECTOR, ".x1hq5gj4 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > ul:nth-child(1) > li:nth-child(3) > div:nth-child(1) > button:nth-child(1) > div:nth-child(1)")
+                btn_stories_dois = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div/div[2]/div/div/div[1]/div[1]/div[1]/section/main/div[1]/div[1]/div/div[1]/div/div/div/div/div/div/ul/li[3]/div/button")
                 btn_stories_dois.click()
             except:
                 print('   [**] ERRO NO BTN STORIES 2')
@@ -531,6 +593,10 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
 
             btn_clicar_input.send_keys(letra)
             time.sleep(0.1)  # Pausa de 100ms entre cada letra (ajuste conforme necessário)
+
+        print('ATUALIZANDO MENSAGEM E DEMANDA - PROCESSADO DENTRO DO SEND-OFERTA')
+
+        update_oferta(oferta_data['id'], 1, demanda['id'])
 
 
     except:
@@ -640,11 +706,13 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
     # time.sleep(120)
 
     
-    time.sleep(120)
+    sleep_time = random.randint(180, 360)  # Gera um número aleatório entre 180 e 360
+    print(f"Dormindo por {sleep_time} segundos.")
+    time.sleep(sleep_time)  # Faz o programa dormir pelo tempo gerado
       # salvar post main.xvbhtw8 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > article:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > section:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
     #  like primeiro post main.xvbhtw8 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > article:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > section:nth-child(1) > div:nth-child(1) > span:nth-child(1) > div:nth-child(1) > div:nth-child(1)
     # clica no botao reeels 
-    # stories
+    # reels
     try:
         btn_reels = driver.find_element(By.CSS_SELECTOR, ".x1xgvd2v > div:nth-child(2) > div:nth-child(4) > span:nth-child(1) > div:nth-child(1) > a:nth-child(1) > div:nth-child(1)")
         btn_reels.click()
@@ -657,7 +725,7 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
                 print('   [**] ERRO NO BTN REELS 2')
 
     count = 0
-    max_iterations = 3  # Número máximo de vezes que o loop deve rodar
+    max_iterations = 10  # Número máximo de vezes que o loop deve rodar
 
     try:
 
@@ -701,7 +769,7 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
 
     # Sai do while e continua o código aqui
     print("Loop completado 3 vezes. Continuando o código...")
-    # stories
+    # reels
 
 
     return True
@@ -866,16 +934,20 @@ def temp_get_domains():
     if status == 200:
         # Tentar carregar os dados como JSON
         try:
-
             json_data = json.loads(data.decode("utf-8"))
-            return json_data[1]
-        
-        except json.JSONDecodeError:
+            # Verifica se há pelo menos 2 domínios na resposta
+            if len(json_data) > 1:
+                # Selecionar um índice aleatório entre 1 e o número de domínios
+                random_index = random.randint(1, len(json_data) - 1)
+                return json_data[random_index]
+            else:
+                print("Nenhum domínio disponível.")
+                return False
 
+        except json.JSONDecodeError:
             print("Erro ao decodificar a resposta em JSON.")
             return False
     else:
-
         print(f"Erro na requisição. Status: {status}")
         return False
 
@@ -1006,7 +1078,7 @@ def temp_register_agente(driver, email, nome, senha, email_md5):
             print('FALHA btn_cadastro ')
             return False
         
-        time.sleep(5)
+        time.sleep(10)
         
         # ========================
 
@@ -1082,7 +1154,7 @@ def temp_register_agente(driver, email, nome, senha, email_md5):
                     print(f'ERRO while: {str(e)}')
                     print('Aguardando  10 segundos.')
                     time.sleep(10)  # Espera 10 segundos antes de tentar novamente
-                    return False
+                    # return False
 
         except Exception as e:
             print(f'ERRO while: {str(e)}')
@@ -1151,7 +1223,6 @@ def temp_register_agente(driver, email, nome, senha, email_md5):
 
         return False
 
-
 def temp_create_agente(driver):
 
     demain = temp_get_domains()
@@ -1212,6 +1283,8 @@ if __name__ == "__main__":
 
         for campanha_data in campanhas_ativas:
 
+            
+
             print('[!] TOTAL DE CAMPANHAS ATIVAS: ', len(campanhas_ativas))
 
             # Pegando ofertas da campanha
@@ -1231,6 +1304,17 @@ if __name__ == "__main__":
 
                 for demanda in demandas_pendentes:
 
+                    if driverx == False:
+
+                        try:
+
+                            driver = setup_selenium_firefox()
+                            driverx = True
+
+                        except:
+                           
+                           print('PROBLEMA AO ABRIR NAVEGADOR')
+
                     if logged == False:
 
                         print('  [!] CRIANDO NOVO AGENTE')
@@ -1243,9 +1327,26 @@ if __name__ == "__main__":
                         agente_data = get_agente_by_email(base_url, agente_create)
                         agente_ofertas = len(count_agentes_oferta(agente_data['id']))
 
+                        # VERIFICANDO SE O AGENTE FOI BANIDO
+
+                        if agente_data['agente_status'] == 0:
+
+                            print('  [!] '+agente_data['agente_email']+' FOI BANIDO')
+                            winsound.Beep(1000, 500)  
+
+                            update_agente_banido(agente_data['id'], 0)
+
+                            logged = False
+                            driverx = False
+
+                            driver.quit()
+
+
+                        # VERIFICANDO SE O AGENTE FOI BANIDO
+
                         if (len(agente_data) > 0 ):
 
-                            if (agente_ofertas < 50):
+                            if (agente_ofertas < 30):
 
                                 print('  [!] '+agente_data['agente_email']+'JÁ REALIZOU '+str(agente_ofertas)+' PROPOSTAS')
 
@@ -1255,12 +1356,15 @@ if __name__ == "__main__":
 
                             else:
 
-                                print('  [!] '+agente_data['agente_email']+' ATINGIU O LIMITE DE 50 PROPOSTAS')
+                                print('  [!] '+agente_data['agente_email']+' ATINGIU O LIMITE DE 30 PROPOSTAS')
                                 winsound.Beep(1000, 500)  
 
                                 update_agente_ocupado(agente_data['id'], 0)
 
                                 logged = False
+                                driverx = False
+
+                                driver.quit()
 
                         else:
 
@@ -1269,7 +1373,7 @@ if __name__ == "__main__":
 
                         time.sleep(3)
 
-                    time.sleep(30)
+                    time.sleep(180)
             else:
 
                 print('   [!] NÃO EXISTEM DEMANDAS PENDENTES: ', len(demandas_pendentes))

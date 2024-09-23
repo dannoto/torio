@@ -44,6 +44,27 @@ class Torio extends CI_Controller
         print_r(json_encode($response));
     }
 
+
+    public function update_agente_banido()
+    {
+
+        $agente_id = htmlspecialchars($this->input->get('agente_id'));
+
+        $agente_data = array(
+            "agente_status" => htmlspecialchars($this->input->get('agente_status'))
+        );
+
+        $response = $this->api_model->update_agente_banido($agente_id, $agente_data);
+
+        if ($response) {
+            $response = array('status' => 'true', 'message' => 'Concluido');
+        } else {
+            $response = array('status' => 'false', 'message' => 'Erro');
+        }
+
+        print_r(json_encode($response));
+    }
+
     public function update_tarefa_status()
     {
         $tarefa_id = htmlspecialchars($this->input->get('tarefa_id'));
