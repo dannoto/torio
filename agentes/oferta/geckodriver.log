@@ -3185,3 +3185,115 @@ JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/
 JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
 Exiting due to channel error.
 Exiting due to channel error.
+1727059256476	geckodriver	INFO	Listening on 127.0.0.1:64622
+1727059259579	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64623" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileMxkEx2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727059260316	Marionette	INFO	Marionette enabled
+1727059260579	Marionette	INFO	Listening on port 64630
+WebDriver BiDi listening on ws://127.0.0.1:64623
+Read port: 64630
+1727059260819	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+Exiting due to channel error.
+1727059463011	geckodriver	INFO	Listening on 127.0.0.1:64717
+1727059466080	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64718" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileRQUJxQ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727059466695	Marionette	INFO	Marionette enabled
+1727059467005	Marionette	INFO	Listening on port 64725
+WebDriver BiDi listening on ws://127.0.0.1:64718
+Read port: 64725
+1727059467246	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.error: "Unable to find target with innerWindowId:6442450945"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+1727059769902	geckodriver	INFO	Listening on 127.0.0.1:64890
+1727059772977	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64891" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilegrhh8X"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727059773752	Marionette	INFO	Marionette enabled
+1727059773993	Marionette	INFO	Listening on port 64899
+WebDriver BiDi listening on ws://127.0.0.1:64891
+Read port: 64899
+1727059774227	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+Exiting due to channel error.
+Exiting due to channel error.
+1727059897516	geckodriver	INFO	Listening on 127.0.0.1:64952
+1727059900583	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64953" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilerpHC5V"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727059900951	Marionette	INFO	Marionette enabled
+1727059901171	Marionette	INFO	Listening on port 64960
+WebDriver BiDi listening on ws://127.0.0.1:64953
+Read port: 64960
+1727059901378	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+1727059984270	geckodriver	INFO	Listening on 127.0.0.1:65023
+1727059987355	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65024" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofile59EXK9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727059987916	Marionette	INFO	Marionette enabled
+1727059988311	Marionette	INFO	Listening on port 65034
+WebDriver BiDi listening on ws://127.0.0.1:65024
+Read port: 65034
+1727059988635	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.error: "Unable to find target with innerWindowId:6442450945"
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1727060207540	geckodriver	INFO	Listening on 127.0.0.1:65107
+1727060210595	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65108" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileu2YrhW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727060211085	Marionette	INFO	Marionette enabled
+1727060211314	Marionette	INFO	Listening on port 65115
+WebDriver BiDi listening on ws://127.0.0.1:65108
+Read port: 65115
+1727060211560	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+Exiting due to channel error.
+1727060634728	geckodriver	INFO	Listening on 127.0.0.1:65325
+1727060637856	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65326" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilekAY4Wn"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727060638274	Marionette	INFO	Marionette enabled
+1727060638505	Marionette	INFO	Listening on port 65333
+WebDriver BiDi listening on ws://127.0.0.1:65326
+Read port: 65333
+1727060638778	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yz/l/pt_BR/8QQb861sah1.js?_nc_x=Ij3Wp8lg5Kz, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 182: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 182: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+Exiting due to channel error.
+Exiting due to channel error.

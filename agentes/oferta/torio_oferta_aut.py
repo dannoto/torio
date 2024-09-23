@@ -787,7 +787,7 @@ def setup_selenium_firefox():
 
     return driver
 
-def temp_get_instagram_code():
+def temp_get_instagram_code(md5):
 
     conn = http.client.HTTPSConnection("privatix-temp-mail-v1.p.rapidapi.com")
 
@@ -796,7 +796,7 @@ def temp_get_instagram_code():
         'x-rapidapi-host': "privatix-temp-mail-v1.p.rapidapi.com"
     }
 
-    conn.request("GET", "/request/mail/id/7cd6127ab1e1d7c3da8d560e728ad2eb/", headers=headers)
+    conn.request("GET", "/request/mail/id/"+str(md5)+"/", headers=headers)
 
     res = conn.getresponse()
     status = res.status
@@ -862,7 +862,7 @@ def temp_get_domains():
         try:
 
             json_data = json.loads(data.decode("utf-8"))
-            return json_data[0]
+            return json_data[1]
         
         except json.JSONDecodeError:
 
@@ -927,6 +927,8 @@ def temp_register_agente(driver, email, nome, senha):
 
     driver.get('https://www.instagram.com/accounts/emailsignup/')
 
+    time.sleep(10)
+
     try:
 
         try:
@@ -971,13 +973,24 @@ def temp_register_agente(driver, email, nome, senha):
         time.sleep(5)
 
         try:
-            input_senha = driver.find_element(By.CSS_SELECTOR, "div._aahy:nth-child(7) > div:nth-child(1) > label:nth-child(1) > input:nth-child(2)")
+
+            input_senha = driver.find_element(By.CSS_SELECTOR, "div._aahy:nth-child(8) > div:nth-child(1) > label:nth-child(1) > input:nth-child(2)")
             input_senha.clear()
             input_senha.send_keys(senha)
+
         except:
             print('FALHA input_senha ')
-            return False
-        
+
+            try:
+                input_senhax = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div/section/main/div/div/div[1]/div[2]/div/form/div[8]/div/label/input")
+                input_senhax.clear()
+                input_senhax.send_keys(senha)
+
+            except:
+
+                print('FALHA input_senha 2 ')
+                return False
+                    
         time.sleep(5)
         
         try:
@@ -1047,7 +1060,7 @@ def temp_register_agente(driver, email, nome, senha):
 
         try:
             while True:
-                code = temp_get_instagram_code()  # Chama a função
+                code = temp_get_instagram_code(senha)  # Chama a função
                 if code:  # Se não for False, encerra o loop
 
                     insta_code = code
@@ -1064,16 +1077,27 @@ def temp_register_agente(driver, email, nome, senha):
         
         try:
 
-            input_code = driver.find_element(By.CSS_SELECTOR, "span._aav3:nth-child(3) > select:nth-child(2)")
+            input_code = driver.find_element(By.CSS_SELECTOR, "._aaie")
             input_code.clear()
             input_code.send_keys(insta_code)
 
         except:
+
             print('FALHA inpu_code')
-            return False
-        
+
+            try:
+
+                input_code = driver.find_element(By.CSS_SELECTOR, "/html/body/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div/section/main/div/div/div[1]/div/div[2]/form/div/div[1]/input")
+                input_code.clear()
+                input_code.send_keys(insta_code)
+
+            except:
+
+                print('FALHA inpu_code 2')
+                
+                return False
+
         time.sleep(5)
-        
         
         try:
 
@@ -1111,7 +1135,7 @@ def temp_create_agente(driver):
 
         # Gerar nome aleatório de 7 dígitos
         random_name = ''.join(random.choices('0123456789', k=7))
-        email = f"{random_name}@{demain}"
+        email = f"{random_name}{demain}"
         print(f"Email gerado: {email}")
 
         # Converter o email para MD5
