@@ -95,6 +95,7 @@ class api_model extends CI_Model
         $this->db->where('processado', 0);
         $this->db->where('is_deleted', 0);
 
+        $this->db->limit(50);
         return $this->db->get('demandas')->result();
     }
 
