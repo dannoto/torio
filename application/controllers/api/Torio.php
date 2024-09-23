@@ -118,8 +118,8 @@ class Torio extends CI_Controller
         $data['agente_username'] = htmlspecialchars($this->input->get('agente_email'));
         $data['agente_ocupado'] = 0;
         $data['agente_status'] = 0;
-        $data['agente_sexo'] = htmlspecialchars($this->input->get('agente_sexo'));
-        $data['agente_data'] = htmlspecialchars($this->input->get('agente_data'));
+        $data['agente_sexo'] = 0;
+        $data['agente_data'] = date('Y-m-d H:i:s');
         $data['is_deleted'] = 0;
 
 
