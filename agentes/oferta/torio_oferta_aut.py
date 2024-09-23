@@ -1243,7 +1243,7 @@ if __name__ == "__main__":
 
                             if (agente_ofertas < 50):
 
-                                print('  [!] '+agente_data['agente_email']+'JÁ REALIZOU '+str(len(agente_ofertas))+' PROPOSTAS')
+                                print('  [!] '+agente_data['agente_email']+'JÁ REALIZOU '+str(agente_ofertas)+' PROPOSTAS')
 
                                 update_agente_ocupado(agente_data['id'], 1)
 
