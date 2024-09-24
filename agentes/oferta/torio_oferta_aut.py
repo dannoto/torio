@@ -410,6 +410,8 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
         element = driver.find_element(By.CSS_SELECTOR, ".wbloks_98")
         winsound.Beep(1500, 800) 
         print("Sua conta foi banida")
+        update_agente_banido(agente_data['id'], 0)
+        return False
     except:
         print("Sua conta não foi banida")
    
@@ -474,10 +476,30 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
     except:
         print('olkdlskd')
 
+    try:
+    # Verificar se o elemento com o CSS selector '.wbloks_98' existe
+        element = driver.find_element(By.CSS_SELECTOR, ".wbloks_98")
+        winsound.Beep(1500, 800) 
+        print("Sua conta foi banida")
+        update_agente_banido(agente_data['id'], 0)
+        return False
+    except:
+        print("Sua conta não foi banida")
+
 
     # click result
 
     time.sleep(5)
+
+    try:
+    # Verificar se o elemento com o CSS selector '.wbloks_98' existe
+        element = driver.find_element(By.CSS_SELECTOR, ".wbloks_98")
+        winsound.Beep(1500, 800) 
+        print("Sua conta foi banida")
+        update_agente_banido(agente_data['id'], 0)
+        return False
+    except:
+        print("Sua conta não foi banida")
   
     time.sleep(60)
 
@@ -524,6 +546,16 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
 
     
     time.sleep(5)
+
+    try:
+    # Verificar se o elemento com o CSS selector '.wbloks_98' existe
+        element = driver.find_element(By.CSS_SELECTOR, ".wbloks_98")
+        winsound.Beep(1500, 800) 
+        print("Sua conta foi banida")
+        update_agente_banido(agente_data['id'], 0)
+        return False
+    except:
+        print("Sua conta não foi banida")
 
     # btn enviar mensagem
     try:
@@ -674,6 +706,16 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
     # enviar mensagem
     time.sleep(5)
 
+    try:
+    # Verificar se o elemento com o CSS selector '.wbloks_98' existe
+        element = driver.find_element(By.CSS_SELECTOR, ".wbloks_98")
+        winsound.Beep(1500, 800) 
+        print("Sua conta foi banida")
+        update_agente_banido(agente_data['id'], 0)
+        return False
+    except:
+        print("Sua conta não foi banida")
+
     # possivel poupup
 
     try:
@@ -705,6 +747,16 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
     # stories
     # time.sleep(120)
 
+    try:
+    # Verificar se o elemento com o CSS selector '.wbloks_98' existe
+        element = driver.find_element(By.CSS_SELECTOR, ".wbloks_98")
+        winsound.Beep(1500, 800) 
+        print("Sua conta foi banida")
+        update_agente_banido(agente_data['id'], 0)
+        return False
+    except:
+        print("Sua conta não foi banida")
+
     
     sleep_time = random.randint(180, 360)  # Gera um número aleatório entre 180 e 360
     print(f"Dormindo por {sleep_time} segundos.")
@@ -712,6 +764,16 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
       # salvar post main.xvbhtw8 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > article:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > section:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
     #  like primeiro post main.xvbhtw8 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > article:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > section:nth-child(1) > div:nth-child(1) > span:nth-child(1) > div:nth-child(1) > div:nth-child(1)
     # clica no botao reeels 
+
+    try:
+    # Verificar se o elemento com o CSS selector '.wbloks_98' existe
+        element = driver.find_element(By.CSS_SELECTOR, ".wbloks_98")
+        winsound.Beep(1500, 800) 
+        print("Sua conta foi banida")
+        update_agente_banido(agente_data['id'], 0)
+        return False
+    except:
+        print("Sua conta não foi banida")
     # reels
     try:
         btn_reels = driver.find_element(By.CSS_SELECTOR, ".x1xgvd2v > div:nth-child(2) > div:nth-child(4) > span:nth-child(1) > div:nth-child(1) > a:nth-child(1) > div:nth-child(1)")
@@ -723,6 +785,27 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
             driver.get('https://instagram.com/reels')
         except:
                 print('   [**] ERRO NO BTN REELS 2')
+
+    try:
+    # Verificar se o elemento com o CSS selector '.wbloks_98' existe
+        element = driver.find_element(By.CSS_SELECTOR, ".wbloks_98")
+        winsound.Beep(1500, 800) 
+        print("Sua conta foi banida")
+        update_agente_banido(agente_data['id'], 0)
+        return False
+    except:
+        print("Sua conta não foi banida")
+
+
+    try:
+    # Verificar se o elemento com o CSS selector '.wbloks_98' existe
+        element = driver.find_element(By.CSS_SELECTOR, ".wbloks_98")
+        winsound.Beep(1500, 800) 
+        print("Sua conta foi banida")
+        update_agente_banido(agente_data['id'], 0)
+        return False
+    except:
+        print("Sua conta não foi banida")
 
     count = 0
     max_iterations = 10  # Número máximo de vezes que o loop deve rodar
@@ -771,6 +854,16 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
     print("Loop completado 3 vezes. Continuando o código...")
     # reels
 
+    try:
+    # Verificar se o elemento com o CSS selector '.wbloks_98' existe
+        element = driver.find_element(By.CSS_SELECTOR, ".wbloks_98")
+        winsound.Beep(1500, 800) 
+        print("Sua conta foi banida")
+        update_agente_banido(agente_data['id'], 0)
+        return False
+    except:
+        print("Sua conta não foi banida")
+
 
     return True
     
@@ -809,7 +902,7 @@ def run_oferta(base_url, agente_data, campanha_data, campanha_ofertas_data, dema
 
 
             runof = send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_data, driver)
-            time.sleep(40)
+            # time.sleep(40)
 
             if runof:
 
@@ -828,7 +921,7 @@ def run_oferta(base_url, agente_data, campanha_data, campanha_ofertas_data, dema
             oferta_data = criar_oferta_pendente(agente_data, campanha_data, template_oferta, demanda, persona_id)
 
             runof = send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_data, driver)
-            time.sleep(40)
+            # time.sleep(40)
 
             if runof:
 
@@ -856,6 +949,8 @@ def setup_selenium_firefox():
     # Configura o Selenium para usar o Firefox com o perfil temporário
     service = Service(geckodriver_path)
     driver = webdriver.Firefox(service=service, firefox_profile=profile)
+
+    driver.set_window_size(300, 450)
 
     return driver
 
@@ -886,7 +981,7 @@ def temp_get_instagram_code(md5):
 
             if len(json_data) > 0:
                 
-                print(json_data)
+                # print(json_data)
 
                 string = json_data[0]['mail_subject']
                 print(string)
@@ -970,6 +1065,8 @@ def temp_create_nome():
     return nome_aleatorio
 
 def get_agente_by_email(base_url, agente_email):
+
+    print('get_agente_by_email', agente_email)
 
     url = base_url+"get_agente?agente_email="+str(agente_email)+""
     
@@ -1267,13 +1364,13 @@ if __name__ == "__main__":
 
     base_url = "https://ccoanalitica.com/torio/api/torio/"
 
-    try:
+    # try:
 
-        driver = setup_selenium_firefox()
-        driverx = True
+    #     driver = setup_selenium_firefox()
+    #     driverx = True
 
-    except:
-        print('PROBLEMA AO ABRIR NAVEGADOR')
+    # except:
+    #     print('PROBLEMA AO ABRIR NAVEGADOR')
 
 
     # get campanhas ativas
@@ -1304,6 +1401,8 @@ if __name__ == "__main__":
 
                 for demanda in demandas_pendentes:
 
+                    print('DEMANDA '+demanda['id'])
+
                     if driverx == False:
 
                         try:
@@ -1319,6 +1418,12 @@ if __name__ == "__main__":
 
                         print('  [!] CRIANDO NOVO AGENTE')
                         agente_create = temp_create_agente(driver)
+                        winsound.Beep(1000, 500) 
+                        winsound.Beep(1000, 500) 
+                        winsound.Beep(1000, 500) 
+                        winsound.Beep(1000, 500) 
+
+
 
                     if agente_create:
 
@@ -1327,30 +1432,62 @@ if __name__ == "__main__":
                         agente_data = get_agente_by_email(base_url, agente_create)
                         agente_ofertas = len(count_agentes_oferta(agente_data['id']))
 
-                        # VERIFICANDO SE O AGENTE FOI BANIDO
 
-                        if agente_data['agente_status'] == 0:
-
-                            print('  [!] '+agente_data['agente_email']+' FOI BANIDO')
-                            winsound.Beep(1000, 500)  
-
-                            update_agente_banido(agente_data['id'], 0)
-
-                            logged = False
-                            driverx = False
-
-                            driver.quit()
+                        # agente_ofertas = 50
 
 
-                        # VERIFICANDO SE O AGENTE FOI BANIDO
 
                         if (len(agente_data) > 0 ):
 
+                            # VERIFICANDO SE O AGENTE FOI BANIDO
+
+                            # print('AGENTE STATUS: '+agente_data['agente_status'])
+                            # print(agente_data['agente_status'])
+
+
+                            
+
+                            # VERIFICANDO SE O AGENTE FOI BANIDO
+
                             if (agente_ofertas < 30):
+
+
+                                agente_datax = get_agente_by_email(base_url, agente_create)
+
+
+                                if int(agente_datax['agente_status']) == 0:
+
+                                    print("agente_data[agente_status] == 0")
+
+                                    print('  [!] '+agente_data['agente_email']+' FOI BANIDO')
+                                    winsound.Beep(1000, 500)  
+
+                                    # update_agente_banido(agente_data['id'], 0)
+
+                                    logged = False
+                                    driverx = False
+
+                                    try:
+
+                                        print('Tentando deslogado banido')
+
+                                        btn_sandwich = driver.find_element(By.CSS_SELECTOR, ".x1swlcf7 > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)")
+                                        btn_sandwich.click()
+
+                                        btn_logout = driver.find_element(By.CSS_SELECTOR, "div.xjbqb8w:nth-child(2) > div:nth-child(1) > div:nth-child(1) > span:nth-child(1)")
+                                        btn_logout.click()
+
+                                    except:
+
+                                        print('ERRO AO TENTAR DESLOGAR  banido')
+
+                                        driver.quit()
+
 
                                 print('  [!] '+agente_data['agente_email']+'JÁ REALIZOU '+str(agente_ofertas)+' PROPOSTAS')
 
                                 update_agente_ocupado(agente_data['id'], 1)
+
 
                                 run_oferta(base_url, agente_data, campanha_data, campanha_ofertas_data, demanda, driver)
 
@@ -1364,16 +1501,29 @@ if __name__ == "__main__":
                                 logged = False
                                 driverx = False
 
-                                driver.quit()
+                                try:
+
+                                    print('Tentando deslogado > 30')
+
+                                    btn_sandwich = driver.find_element(By.CSS_SELECTOR, ".x1swlcf7 > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)")
+                                    btn_sandwich.click()
+                                    btn_logout = driver.find_element(By.CSS_SELECTOR, "div.xjbqb8w:nth-child(2) > div:nth-child(1) > div:nth-child(1) > span:nth-child(1)")
+                                    btn_logout.click()
+
+                                except:
+
+                                    print('ERRO AO TENTAR DESLOGAR > 30')
+                                    driver.quit()
 
                         else:
 
                             print('  [!] NENHUM AGENTE DISPONÍVEL NO MOMENTO - STEP 1 ** ESPERANDO 10 MINUTOS')
-                            time.sleep(600)
+                            
+                            time.sleep(10)
 
                         time.sleep(3)
 
-                    time.sleep(180)
+                    time.sleep(10)
             else:
 
                 print('   [!] NÃO EXISTEM DEMANDAS PENDENTES: ', len(demandas_pendentes))

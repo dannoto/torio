@@ -66,8 +66,7 @@ class api_model extends CI_Model
 
         $this->db->where('campanha_status', 1);
         $this->db->where('is_deleted', 0);
-        $this->db->order_by('id', 'rand');
-
+        $this->db->order_by('RAND()');
         return $this->db->get('campanhas')->result();
     }
 
