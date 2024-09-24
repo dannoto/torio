@@ -419,7 +419,7 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
     driver.get('https://instagram.com/explore')
 
     county = 0
-    max_iterationsj = 10  # Número máximo de vezes que o loop deve rodar
+    max_iterationsj = 5  # Número máximo de vezes que o loop deve rodar
 
     try:
 
@@ -758,7 +758,7 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
         print("Sua conta não foi banida")
 
     
-    sleep_time = random.randint(180, 360)  # Gera um número aleatório entre 180 e 360
+    sleep_time = random.randint(30, 120)  # Gera um número aleatório entre 180 e 360
     print(f"Dormindo por {sleep_time} segundos.")
     time.sleep(sleep_time)  # Faz o programa dormir pelo tempo gerado
       # salvar post main.xvbhtw8 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > article:nth-child(1) > div:nth-child(1) > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > section:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
@@ -808,7 +808,7 @@ def send_oferta(demanda, template_oferta, campanha_data, agente_data, oferta_dat
         print("Sua conta não foi banida")
 
     count = 0
-    max_iterations = 10  # Número máximo de vezes que o loop deve rodar
+    max_iterations = 5  # Número máximo de vezes que o loop deve rodar
 
     try:
 
@@ -1420,9 +1420,7 @@ if __name__ == "__main__":
                         agente_create = temp_create_agente(driver)
                         winsound.Beep(1000, 500) 
                         winsound.Beep(1000, 500) 
-                        winsound.Beep(1000, 500) 
-                        winsound.Beep(1000, 500) 
-
+                        
 
 
                     if agente_create:
@@ -1522,8 +1520,12 @@ if __name__ == "__main__":
                             time.sleep(10)
 
                         time.sleep(3)
+                    
+                    winsound.Beep(5000, 2000) 
+                    winsound.Beep(5000, 2000) 
 
-                    time.sleep(10)
+
+                    # time.sleep(100000)
             else:
 
                 print('   [!] NÃO EXISTEM DEMANDAS PENDENTES: ', len(demandas_pendentes))

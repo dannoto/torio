@@ -87,6 +87,32 @@ class api_model extends CI_Model
         return $this->db->get('campanhas_ofertas')->result();
     }
 
+  
+
+    public function dash_get_oferta_concluidas_by_campanha($campanha_id)
+    {
+        $this->db->where('oferta_campanha_id', $campanha_id);
+        // $this->db->like('oferta_data', date('Y-m-d'));
+        // $this->db->where('oferta_status', 1);
+        $this->db->where('oferta_status', 1);
+
+        $this->db->where('is_deleted', 0);
+        return $this->db->get('campanhas')->result();
+    }
+
+
+    public function dash_get_demandas_abertas($campanha_tag_id)
+    {
+
+        $this->db->where('tag_id', $campanha_tag_id);
+
+        $this->db->order_by('RAND()');
+        $this->db->where('processado', 0);
+        $this->db->where('is_deleted', 0);
+
+        // $this->db->limit(50);
+        return $this->db->get('demandas')->result();
+    }
 
 
 
