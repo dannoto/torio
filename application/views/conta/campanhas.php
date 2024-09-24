@@ -160,8 +160,7 @@
                       </td>
                       <td>
 
-                      <?php print_r($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id));?>
-                       
+
                         <div class="d-flex align-items-center justify-content-center">
                             <span class="me-2 text-xs font-weight-bold"><?php 
                             echo 
