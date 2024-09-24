@@ -162,7 +162,7 @@
 
 
                         <div class="d-flex align-items-center justify-content-center">
-                            <span class="me-2 text-xs font-weight-bold" title="<?php echo  count($this->api_model->dash_get_oferta_concluidas_by_campanha($t->id)) / count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id)); ?>"><?php 
+                            <span class="me-2 text-xs font-weight-bold" title="<?= count($this->api_model->dash_get_oferta_concluidas_by_campanha($t->id)) ?> <?=count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id)); ?>"><?php 
                             echo 
                             round((
                               count($this->api_model->dash_get_oferta_concluidas_by_campanha($t->id)) / count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id))
