@@ -167,10 +167,10 @@
                             (
                               count($this->api_model->dash_get_oferta_concluidas_by_campanha($t->id)) / count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id))
                               
-                            ) ; ?>%</span>
+                            ) * 100 ; ?>%</span>
                             <div>
                               <div class="progress">
-                                <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="<?php echo ( count($this->api_model->dash_get_oferta_concluidas_by_campanha($t->id)) / count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id)) );?>" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="<?php echo ( count($this->api_model->dash_get_oferta_concluidas_by_campanha($t->id)) / count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id)) ) * 100;?>" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
                               </div>
                             </div>
                           </div>
