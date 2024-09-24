@@ -106,7 +106,7 @@ class api_model extends CI_Model
 
         $this->db->where('tag_id', $campanha_tag_id);
 
-        $this->db->order_by('RAND()');
+        // $this->db->order_by('RAND()');
         $this->db->where('processado', 0);
         $this->db->where('is_deleted', 0);
 

@@ -163,12 +163,12 @@
                           <span class="me-2 text-xs font-weight-bold"><?php 
                           echo 
                           (
-                             count($this->api_model->dash_get_oferta_concluidas_by_campanha($p->id)) / count($this->api_model->dash_get_demandas_abertas($t->id))
+                             count($this->api_model->dash_get_oferta_concluidas_by_campanha($p->id)) / count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id))
                              
                           ) ; ?>%</span>
                           <div>
                             <div class="progress">
-                              <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="<?php echo ( count($this->api_model->dash_get_oferta_concluidas_by_campanha($p->id)) / count($this->api_model->dash_get_demandas_abertas($t->id)) );?>" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                              <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="<?php echo ( count($this->api_model->dash_get_oferta_concluidas_by_campanha($p->id)) / count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id)) );?>" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
                             </div>
                           </div>
                         </div>
