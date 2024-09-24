@@ -170,7 +170,7 @@
                             ) * 100, 1) ; ?>%</span>
                             <div>
                               <div class="progress">
-                                <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="<?php echo round(( count($this->api_model->dash_get_oferta_concluidas_by_campanha($t->id)) / count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id)) ) * 100, 1);?>" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+                                <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="<?php echo round(( count($this->api_model->dash_get_oferta_concluidas_by_campanha($t->id)) / count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id)) ) * 100, 1);?>" aria-valuemin="0" aria-valuemax="<?php echo round(( count($this->api_model->dash_get_oferta_concluidas_by_campanha($t->id)) / count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id)) ) * 100, 1);?>" style="width: <?php echo round(( count($this->api_model->dash_get_oferta_concluidas_by_campanha($t->id)) / count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id)) ) * 100, 1);?>%;"></div>
                               </div>
                             </div>
                           </div>
