@@ -8,6 +8,7 @@ class Conta extends CI_Controller
     {
 
         parent::__construct();
+        $this->load->model('api_model');
 
         $this->load->model('conta_model');
     }
