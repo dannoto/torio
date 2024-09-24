@@ -97,7 +97,7 @@ class api_model extends CI_Model
         $this->db->where('oferta_status', 1);
 
         $this->db->where('is_deleted', 0);
-        return $this->db->get('campanhas')->result();
+        return $this->db->get('ofertas')->result();
     }
 
 
