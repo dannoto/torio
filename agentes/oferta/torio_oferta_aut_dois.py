@@ -1476,8 +1476,8 @@ def temp_create_agente(driver):
             else :
 
                 print('FAIL: temp_register_agente')
-                print('ADICIONANDO LOOP 3 MINUTOS PARE EVITAR ABUSO')
-                time.sleep(180)
+                print('ADICIONANDO LOOP INFINITO PARE EVITAR ABUSO')
+                time.sleep(1000000)
 
                 return False
         else:
@@ -1488,6 +1488,17 @@ def temp_create_agente(driver):
     else:
         print('FAIL: temp_get_domains')
         return False
+
+
+
+
+
+def reload_session():
+
+    
+
+    
+
 
 
 if __name__ == "__main__":
@@ -1512,19 +1523,21 @@ if __name__ == "__main__":
 
         for campanha_data in campanhas_ativas:
 
-            
-
-            print('[!] TOTAL DE CAMPANHAS ATIVAS: ', len(campanhas_ativas))
-
-            # Pegando ofertas da campanha
             campanha_ofertas_data = get_campanha_ofertas(campanha_data['id'])
+            demandas_pendentes = get_demandas_por_campanha(base_url, campanha_data['id'])
+
+            print("\n ====== [INFO] ========")
 
             print(' [!] CAMPANHA ATUAL: ', campanha_data['campanha_nome'])
 
+            print("====== [INFO] ======== \n")
+            
 
-            demandas_pendentes = get_demandas_por_campanha(base_url, campanha_data['id'])
+            print("\n ====== [INFO] ========")
 
             print('  [!] DEMANDAS PENDENTES: ', len(demandas_pendentes))
+
+            print("====== [INFO] ======== \n")
 
 
             logged = False
@@ -1533,7 +1546,6 @@ if __name__ == "__main__":
 
                 for demanda in demandas_pendentes:
 
-                    print('DEMANDA '+demanda['id'])
 
                     if driverx == False:
 
