@@ -753,7 +753,7 @@ class Conta_model extends CI_Model
     public function report_get_cliques_today() {
 
         $this->db->like('clique_data_id', date('Y-m-d'));
-        $this->db->where('clique_user_agente !=', "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)");
+        $this->db->where('clique_user_agent !=', "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)");
 		return $this->db->get('cliques')->result();
 
     }
@@ -793,7 +793,7 @@ class Conta_model extends CI_Model
     public function report_get_cliques_month() {
 
         $this->db->like('clique_data_id', date('Y-m'));
-        $this->db->where('clique_user_agente !=', "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)");
+        $this->db->where('clique_user_agent !=', "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)");
 		return $this->db->get('cliques')->result();
 
     }
