@@ -14,9 +14,6 @@ class Torio extends CI_Controller
         $this->load->model('api_model');
     }
 
-
-
-
     public function get_tarefas_ativas()
     {
 
@@ -43,7 +40,6 @@ class Torio extends CI_Controller
 
         print_r(json_encode($response));
     }
-
 
     public function update_agente_banido()
     {
@@ -115,8 +111,6 @@ class Torio extends CI_Controller
         print_r(json_encode($response));
     }
     
-    
-
     public function get_agente()
     {
         $data['agente_email'] = htmlspecialchars($this->input->get('agente_email'));
@@ -129,8 +123,7 @@ class Torio extends CI_Controller
 
         print_r(json_encode($response));
     }
-
-    
+ 
     public function add_agente()
     {
         $data['agente_email'] = htmlspecialchars($this->input->get('agente_email'));
@@ -159,7 +152,6 @@ class Torio extends CI_Controller
         $response = $this->api_model->get_campanhas_ativas();
         print_r(json_encode($response));
     }
-
 
     public function get_demandas_por_campanha()
     {
@@ -222,7 +214,6 @@ class Torio extends CI_Controller
 
         print_r(json_encode($response));
     }
-
 
     function get_oferta_key($oferta_id, $campanha_id)
     {
