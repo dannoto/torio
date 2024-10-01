@@ -1202,7 +1202,7 @@ class Conta extends CI_Controller
             $temaplte = $this->conta_model-> get_sms_template_by_campanha($this->input->post('oferta_campanha_id'));
 
 
-            $data['oferta_status'] = 0;
+            $data['oferta_status'] = 1;
             $data['oferta_persona_id'] =  htmlspecialchars($this->input->post('oferta_persona_id'));
             $data['oferta_insta_id'] = htmlspecialchars($this->input->post('oferta_insta_id'));
             $data['oferta_campanha_id'] = htmlspecialchars($this->input->post('oferta_campanha_id'));
