@@ -419,13 +419,13 @@ class Torio extends CI_Controller
     // }
 
 
-    // public function update_demanda_pendente()
-    // {
-    //     $demanda_id = htmlspecialchars($this->input->get('demanda_id'));
-    //     $response = $this->api_model->update_demanda_pendente($demanda_id);
+    public function update_demanda_pendente()
+    {
+        $demanda_id = htmlspecialchars($this->input->get('demanda_id'));
+        $response = $this->api_model->update_demanda_pendente($demanda_id);
 
-    //     print_r(json_encode($response));
-    // }
+        print_r(json_encode($response));
+    }
 
 
     public function add_instalead()
@@ -778,15 +778,18 @@ class Torio extends CI_Controller
         $persona_data['is_deleted'] = 0;
 
 
-
         if ($persona_id = $this->api_model->check_persona($persona_data['persona_username'])) {
 
 
             // Já existe persona, adicionando nova TAG.
             if ($this->api_model->check_persona_tag($persona_data['persona_username'], $persona_data['persona_tag_id'])) {
+
+                $this->api_model->update_persona($persona_id, $persona_data);
+
                 // Já existe tag associada.
                 $response = array('persona_id' => $persona_id);
                 return print_r(json_encode($response));
+                
             } else {
 
 

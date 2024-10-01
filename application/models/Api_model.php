@@ -197,6 +197,13 @@ class api_model extends CI_Model
         return $this->db->insert_id();
     }
 
+    public function update_persona($persona_id, $persona_data)
+    {
+        $this->db->where('id', $persona_id);
+        return $this->db->update('personas', $persona_data);
+      
+    }
+
     public function check_persona($persona_username)
     {
         $this->db->where('persona_username', $persona_username);
@@ -320,7 +327,7 @@ class api_model extends CI_Model
             'processado' => 1
         );
 
-        return $this->db->update('insta_leads_demandas', $data);
+        return $this->db->update('demandas', $data);
     }
 
 

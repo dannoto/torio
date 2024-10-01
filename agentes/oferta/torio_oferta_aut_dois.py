@@ -23,6 +23,8 @@ import datetime
 import random
 import winsound
 
+
+
 # Foto de perfil, feed e Imagem
 
 # def initiaLsetup_bio():

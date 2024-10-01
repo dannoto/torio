@@ -22,7 +22,7 @@ import time
 import datetime
 import random
 import winsound
-
+from bs4 import BeautifulSoup
 # Foto de perfil, feed e Imagem
 
 # def initiaLsetup_bio():
@@ -288,6 +288,25 @@ def get_campanhas_ativas(base_url):
     else:
 
         return False   
+
+def update_demanda_pendente(base_url, demanda_id):
+    
+    url = base_url+"/update_demanda_pendente?demanda_id="+str(demanda_id)+""
+        
+    response = requests.get(url)
+
+    if response.status_code == 200:
+            
+        data = json.loads(response.content)
+
+        print('demanda atualizada')
+   
+        return data
+        
+    else:
+
+        return False   
+    
                   
 def get_demandas_por_campanha(base_url, campanha_id):
  
@@ -440,9 +459,9 @@ def criar_oferta_pendente(agente_data, campanha_data, template_oferta, demanda, 
 
         return False 
 
-def add_persona(agente_data, campanha_data, demanda):
+def add_persona(agente_data, campanha_data, demanda, nome, username, email, telefone):
 
-    url = base_url+"add_persona?persona_nome="+str(demanda['full_name'])+"&persona_username="+str(demanda['username'])+"&persona_email=danrib2018@gmail.com"+"&persona_telefone=62993615459"+"&persona_tag_id="+str(campanha_data['campanha_tag_id'])+"&oferta_agente_id="+str(agente_data['id'])+"&is_deleted=0"
+    url = base_url+"add_persona?persona_nome="+str(nome)+"&persona_username="+str(username)+"&persona_email="+str(email)+"&persona_telefone="+str(telefone)+"&persona_tag_id="+str(campanha_data['campanha_tag_id'])+"&oferta_agente_id="+str(agente_data['id'])+"&is_deleted=0"
     
  
     response = requests.get(url)
@@ -453,7 +472,8 @@ def add_persona(agente_data, campanha_data, demanda):
         data = json.loads(response.content)
 
         # print('response.content', data)
-
+        print('persona adicionada: '+username)
+        update_demanda_pendente(base_url, demanda['id'])
         return data['persona_id']
         
     else:
@@ -1677,6 +1697,396 @@ def choose_campaign():
         print('\n  [*] Voce escolheu uma opção existente. Voce sabe ler?')
         sys.exit()
 
+
+def extractTelefone( telefone, links, biografia, mencoes, headers):
+        
+        # print('\n [EXTRAÇAO DE TELEFONE] \n')
+        
+        # print('\n [**][VERIF. TELEFONE VIA API] \n')
+        
+        if  telefone != None:
+            # print(telefone)  
+            print('TELEFONE ENCONTRADO: ',numero )          
+            return telefone
+        
+        # print('\n [**][VERIF. TELEFONE PELA BIOGRAFIA] \n')
+        
+        biografia = biografia.replace('(', "")
+        biografia = biografia.replace(')', "")
+        biografia = biografia.replace('-', "")
+
+        treze = r"\b\d{13}\b"
+        # Encontra todos os números no texto
+        numeros_treze = re.findall(treze, biografia)
+        if numeros_treze:
+            numero = str(numeros_treze[0])
+            numero = numero.replace(' ', "")
+           
+            # print(numero)
+            print('TELEFONE ENCONTRADO: ',numero )
+            return numero
+        
+        onze_espaco = r"\b\d{2}\s\d{9}\b"
+        # Encontra todos os números no texto
+        numeros_onze_espaco = re.findall(onze_espaco, biografia)
+        if numeros_onze_espaco:
+            numero = str(numeros_onze_espaco[0])
+            numero = numero.replace(' ', "")
+            numero = "55"+numero
+            # print(numero)
+            print('TELEFONE ENCONTRADO: ',numero )
+            return numero
+            
+        onze_sem_espaco = r"\b\d{11}\b"
+        # Encontra todos os números no texto
+        numeros_onze_sem_espaco = re.findall(onze_sem_espaco, biografia)
+        if numeros_onze_sem_espaco:
+            numero = str(numeros_onze_sem_espaco[0])
+            numero = numero.replace(' ', "")
+            numero = "55"+numero
+            # print(numero)
+            print('TELEFONE ENCONTRADO: ',numero )
+
+            return numero
+            
+        dez_espaco = r"\b\d{2}\s\d{8}\b"
+        # Encontra todos os números no texto
+        numeros_dez_espaco = re.findall(dez_espaco, biografia)
+        if numeros_dez_espaco:
+            numero = str(numeros_dez_espaco[0])
+            numero = numero.replace(' ', "")
+            numero = "55"+numero
+            # print(numero)
+            print('TELEFONE ENCONTRADO: ',numero )
+
+            return numero
+            
+        dez_sem_espaco = r"\b\d{10}\b"
+        # Encontra todos os números no texto
+        numeros_dez_sem_espaco = re.findall(dez_sem_espaco, biografia)
+        if numeros_dez_sem_espaco:
+            numero = str(numeros_dez_sem_espaco[0])
+            numero = numero.replace(' ', "")
+            numero = "55"+numero
+            # print(numero)
+            print('TELEFONE ENCONTRADO: ',numero )
+            return numero
+            
+    
+                
+        # print('\n [**][VERIF. TELEFONE POR LINKS] \n')
+        
+        links = links.split(", ")
+        
+        # print(f'LINKS: {links}')
+        
+        if len(links) == 1 and len(links[0]) == 0:
+            
+            # print('NAO EXISTEM LINKS')
+            pass
+            
+        else:
+            
+            for link in links:
+            
+                print(f'VISITANDO: {link}')
+                
+                if not link.startswith('https://'):
+                    if link.startswith('http://'):
+                        link = link.replace('http://', 'https://')
+                    else:
+                        link = 'https://' + link
+                
+                try:
+
+                    response = requests.get(link)
+        
+                    soup = BeautifulSoup(response.content, 'html.parser')
+
+                    a_tags = soup.find_all('a')
+                
+                    for a_tag in a_tags:
+                        href = a_tag.get('href')
+                        if href:
+                            # print(href)
+                            padrao_whatsapp = re.compile(r'\b55\d{11}')
+
+                            # Encontra todos os números do WhatsApp na string
+                            numeros_whatsapp = padrao_whatsapp.findall(href)
+
+                            if len(numeros_whatsapp) > 0:
+                                # print(numeros_whatsapp[0])
+                                print('TELEFONE ENCONTRADO: ',numeros_whatsapp[0] )
+                                return numeros_whatsapp[0] 
+                    biografia = str(response.content) 
+                    biografia = biografia.replace('(', "")
+                    biografia = biografia.replace(')', "")
+                    biografia = biografia.replace('-', "")
+        
+                    treze = r"\b\d{13}\b"
+                    # Encontra todos os números no texto
+                    numeros_treze = re.findall(treze, biografia)
+                    if numeros_treze:
+                        numero = str(numeros_treze[0])
+                        numero = numero.replace(' ', "")
+                     
+                        # print(numero)
+                        print('TELEFONE ENCONTRADO: ',numero)
+                        return numero
+                    
+                    onze_espaco = r"\b\d{2}\s\d{9}\b"
+                    # Encontra todos os números no texto
+                    numeros_onze_espaco = re.findall(onze_espaco, biografia)
+                    if numeros_onze_espaco:
+                        numero = str(numeros_onze_espaco[0])
+                        numero = numero.replace(' ', "")
+                        numero = "55"+numero
+                        # print(numero)
+                        print('TELEFONE ENCONTRADO: ',numero)
+                        return numero
+                        
+                    onze_sem_espaco = r"\b\d{11}\b"
+                    # Encontra todos os números no texto
+                    numeros_onze_sem_espaco = re.findall(onze_sem_espaco, biografia)
+                    if numeros_onze_sem_espaco:
+                        numero = str(numeros_onze_sem_espaco[0])
+                        numero = numero.replace(' ', "")
+                        numero = "55"+numero
+                        # print(numero)
+                        print('TELEFONE ENCONTRADO: ',numero)
+                        return numero
+                        
+                    dez_espaco = r"\b\d{2}\s\d{8}\b"
+                    # Encontra todos os números no texto
+                    numeros_dez_espaco = re.findall(dez_espaco, biografia)
+                    if numeros_dez_espaco:
+                        numero = str(numeros_dez_espaco[0])
+                        numero = numero.replace(' ', "")
+                        numero = "55"+numero
+                        # print(numero)
+                        print('TELEFONE ENCONTRADO: ',numero)
+                        return numero
+                        
+                    dez_sem_espaco = r"\b\d{10}\b"
+                    # Encontra todos os números no texto
+                    numeros_dez_sem_espaco = re.findall(dez_sem_espaco, biografia)
+                    if numeros_dez_sem_espaco:
+                        numero = str(numeros_dez_sem_espaco[0])
+                        numero = numero.replace(' ', "")
+                        numero = "55"+numero
+                        print('TELEFONE ENCONTRADO: ',numero)
+                        return numero
+                    
+                
+                except Exception as e:
+                    print(f"Ocorreu um erro ao acessar {link}: {e}")
+                
+       
+    # Extracao de Telefones
+         
+    # Extração Emails
+
+def extractEmail( email, biografia, links, headers, mencoes):
+        
+        # print('\n [EXTRAÇAO DE EMAILS] \n')
+        
+        # print('\n [**][VERIF. EMAIL VIA API] \n')
+        
+        if  email != None:
+            print(email)
+            return email
+        
+        # print('\n [**][VERIF. EMAIL PELA BIOGRAFIA] \n')
+        
+        padrao_email = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+        match = re.search(padrao_email, biografia)
+        
+        if match:
+            # print( match.group())
+            print(f'EMAIL ENCONTRADO: {match.group()}')
+            return match.group()
+
+        # print('\n [**][VERIF. EMAIL PELOS LINKS] \n')
+        
+        links = links.split(", ")
+        
+        # print(f'LINKS: {links}')
+        
+        if len(links) == 1 and len(links[0]) == 0:
+            
+            # print('NAO EXISTEM LINKS')
+            pass
+            
+        else:
+
+            for link in links:
+                
+                print(f'VISITANDO: {link}')
+                
+                if not link.startswith('https://'):
+                    if link.startswith('http://'):
+                        link = link.replace('http://', 'https://')
+                    else:
+                        link = 'https://' + link
+                try:
+
+                    response = requests.get(link)
+        
+                        # Extrai o conteúdo HTML da resposta
+                    html_content = response.text
+
+                    # print(html_content)
+                    # Regex para extrair endereços de e-mail
+                    padrao_email = re.compile(r'[\w\.-]+@[\w\.-]+')
+
+                    # Encontra todos os endereços de e-mail no código-fonte
+                    emails_encontrados = padrao_email.findall(html_content)
+
+                    if emails_encontrados:
+                        print(f'EMAIL ENCONTRADO: {emails_encontrados[0]}')
+                        return emails_encontrados[0]  # Retorna o primeiro endereço de e-mail encontrado
+                
+                    
+                except Exception as e:
+                    print(f"ERRO AO ACESSAR: [{link}]  {e}")
+
+def capturar_header(agente_data):
+
+        print('capturando header')
+
+        
+
+        driver = webdriver.Firefox()
+
+        # Abrindo o site do Instagram
+        driver.get('https://www.instagram.com/accounts/login/')
+
+        # Espera para garantir que a página carregue corretamente
+        time.sleep(3)
+
+        # Encontrar os campos de login e senha
+        username_input = driver.find_element(By.NAME, 'username')
+        password_input = driver.find_element(By.NAME, 'password')       
+
+        # Inserir as credenciais
+        username = agente_data['agente_username']
+        password = 'Torio142536*'
+        username_input.send_keys(username)
+        password_input.send_keys(password)
+
+        # Pressionar ENTER para logar
+        password_input.send_keys(Keys.RETURN)
+
+        # Espera o login processar (ajuste o tempo se necessário)
+        time.sleep(10)
+
+        # Capturar os cookies
+
+        try:
+            
+            cookies = driver.get_cookies()
+
+            # Procurar o cookie que contém o 'csrftoken'
+            csrftoken = None
+            for cookie in cookies:
+                if cookie['name'] == 'csrftoken':
+                    csrftoken = cookie['value']
+                    break
+
+            # Capturar o valor do cabeçalho 'X-csrftoken'
+            headersx = {
+                'Cookie': "; ".join([f"{cookie['name']}={cookie['value']}" for cookie in cookies]),
+                'X-csrftoken': csrftoken
+            }
+
+            print(headersx)
+
+            headers = {
+                'Accept': '*/*',
+                'Accept-Encoding': 'gzip, deflate, br',
+                'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+                'Cookie': "; ".join([f"{cookie['name']}={cookie['value']}" for cookie in cookies]),
+                'X-csrftoken': csrftoken,
+                'Dpr': '1',
+                'Referer': 'https://www.instagram.com/p/C07F4jjrEy2/?img_index=1',
+                'Sec-Ch-Prefers-Color-Scheme': 'light',
+                'Sec-Ch-Ua': '"Opera";v="105", "Chromium";v="119", "Not?A_Brand";v="24"',
+                'Sec-Ch-Ua-Full-Version-List': '"Opera";v="105.0.4970.60", "Chromium";v="119.0.6045.199", "Not?A_Brand";v="24.0.0.0"',
+                'Sec-Ch-Ua-Mobile': '?0',
+                'Sec-Ch-Ua-Model': '""',
+                'Sec-Ch-Ua-Platform': '"Windows"',
+                'Sec-Ch-Ua-Platform-Version': '"10.0.0"',
+                'Sec-Fetch-Dest': 'empty',
+                'Sec-Fetch-Mode': 'cors',
+                'Sec-Fetch-Site': 'same-origin',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0',
+                'Viewport-Width': '1312',
+                'X-Asbd-Id': '129477',
+                'X-Ig-App-Id': '936619743392459',
+                'X-Ig-Www-Claim': 'hmac.AR2kovJ4-DcOAF0d43NiUcqAx69DUcqPe2rRZLMjoHsdi9v6',
+                'X-Requested-With': 'XMLHttpRequest'
+            }
+
+            return [headers, driver]
+
+        except:
+            print('Erro ao pegar header')
+            return False
+
+def add_person_process(user_data, agente_data, campanha_data, headers, demanda):
+
+        # Links
+                links = ""
+                
+                try:
+                    for link in user_data['data']['user']['bio_links']:
+                        
+                        if links:  # Verifica se a string já possui conteúdo
+                            links += ", " + link['url']  # Adiciona o link à string, separado por vírgula
+                        else:
+                            links += link['url']
+                except Exception as e:
+                    print('[**] Erro ao capturar links:', e)
+
+                mencoes= ""
+                
+                try:
+                    for mencao in user_data['data']['user']['biography_with_entities']['entities']:
+                        if mencoes:  # Verifica se a string já possui conteúdo
+                            mencoes += ", " + mencao['user']['username']  # Adiciona a menção à string, separada por vírgula
+                        else:
+                            mencoes += mencao['user']['username']
+                except Exception as e:
+                    print('[**] Erro ao capturar menções:', e)
+        
+                # persona = {
+                #         # 'tarefa_id': tarefa_id,
+                #         # 'tag_id': tag_id,
+                #         'username': user_data['data']['user']['username'],
+                #         'full_name': user_data['data']['user']['full_name'],
+                #         'is_private': user_data['data']['user']['is_private'],
+                #         'biografia': user_data['data']['user']['biography'],
+                #         'links': links,
+                #         'mencoes': mencoes,
+                #         'categoria': user_data['data']['user']['category_name'],
+                #         'email': extractEmail(user_data['data']['user']['business_email'], user_data['data']['user']['biography'], links, headers, mencoes),
+                #         'telefone': extractTelefone(user_data['data']['user']['business_phone_number'], links, user_data['data']['user']['biography'], mencoes, headers),
+                #     }
+                
+                add_persona(
+                    agente_data,
+                    campanha_data, 
+                    demanda,
+                    user_data['data']['user']['full_name'], 
+                    user_data['data']['user']['username'],
+                    extractEmail(user_data['data']['user']['business_email'], user_data['data']['user']['biography'], links, headers, mencoes),
+                    extractTelefone(user_data['data']['user']['business_phone_number'], links, user_data['data']['user']['biography'], mencoes, headers)
+                )
+                
+                # print(persona)
+    
+
+  
 if __name__ == "__main__":
 
     firefox_driver_status = False
@@ -1696,133 +2106,95 @@ if __name__ == "__main__":
             print(f'\n  [!] Demandas Encontradas: {len(demandas_pendentes)}\n')
 
 
-            d_count = 0
+            a_index = 0
+            header_status = False
+            header = ""
+            driver = ""
+
 
             for demanda in demandas_pendentes:
 
-                headers = {
-                    'Accept': '*/*',
-                    'Accept-Encoding': 'gzip, deflate, br',
-                    'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
-                    # 'Cookie': self.header_data[self.header_current]['agente_cookie'],
-                    'Cookie': 'ig_did=1E36CBE8-F02A-49AA-BD2B-E1A5C0111ED0; datr=i-UrZsTnMEkNQqCkeoO2UKJu; ig_nrcb=1; fbm_124024574287414=base_domain=.instagram.com; ps_n=1; ps_l=1; mid=Zm4XgQALAAEMoTlQzk2A2V8ajQLo; ds_user_id=61013886138; csrftoken=rhPONWnbfDRydarqzs9IbIvfG8aQvmWt; fbsr_124024574287414=Pk60WKWC-eWKho4L43cKlid1JTngVaObISl_RQTXWPk.eyJ1c2VyX2lkIjoiMTAwMDg5NDAyNTYzMTE3IiwiY29kZSI6IkFRQlNEZkVCTUdlZ0xROW1aSUFOSnBpbFFGTGQzeEY4Z2lOTHBEd2VBVmVOUXo1czVTeU13UzBkMUtqeXh2NnQySmtSSTExTG5ORGlYUGJzU3dyYWplZHVDa2JsYjdqN0hldVNYMXRDNnc2NEhqWlZnNTByWm1Lb1dWZkFrSGRIWjFkSHRPbmVjejlwMFJ4ektmckh3M1FTV2hCeFh4UkhFTlpEYVl1TFlfQ2ZLS09kTEs0dmEyUXE1QTBtUXlrZkVoT3lPWWhDS1c4aUVSdW5vdUFGdkplY2Z1MXdoNUlIa0hSdFVlVllxQkNZNmc5aTVfa1RvOWtFRDQ1QXRIS005TlhHVHJDWV9HVVhUMlZPa1oyRGR5Z1Etc1dacGpiRWJaRm00TXRnZGlOY3o3RTFWRE91OTFMcUdXQV9Oa21tTF8ySi1VNDNiS2Z3ZUZON0dQRVJQNHVCVERfTFBFNkpRRE5hS2VyMTdSbW53QSIsIm9hdXRoX3Rva2VuIjoiRUFBQnd6TGl4bmpZQk93UjV5TlpCbFBteVByNWdZV0tIRjNaQ1dzV2MxcE1rdHpwaFpBYzZyMlBvZkVSdXgyajRSbHllVUJNMHBQR3N0N0sxUlpBckJhYmY5WkI4aEcxNjBodE9zUm5GTVVoaXcxcWlVZ0tSV2dFb09JdnQwYXBkWkF4bXRPRzB0N2ZxeHFsYTFINGFhc2hGaDZEcE1VRnQ3WkJjcTJzNXJZSzk5VjRCTlJ5Y3ZUTnRaQ1A1a2hNWkFiS0dsQ2RZWkQiLCJhbGdvcml0aG0iOiJITUFDLVNIQTI1NiIsImlzc3VlZF9hdCI6MTcyNzExMDE1N30; shbid="7447\05461013886138\0541759206120:01f7d546c8dab3869ffc30ad366f892fd6ae6ffca2dedbf5322db2116b287942a307dfe1"; shbts="1727670120\05461013886138\0541759206120:01f7864205e1bc876bf28dc6fa151a35a67a0cc0d389702579f84f8bc99f23b621971aa3"; sessionid=61013886138%3A4hY4q8IsFe1IOi%3A6%3AAYdT8Y9-geh8GaEQgyrehAm_lyMKH1LjGaxrkomdHl8; wd=1312x308; rur="NHA\05461013886138\0541759256930:01f7c13d17bf6e00c0ed56eefe4c6ec6bcb301e3466e5169299b37b270927d945953d0c4"',
-                    'Dpr': '1',
-                    'Referer': 'https://www.instagram.com/p/C07F4jjrEy2/?img_index=1',
-                    'Sec-Ch-Prefers-Color-Scheme': 'light',
-                    'Sec-Ch-Ua': '"Opera";v="105", "Chromium";v="119", "Not?A_Brand";v="24"',
-                    'Sec-Ch-Ua-Full-Version-List': '"Opera";v="105.0.4970.60", "Chromium";v="119.0.6045.199", "Not?A_Brand";v="24.0.0.0"',
-                    'Sec-Ch-Ua-Mobile': '?0',
-                    'Sec-Ch-Ua-Model': '""',
-                    'Sec-Ch-Ua-Platform': '"Windows"',
-                    'Sec-Ch-Ua-Platform-Version': '"10.0.0"',
-                    'Sec-Fetch-Dest': 'empty',
-                    'Sec-Fetch-Mode': 'cors',
-                    'Sec-Fetch-Site': 'same-origin',
-                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0',
-                    'Viewport-Width': '1312',
-                    'X-Asbd-Id': '129477',
-                    # 'X-Csrftoken': self.header_data[self.header_current]['agente_crsf'],
-                    'X-Csrftoken': 'rhPONWnbfDRydarqzs9IbIvfG8aQvmWt',
-                    'X-Ig-App-Id': '936619743392459',
-                    'X-Ig-Www-Claim': 'hmac.AR2kovJ4-DcOAF0d43NiUcqAx69DUcqPe2rRZLMjoHsdi9v6',
-                    'X-Requested-With': 'XMLHttpRequest'
-                }
-    
+                agentes_data = get_agentes(base_url)
 
-                url = 'https://www.instagram.com/api/v1/users/web_profile_info/?username='+demanda['username']
-                print(url)
-                response = requests.get(url, headers=headers)
+            
+                if header_status == False:
 
-                try:
+                    result = capturar_header(agentes_data[a_index])
+                    header = result[0]
+                    driver = result[1]
+
+                    if header:
+                        header_status = True
+                        driver
+                        print(' AGENTE ESCOLHIDO: ', agentes_data[a_index]['agente_nome'])
+
+                if header:
+
+                    url = 'https://www.instagram.com/api/v1/users/web_profile_info/?username='+demanda['username']
+
+                    print('VISITANDO : ', demanda['username'])
+
+                    response = requests.get(url, headers=header)
+                    # print(response.content)
+                    try:
                     
-                    if response.status_code == 200:
+                        if response.status_code == 200:
 
-                        user_data = ""
-
-                        try:
-                        
                             user_data = json.loads(response.content)
+                        
+                            add_person_process(user_data, agentes_data[a_index], campanha_data, header, demanda)
+                        
+                        elif response.status_code == 404:
 
-                            d_count = d_count + 1
+                            print('None')
+                            
+                        
+                        elif response.status_code == 429:
 
-                            print("CONTAGEM: "+str(d_count))
+                            print("=========== GET PROFILE LIMIT REACH :"+ str(response.status_code))
+                            print('False')
+                            header_status =  False
+                            a_index = random.randint(0, len(agentes_data) - 1)
 
-                            # print(user_data)
+                            try:
+                                driver.close()
+                                print('tem driver aberto')
+                            except:
+                                print('nao tem driver aberto')
+                            
+                            update_agente_banido(agentes_data[a_index]['id'], 0)
+
+                        else:
+
+                            print("=========== NEW FAILED RESPONSE :"+ str(response.status_code))
+                            print('False')
 
 
-                        except Exception as e:
-                            print('Erro do JSON ', e)
+                        
+                    except Exception as e:
+                        
+                        # winsound.Beep(1000, 1500) 
+                        print("=========== GET PROFILE EXCEPTION: ", e)
+                        header_status =  False
+                        a_index = random.randint(0, len(agentes_data) - 1)
 
-        
-                        # ===================
-
-                        print('\n ==================>> ACESSANDO: '+demanda['username']+'\n\n')
-                               
-                        # Links
-                        links = ""
-                                
                         try:
+                            driver.close()
+                            print('tem driver aberto')
+                        except:
+                            print('nao tem driver aberto')
 
-                            for link in user_data['data']['user']['bio_links']:
-                                        
-                                if links:  # Verifica se a string já possui conteúdo
-                                    links += ", " + link['url']  # Adiciona o link à string, separado por vírgula
-                                else:
-                                    links += link['url']
+                        update_agente_banido(agentes_data[a_index]['id'], 0)
 
-                        except Exception as e:
-                                    # print('[**] Erro ao capturar links:', e)
-                            pass
+               
+                
+                else:
 
-                        mencoes= ""
-                                
-                        try:
-                            for mencao in user_data['data']['user']['biography_with_entities']['entities']:
-                                if mencoes:  # Verifica se a string já possui conteúdo
-                                    mencoes += ", " + mencao['user']['username']  # Adiciona a menção à string, separada por vírgula
-                                else:
-                                    mencoes += mencao['user']['username']
-                        except Exception as e:
-                            pass
-
-                        persona = {
-                                        'username': user_data['data']['user']['username'],
-                                        'full_name': user_data['data']['user']['full_name'],
-                                        'is_private': user_data['data']['user']['is_private'],
-                                        'biografia': user_data['data']['user']['biography'],
-                                        'links': links,
-                                        'mencoes': mencoes,
-                                        'categoria': user_data['data']['user']['category_name'],
-                                        # 'email': extractEmail(user_data['data']['user']['business_email'], user_data['data']['user']['biography'], links, headers, mencoes),
-                                        # 'telefone': extractTelefone(user_data['data']['user']['business_phone_number'], links, user_data['data']['user']['biography'], mencoes, headers),
-                                       
-                        }
-
-                        print('\n====')
-                        print(persona)
-                        print('\n====')
-
-                        # ==========
-
-                    elif response.status_code == 404:
-
-                        print('None 404')                    
-
-                    elif response.status_code == 429:
-
-                        print("=========== GET PROFILE LIMIT REACH :"+ str(response.status_code))
-                        print('False 429')
-
-                    else:
-
-                        print("=========== NEW FAILED RESPONSE :"+ str(response.status_code))
-                        print('False')
+                    print('Header com problema.')
 
 
-                except Exception as e:
-                    
-                    print("=========== GET PROFILE EXCEPTION: ", e)
-             
+              
+
                     
                 time.sleep(10)
 
