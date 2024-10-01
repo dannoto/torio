@@ -575,7 +575,7 @@ class Conta extends CI_Controller
             'campanha' => $campanha_data
         );
 
-        $this->load->view('conta/campanhas_leads/'.$campanha_id,  $data);
+        $this->load->view('conta/campanhas_leads',  $data);
     }
 
     public function tags()
