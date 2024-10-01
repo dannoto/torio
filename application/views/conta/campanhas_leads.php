@@ -159,8 +159,16 @@
                                                             <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_data ?>"><small class="text-uppercase"><?= $persona->persona_data ?></small></p>
                                                         </td>
                                                         <td>
-                                                            <button class="btn btn-primary"><small>ENVIAR</small></button>
-                                                        </td>
+
+<?php if ($this->conta_model->check_oferta_enviada($campanha->id, $campanha->campanha_produto_id, $campanha->campanha_tag_id, 'sms', $persona->id)) { ?>
+
+    <span style="color:green"><i class="fa fa-check"></i> <small>ENVIADA</small></span>
+    
+    <?php } else { ?>
+        
+        <button onclick="add_oferta('<?=$persona->id?>', '<?=$persona->persona_username?>', '<?=$campanha->id?>', '<?=$campanha->campanha_tag_id?>', '<?=$campanha->campanha_produto_id?>')" class="btn btn-primary"><small>ENVIAR</small></button>
+<?php } ?>
+</td>
                                                     </tr>
 
                                                 <?php } ?>
@@ -189,7 +197,7 @@
                                                         </td>
                                                         <td>
 
-                                                            <?php if ($this->conta_model->check_oferta_enviada($campanha->id, $campanha->campanha_produto_id, $campanha->campanha_tag_id, 'sms', $persona->id)) { ?>
+                                                            <?php if ($this->conta_model->check_oferta_enviada($campanha->id, $campanha->campanha_produto_id, $campanha->campanha_tag_id, 'email', $persona->id)) { ?>
 
                                                                 <span style="color:green"><i class="fa fa-check"></i> <small>ENVIADA</small></span>
                                                                 
