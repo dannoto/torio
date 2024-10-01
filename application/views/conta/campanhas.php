@@ -167,16 +167,7 @@
                             VER LEADS
                           </a></small>
                       </td>
-                      <td>
-
-                        <p title="<?= $this->conta_model->get_tag($t->campanha_tag_id)->tag_name ?>"> <small>
-                            <?php if (strlen($this->conta_model->get_tag($t->campanha_tag_id)->tag_name) > 14) {
-                              echo substr($this->conta_model->get_tag($t->campanha_tag_id)->tag_name, 0, 14) . "...";
-                            } else {
-                              echo $this->conta_model->get_tag($t->campanha_tag_id)->tag_name;
-                            } ?>
-                          </small>
-                        </p>
+            
 
                       <td>
                         <p title="<?= $this->conta_model->get_produto($t->campanha_produto_id)->nome ?>"> <small>
