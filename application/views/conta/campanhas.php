@@ -508,13 +508,13 @@
 
             if (resp.status) {
 
-              $('#update_campanha_id').val(resp.response.id)
-              $('#update_campanha_descricao').val(resp.response.campanha_descricao)
-              $('#update_campanha_nome').val(resp.response.campanha_nome)
-              $('#update_campanha_tag_id').val(resp.response.campanha_tag_id)
-              $('#update_campanha_produto_id').val(resp.response.campanha_produto_id)
-              $('#update_campanha_status').val(resp.response.campanha_status)
-              $('#update_campanha_tipo').val(resp.response.campanha_tipo)
+              // $('#update_campanha_id').val(resp.response.id)
+              // $('#update_campanha_descricao').val(resp.response.campanha_descricao)
+              // $('#update_campanha_nome').val(resp.response.campanha_nome)
+              // $('#update_campanha_tag_id').val(resp.response.campanha_tag_id)
+              // $('#update_campanha_produto_id').val(resp.response.campanha_produto_id)
+              // $('#update_campanha_status').val(resp.response.campanha_status)
+              // $('#update_campanha_tipo').val(resp.response.campanha_tipo)
 
               $('#trigger_update_btn').click()
 
