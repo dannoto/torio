@@ -125,7 +125,7 @@
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">NOME</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">TIPO</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">OFERTAS</th>
-                    <!-- <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">LEADS</th> -->
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">LEADS</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">PRODUTO</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">DATA</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">STATUS</th>
@@ -162,12 +162,12 @@
                             VER TEMPLATES
                           </a></small>
                       </td>
-                      <!-- <td>
+                      <td>
                         <small><a href="<?= base_url() ?>conta/campanhas_leads/<?= $t->id ?>">
                             VER LEADS
                           </a></small>
                       </td>
-             -->
+            
 
                       <td>
                         <p title="<?= $this->conta_model->get_produto($t->campanha_produto_id)->nome ?>"> <small>

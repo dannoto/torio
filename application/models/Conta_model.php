@@ -828,5 +828,26 @@ class Conta_model extends CI_Model
 
 
 
+    // leads
+    public function get_campanhas_leads($campanha_tag_id, $limit = null, $start = null)
+    {
+        $this->db->where('is_deleted', 0);
+        $this->db->where('persona_tag_id', $campanha_tag_id);
+        $this->db->order_by('id', 'desc');
+        $this->db->limit($limit, $start);
+        return $this->db->get('personas_tags')->result();
+    }
+
+    public function count_campanhas_leads($campanha_tag_id)
+    {
+        $this->db->where('is_deleted', 0);
+        $this->db->where('persona_tag_id', $campanha_tag_id);
+
+        return count($this->db->get('personas_tags')->result());
+    }
+
+
+    // leads
+
 
 }

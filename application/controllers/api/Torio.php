@@ -855,6 +855,9 @@ class Torio extends CI_Controller
                 $this->api_model->add_persona_tag($tag);
 
                 $response = array('persona_id' => $persona_id);
+
+                $this->process_oferta($persona_id, $campanha_id, );
+
                 return print_r(json_encode($response));
             }
         }
