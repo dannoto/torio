@@ -83,11 +83,11 @@
             </div>
             <div class="row">
 
-            <div class="mb-3">
-                <a href="<?=base_url('conta/campanhas')?>">
-                    <button class="btn btn-light p-3"><i class="fa fa-arrow-left"></i></button>
-                </a>
-            </div>
+                <div class="mb-3">
+                    <a href="<?= base_url('conta/campanhas') ?>">
+                        <button class="btn btn-light p-3"><i class="fa fa-arrow-left"></i></button>
+                    </a>
+                </div>
                 <div class="card-header pb-0 mb-3">
                     <h6>#<?= $campanha->id ?> <?= $campanha->campanha_nome ?></small></h6>
                 </div>
@@ -188,7 +188,15 @@
                                                             <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_data ?>"><small class="text-uppercase"><?= $persona->persona_data ?></small></p>
                                                         </td>
                                                         <td>
-                                                            <button class="btn btn-primary"><small>ENVIAR</small></button>
+
+                                                            <?php if ($this->conta_model->check_oferta()) { ?>
+
+                                                                <button onclick="add_oferta('<?=$persona->id?>', '<?=$persona->persona_username?>', '<?=$campanha->id?>', '<?=$campanha->campanha_tag_id?>', '<?=$campanha->campanha_produto_id?>')" class="btn btn-primary"><small>ENVIAR</small></button>
+
+                                                            <?php } else { ?>
+
+                                                                <span style="color:green"><i class="fa fa-check"></i> <small>ENVIADA</small></span>
+                                                            <?php } ?>
                                                         </td>
                                                     </tr>
 
@@ -202,7 +210,6 @@
                                     </tbody>
                                 </table>
                                 <!-- <div class="pt-5">
-                                    <?php// print_r($pagination); ?>
                                 </div> -->
                             </div>
                         </div>
@@ -494,6 +501,50 @@
             });
 
         })
+
+        function add_oferta(persona_id, persona_username, campanha_id, campanha_tag_id, campanha_produto_id) {
+            $.ajax({
+                url: '<?= base_url() ?>conta/action_enviar_oferta',
+                type: 'POST',
+                data: {
+                    oferta_persona_id: persona_id,
+                    oferta_insta_id:persona_username,
+                    oferta_campanha_id:campanha_id,
+                    oferta_tag_id:campanha_tag_id,
+                    oferta_produto_id:campanha_produto_id
+                },
+                success: function(response) {
+
+                    var resp = JSON.parse(response)
+
+                    if (resp.status) {
+
+                        location.reload()
+
+
+                    } else {
+
+
+                        swal({
+                            title: 'Ops!',
+                            text: resp.message,
+                            icon: 'warning',
+                            confirmButtonText: 'OK'
+                        });
+
+                    }
+
+                },
+                error: function(xhr, status, error) {
+                    swal({
+                        title: 'Ops!',
+                        text: "Houve um erro inesperado. Tente novamente",
+                        icon: 'warning',
+                        confirmButtonText: 'OK'
+                    });
+                }
+            });
+        }
 
         function open_modal_update_produto(produto_id) {
 

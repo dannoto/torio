@@ -546,9 +546,9 @@ class Conta extends CI_Controller
         }
 
         echo $campanha_data->campanha_tipo;
-        
 
-        $config['base_url'] = base_url('conta/campanhas_leads/'.$campanha_id);
+
+        $config['base_url'] = base_url('conta/campanhas_leads/' . $campanha_id);
         $config['total_rows'] = $this->conta_model->count_campanhas_leads($campanha_data->campanha_tag_id); // Total de registros
         $config['per_page'] = 10000000; // Quantidade de imóveis por página
         $config['uri_segment'] = 4; // Segmento da URL onde a página está indicada
@@ -570,7 +570,7 @@ class Conta extends CI_Controller
         $page = ($this->uri->segment(4)) ? $this->uri->segment(4) : 0;
 
 
-    
+
         $data = array(
             'leads' => $this->conta_model->get_campanhas_leads($campanha_data->campanha_tag_id, $config['per_page'], $page),
             'pagination' => $this->pagination->create_links(),
@@ -1176,5 +1176,68 @@ class Conta extends CI_Controller
     // CAMPANHA OFERTA
 
 
+    // criandooferta
 
+    function get_oferta_key($oferta_id, $campanha_id)
+    {
+
+        // Gera 3 letras aleatórias do alfabeto
+        $random_letters = '';
+        for ($i = 0; $i < 3; $i++) {
+            // Gera uma letra aleatória (A-Z)
+            $random_letters .= chr(rand(65, 90));
+        }
+
+        // Concatena o oferta_id, as letras aleatórias e o campanha_id
+        $key = $oferta_id . $random_letters . $campanha_id;
+
+        return $key;
+    }
+
+    public function action_enviar_oferta()
+    {
+
+        if (count($this->conta_model->count_sms_template_by_campanha($this->input->post('oferta_campanha_id')))) {
+
+            $temaplte = $this->conta_model-> get_sms_template_by_campanha($this->input->post('oferta_campanha_id'));
+
+
+            $data['oferta_status'] = 0;
+            $data['oferta_persona_id'] =  htmlspecialchars($this->input->post('oferta_persona_id'));
+            $data['oferta_insta_id'] = htmlspecialchars($this->input->post('oferta_insta_id'));
+            $data['oferta_campanha_id'] = htmlspecialchars($this->input->post('oferta_campanha_id'));
+            $data['oferta_oferta_id'] = $temaplte[0]->id;
+            $data['oferta_tag_id'] = htmlspecialchars($this->input->post('oferta_tag_id'));
+            $data['oferta_produto_id'] = htmlspecialchars($this->input->post('oferta_produto_id'));
+            $data['oferta_data'] = date('Y-m-d');
+    
+            $data['oferta_data_creation'] = date('Y-m-d H:i:s');
+            $data['oferta_key'] = $this->get_oferta_key(htmlspecialchars($this->input->post('oferta_persona_id')), htmlspecialchars($this->input->post('oferta_campanha_id')));
+    
+            $data['oferta_time'] = date('H:i:s');
+            $data['oferta_agente_id'] = 'api';
+            $data['is_deleted'] = 0;
+    
+          
+    
+            if ($this->api_model->add_oferta($data)) {
+    
+                $response = array("status" => true, "message" => "Oferta enviada com sucesso");
+            } else {
+    
+    
+                $response = array("status" => false, "message" => "Erro ao enviar oferta");
+            }
+    
+            return print_r(json_encode($response));
+
+        } else {
+
+            $response = array("status" => false, "message" => "Não existem templates de ofertas para esta campanha. ");
+
+            return print_r(json_encode($response));
+
+        }
+   
+    }
 }

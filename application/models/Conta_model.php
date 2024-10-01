@@ -850,4 +850,46 @@ class Conta_model extends CI_Model
     // leads
 
 
+    public function check_oferta_enviada($oferta_campanha_id, $oferta_produto_id, $oferta_tag_id, $oferta_tipo, $oferta_persona_id) {
+
+        $this->db->where('oferta_persona_id', $oferta_persona_id);
+        $this->db->where('oferta_campanha_id', $oferta_campanha_id);
+        $this->db->where('oferta_produto_id', $oferta_produto_id);
+        $this->db->where('oferta_tag_id', $oferta_tag_id);
+        $this->db->where('oferta_tag_id', $oferta_tipo);
+        $this->db->where('oferta_status', 1);
+
+        
+		return $this->db->get('ofertas')->row();
+
+    }
+
+    public function count_sms_template_by_campanha($campanha_id) {
+
+        $this->db->where('oferta_campanha_id', $campanha_id);
+        $this->db->where('oferta_tipo', 'sms');
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('campanhas_ofertas')->result();
+
+    }
+
+    public function get_sms_template_by_campanha($campanha_id) {
+
+
+        $this->db->where('oferta_campanha_id', $campanha_id);
+        $this->db->where('oferta_tipo', 'sms');
+        
+        $this->db->order_by('RAND()');
+        $this->db->where('is_deleted', 0);
+
+        $this->db->limit(1);
+
+        return $this->db->get('campanhas_ofertas')->result();
+
+
+    }
+
+    
+
 }

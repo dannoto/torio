@@ -856,7 +856,6 @@ class Torio extends CI_Controller
 
                 $response = array('persona_id' => $persona_id);
 
-                $this->process_oferta($persona_id, $campanha_id, );
 
                 return print_r(json_encode($response));
             }
