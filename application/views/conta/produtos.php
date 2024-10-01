@@ -199,6 +199,7 @@
                                     <option value="kiwify">KIWIFY</option>
                                     <option value="monetizze">MONETIZZE</option>
                                     <option value="edduz">EDUZZ</option>
+                                    <option value="braip">BRAIP</option>
 
                                 </select>
 
@@ -283,6 +284,7 @@
                                     <option value="kiwify">KIWIFY</option>
                                     <option value="monetizze">MONETIZZE</option>
                                     <option value="edduz">EDUZZ</option>
+                                    <option value="braip">BRAIP</option>
 
                                 </select>
 
