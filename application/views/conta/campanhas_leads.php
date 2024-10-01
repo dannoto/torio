@@ -189,13 +189,13 @@
                                                         </td>
                                                         <td>
 
-                                                            <?php if ($this->conta_model->check_oferta()) { ?>
-
-                                                                <button onclick="add_oferta('<?=$persona->id?>', '<?=$persona->persona_username?>', '<?=$campanha->id?>', '<?=$campanha->campanha_tag_id?>', '<?=$campanha->campanha_produto_id?>')" class="btn btn-primary"><small>ENVIAR</small></button>
-
-                                                            <?php } else { ?>
+                                                            <?php if ($this->conta_model->check_oferta_enviada($campanha->id, $campanha->campanha_produto_id, $campanha->campanha_tag_id, 'sms', $persona->id)) { ?>
 
                                                                 <span style="color:green"><i class="fa fa-check"></i> <small>ENVIADA</small></span>
+                                                                
+                                                                <?php } else { ?>
+                                                                    
+                                                                    <button onclick="add_oferta('<?=$persona->id?>', '<?=$persona->persona_username?>', '<?=$campanha->id?>', '<?=$campanha->campanha_tag_id?>', '<?=$campanha->campanha_produto_id?>')" class="btn btn-primary"><small>ENVIAR</small></button>
                                                             <?php } ?>
                                                         </td>
                                                     </tr>
