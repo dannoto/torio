@@ -82,6 +82,12 @@
                 <!-- </div> -->
             </div>
             <div class="row">
+
+            <div>
+                <a href="<?=base_url('conta/campanhas')?>">
+                    <button><i class="fa fa-left"></i></button>
+                </a>
+            </div>
                 <div class="card-header pb-0">
                     <h6><?= $campanha->campanha_nome ?></small></h6>
                 </div>
