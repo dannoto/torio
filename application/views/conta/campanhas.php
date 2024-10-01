@@ -66,7 +66,7 @@
         <div class="col-md-6"></div>
         <div class="col-md-6 d-flex justify-content-end">
           <button type="button" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#modal_add_campanha"><i class="fa fa-plus mr-2"></i> Adicionar Campanha</button>
-          <button type="button" id="trigger_update_btn" style="display: block;" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#modal_update_campanha">Editar Campanha</button>
+          <button type="button" id="trigger_update_btn" style="display: none;" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#modal_update_campanha">Editar Campanha</button>
         </div>
       </div>
       <div class="row">
@@ -356,7 +356,7 @@
               </div>
               <div class="col-md-6">
                 <label for="">TIPO</label>
-                <select class="form-control" name="update_campanha_tipo" required id="update_campanha_tipo">
+                <select class="form-control" name="campanha_tipo" required id="update_campanha_tipo">
                   <option value="">SELECIONAR</option>
                   <option value="instagram">INSTAGRAM</option>
                   <option value="sms">SMS</option>
