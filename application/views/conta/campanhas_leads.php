@@ -106,28 +106,91 @@
                                         <?php foreach ($leads as $p) { ?>
 
                                             <?php $persona = $this->conta_model->get_persona($p->persona_id) ?>
+                                            <?php if ($campanha->campanha_tipo == "instagram") { ?>
 
-                                            <tr>
+                                                <tr>
 
-                                                <td>
-                                                    <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_nome ?>"><small class="text-uppercase"><?= substr($persona->persona_nome,0, 12)."..." ?></small></p>
-                                                </td>
-                                                <td>
-                                                    <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_username ?>"><small class="text-uppercase"><?= $persona->persona_username ?></small></p>
-                                                </td>
-                                                <td>
-                                                    <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_email ?>"><small class="text-uppercase"><?= $persona->persona_email ?></small></p>
-                                                </td>
-                                                <td>
-                                                    <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_telefone ?>"><small class="text-uppercase"><?= $persona->persona_telefone ?></small></p>
-                                                </td>
-                                                <td>
-                                                    <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_data ?>"><small class="text-uppercase"><?= $persona->persona_data ?></small></p>
-                                                </td>
-                                                <td>
-                                                    <button class="btn btn-primary"><small>ENVIAR</small></button>
-                                                </td>
-                                            </tr>
+                                                    <td>
+                                                        <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_nome ?>"><small class="text-uppercase"><?= substr($persona->persona_nome, 0, 12) . "..." ?></small></p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_username ?>"><small class="text-uppercase"><?= $persona->persona_username ?></small></p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_email ?>"><small class="text-uppercase"><?= $persona->persona_email ?></small></p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_telefone ?>"><small class="text-uppercase"><?= $persona->persona_telefone ?></small></p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_data ?>"><small class="text-uppercase"><?= $persona->persona_data ?></small></p>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-primary"><small>ENVIAR</small></button>
+                                                    </td>
+                                                </tr>
+
+                                            <?php } else if ($campanha->campanha_tipo == "sms") { ?>
+
+                                                <?php if (strlen($persona->persona_telefone) > 0) { ?>
+
+                                                    <tr>
+
+                                                        <td>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_nome ?>"><small class="text-uppercase"><?= substr($persona->persona_nome, 0, 12) . "..." ?></small></p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_username ?>"><small class="text-uppercase"><?= $persona->persona_username ?></small></p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_email ?>"><small class="text-uppercase"><?= $persona->persona_email ?></small></p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_telefone ?>"><small class="text-uppercase"><?= $persona->persona_telefone ?></small></p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_data ?>"><small class="text-uppercase"><?= $persona->persona_data ?></small></p>
+                                                        </td>
+                                                        <td>
+                                                            <button class="btn btn-primary"><small>ENVIAR</small></button>
+                                                        </td>
+                                                    </tr>
+
+                                                <?php } ?>
+
+                                            <?php } else if ($campanha->campanha_tipo == "e-mail") { ?>
+
+
+                                                <?php if (strlen($persona->persona_email) > 0) { ?>
+
+                                                    <tr>
+
+                                                        <td>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_nome ?>"><small class="text-uppercase"><?= substr($persona->persona_nome, 0, 12) . "..." ?></small></p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_username ?>"><small class="text-uppercase"><?= $persona->persona_username ?></small></p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_email ?>"><small class="text-uppercase"><?= $persona->persona_email ?></small></p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_telefone ?>"><small class="text-uppercase"><?= $persona->persona_telefone ?></small></p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_data ?>"><small class="text-uppercase"><?= $persona->persona_data ?></small></p>
+                                                        </td>
+                                                        <td>
+                                                            <button class="btn btn-primary"><small>ENVIAR</small></button>
+                                                        </td>
+                                                    </tr>
+
+                                                <?php } ?>
+
+
+                                            <?php } ?>
+
+
                                         <?php } ?>
                                     </tbody>
                                 </table>
