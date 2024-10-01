@@ -777,6 +777,15 @@ class Torio extends CI_Controller
         $persona_data['persona_data'] = date('Y-m-d H:i:s');
         $persona_data['is_deleted'] = 0;
 
+        if ($persona_data['persona_telefone'] == "None") {
+            $persona_data['persona_telefone'] == "";
+        } 
+
+
+        if ($persona_data['persona_email'] == "None") {
+            $persona_data['persona_email'] == "";
+        } 
+
 
         if ($persona_id = $this->api_model->check_persona($persona_data['persona_username'])) {
 

@@ -2154,6 +2154,8 @@ if __name__ == "__main__":
                             print("=========== GET PROFILE LIMIT REACH :"+ str(response.status_code))
                             print('False')
                             header_status =  False
+                            
+                            update_agente_ocupado(agentes_data[a_index]['id'], 1)
                             a_index = random.randint(0, len(agentes_data) - 1)
 
                             try:
@@ -2162,7 +2164,7 @@ if __name__ == "__main__":
                             except:
                                 print('nao tem driver aberto')
                             
-                            update_agente_banido(agentes_data[a_index]['id'], 0)
+                            
 
                         else:
 
@@ -2176,6 +2178,7 @@ if __name__ == "__main__":
                         # winsound.Beep(1000, 1500) 
                         print("=========== GET PROFILE EXCEPTION: ", e)
                         header_status =  False
+                        update_agente_banido(agentes_data[a_index]['id'], 0)
                         a_index = random.randint(0, len(agentes_data) - 1)
 
                         try:
@@ -2184,7 +2187,7 @@ if __name__ == "__main__":
                         except:
                             print('nao tem driver aberto')
 
-                        update_agente_banido(agentes_data[a_index]['id'], 0)
+                        
 
                
                 
