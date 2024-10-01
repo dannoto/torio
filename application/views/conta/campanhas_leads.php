@@ -85,7 +85,7 @@
 
             <div>
                 <a href="<?=base_url('conta/campanhas')?>">
-                    <button><i class="fa fa-left"></i></button>
+                    <button><i class="fa fa-arrow-left"></i></button>
                 </a>
             </div>
                 <div class="card-header pb-0">
