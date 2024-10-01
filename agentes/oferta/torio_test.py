@@ -2151,7 +2151,7 @@ if __name__ == "__main__":
                         
                         elif response.status_code == 429:
 
-                            print("=========== GET PROFILE LIMIT REACH :"+ str(response.status_code))
+                            print("=========== LIMITE ATINGIDO :"+ str(response.status_code))
                             print('False')
                             header_status =  False
                             
@@ -2168,15 +2168,24 @@ if __name__ == "__main__":
 
                         else:
 
-                            print("=========== NEW FAILED RESPONSE :"+ str(response.status_code))
-                            print('False')
+                            print("=========== 400 CONTA BANIDA :"+ str(response.status_code))
+                            header_status =  False
+                            
+                            update_agente_banido(agentes_data[a_index]['id'], 1)
+                            a_index = random.randint(0, len(agentes_data) - 1)
+
+                            try:
+                                driver.close()
+                                print('tem driver aberto')
+                            except:
+                                print('nao tem driver aberto')
 
 
                         
                     except Exception as e:
                         
                         # winsound.Beep(1000, 1500) 
-                        print("=========== GET PROFILE EXCEPTION: ", e)
+                        print("=========== CREDENCIAIS INCORRETAS: ", e)
                         header_status =  False
                         update_agente_banido(agentes_data[a_index]['id'], 0)
                         a_index = random.randint(0, len(agentes_data) - 1)

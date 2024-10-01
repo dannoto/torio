@@ -792,7 +792,9 @@ class Torio extends CI_Controller
             }
             // Verifica se o telefone inicia com 55
             elseif (substr($persona_data['persona_telefone'], 0, 2) !== '55') {
-                $persona_data['persona_telefone'] = 'invalid:[' . $persona_data['persona_telefone'] . ']';
+                // $persona_data['persona_telefone'] = 'invalid:[' . $persona_data['persona_telefone'] . ']';
+                $persona_data['persona_telefone'] = '';
+
             }
         }
         
@@ -803,7 +805,9 @@ class Torio extends CI_Controller
             }
             // Verifica se o email é válido
             elseif (!filter_var($persona_data['persona_email'], FILTER_VALIDATE_EMAIL)) {
-                $persona_data['persona_email'] = 'invalid:[' . $persona_data['persona_email'] . ']';
+                // $persona_data['persona_email'] = 'invalid:[' . $persona_data['persona_email'] . ']';
+                $persona_data['persona_email'] = '';
+
             }
         }
         
