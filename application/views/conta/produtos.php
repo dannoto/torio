@@ -129,7 +129,7 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <p class="text-sm font-weight-bold mb-0" title="<?= $p->plataforma ?>"><?= $p->plataforma ?></p>
+                                                    <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?= $p->plataforma ?>"><?= $p->plataforma ?></p>
                                                 </td>
                                                 <td>
                                                     <p class="text-sm text-uppercase font-weight-bold mb-0" ><?php if ($p->status == 1) { echo "ATIVO";} else if ($p->status == 0) { echo "INATIVO";} ?></p>
