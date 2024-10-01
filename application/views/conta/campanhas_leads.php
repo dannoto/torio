@@ -90,7 +90,6 @@
             </div>
                 <div class="card-header pb-0 mb-3">
                     <h6>#<?= $campanha->id ?> <?= $campanha->campanha_nome ?></small></h6>
-                    <small>TOTAL DE <?=count($leads)?> ENCONTRADOS</small>
                 </div>
                 <div class="col-12">
                     <div class="card mb-4">
@@ -166,7 +165,7 @@
 
                                                 <?php } ?>
 
-                                            <?php } else if ($campanha->campanha_tipo == "e-mail") { ?>
+                                            <?php } else if ($campanha->campanha_tipo == "email") { ?>
 
 
                                                 <?php if (strlen($persona->persona_email) > 0) { ?>

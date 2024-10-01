@@ -546,7 +546,7 @@ class Conta extends CI_Controller
         }
 
         echo $campanha_data->campanha_tipo;
-
+        
 
         $config['base_url'] = base_url('conta/campanhas_leads/'.$campanha_id);
         $config['total_rows'] = $this->conta_model->count_campanhas_leads($campanha_data->campanha_tag_id); // Total de registros
@@ -569,6 +569,8 @@ class Conta extends CI_Controller
 
         $page = ($this->uri->segment(4)) ? $this->uri->segment(4) : 0;
 
+
+    
         $data = array(
             'leads' => $this->conta_model->get_campanhas_leads($campanha_data->campanha_tag_id, $config['per_page'], $page),
             'pagination' => $this->pagination->create_links(),
