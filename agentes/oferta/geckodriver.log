@@ -10646,3 +10646,33 @@ JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
 JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+1727744539512	Marionette	INFO	Stopped listening on port 52773
+Dynamically enable window occlusion 1
+1727744550324	geckodriver	INFO	Listening on 127.0.0.1:53371
+1727744553414	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53372" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileha2Bz5"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727744554294	Marionette	INFO	Marionette enabled
+1727744554578	Marionette	INFO	Listening on port 53379
+WebDriver BiDi listening on ws://127.0.0.1:53372
+Read port: 53379
+1727744554805	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+1727744575751	Marionette	INFO	Stopped listening on port 53379
+Dynamically enable window occlusion 1
+1727744656779	geckodriver	INFO	Listening on 127.0.0.1:62186
+1727744659843	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62187" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofile8BxCZB"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727744660244	Marionette	INFO	Marionette enabled
+1727744660504	Marionette	INFO	Listening on port 62194
+WebDriver BiDi listening on ws://127.0.0.1:62187
+Read port: 62194
+1727744660731	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1727744664968	Marionette	INFO	Stopped listening on port 62194
+Dynamically enable window occlusion 1
