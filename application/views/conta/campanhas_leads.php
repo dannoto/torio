@@ -88,7 +88,7 @@
                     <button class="btn btn-light p-3"><i class="fa fa-arrow-left"></i></button>
                 </a>
             </div>
-                <div class="card-header pb-0">
+                <div class="card-header pb-0 mb-3">
                     <h6>#<?= $campanha->id ?> <?= $campanha->campanha_nome ?></small></h6>
                     <small>TOTAL DE <?=count($leads)?> ENCONTRADOS</small>
                 </div>
@@ -100,11 +100,11 @@
                                 <table class="table align-items-center justify-content-center mb-0">
                                     <thead>
                                         <tr>
-                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">NOME</th>
-                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">USERNAME</th>
-                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">E-MAIL</th>
-                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">TELEFONE</th>
-                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">DATA</th>
+                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder  ps-2">NOME</th>
+                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder  ps-2">USERNAME</th>
+                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder  ps-2">E-MAIL</th>
+                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder  ps-2">TELEFONE</th>
+                                            <th class="text-uppercase text-secondary text-xxs font-weight-bolder  ps-2">DATA</th>
 
                                             <th></th>
                                         </tr>
