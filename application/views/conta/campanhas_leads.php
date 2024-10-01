@@ -519,7 +519,8 @@
                     oferta_insta_id:persona_username,
                     oferta_campanha_id:campanha_id,
                     oferta_tag_id:campanha_tag_id,
-                    oferta_produto_id:campanha_produto_id
+                    oferta_produto_id:campanha_produto_id,
+                    oferta_tipo:'<?=$campanha->campanha_tipo?>'
                 },
                 success: function(response) {
 

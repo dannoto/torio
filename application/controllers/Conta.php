@@ -1209,6 +1209,8 @@ class Conta extends CI_Controller
             $data['oferta_oferta_id'] = $temaplte[0]->id;
             $data['oferta_tag_id'] = htmlspecialchars($this->input->post('oferta_tag_id'));
             $data['oferta_produto_id'] = htmlspecialchars($this->input->post('oferta_produto_id'));
+            $data['oferta_tipo'] = htmlspecialchars($this->input->post('oferta_tipo'));
+
             $data['oferta_data'] = date('Y-m-d');
     
             $data['oferta_data_creation'] = date('Y-m-d H:i:s');
