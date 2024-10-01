@@ -72,6 +72,11 @@
            
         </div>
         <div class="row p-5" style="overflow-x: hidden;">
+        <div class="mb-3">
+                    <a href="<?= base_url('conta/campanhas') ?>">
+                        <button class="btn btn-light p-3"><i class="fa fa-arrow-left"></i></button>
+                    </a>
+                </div>
             <div class="col-12" style="overflow-x: hidden;">
                 <div class="card mb-4" style="overflow-x: hidden;">
                     <div class="card-header pb-0">
