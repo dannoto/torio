@@ -777,14 +777,27 @@ class Torio extends CI_Controller
         $persona_data['persona_data'] = date('Y-m-d H:i:s');
         $persona_data['is_deleted'] = 0;
 
-        if (!$persona_data['persona_telefone']) {
-            $persona_data['persona_telefone'] == "";
-        } 
+        // if ($persona_data['persona_telefone']) {
+        //     $persona_data['persona_telefone'] == "";
+        // } 
 
-        if (!$persona_data['persona_email']) {
-            $persona_data['persona_email'] == "";
-        } 
+        // if ($persona_data['persona_email']) {
+        //     $persona_data['persona_email'] == "";
+        // } 
 
+        if (isset($persona_data['persona_telefone'])) {
+            // Verifica se o telefone inicia com 55
+            if (substr($persona_data['persona_telefone'], 0, 2) !== '55') {
+                $persona_data['persona_telefone'] = 'invalid:[' . $persona_data['persona_telefone'] . ']';
+            }
+        }
+        
+        if (isset($persona_data['persona_email'])) {
+            // Verifica se o email é válido
+            if (!filter_var($persona_data['persona_email'], FILTER_VALIDATE_EMAIL)) {
+                $persona_data['persona_email'] = 'invalid:[' . $persona_data['persona_email'] . ']';
+            }
+        }
 
         if ($persona_id = $this->api_model->check_persona($persona_data['persona_username'])) {
 
