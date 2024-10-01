@@ -83,13 +83,13 @@
             </div>
             <div class="row">
 
-            <div>
+            <div class="mb-3">
                 <a href="<?=base_url('conta/campanhas')?>">
-                    <button><i class="fa fa-arrow-left"></i></button>
+                    <button class="btn btn-light p-3"><i class="fa fa-arrow-left"></i></button>
                 </a>
             </div>
                 <div class="card-header pb-0">
-                    <h6><?= $campanha->campanha_nome ?></small></h6>
+                    <h6>#<?= $campanha->id ?> <?= $campanha->campanha_nome ?></small></h6>
                 </div>
                 <div class="col-12">
                     <div class="card mb-4">
