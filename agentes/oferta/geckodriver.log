@@ -12650,3 +12650,5 @@ WebDriver BiDi listening on ws://127.0.0.1:55820
 Read port: 55827
 1727753189326	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727753501550	Marionette	INFO	Stopped listening on port 55827
+Dynamically enable window occlusion 1

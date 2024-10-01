@@ -263,316 +263,346 @@
 
             </div>
             <br>
-            <label for="">STATUS</label>
-            <select class="form-control" name="campanha_status" required id="campanha_status">
-              <option value="">SELECIONAR</option>
-              <option value="1">ATIVA</option>
-              <option value="0">INATIVA</option>
-            </select>
 
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">FECHAR</button>
-          <button type="submit" class="btn bg-gradient-primary">ADICIONAR</button>
-
-        </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- Modal Adicionar Tag -->
-
-
-  <!-- Modal UPDATE Tag -->
-  <div class="modal fade" id="modal_update_campanha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">ATUALIZAR CAMPANHA</h5>
-          <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form id="form_update_campanha">
-
-            <input type="hidden" class="form-control" name="campanha_id" id="update_campanha_id" required>
-
-            <label for="">NOME</label>
-            <input type="text" class="form-control" name="campanha_nome" id="update_campanha_nome" required>
-            <br>
-            <label for="">DESCRIÇÃO</label>
-            <textarea maxlength="200" name="campanha_descricao" required class="form-control" id="update_campanha_descricao"></textarea>
-            <br>
             <div class="row">
               <div class="col-md-6">
-                <label for="">PRODUTO</label>
-                <select class="form-control" name="campanha_produto_id" required id="update_campanha_produto_id">
+                <label for="">STATUS</label>
+                <select class="form-control" name="campanha_status" required id="campanha_status">
                   <option value="">SELECIONAR</option>
-
-                  <?php foreach ($this->conta_model->get_produtos() as $p) { ?>
-                    <option value="<?= $p->id ?>"><?= $p->nome ?></option>
-                  <?php } ?>
+                  <option value="1">ATIVA</option>
+                  <option value="0">INATIVA</option>
                 </select>
-
               </div>
               <div class="col-md-6">
-                <label for="">TAG</label>
-                <select class="form-control" name="campanha_tag_id" required id="update_campanha_tag_id">
+                <label for="">TIPO</label>
+                <select class="form-control" name="campanha_tipo" required id="campanha_tipo">
                   <option value="">SELECIONAR</option>
-
-                  <?php foreach ($this->conta_model->get_tags() as $p) { ?>
-                    <option value="<?= $p->id ?>"><?= $p->tag_name ?></option>
-                  <?php } ?>
+                  <option value="instagram">INSTAGRAM</option>
+                  <option value="sms">SMS</option>
+                  <option value="email">EMAIL</option>
                 </select>
               </div>
 
             </div>
-            <br>
-            <label for="">STATUS</label>
-            <select class="form-control" name="campanha_status" required id="update_campanha_status">
-              <option value="">SELECIONAR</option>
-              <option value="1">ATIVA</option>
-              <option value="0">INATIVA</option>
-            </select>
+            <div class="modal-footer">
+              <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">FECHAR</button>
+              <button type="submit" class="btn bg-gradient-primary">ADICIONAR</button>
 
+            </div>
+          </form>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">FECHAR</button>
-          <button type="submit" class="btn bg-gradient-primary">ATUALIZAR</button>
-
-        </div>
-        </form>
       </div>
     </div>
-  </div>
-  <!-- Modal UPDATE Tag -->
+    <!-- Modal Adicionar Tag -->
 
 
-  <!--   Core JS Files   -->
-  <?php $this->load->view('comp/js'); ?>
+    <!-- Modal UPDATE Tag -->
+    <div class="modal fade" id="modal_update_campanha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">ATUALIZAR CAMPANHA</h5>
+            <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="form_update_campanha">
 
-  <script>
-    $('#form_add_campanha').on('submit', function(e) {
+              <input type="hidden" class="form-control" name="campanha_id" id="update_campanha_id" required>
 
+              <label for="">NOME</label>
+              <input type="text" class="form-control" name="campanha_nome" id="update_campanha_nome" required>
+              <br>
+              <label for="">DESCRIÇÃO</label>
+              <textarea maxlength="200" name="campanha_descricao" required class="form-control" id="update_campanha_descricao"></textarea>
+              <br>
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="">PRODUTO</label>
+                  <select class="form-control" name="campanha_produto_id" required id="update_campanha_produto_id">
+                    <option value="">SELECIONAR</option>
 
-      e.preventDefault()
+                    <?php foreach ($this->conta_model->get_produtos() as $p) { ?>
+                      <option value="<?= $p->id ?>"><?= $p->nome ?></option>
+                    <?php } ?>
+                  </select>
 
-      var FormData = $(this).serialize()
+                </div>
+                <div class="col-md-6">
+                  <label for="">TAG</label>
+                  <select class="form-control" name="campanha_tag_id" required id="update_campanha_tag_id">
+                    <option value="">SELECIONAR</option>
 
-      $.ajax({
-        url: '<?= base_url() ?>conta/act_add_campanha',
-        type: 'POST',
-        data: FormData,
-        success: function(response) {
+                    <?php foreach ($this->conta_model->get_tags() as $p) { ?>
+                      <option value="<?= $p->id ?>"><?= $p->tag_name ?></option>
+                    <?php } ?>
+                  </select>
+                </div>
 
-          var resp = JSON.parse(response)
-
-          if (resp.status) {
-
-            swal({
-                title: 'Uhuu!',
-                text: resp.message,
-                icon: 'success',
-                confirmButtonText: 'OK'
-              })
-              .then((e) => {
-
-                location.reload()
-
-                // window.location.href = "<?= base_url() ?>conta/taf"
-              })
-
-
-          } else {
-
-
-            swal({
-              title: 'Ops!',
-              text: resp.message,
-              icon: 'warning',
-              confirmButtonText: 'OK'
-            });
-
-          }
-
-        },
-        error: function(xhr, status, error) {
-          swal({
-            title: 'Ops!',
-            text: "Houve um erro inesperado. Tente novamente",
-            icon: 'warning',
-            confirmButtonText: 'OK'
-          });
-        }
-      });
-
-    })
-
-    $('#form_update_campanha').on('submit', function(e) {
+              </div>
+              <br>
 
 
-      e.preventDefault()
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="">STATUS</label>
+                  <select class="form-control" name="campanha_status" required id="update_campanha_status">
+                    <option value="">SELECIONAR</option>
+                    <option value="1">ATIVA</option>
+                    <option value="0">INATIVA</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="">TIPO</label>
+                  <select class="form-control" name="update_campanha_tipo" required id="update_campanha_tipo">
+                    <option value="">SELECIONAR</option>
+                    <option value="instagram">INSTAGRAM</option>
+                    <option value="sms">SMS</option>
+                    <option value="email">EMAIL</option>
+                  </select>
+                </div>
 
-      var FormData = $(this).serialize()
+              </div>
 
-      $.ajax({
-        url: '<?= base_url() ?>conta/act_update_campanha',
-        type: 'POST',
-        data: FormData,
-        success: function(response) {
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">FECHAR</button>
+            <button type="submit" class="btn bg-gradient-primary">ATUALIZAR</button>
 
-          var resp = JSON.parse(response)
-
-          if (resp.status) {
-
-            swal({
-                title: 'Uhuu!',
-                text: resp.message,
-                icon: 'success',
-                confirmButtonText: 'OK'
-              })
-              .then((e) => {
-
-                location.reload()
-
-                // window.location.href = "<?= base_url() ?>conta/taf"
-              })
-
-
-          } else {
-
-
-            swal({
-              title: 'Ops!',
-              text: resp.message,
-              icon: 'warning',
-              confirmButtonText: 'OK'
-            });
-
-          }
-
-        },
-        error: function(xhr, status, error) {
-          swal({
-            title: 'Ops!',
-            text: "Houve um erro inesperado. Tente novamente",
-            icon: 'warning',
-            confirmButtonText: 'OK'
-          });
-        }
-      });
-
-    })
-
-    function open_modal_update_campanha(campanha_id) {
-
-      $.ajax({
-        url: '<?= base_url() ?>conta/act_get_campanha',
-        type: 'POST',
-        data: {
-          campanha_id: campanha_id
-        },
-        success: function(response) {
-
-          var resp = JSON.parse(response)
-
-          if (resp.status) {
-
-            $('#update_campanha_id').val(resp.response.id)
-            $('#update_campanha_descricao').val(resp.response.campanha_descricao)
-            $('#update_campanha_nome').val(resp.response.campanha_nome)
-            $('#update_campanha_tag_id').val(resp.response.campanha_tag_id)
-            $('#update_campanha_produto_id').val(resp.response.campanha_produto_id)
-            $('#update_campanha_status').val(resp.response.campanha_status)
-
-            $('#trigger_update_btn').click()
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal UPDATE Tag -->
 
 
-          } else {
+    <!--   Core JS Files   -->
+    <?php $this->load->view('comp/js'); ?>
+
+    <script>
+      $('#form_add_campanha').on('submit', function(e) {
 
 
-            swal({
-              title: 'Ops!',
-              text: resp.message,
-              icon: 'warning',
-              confirmButtonText: 'OK'
-            });
+        e.preventDefault()
 
-          }
+        var FormData = $(this).serialize()
 
-        },
-        error: function(xhr, status, error) {
-          swal({
-            title: 'Ops!',
-            text: "Houve um erro inesperado. Tente novamente",
-            icon: 'warning',
-            confirmButtonText: 'OK'
-          });
-        }
-      });
+        $.ajax({
+          url: '<?= base_url() ?>conta/act_add_campanha',
+          type: 'POST',
+          data: FormData,
+          success: function(response) {
 
+            var resp = JSON.parse(response)
 
-    }
+            if (resp.status) {
 
-    function delete_campanha(campanha_id) {
-      swal({
-          title: "Tem certeza?",
-          text: "Deseja excluir esta CAMPANHA?",
-          icon: "warning",
-          buttons: true,
-          dangerMode: true,
-        })
-        .then((willDelete) => {
-
-          if (willDelete) {
-
-            $.ajax({
-              url: '<?= base_url() ?>conta/act_delete_campanha',
-              type: 'POST',
-              data: {
-                campanha_id: campanha_id
-              },
-              success: function(response) {
-
-                var resp = JSON.parse(response)
-
-                if (resp.status) {
+              swal({
+                  title: 'Uhuu!',
+                  text: resp.message,
+                  icon: 'success',
+                  confirmButtonText: 'OK'
+                })
+                .then((e) => {
 
                   location.reload()
 
+                  // window.location.href = "<?= base_url() ?>conta/taf"
+                })
 
-                } else {
+
+            } else {
 
 
-                  swal({
-                    title: 'Ops!',
-                    text: resp.message,
-                    icon: 'warning',
-                    confirmButtonText: 'OK'
-                  });
+              swal({
+                title: 'Ops!',
+                text: resp.message,
+                icon: 'warning',
+                confirmButtonText: 'OK'
+              });
 
-                }
+            }
 
-              },
-              error: function(xhr, status, error) {
-                swal({
-                  title: 'Ops!',
-                  text: "Houve um erro inesperado. Tente novamente",
-                  icon: 'warning',
-                  confirmButtonText: 'OK'
-                });
-              }
+          },
+          error: function(xhr, status, error) {
+            swal({
+              title: 'Ops!',
+              text: "Houve um erro inesperado. Tente novamente",
+              icon: 'warning',
+              confirmButtonText: 'OK'
             });
+          }
+        });
 
+      })
+
+      $('#form_update_campanha').on('submit', function(e) {
+
+
+        e.preventDefault()
+
+        var FormData = $(this).serialize()
+
+        $.ajax({
+          url: '<?= base_url() ?>conta/act_update_campanha',
+          type: 'POST',
+          data: FormData,
+          success: function(response) {
+
+            var resp = JSON.parse(response)
+
+            if (resp.status) {
+
+              swal({
+                  title: 'Uhuu!',
+                  text: resp.message,
+                  icon: 'success',
+                  confirmButtonText: 'OK'
+                })
+                .then((e) => {
+
+                  location.reload()
+
+                  // window.location.href = "<?= base_url() ?>conta/taf"
+                })
+
+
+            } else {
+
+
+              swal({
+                title: 'Ops!',
+                text: resp.message,
+                icon: 'warning',
+                confirmButtonText: 'OK'
+              });
+
+            }
+
+          },
+          error: function(xhr, status, error) {
+            swal({
+              title: 'Ops!',
+              text: "Houve um erro inesperado. Tente novamente",
+              icon: 'warning',
+              confirmButtonText: 'OK'
+            });
+          }
+        });
+
+      })
+
+      function open_modal_update_campanha(campanha_id) {
+
+        $.ajax({
+          url: '<?= base_url() ?>conta/act_get_campanha',
+          type: 'POST',
+          data: {
+            campanha_id: campanha_id
+          },
+          success: function(response) {
+
+            var resp = JSON.parse(response)
+
+            if (resp.status) {
+
+              $('#update_campanha_id').val(resp.response.id)
+              $('#update_campanha_descricao').val(resp.response.campanha_descricao)
+              $('#update_campanha_nome').val(resp.response.campanha_nome)
+              $('#update_campanha_tag_id').val(resp.response.campanha_tag_id)
+              $('#update_campanha_produto_id').val(resp.response.campanha_produto_id)
+              $('#update_campanha_status').val(resp.response.campanha_status)
+              $('#update_campanha_tipo').val(resp.response.campanha_tipo)
+
+              $('#trigger_update_btn').click()
+
+
+            } else {
+
+
+              swal({
+                title: 'Ops!',
+                text: resp.message,
+                icon: 'warning',
+                confirmButtonText: 'OK'
+              });
+
+            }
+
+          },
+          error: function(xhr, status, error) {
+            swal({
+              title: 'Ops!',
+              text: "Houve um erro inesperado. Tente novamente",
+              icon: 'warning',
+              confirmButtonText: 'OK'
+            });
           }
         });
 
 
+      }
+
+      function delete_campanha(campanha_id) {
+        swal({
+            title: "Tem certeza?",
+            text: "Deseja excluir esta CAMPANHA?",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+          })
+          .then((willDelete) => {
+
+            if (willDelete) {
+
+              $.ajax({
+                url: '<?= base_url() ?>conta/act_delete_campanha',
+                type: 'POST',
+                data: {
+                  campanha_id: campanha_id
+                },
+                success: function(response) {
+
+                  var resp = JSON.parse(response)
+
+                  if (resp.status) {
+
+                    location.reload()
 
 
-    }
-  </script>
+                  } else {
+
+
+                    swal({
+                      title: 'Ops!',
+                      text: resp.message,
+                      icon: 'warning',
+                      confirmButtonText: 'OK'
+                    });
+
+                  }
+
+                },
+                error: function(xhr, status, error) {
+                  swal({
+                    title: 'Ops!',
+                    text: "Houve um erro inesperado. Tente novamente",
+                    icon: 'warning',
+                    confirmButtonText: 'OK'
+                  });
+                }
+              });
+
+            }
+          });
+
+
+
+
+      }
+    </script>
 
 
 </body>

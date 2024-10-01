@@ -973,6 +973,8 @@ class Conta extends CI_Controller
         $data['campanha_produto_id'] = htmlspecialchars($this->input->post('campanha_produto_id'));
         $data['campanha_data'] = date('Y-m-d H:i:s');
         $data['campanha_status'] = htmlspecialchars($this->input->post('campanha_status'));
+        $data['campanha_tipo'] = htmlspecialchars($this->input->post('campanha_tipo'));
+
         $data['is_deleted'] = 0;
 
         $response = array();
@@ -996,6 +998,8 @@ class Conta extends CI_Controller
         $data['campanha_produto_id'] = htmlspecialchars($this->input->post('campanha_produto_id'));
         $data['campanha_data'] = date('Y-m-d H:i:s');
         $data['campanha_status'] = htmlspecialchars($this->input->post('campanha_status'));
+        $data['campanha_tipo'] = htmlspecialchars($this->input->post('campanha_tipo'));
+
         $data['is_deleted'] = 0;
 
         $response = array();
