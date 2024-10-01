@@ -551,7 +551,7 @@ class Conta extends CI_Controller
         $config['base_url'] = base_url('conta/campanhas_leads/'.$campanha_id);
         $config['total_rows'] = $this->conta_model->count_campanhas_leads($campanha_data->campanha_tag_id); // Total de registros
         $config['per_page'] = 20; // Quantidade de imóveis por página
-        $config['uri_segment'] = 3; // Segmento da URL onde a página está indicada
+        $config['uri_segment'] = 4; // Segmento da URL onde a página está indicada
 
         $config['full_tag_open'] = '<ul class="pagination">';
         $config['full_tag_close'] = '</ul>';
