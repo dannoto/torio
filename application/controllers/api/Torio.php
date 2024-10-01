@@ -777,12 +777,11 @@ class Torio extends CI_Controller
         $persona_data['persona_data'] = date('Y-m-d H:i:s');
         $persona_data['is_deleted'] = 0;
 
-        if ($persona_data['persona_telefone'] == "None") {
+        if (!$persona_data['persona_telefone']) {
             $persona_data['persona_telefone'] == "";
         } 
 
-
-        if ($persona_data['persona_email'] == "None") {
+        if (!$persona_data['persona_email']) {
             $persona_data['persona_email'] == "";
         } 
 
