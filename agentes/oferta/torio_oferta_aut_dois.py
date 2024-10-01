@@ -1248,7 +1248,6 @@ def temp_add_agente(base_url, email, email_md5, nome):
 
         return False 
 
-
 # temp_register_agente(driver, email, nome, 'Torio142536*', email_md5)
 def temp_register_agente(driver, email, nome, senha, email_md5):
 

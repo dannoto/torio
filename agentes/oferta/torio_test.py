@@ -27,6 +27,498 @@ from bs4 import BeautifulSoup
 
 # def initiaLsetup_bio():
 
+def temp_get_instagram_code(md5):
+
+    conn = http.client.HTTPSConnection("privatix-temp-mail-v1.p.rapidapi.com")
+
+    headers = {
+        'x-rapidapi-key': "59676de38dmshc3ef26892aa3735p15c5e7jsn87eb55dc67d4",
+        'x-rapidapi-host': "privatix-temp-mail-v1.p.rapidapi.com"
+    }
+
+    conn.request("GET", "/request/mail/id/"+str(md5)+"/", headers=headers)
+
+    res = conn.getresponse()
+    status = res.status
+    data = res.read()
+
+    # Verificar se o status é 200 (sucesso)
+    if status == 200:
+        # Tentar carregar os dados como JSON
+        try:
+
+            json_data = json.loads(data.decode("utf-8"))
+
+            print('EMAIL ENCONTRADOS: ', len(json_data))
+
+
+            if len(json_data) > 0:
+                
+                # print(json_data)
+
+                string = json_data[0]['mail_subject']
+                print(string)
+                code = re.findall(r'\d+', string)
+                code = ''.join(code)
+
+                print(code)
+
+                return code
+
+            
+            else:
+                print('NENHUM E-MAIL CHEGOU')
+                return False
+
+
+            
+        
+        except json.JSONDecodeError:
+
+            print("Erro ao decodificar a resposta em JSON.")
+            
+            return False
+    else:
+
+        print(f"Erro na requisição. Status: {status}")
+        return False
+
+def temp_get_domains():
+
+    conn = http.client.HTTPSConnection("privatix-temp-mail-v1.p.rapidapi.com")
+
+    headers = {
+        'x-rapidapi-key': "59676de38dmshc3ef26892aa3735p15c5e7jsn87eb55dc67d4",
+        'x-rapidapi-host': "privatix-temp-mail-v1.p.rapidapi.com"
+    }
+
+    conn.request("GET", "/request/domains/", headers=headers)
+
+    res = conn.getresponse()
+    status = res.status
+    data = res.read()
+
+    # Verificar se o status é 200 (sucesso)
+    if status == 200:
+        # Tentar carregar os dados como JSON
+        try:
+            json_data = json.loads(data.decode("utf-8"))
+            # Verifica se há pelo menos 2 domínios na resposta
+            if len(json_data) > 1:
+                # Selecionar um índice aleatório entre 1 e o número de domínios
+                random_index = random.randint(1, len(json_data) - 1)
+                return json_data[random_index]
+            else:
+                print("Nenhum domínio disponível.")
+                return False
+
+        except json.JSONDecodeError:
+            print("Erro ao decodificar a resposta em JSON.")
+            return False
+    else:
+        print(f"Erro na requisição. Status: {status}")
+        return False
+
+def temp_create_nome():
+
+    # Criar uma instância do Faker para o Brasil
+    fake = Faker('pt_BR')
+
+    # Gerar nome e sobrenome aleatórios
+    def gerar_nome_brasileiro():
+        nome = fake.first_name()  # Nome aleatório
+        sobrenome = fake.last_name()  # Sobrenome aleatório
+        nome_completo = f"{nome} {sobrenome}"
+        return nome_completo
+
+    # Exemplo de uso
+    nome_aleatorio = gerar_nome_brasileiro()
+
+    print(f"Nome gerado: {nome_aleatorio}")
+    return nome_aleatorio
+
+def get_agente_by_email(base_url, agente_email):
+
+    print('get_agente_by_email', agente_email)
+
+    url = base_url+"get_agente?agente_email="+str(agente_email)+""
+    
+ 
+    response = requests.get(url)
+
+    if response.status_code == 200:
+
+        data = json.loads(response.content)
+        return data
+        
+    else:
+
+        return False 
+    
+def temp_add_agente(base_url, email, email_md5, nome):
+
+    url = base_url+"add_agente?agente_email="+str(email)+"&agente_senha="+str(email_md5)+"&agente_nome="+nome
+    
+ 
+    response = requests.get(url)
+
+    if response.status_code == 200:
+
+        data = json.loads(response.content)
+        return True
+        
+    else:
+
+        return False 
+
+# temp_register_agente(driver, email, nome, 'Torio142536*', email_md5)
+def temp_register_agente(driver, email, nome, senha, email_md5):
+
+    print('\n == REGISTRANDO AGENTE == \n')
+
+    print('email: ', email)
+    print('nome: ', nome)
+    print('senha: ', senha)
+    print('email_md5: ', email_md5)
+
+
+    driver.get('https://www.instagram.com/accounts/emailsignup/')
+
+    time.sleep(10)
+
+    try:
+
+        try:
+            input_email = driver.find_element(By.CSS_SELECTOR, "div._aahy:nth-child(4) > div:nth-child(1) > label:nth-child(1) > input:nth-child(2)")
+            input_email.clear()
+            input_email.send_keys(email)
+        except:
+            print("\n  [*] Falha input_email ")
+            return False
+        
+        time.sleep(3)
+        
+        try:
+            input_nome = driver.find_element(By.CSS_SELECTOR, "div._aahy:nth-child(6) > div:nth-child(1) > label:nth-child(1) > input:nth-child(2)")
+            input_nome.clear()
+            input_nome.send_keys(nome)
+        except:
+            print("\n  [*] Falha input_nome ")
+            return False
+        
+        time.sleep(3)
+
+        try:
+            input_username_sugestao = driver.find_element(By.CSS_SELECTOR, "div.x1i10hfl")
+            input_username_sugestao.click()
+
+        except:
+
+            print("\n  [*] Falha input_username_sugestao ")
+
+            try:
+
+                random_name = ''.join(random.choices('0ABCDEFGHIJKLMNOPQRSTUVWXYZ543216789', k=7))
+
+                input_username = driver.find_element(By.CSS_SELECTOR, "div._aahy:nth-child(6) > div:nth-child(1) > label:nth-child(1) > input:nth-child(2)")
+                input_username.clear()
+                input_username.send_keys(random_name)
+
+            except:
+
+                print("\n  [*] Falha input_username ")
+                return False
+            
+        time.sleep(3)
+
+        try:
+
+            input_senha = driver.find_element(By.CSS_SELECTOR, "div._aahy:nth-child(5) > div:nth-child(1) > label:nth-child(1) > input:nth-child(2)")
+            input_senha.clear()
+            input_senha.send_keys(senha)
+
+        except:
+
+            print("\n  [*] Falha input_senha ")
+
+            try:
+                input_senhax = driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div/section/main/div/div/div[1]/div[2]/div/form/div[8]/div/label/input")
+                input_senhax.clear()
+                input_senhax.send_keys(senha)
+
+            except:
+
+                print("\n  [*] Falha input_senha 2 ")
+                return False
+                    
+        time.sleep(3)
+        
+        try:
+            btn_cadastro = driver.find_element(By.CSS_SELECTOR, "div.x1xmf6yo:nth-child(1) > button:nth-child(1)")
+            btn_cadastro.click()
+        except:
+
+            print("\n  [*] Falha btn_cadastro")
+            return False
+        
+        time.sleep(10)
+        
+        print('\n == DEFININDO DATA  == \n')
+
+        try:
+
+            select_mes = driver.find_element(By.CSS_SELECTOR, "span._aav3:nth-child(1) > select:nth-child(2)")
+            select_mesx = Select(select_mes)
+            select_mesx.select_by_index(3) 
+
+        except:
+    
+            print("\n  [*] Falha select_mes")
+            return False
+        
+        time.sleep(3)
+        
+        try:
+
+            selectdia = driver.find_element(By.CSS_SELECTOR, "span._aav3:nth-child(2) > select:nth-child(2)")
+            selectdiax = Select(selectdia)
+            selectdiax.select_by_index(23) 
+
+        except:
+
+            print("\n  [*] Falha selectdia")
+            return False
+        
+        time.sleep(3)
+        
+        
+        try:
+
+            select_ano = driver.find_element(By.CSS_SELECTOR, "span._aav3:nth-child(3) > select:nth-child(2)")
+            select_anox = Select(select_ano)
+            select_anox.select_by_index(26) 
+
+        except:
+            print("\n  [*] Falha select_ano")
+            return False
+        
+        time.sleep(3)        
+        
+        try:
+
+            btn_next = driver.find_element(By.CSS_SELECTOR, "._acap")
+            btn_next.click()
+
+        except:
+          
+            print("\n  [*] Falha btn_next")
+            return False
+        
+        time.sleep(3)
+        
+        
+        print('\n == RECEBENDO CÓDIGO  == \n')
+
+        insta_code = ""
+
+        count_abcx = 0
+
+        try:
+            while True:
+
+                try:
+
+                    code = temp_get_instagram_code(email_md5)  # Chama a função
+
+                    if code:  # Se não for False, encerra o loop
+
+                        insta_code = code
+
+                        break
+
+                    
+                    count_abcx += 1
+
+                    print('  [!] Tentativa: ', count_abcx)
+
+                    if int(count_abcx) == 10:
+
+                        print('Já tentou '+str(count_abcx)+' vezes. ')
+                        return False
+
+
+                    print('Aguardando  10 segundos.')
+
+                    time.sleep(10)  # Espera 10 segundos antes de tentar novamente
+                    
+                except Exception as e:
+
+                    print(f'ERRO while: {str(e)}')
+
+                    print('Aguardando  10 segundos.')
+
+                    print('  [!] Tentativa: ', count_abcx)
+
+                    count_abcx += 1
+
+                    print('  [!] Tentativa: ', count_abcx)
+
+                    if int(count_abcx) == 10:
+
+                        print('Já tentou '+str(count_abcx)+' vezes. ')
+                        return False
+                    
+                    time.sleep(10)  # Espera 10 segundos antes de tentar novamente
+                    # return False
+
+        except Exception as e:
+            print(f'ERRO while: {str(e)}')
+            return False
+        
+        time.sleep(3)
+        
+        try:
+
+            input_code = driver.find_element(By.CSS_SELECTOR, "._aaie")
+            input_code.clear()
+            input_code.send_keys(insta_code)
+
+        except:
+
+            print("\n  [*] Falha inpu_code")
+
+            try:
+
+                input_code = driver.find_element(By.CSS_SELECTOR, "/html/body/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div/section/main/div/div/div[1]/div/div[2]/form/div/div[1]/input")
+                input_code.clear()
+                input_code.send_keys(insta_code)
+
+            except:
+
+                print("\n  [*] Falha inpu_code 2")
+                
+                return False
+
+        time.sleep(3)
+        
+        try:
+
+            btn_cadastro_code = driver.find_element(By.CSS_SELECTOR, ".x1lq5wgf")
+            btn_cadastro_code.click()
+
+        except:
+
+            print("\n  [*] Falha btn_cadastro_code")
+
+            return False
+        
+        # sndanien@cpav3.com
+        time.sleep(30)
+
+
+        # try:
+
+        #     check_erro_cadastro = driver.find_element(By.CSS_SELECTOR, ".x1lq5wgf")
+
+        # except:
+
+        #     print("\n  [*] Falha erro adicionar codigo e criar conta")
+
+        #     return False
+
+
+        # possivel poupup
+        try:
+            poupup = driver.find_element(By.CSS_SELECTOR, "button._a9--:nth-child(2)")
+            poupup.click()
+        except:
+            print("\n  [*] Falha POUPUP")
+
+        # possivel poupup
+
+        try:
+
+            btn_suggest = driver.find_element(By.CSS_SELECTOR, "div.x1i10hfl")
+            btn_suggest.click()
+
+        except:
+
+            print("\n  [*] Falha btn_suggest")
+            # return False
+
+
+        try:
+            possivel_out = driver.find_element(By.CSS_SELECTOR, ".x1dr59a3 > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div:nth-child(2) > a:nth-child(1)")
+            possivel_out.click()
+
+            winsound.Beep(1000, 500) 
+            winsound.Beep(1000, 500) 
+            
+            print(" =========== POSSIVELMENTE ERRO NO CADASTRO  =========== POSSIVELMENTE ERRO NO CADASTRO =========== POSSIVELMENTE ERRO NO CADASTRO =========== POSSIVELMENTE ERRO NO CADASTRO =========== POSSIVELMENTE ERRO NO CADASTRO")
+            
+            return False
+
+        except:
+
+            print('\n  [!] Aparentemente tudo certo. \n')
+            
+
+        return True
+
+    except:
+
+        return False
+
+def temp_create_agente(driver):
+
+    demain = temp_get_domains()
+
+    if demain:
+
+        nome = temp_create_nome()
+
+        nome_split = nome.split(' ')
+        nome_split = re.sub(r'[^a-zA-Z0-9_]', '', nome_split[0])
+
+
+        # Gerar nome aleatório de 7 dígitos
+        random_name = ''.join(random.choices('0123456789', k=5))
+        raw_name = nome_split + random_name
+        clean_name = re.sub(r'[^a-zA-Z0-9_]', '', raw_name)
+
+        clean_name = clean_name.lower()
+        
+        email = f"{clean_name}{demain}"
+
+        print(f"\n  [!] Email gerado: {email}")
+
+        # Converter o email para MD5
+        email_md5 = hashlib.md5(email.encode()).hexdigest()
+        print(f"\n  [!] MD5 Hash: {email_md5}")
+
+        if temp_add_agente(base_url, email, email_md5, nome):
+
+            register = temp_register_agente(driver, email, nome, 'Torio142536@', email_md5)
+
+            if register:
+
+                return email
+            
+            else :
+
+                print("\n  [*] Falha temp_register_agente ")
+                return False
+        else:
+
+            print("\n  [*] Falha temp_add_agente ")
+            return False
+
+    else:
+     
+        print("\n  [*] Falha temp_get_domains ")
+        return False
+
+
 # def initiaLsetup_perfil():
 
 # def initiaLsetup_feed():
