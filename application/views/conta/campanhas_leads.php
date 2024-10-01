@@ -201,9 +201,9 @@
                                         <?php } ?>
                                     </tbody>
                                 </table>
-                                <div class="pt-5">
-                                    <?php print_r($pagination); ?>
-                                </div>
+                                <!-- <div class="pt-5">
+                                    <?php// print_r($pagination); ?>
+                                </div> -->
                             </div>
                         </div>
                     </div>
