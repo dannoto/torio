@@ -795,6 +795,10 @@ class Torio extends CI_Controller
                 // $persona_data['persona_telefone'] = 'invalid:[' . $persona_data['persona_telefone'] . ']';
                 $persona_data['persona_telefone'] = '';
 
+            } else if (strlen($persona_data['persona_telefone']) != 13) {
+                
+                $persona_data['persona_telefone'] = '';
+
             }
         }
         
