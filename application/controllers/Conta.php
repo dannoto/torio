@@ -548,7 +548,7 @@ class Conta extends CI_Controller
         echo $campanha_data->campanha_tipo;
 
 
-        $config['base_url'] = base_url('conta/campanhas_leads');
+        $config['base_url'] = base_url('conta/campanhas_leads/'.$campanha_id);
         $config['total_rows'] = $this->conta_model->count_campanhas_leads($campanha_data->campanha_tag_id); // Total de registros
         $config['per_page'] = 100; // Quantidade de imóveis por página
         $config['uri_segment'] = 3; // Segmento da URL onde a página está indicada
@@ -567,7 +567,7 @@ class Conta extends CI_Controller
 
         $this->pagination->initialize($config);
 
-        $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+        $page = ($this->uri->segment(4)) ? $this->uri->segment(4) : 0;
 
         $data = array(
             'leads' => $this->conta_model->get_campanhas_leads($campanha_data->campanha_tag_id, $config['per_page'], $page),
@@ -575,7 +575,7 @@ class Conta extends CI_Controller
             'campanha' => $campanha_data
         );
 
-        $this->load->view('conta/campanhas_leads',  $data);
+        $this->load->view('conta/campanhas_leads/'.$campanha_id,  $data);
     }
 
     public function tags()
