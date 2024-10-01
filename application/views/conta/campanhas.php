@@ -123,6 +123,7 @@
                 <thead>
                   <tr>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">NOME</th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">TIPO</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">OFERTAS</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">TAG</th>
                     <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">PRODUTO</th>
@@ -154,28 +155,24 @@
                         </div>
                       </td>
                       <td>
-                                                                                                      <small><a href="<?=base_url()?>conta/campanhas_ofertas/<?=$t->id?>">
-                                                                                                        VER OFERTAS
-                                                                                                      </a></small>
+                        <small class="text-uppercase"><?= $t->campanha_tipo ?></small>
+                      </td>
+                      <td>
+                        <small><a href="<?= base_url() ?>conta/campanhas_ofertas/<?= $t->id ?>">
+                            VER OFERTAS
+                          </a></small>
                       </td>
                       <td>
 
+                        <p title="<?= $this->conta_model->get_tag($t->campanha_tag_id)->tag_name ?>"> <small>
+                            <?php if (strlen($this->conta_model->get_tag($t->campanha_tag_id)->tag_name) > 14) {
+                              echo substr($this->conta_model->get_tag($t->campanha_tag_id)->tag_name, 0, 14) . "...";
+                            } else {
+                              echo $this->conta_model->get_tag($t->campanha_tag_id)->tag_name;
+                            } ?>
+                          </small>
+                        </p>
 
-                        <div class="d-flex align-items-center justify-content-center">
-                            <span class="me-2 text-xs font-weight-bold" title="<?= count($this->api_model->dash_get_oferta_concluidas_by_campanha($t->id)) ?> / <?=count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id)); ?>"><?php 
-                            echo 
-                            round((
-                              count($this->api_model->dash_get_oferta_concluidas_by_campanha($t->id)) / count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id))
-                              
-                            ) * 100, 1) ; ?>%</span>
-                            <div>
-                              <div class="progress">
-                                <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="<?php echo round(( count($this->api_model->dash_get_oferta_concluidas_by_campanha($t->id)) / count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id)) ) * 100, 1);?>" aria-valuemin="0" aria-valuemax="<?php echo round(( count($this->api_model->dash_get_oferta_concluidas_by_campanha($t->id)) / count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id)) ) * 100, 1);?>" style="width: <?php echo round(( count($this->api_model->dash_get_oferta_concluidas_by_campanha($t->id)) / count($this->api_model->dash_get_demandas_abertas($t->campanha_tag_id)) ) * 100, 1);?>%;"></div>
-                              </div>
-                            </div>
-                          </div>
-                  
-                        </td>
                       <td>
                         <p title="<?= $this->conta_model->get_produto($t->campanha_produto_id)->nome ?>"> <small>
                             <?php if (strlen($this->conta_model->get_produto($t->campanha_produto_id)->nome) > 14) {

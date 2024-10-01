@@ -2146,7 +2146,7 @@ if __name__ == "__main__":
                         
                         elif response.status_code == 404:
 
-                            print('None')
+                            print("=========== PERFIL NÃO ENCONTRADO :"+ str(response.status_code))
                             
                         
                         elif response.status_code == 429:
@@ -2185,16 +2185,16 @@ if __name__ == "__main__":
                     except Exception as e:
                         
                         # winsound.Beep(1000, 1500) 
-                        print("=========== CREDENCIAIS INCORRETAS: ", e)
-                        header_status =  False
-                        update_agente_banido(agentes_data[a_index]['id'], 0)
-                        a_index = random.randint(0, len(agentes_data) - 1)
+                        print("=========== PROBLEMA ALEATÓRIO: ", e)
+                        # header_status =  False
+                        # update_agente_banido(agentes_data[a_index]['id'], 0)
+                        # a_index = random.randint(0, len(agentes_data) - 1)
 
-                        try:
-                            driver.close()
-                            print('tem driver aberto')
-                        except:
-                            print('nao tem driver aberto')
+                        # try:
+                        #     driver.close()
+                        #     print('tem driver aberto')
+                        # except:
+                        #     print('nao tem driver aberto')
 
                         
 
