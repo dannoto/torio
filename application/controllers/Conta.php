@@ -163,8 +163,8 @@ class Conta extends CI_Controller
             $this->load->view('conta/produtos',  $data);
         }
     }
-    
-    
+
+
     public function agentes()
     {
         if ($this->input->get()) {
@@ -306,7 +306,7 @@ class Conta extends CI_Controller
     }
 
     public function ofertas()
- {
+    {
         if ($this->input->get()) {
 
             $f_data = $this->input->get();
@@ -376,7 +376,7 @@ class Conta extends CI_Controller
 
         // print_r($data['ofertas']);
     }
-    
+
 
     public function vendas()
     {
@@ -457,8 +457,6 @@ class Conta extends CI_Controller
 
     public function campanhas_ofertas($campanha_id)
 
-
-
     {
 
         if ($this->input->get()) {
@@ -534,6 +532,53 @@ class Conta extends CI_Controller
 
             $this->load->view('conta/campanhas_ofertas',  $data);
         }
+    }
+
+
+    public function campanhas_leads($campanha_id)
+
+    {
+
+        $campanha_data = $this->conta_model->get_campanha($campanha_id);
+
+        if (!$campanha_data) {
+            redirect(base_url());
+        }
+
+        echo $campanha_data->campanha_tipo;
+
+
+        $config['base_url'] = base_url('conta/campanhas_leads');
+        $config['total_rows'] = $this->conta_model->count_campanhas_leads($campanha_data->campanha_tag_id, $campanha_data->campanha_tipo); // Total de registros
+        $config['per_page'] = 100; // Quantidade de imóveis por página
+        $config['uri_segment'] = 3; // Segmento da URL onde a página está indicada
+
+        $config['full_tag_open'] = '<ul class="pagination">';
+        $config['full_tag_close'] = '</ul>';
+        $config['first_link'] = 'Primeira';
+        $config['last_link'] = 'Última';
+        $config['next_link'] = '&gt;';
+        $config['prev_link'] = '&lt;';
+        $config['num_tag_open'] = '<li>';
+        $config['num_tag_close'] = '</li>';
+        $config['cur_tag_open'] = '<li class="active"><a href="#">';
+        $config['cur_tag_close'] = '</a></li>';
+
+
+        $this->pagination->initialize($config);
+
+        $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+
+        $data = array(
+            'leads' => $this->conta_model->get_campanhas_leads($campanha_data->campanha_tag_id, $campanha_data->campanha_tipo, $config['per_page'], $page),
+            'pagination' => $this->pagination->create_links(),
+            'campanha_id' => $campanha_id
+        );
+
+
+
+
+        $this->load->view('conta/campanhas_leads',  $data);
     }
 
     public function tags()

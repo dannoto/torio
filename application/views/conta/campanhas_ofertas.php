@@ -178,6 +178,8 @@
                                 <select class="form-control" name="oferta_tipo" required id="oferta_tipo">
                                     <option value="">SELECIONAR</option>
                                     <option value="instagram">INSTAGRAM</option>
+                                    <option value="sms">SMS</option>
+                                    <option value="email">E-MAIL</option>
                                 </select>
                             </div>
                         </div>
@@ -225,6 +227,9 @@
                                 <select class="form-control" name="oferta_tipo" required id="update_oferta_tipo">
                                     <option value="">SELECIONAR</option>
                                     <option value="instagram">INSTAGRAM</option>
+                                    <option value="sms">SMS</option>
+                                    <option value="email">E-MAIL</option>
+
                                 </select>
                             </div>
                         </div>
