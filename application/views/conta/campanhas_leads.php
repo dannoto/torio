@@ -90,6 +90,7 @@
             </div>
                 <div class="card-header pb-0">
                     <h6>#<?= $campanha->id ?> <?= $campanha->campanha_nome ?></small></h6>
+                    <small>TOTAL DE <?=count($leads)?> ENCONTRADOS</small>
                 </div>
                 <div class="col-12">
                     <div class="card mb-4">
