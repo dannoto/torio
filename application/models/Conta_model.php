@@ -547,107 +547,107 @@ class Conta_model extends CI_Model
     // CAMPANHA
 
 
-      // CAMPANHA
-      public function add_campanhas_ofertas($campanhas_ofertas_data)
-      {
-          return $this->db->insert('campanhas_ofertas', $campanhas_ofertas_data);
-      }
-  
-      public function get_campanha_ofertas($campanhas_ofertas_id)
-      {
-          $this->db->where('id', $campanhas_ofertas_id);
-          return $this->db->get('campanhas_ofertas')->row();
-      }
-  
-      public function get_campanhas_ofertas($campanhas_ofertas_id, $limit = null, $start = null)
-      {
-          $this->db->where('is_deleted', 0);
-          $this->db->where('oferta_campanha_id', $campanhas_ofertas_id);
+    // CAMPANHA
+    public function add_campanhas_ofertas($campanhas_ofertas_data)
+    {
+        return $this->db->insert('campanhas_ofertas', $campanhas_ofertas_data);
+    }
 
-          $this->db->order_by('id', 'desc');
+    public function get_campanha_ofertas($campanhas_ofertas_id)
+    {
+        $this->db->where('id', $campanhas_ofertas_id);
+        return $this->db->get('campanhas_ofertas')->row();
+    }
+
+    public function get_campanhas_ofertas($campanhas_ofertas_id, $limit = null, $start = null)
+    {
+        $this->db->where('is_deleted', 0);
+        $this->db->where('oferta_campanha_id', $campanhas_ofertas_id);
+
+        $this->db->order_by('id', 'desc');
         //   $this->db->limit($limit, $start);
-          return $this->db->get('campanhas_ofertas')->result();
-      }
-  
-      public function count_campanhas_ofertas($campanhas_ofertas_id)
-      {
-          $this->db->where('is_deleted', 0);
-          $this->db->where('oferta_campanha_id', $campanhas_ofertas_id);
+        return $this->db->get('campanhas_ofertas')->result();
+    }
 
-          return count($this->db->get('campanhas_ofertas')->result());
-      }
-  
-      public function get_search_campanhas_ofertas($campanhas_ofertas_id, $f_data, $limit, $start)
-      {
+    public function count_campanhas_ofertas($campanhas_ofertas_id)
+    {
+        $this->db->where('is_deleted', 0);
+        $this->db->where('oferta_campanha_id', $campanhas_ofertas_id);
+
+        return count($this->db->get('campanhas_ofertas')->result());
+    }
+
+    public function get_search_campanhas_ofertas($campanhas_ofertas_id, $f_data, $limit, $start)
+    {
         //   if (strlen($f_data['campanhas_ofertas_interacao_tipo']) > 0) {
         //       $this->db->where('campanhas_ofertas_status', $f_data['campanhas_ofertas_interacao_tipo']);
         //   }
-  
-  
+
+
         //   if (strlen($f_data['campanhas_ofertas_tag_id']) > 0) {
         //       $this->db->where('campanhas_ofertas_tag_id', $f_data['campanhas_ofertas_tag_id']);
         //   }
-  
+
         $this->db->where('oferta_campanha_id', $campanhas_ofertas_id);
 
-  
-          $this->db->limit($limit, $start);
-          $this->db->where('is_deleted', 0);
-  
-          return $this->db->get('campanhas_ofertas')->result();
-      }
-  
-      public function count_search_campanhas_ofertas($campanhas_ofertas_id, $f_data)
-      {
-  
-  
+
+        $this->db->limit($limit, $start);
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('campanhas_ofertas')->result();
+    }
+
+    public function count_search_campanhas_ofertas($campanhas_ofertas_id, $f_data)
+    {
+
+
         //   if (strlen($f_data['campanhas_ofertas_interacao_tipo']) > 0) {
         //       $this->db->where('campanhas_ofertas_status', $f_data['campanhas_ofertas_interacao_tipo']);
         //   }
-  
-  
+
+
         //   if (strlen($f_data['campanhas_ofertas_tag_id']) > 0) {
         //       $this->db->where('campanhas_ofertas_tag_id', $f_data['campanhas_ofertas_tag_id']);
         //   }
         $this->db->where('oferta_campanha_id', $campanhas_ofertas_id);
 
-  
-          $this->db->where('is_deleted', 0);
-  
-  
-          return count($this->db->get('campanhas_ofertas')->result());
-      }
-  
-      public function update_campanhas_ofertas($campanhas_ofertas_id, $campanhas_ofertas_data)
-      {
-          $this->db->where('id', $campanhas_ofertas_id);
-  
-          return $this->db->update('campanhas_ofertas', $campanhas_ofertas_data);
-      }
-  
-      public function delete_campanhas_ofertas($campanhas_ofertas_id)
-      {
-          $this->db->where('id', $campanhas_ofertas_id);
-          $campanhas_ofertas_data = array(
-              'is_deleted' => 1
-          );
-          return $this->db->update('campanhas_ofertas', $campanhas_ofertas_data);
-      }
-  
-      public function check_campanhas_ofertas($nome)
-      {
-  
-          $this->db->where('nome', $nome);
-          $this->db->where('is_deleted', 0);
-  
-          return $this->db->get('campanhas_ofertas')->result();
-      }
-  
-      // CAMPANHA
-  
+
+        $this->db->where('is_deleted', 0);
 
 
-      
+        return count($this->db->get('campanhas_ofertas')->result());
+    }
+
+    public function update_campanhas_ofertas($campanhas_ofertas_id, $campanhas_ofertas_data)
+    {
+        $this->db->where('id', $campanhas_ofertas_id);
+
+        return $this->db->update('campanhas_ofertas', $campanhas_ofertas_data);
+    }
+
+    public function delete_campanhas_ofertas($campanhas_ofertas_id)
+    {
+        $this->db->where('id', $campanhas_ofertas_id);
+        $campanhas_ofertas_data = array(
+            'is_deleted' => 1
+        );
+        return $this->db->update('campanhas_ofertas', $campanhas_ofertas_data);
+    }
+
+    public function check_campanhas_ofertas($nome)
+    {
+
+        $this->db->where('nome', $nome);
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('campanhas_ofertas')->result();
+    }
+
+    // CAMPANHA
+
+
+
+
     // OFERTA
     public function add_oferta($oferta_data)
     {
@@ -732,95 +732,107 @@ class Conta_model extends CI_Model
 
 
 
-    
-	// PERSONAS
-	public function get_persona($persona_id) {
-		$this->db->where('id', $persona_id);
-		return $this->db->get('personas')->row();
-	}
-	// PERSONAS
+
+    // PERSONAS
+    public function get_persona($persona_id)
+    {
+        $this->db->where('id', $persona_id);
+        return $this->db->get('personas')->row();
+    }
+    // PERSONAS
 
 
     // DASHBOARD
 
-    public function report_get_ofertas_today() {
+    public function report_get_ofertas_today()
+    {
 
         $this->db->where('oferta_data', date('Y-m-d'));
         $this->db->where('oferta_status', 1);
-		return $this->db->get('ofertas')->result();
+        return $this->db->get('ofertas')->result();
     }
 
-    public function report_get_cliques_today() {
-
+    public function report_get_cliques_today()
+    {
+        // Filtra os registros pela data de hoje
         $this->db->like('clique_data_id', date('Y-m-d'));
+
+        // Exclui registros onde o user agent seja 'facebookexternalhit/1.1'
         $this->db->where('clique_user_agent !=', "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)");
-		return $this->db->get('cliques')->result();
 
+        // Exclui registros onde o user agent contenha a palavra 'google'
+        $this->db->not_like('clique_user_agent', 'google');
+
+        // Executa a consulta e retorna os resultados
+        return $this->db->get('cliques')->result();
     }
 
-    public function report_get_vendas_today() {
+    public function report_get_vendas_today()
+    {
 
         $this->db->like('venda_data', date('Y-m-d'));
-		return $this->db->get('vendas')->result();
-
-
+        return $this->db->get('vendas')->result();
     }
 
-    public function report_get_faturamento_today() {
+    public function report_get_faturamento_today()
+    {
 
         $this->db->like('venda_data', date('Y-m-d'));
-		$vendas =  $this->db->get('vendas')->result();
+        $vendas =  $this->db->get('vendas')->result();
 
         $total = 0;
 
         foreach ($vendas as $v) {
 
-            $total = ($total + $v->venda_valor );
-
+            $total = ($total + $v->venda_valor);
         }
 
-        return round( $total, 2);
-
+        return round($total, 2);
     }
 
-    public function report_get_ofertas_month() {
+    public function report_get_ofertas_month()
+    {
 
         $this->db->like('oferta_data', date('Y-m'));
-        $this->db->where('oferta_status',1);
-		return $this->db->get('ofertas')->result();
+        $this->db->where('oferta_status', 1);
+        return $this->db->get('ofertas')->result();
     }
 
-    public function report_get_cliques_month() {
+    public function report_get_cliques_month()
+    {
 
         $this->db->like('clique_data_id', date('Y-m'));
-        $this->db->where('clique_user_agent !=', "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)");
-		return $this->db->get('cliques')->result();
+       // Exclui registros onde o user agent seja 'facebookexternalhit/1.1'
+       $this->db->where('clique_user_agent !=', "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)");
 
+       // Exclui registros onde o user agent contenha a palavra 'google'
+       $this->db->not_like('clique_user_agent', 'google');
+
+       // Executa a consulta e retorna os resultados
+       return $this->db->get('cliques')->result();
     }
 
-    public function report_get_vendas_month() {
+    public function report_get_vendas_month()
+    {
 
         $this->db->like('venda_data', date('Y-m'));
-		return $this->db->get('vendas')->result();
-
-
+        return $this->db->get('vendas')->result();
     }
 
-    public function report_get_faturamento_month() {
+    public function report_get_faturamento_month()
+    {
 
         $this->db->like('venda_data', date('Y-m'));
-		$vendas =  $this->db->get('vendas')->result();
+        $vendas =  $this->db->get('vendas')->result();
 
         $total = 0;
 
         foreach ($vendas as $v) {
 
-            $total = ($total + $v->venda_valor );
-
+            $total = ($total + $v->venda_valor);
         }
 
-        return round( $total, 2);
-
+        return round($total, 2);
     }
 
     // DASHBOARD    
@@ -846,19 +858,19 @@ class Conta_model extends CI_Model
         return count($this->db->get('personas_tags')->result());
     }
 
-    public function get_template($template_id) {
+    public function get_template($template_id)
+    {
 
         $this->db->where('id', $template_id);
         return $this->db->get('campanhas_ofertas')->row();
-
-        
-    } 
+    }
 
 
     // leads
 
 
-    public function check_oferta_enviada($oferta_campanha_id, $oferta_produto_id, $oferta_tag_id, $oferta_tipo, $oferta_persona_id) {
+    public function check_oferta_enviada($oferta_campanha_id, $oferta_produto_id, $oferta_tag_id, $oferta_tipo, $oferta_persona_id)
+    {
 
         $this->db->where('oferta_persona_id', $oferta_persona_id);
         $this->db->where('oferta_campanha_id', $oferta_campanha_id);
@@ -869,37 +881,32 @@ class Conta_model extends CI_Model
         // $this->db->where('oferta_status', 1);
 
         // $campanha->id, $campanha->campanha_produto_id, $campanha->campanha_tag_id, 'sms', $persona->id
-        
-		return $this->db->get('ofertas')->row();
 
+        return $this->db->get('ofertas')->row();
     }
 
-    public function count_sms_template_by_campanha($campanha_id) {
+    public function count_sms_template_by_campanha($campanha_id)
+    {
 
         $this->db->where('oferta_campanha_id', $campanha_id);
         $this->db->where('oferta_tipo', 'sms');
         $this->db->where('is_deleted', 0);
 
         return $this->db->get('campanhas_ofertas')->result();
-
     }
 
-    public function get_sms_template_by_campanha($campanha_id) {
+    public function get_sms_template_by_campanha($campanha_id)
+    {
 
 
         $this->db->where('oferta_campanha_id', $campanha_id);
         $this->db->where('oferta_tipo', 'sms');
-        
+
         $this->db->order_by('RAND()');
         $this->db->where('is_deleted', 0);
 
         $this->db->limit(1);
 
         return $this->db->get('campanhas_ofertas')->result();
-
-
     }
-
-    
-
 }
