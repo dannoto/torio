@@ -49,3 +49,33 @@ console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanali
 console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
 1727909964493	Marionette	INFO	Stopped listening on port 64694
 Dynamically enable window occlusion 1
+1727909968704	geckodriver	INFO	Listening on 127.0.0.1:64872
+1727909971794	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64873" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileSzJY9O"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727909972619	Marionette	INFO	Marionette enabled
+1727909972912	Marionette	INFO	Listening on port 64881
+WebDriver BiDi listening on ws://127.0.0.1:64873
+Read port: 64881
+1727909973155	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ccoanalitica.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ccoanalitica.com."
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1727910432158	geckodriver	INFO	Listening on 127.0.0.1:65348
+1727910435157	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65349" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilexQ0ZPU"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727910436266	Marionette	INFO	Marionette enabled
+1727910436712	Marionette	INFO	Listening on port 65359
+WebDriver BiDi listening on ws://127.0.0.1:65349
+Read port: 65359
+1727910437180	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ccoanalitica.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ccoanalitica.com."
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

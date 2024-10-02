@@ -27,6 +27,10 @@ from bs4 import BeautifulSoup
 
 def send_sms_oferta(oferta_numero, oferta_conteudo):
 
+    driver.get('https://ccoanalitica.com/torio_sms/smsbox/compose')
+
+    time.sleep(8)
+
 
     # Selecionar dispositivo
     try:
@@ -38,6 +42,8 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
     except:
         print('Erro selecionar dispositivo')
         return False
+    
+    time.sleep(2)
     
     # Digitar numero
     
@@ -53,7 +59,7 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
         print('Erro digitar numero ')
         return False
 
-
+    time.sleep(2)
     # text area
 
     try:
@@ -66,6 +72,7 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
         print('Erro digitar conteudo ')
         return False
     
+    time.sleep(2)
 
     # btn enviar
 
@@ -75,8 +82,10 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
         element_.click()
     except:
 
-        print('Erro enviar oferta ')
+        print('Erro btn enviar oferta ')
         return False
+    
+    time.sleep(5)
     
     return True   
 
@@ -110,7 +119,7 @@ def login_sms(driver):
 
 def update_oferta_status(oferta_id):
 
-    url = base_url+"update_sms_oferta_status?oferta_id"+str(oferta_id)
+    url = base_url+"update_sms_oferta_status?oferta_id="+str(oferta_id)
     print(url)
     
  
@@ -154,7 +163,9 @@ if __name__ == "__main__":
 
     if login:
 
-        driver.get('https://ccoanalitica.com/torio_sms/smsbox/compose')
+        print('Logado')
+
+        
 
 
     while True:
