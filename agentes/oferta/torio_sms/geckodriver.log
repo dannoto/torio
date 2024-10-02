@@ -79,3 +79,57 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1727910636812	geckodriver	INFO	Listening on 127.0.0.1:65459
+1727910639881	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65460" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileBM2eLh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727910640381	Marionette	INFO	Marionette enabled
+1727910640692	Marionette	INFO	Listening on port 65468
+Read port: 65468
+WebDriver BiDi listening on ws://127.0.0.1:65460
+1727910640834	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ccoanalitica.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ccoanalitica.com."
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/overview?type=sent" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/overview?type=sent" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/overview?type=sent" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/overview?type=sent" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/overview?type=sent" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1727911499628	geckodriver	INFO	Listening on 127.0.0.1:49522
+1727911502659	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49523" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilePmLqjI"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727911503680	Marionette	INFO	Marionette enabled
+1727911504134	Marionette	INFO	Listening on port 49531
+WebDriver BiDi listening on ws://127.0.0.1:49523
+Read port: 49531
+1727911504407	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ccoanalitica.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ccoanalitica.com."
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

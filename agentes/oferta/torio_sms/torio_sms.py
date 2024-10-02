@@ -27,32 +27,32 @@ from bs4 import BeautifulSoup
 
 def send_sms_oferta(oferta_numero, oferta_conteudo):
 
-    driver.get('https://ccoanalitica.com/torio_sms/smsbox/compose')
+    # driver.get('https://ccoanalitica.com/torio_sms/smsbox/compose')
 
-    time.sleep(5)
+    # time.sleep(5)
 
 
     # Selecionar dispositivo
     try:
 
-        element_ = driver.find_element(By.CSS_SELECTOR, '#device_id')
-        element__ = Select(element_)
-        element__.select_by_index(1) 
+        element_a = driver.find_element(By.CSS_SELECTOR, '#device_id')
+        element_a_ = Select(element_a)
+        element_a_.select_by_index(1) 
 
     except:
         print('Erro selecionar dispositivo')
         return False
     
-    time.sleep(1)
+    time.sleep(2)
     
     # Digitar numero
     
     try:
 
-        element_ = driver.find_element(By.CSS_SELECTOR, '.select2-search__field')
-        element_.send_keys(oferta_numero)
+        element_x = driver.find_element(By.CSS_SELECTOR, '.select2-search__field')
+        element_x.send_keys(oferta_numero)
 
-        element_.send_keys(Keys.RETURN)
+        element_x.send_keys(Keys.RETURN)
 
     except:
 
@@ -64,8 +64,8 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
 
     try:
 
-        element_ = driver.find_element(By.CSS_SELECTOR, '#compose-textarea')
-        element_.send_keys(oferta_conteudo)
+        element_b = driver.find_element(By.CSS_SELECTOR, '#compose-textarea')
+        element_b.send_keys(oferta_conteudo)
 
     except:
 
@@ -76,16 +76,17 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
 
     # btn enviar
 
-    try:
+    # try:
 
-        element_ = driver.find_element(By.CSS_SELECTOR, 'button.btn-primary:nth-child(2)')
-        element_.click()
-    except:
+    element_c = driver.find_element(By.CSS_SELECTOR, 'button.btn-primary:nth-child(2)')
+    element_c.click()
 
-        print('Erro btn enviar oferta ')
-        return False
+    # except:
+
+    #     print('Erro btn enviar oferta ')
+    #     return False
     
-    time.sleep(5)
+    # time.sleep(5)
     
     return True   
 
@@ -120,7 +121,7 @@ def login_sms(driver):
 def update_oferta_status(oferta_id):
 
     url = base_url+"update_sms_oferta_status?oferta_id="+str(oferta_id)
-    print(url)
+    # print(url)
     
  
     response = requests.get(url)
@@ -164,6 +165,8 @@ if __name__ == "__main__":
     if login:
 
         print('Logado')
+        driver.get('https://ccoanalitica.com/torio_sms/smsbox/compose')
+        time.sleep(5)
 
         
 
