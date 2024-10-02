@@ -172,6 +172,15 @@ class api_model extends CI_Model
         return $this->db->get('ofertas')->result();
     }
 
+    public function get_sms_ofertas_pendentes()
+    {
+        $this->db->where('oferta_status', 0);
+        $this->db->where('oferta_tipo', 'sms');
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('ofertas')->result();
+    }
+
     public function get_ofertas_pendentes($agente_id)
     {
         $this->db->where('oferta_agente_id', $agente_id);

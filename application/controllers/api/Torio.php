@@ -173,6 +173,29 @@ class Torio extends CI_Controller
         print_r(json_encode($response));
     }
 
+    public function get_sms_ofertas_pendentes() {
+
+        $response = $this->api_model->get_sms_ofertas_pendentes();
+        print_r(json_encode($response));
+
+    }
+
+
+    public function update_sms_oferta_status() {
+
+        $oferta_id = htmlspecialchars($this->input->get('oferta_id'));
+
+        $data = array(
+            'oferta_status' =>  1
+        );
+
+
+        $response = $this->api_model->update_oferta($oferta_id, $data);
+
+        print_r(json_encode($response));
+
+    }
+
     public function update_oferta()
     {
         $oferta_id = htmlspecialchars($this->input->get('oferta_id'));
