@@ -99,6 +99,9 @@ def login_sms(driver):
 
         password_input.send_keys(Keys.RETURN)
 
+
+        time.sleep(10)
+
         return True
 
     except:

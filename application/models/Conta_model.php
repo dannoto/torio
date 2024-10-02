@@ -846,6 +846,14 @@ class Conta_model extends CI_Model
         return count($this->db->get('personas_tags')->result());
     }
 
+    public function get_template($template_id) {
+
+        $this->db->where('id', $template_id);
+        return $this->db->get('campanhas_ofertas')->row();
+
+        
+    } 
+
 
     // leads
 

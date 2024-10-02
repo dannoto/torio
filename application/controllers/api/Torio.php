@@ -110,7 +110,7 @@ class Torio extends CI_Controller
 
         print_r(json_encode($response));
     }
-    
+
     public function get_agente()
     {
         $data['agente_email'] = htmlspecialchars($this->input->get('agente_email'));
@@ -123,7 +123,7 @@ class Torio extends CI_Controller
 
         print_r(json_encode($response));
     }
- 
+
     public function add_agente()
     {
         $data['agente_email'] = htmlspecialchars($this->input->get('agente_email'));
@@ -173,15 +173,25 @@ class Torio extends CI_Controller
         print_r(json_encode($response));
     }
 
-    public function get_sms_ofertas_pendentes() {
-
+    public function get_sms_ofertas_pendentes()
+    {
+        // Recupera a lista de ofertas pendentes
         $response = $this->api_model->get_sms_ofertas_pendentes();
-        print_r(json_encode($response));
 
+        // Itera sobre cada oferta e adiciona os novos campos
+        foreach ($response as &$oferta) {
+            // Adiciona o campo 'oferta_conteudo' com o valor que você deseja
+            $oferta['oferta_conteudo'] = $this->conta_model->get_persona($oferta->oferta_persona_id)->persona_telefone; // você pode ajustar conforme necessário
+            $oferta['oferta_numero'] =  $this->conta_model->get_template($oferta->oferta_oferta_id)->oferta_conteudo; // você pode ajustar conforme necessário
+        }
+
+        // Retorna a lista de ofertas com os campos adicionados
+        print_r(json_encode($response));
     }
 
 
-    public function update_sms_oferta_status() {
+    public function update_sms_oferta_status()
+    {
 
         $oferta_id = htmlspecialchars($this->input->get('oferta_id'));
 
@@ -193,7 +203,6 @@ class Torio extends CI_Controller
         $response = $this->api_model->update_oferta($oferta_id, $data);
 
         print_r(json_encode($response));
-
     }
 
     public function update_oferta()
@@ -332,53 +341,51 @@ class Torio extends CI_Controller
     # oferta run
 
     public function off_get_oferta_by_key()
-	{
+    {
 
         if ($this->input->get('oferta_key')) {
 
-        
+
             if ($this->api_model->off_get_oferta_by_key($this->input->get('oferta_key'))) {
                 $response = $this->api_model->off_get_oferta_by_key($this->input->get('oferta_key'));
             } else {
                 // echo "ai papai";
                 $response = false;
             }
-           
         }
 
-		print_r(json_encode($response));
-	}
+        print_r(json_encode($response));
+    }
 
 
     public function off_get_produto()
-	{
+    {
 
         if ($this->input->get('produto_id')) {
 
-        
+
             if ($this->api_model->off_get_produto($this->input->get('produto_id'))) {
                 $response = $this->api_model->off_get_produto($this->input->get('produto_id'));
             } else {
                 $response = false;
             }
-           
         }
 
-		print_r(json_encode($response));
-	}
+        print_r(json_encode($response));
+    }
 
 
     public function off_add_clique()
-	{
+    {
 
-        
+
         if ($this->input->get()) {
 
             $data['clique_user_agent'] = $this->input->get('clique_user_agent');
             $data['clique_persona_id'] = $this->input->get('clique_persona_id');
             $data['clique_campanha_id'] = $this->input->get('clique_campanha_id');
             $data['clique_oferta_id'] = $this->input->get('clique_oferta_id');
-            $data['clique_oferta_template_id'] = $this->input->get('clique_oferta_template_id'); 
+            $data['clique_oferta_template_id'] = $this->input->get('clique_oferta_template_id');
             $data['clique_produto_id'] = $this->input->get('clique_produto_id');
             $data['clique_data_id'] = $this->input->get('clique_data_id');
             $data['clique_ip'] = $this->input->get('clique_ip');
@@ -391,11 +398,10 @@ class Torio extends CI_Controller
             } else {
                 $response = false;
             }
-           
         }
 
-		print_r(json_encode($response));
-	}
+        print_r(json_encode($response));
+    }
 
     # oferta run
 
@@ -817,14 +823,12 @@ class Torio extends CI_Controller
             elseif (substr($persona_data['persona_telefone'], 0, 2) !== '55') {
                 // $persona_data['persona_telefone'] = 'invalid:[' . $persona_data['persona_telefone'] . ']';
                 $persona_data['persona_telefone'] = '';
-
             } else if (strlen($persona_data['persona_telefone']) != 13) {
-                
-                $persona_data['persona_telefone'] = '';
 
+                $persona_data['persona_telefone'] = '';
             }
         }
-        
+
         if (isset($persona_data['persona_email'])) {
             // Verifica se o valor é None ou vazio e atribui uma string vazia
             if ($persona_data['persona_email'] === null || $persona_data['persona_email'] === 'None') {
@@ -834,10 +838,9 @@ class Torio extends CI_Controller
             elseif (!filter_var($persona_data['persona_email'], FILTER_VALIDATE_EMAIL)) {
                 // $persona_data['persona_email'] = 'invalid:[' . $persona_data['persona_email'] . ']';
                 $persona_data['persona_email'] = '';
-
             }
         }
-        
+
         if ($persona_id = $this->api_model->check_persona($persona_data['persona_username'])) {
 
 
@@ -849,7 +852,6 @@ class Torio extends CI_Controller
                 // Já existe tag associada.
                 $response = array('persona_id' => $persona_id);
                 return print_r(json_encode($response));
-                
             } else {
 
 
