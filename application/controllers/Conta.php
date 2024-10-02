@@ -1194,15 +1194,46 @@ class Conta extends CI_Controller
         return $key;
     }
 
+    public function sms_dev($telefone, $oferta_mensagem)
+    {
+
+
+
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://api.smsdev.com.br/v1/send?key=SUA_CHAVE_KEY&type=9&number=11988887777&msg=" . urlencode("Teste de envio"),
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+            CURLOPT_SSL_VERIFYHOST => 0,
+            CURLOPT_SSL_VERIFYPEER => 0,
+        ));
+
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($err) {
+            echo "cURL Error #:" . $err;
+        } else {
+            echo $response;
+        }
+    }
+
     public function action_enviar_oferta()
     {
 
         if (count($this->conta_model->count_sms_template_by_campanha($this->input->post('oferta_campanha_id')))) {
 
-            $temaplte = $this->conta_model-> get_sms_template_by_campanha($this->input->post('oferta_campanha_id'));
+            $temaplte = $this->conta_model->get_sms_template_by_campanha($this->input->post('oferta_campanha_id'));
 
 
-            $data['oferta_status'] = 1;
+            $data['oferta_status'] = 0;
             $data['oferta_persona_id'] =  htmlspecialchars($this->input->post('oferta_persona_id'));
             $data['oferta_insta_id'] = htmlspecialchars($this->input->post('oferta_insta_id'));
             $data['oferta_campanha_id'] = htmlspecialchars($this->input->post('oferta_campanha_id'));
@@ -1212,34 +1243,31 @@ class Conta extends CI_Controller
             $data['oferta_tipo'] = htmlspecialchars($this->input->post('oferta_tipo'));
 
             $data['oferta_data'] = date('Y-m-d');
-    
+
             $data['oferta_data_creation'] = date('Y-m-d H:i:s');
             $data['oferta_key'] = $this->get_oferta_key(htmlspecialchars($this->input->post('oferta_persona_id')), htmlspecialchars($this->input->post('oferta_campanha_id')));
-    
+
             $data['oferta_time'] = date('H:i:s');
             $data['oferta_agente_id'] = 'api';
             $data['is_deleted'] = 0;
-    
-          
-    
+
+
             if ($this->api_model->add_oferta($data)) {
-    
+
                 $response = array("status" => true, "message" => "Oferta enviada com sucesso");
             } else {
-    
-    
+
+
                 $response = array("status" => false, "message" => "Erro ao enviar oferta");
             }
-    
-            return print_r(json_encode($response));
 
+
+            return print_r(json_encode($response));
         } else {
 
             $response = array("status" => false, "message" => "Não existem templates de ofertas para esta campanha. ");
 
             return print_r(json_encode($response));
-
         }
-   
     }
 }

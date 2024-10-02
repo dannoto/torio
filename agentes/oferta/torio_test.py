@@ -2442,35 +2442,35 @@ def extractEmail( email, biografia, links, headers, mencoes):
                 except Exception as e:
                     print(f"ERRO AO ACESSAR: [{link}]  {e}")
 
-def capturar_header(driver):
+def capturar_header(agente_data):
 
         print('capturando header')
 
         
 
-        
+        driver = webdriver.Firefox()
 
-        # # Abrindo o site do Instagram
-        # driver.get('https://www.instagram.com/accounts/login/')
+        # Abrindo o site do Instagram
+        driver.get('https://www.instagram.com/accounts/login/')
 
-        # # Espera para garantir que a página carregue corretamente
-        # time.sleep(3)
+        # Espera para garantir que a página carregue corretamente
+        time.sleep(3)
 
-        # # Encontrar os campos de login e senha
-        # username_input = driver.find_element(By.NAME, 'username')
-        # password_input = driver.find_element(By.NAME, 'password')       
+        # Encontrar os campos de login e senha
+        username_input = driver.find_element(By.NAME, 'username')
+        password_input = driver.find_element(By.NAME, 'password')       
 
-        # # Inserir as credenciais
-        # username = agente_data['agente_username']
-        # password = 'Torio142536*'
-        # username_input.send_keys(username)
-        # password_input.send_keys(password)
+        # Inserir as credenciais
+        username = agente_data['agente_username']
+        password = 'Torio142536*'
+        username_input.send_keys(username)
+        password_input.send_keys(password)
 
-        # # Pressionar ENTER para logar
-        # password_input.send_keys(Keys.RETURN)
+        # Pressionar ENTER para logar
+        password_input.send_keys(Keys.RETURN)
 
-        # # Espera o login processar (ajuste o tempo se necessário)
-        # time.sleep(10)
+        # Espera o login processar (ajuste o tempo se necessário)
+        time.sleep(10)
 
         # Capturar os cookies
 
@@ -2602,32 +2602,23 @@ if __name__ == "__main__":
             header_status = False
             header = ""
             driver = ""
-            agente_create = ""
+
 
             for demanda in demandas_pendentes:
 
-                # agentes_data = get_agentes(base_url)
-                
+                agentes_data = get_agentes(base_url)
 
             
                 if header_status == False:
 
-                    driver = webdriver.Firefox()
+                    result = capturar_header(agentes_data[a_index])
+                    header = result[0]
+                    driver = result[1]
 
-                    creation = temp_create_agente(driver)
-
-                    if creation:
-
-                        agente_create = get_agente_by_email(base_url, creation)
-
-                        result = capturar_header(driver)
-                        header = result[0]
-                        driver = result[1]
-
-                        if header:
-                            header_status = True
-                            driver
-                            print(' AGENTE ESCOLHIDO: ', agente_create['agente_email'])
+                    if header:
+                        header_status = True
+                        driver
+                        print(' AGENTE ESCOLHIDO: ', agentes_data[a_index]['agente_nome'])
 
                 if header:
 
@@ -2643,7 +2634,7 @@ if __name__ == "__main__":
 
                             user_data = json.loads(response.content)
                         
-                            add_person_process(user_data, agente_create, campanha_data, header, demanda)
+                            add_person_process(user_data, agentes_data[a_index], campanha_data, header, demanda)
                         
                         elif response.status_code == 404:
 
@@ -2656,8 +2647,8 @@ if __name__ == "__main__":
                             print('False')
                             header_status =  False
                             
-                            update_agente_ocupado(agente_create['id'], 1)
-                            a_index = random.randint(0, len(agente_create) - 1)
+                            update_agente_ocupado(agentes_data[a_index]['id'], 1)
+                            a_index = random.randint(0, len(agentes_data) - 1)
 
                             try:
                                 driver.close()
@@ -2672,8 +2663,8 @@ if __name__ == "__main__":
                             print("=========== 400 CONTA BANIDA :"+ str(response.status_code))
                             header_status =  False
                             
-                            update_agente_banido(agente_create['id'], 1)
-                            a_index = random.randint(0, len(agente_create) - 1)
+                            update_agente_banido(agentes_data[a_index]['id'], 1)
+                            a_index = random.randint(0, len(agentes_data) - 1)
 
                             try:
                                 driver.close()
@@ -2686,21 +2677,20 @@ if __name__ == "__main__":
                     except Exception as e:
                         
                         # winsound.Beep(1000, 1500) 
-                        a_index = (a_index + 1)
-                        print("=========== PROBLEMA ALEATÓRIO: ", a_index)
+                        print("=========== PROBLEMA ALEATÓRIO: ", e)
+                        # header_status =  False
+                        # update_agente_banido(agentes_data[a_index]['id'], 0)
+                        # a_index = random.randint(0, len(agentes_data) - 1)
 
-                        if a_index == 10:
+                        # try:
+                        #     driver.close()
+                        #     print('tem driver aberto')
+                        # except:
+                        #     print('nao tem driver aberto')
 
-                            header_status =  False
-                                
-                            update_agente_ocupado(agente_create['id'], 1)
-                            a_index = 0
+                        
 
-                            try:
-                                driver.close()
-                                print('tem driver aberto')
-                            except:
-                                print('nao tem driver aberto')               
+               
                 
                 else:
 
@@ -2712,9 +2702,8 @@ if __name__ == "__main__":
                     
                 time.sleep(10)
 
-            print('acabou as demandas')
-            sys.exit() 
 
+        
         else:
             print('\n  [*] Falha ao pegar demandas OU zero demandas foram encontradas. \n')
             sys.exit()    

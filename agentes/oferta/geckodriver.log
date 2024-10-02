@@ -12828,3 +12828,1658 @@ fj@https://static.cdninstagram.com/rsrc.php/v3iRaz4/yA/l/rt/z0QcYXMPVY4PzOFCdkIn
 
 1727765619069	Marionette	INFO	Stopped listening on port 55493
 Dynamically enable window occlusion 1
+1727765667053	geckodriver	INFO	Listening on 127.0.0.1:55783
+1727765670150	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55784" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileAeVkNA"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727765671052	Marionette	INFO	Marionette enabled
+1727765671336	Marionette	INFO	Listening on port 55793
+WebDriver BiDi listening on ws://127.0.0.1:55784
+Read port: 55793
+1727765671600	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+Exiting due to channel error.
+Exiting due to channel error.
+
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727772596240	Marionette	INFO	Stopped listening on port 56186
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3/yL/r/jUtxoV5DYvP.js, line 224: Script terminated by timeout at:
+O/G<@https://static.cdninstagram.com/rsrc.php/v3/yL/r/jUtxoV5DYvP.js:224:2505
+
+Dynamically enable window occlusion 1
+\rust_mozprofilepDoCTf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727770132265	Marionette	INFO	Marionette enabled
+1727770132634	Marionette	INFO	Listening on port 58504
+WebDriver BiDi listening on ws://127.0.0.1:58497
+Read port: 58504
+1727770132881	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , li1727778975433	Marionette	INFO	Stopped listening on port 55560
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3/yL/r/jUtxoV5DYvP.js, line 224: Script terminated by timeout at:
+O/G<@https://static.cdninstagram.com/rsrc.php/v3/yL/r/jUtxoV5DYvP.js:224:2505
+
+Dynamically enable window occlusion 1
+
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exc1727785349482	Marionette	INFO	Stopped listening on port 59153
+Dynamically enable window occlusion 1
+caught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error:JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 75: Error: Could not get children of `C:\Users\danta\AppData\Local\Temp\rust_mozprofile17qNj3\thumbnails': directory does not exist (NS_ERROR_FILE_NOT_FOUND)
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+Exiting due to channel error.
+ct
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+1727787641489	geckodriver	INFO	Listening on 127.0.0.1:51558
+1727787644477	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51559" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileMpboor"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727787645752	Marionette	INFO	Marionette enabled
+1727787646179	Marionette	INFO	Listening on port 51572
+Read port: 51572
+WebDriver BiDi listening on ws://127.0.0.1:51559
+1727787646342	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iRaz4/yG/l/rt/z0QcYXMPVY4PzOFCdkInCs0WZ_3SvbCWSOjX-g-skLCw6JGmjM7HgnoKT9orDTNjot2d2EbvfZpgzKD2UpEEEbGcWUH7iTdWbNOxjnWCFO_R4G_AL7gvmBALyITFamemC1fPv1Zg26LUF-4UtSshCDUOCUQgElicaJm8Vx-w1jY03V6Gz7TI6vjPWIQNIPYVkeONT3j9OfRBtonXsm5AEW8a9doKA_tMxBBf_jnEazexkL6QTf8qVK4Tlw0eKD-uGhQB4endYMYZ2Hwu6D30iuK04MRz8RFfa-B5dLrcm.js, line 1445: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iRaz4/yG/l/rt/z0QcYXMPVY4PzOFCdkInCs0WZ_3SvbCWSOjX-g-skLCw6JGmjM7HgnoKT9orDTNjot2d2EbvfZpgzKD2UpEEEbGcWUH7iTdWbNOxjnWCFO_R4G_AL7gvmBALyITFamemC1fPv1Zg26LUF-4UtSshCDUOCUQgElicaJm8Vx-w1jY03V6Gz7TI6vjPWIQNIPYVkeONT3j9OfRBtonXsm5AEW8a9doKA_tMxBBf_jnEazexkL6QTf8qVK4Tlw0eKD-uGhQB4endYMYZ2Hwu6D30iuK04MRz8RFfa-B5dLrcm.js, line 1445: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exc1727793534586	Marionette	INFO	Stopped listening on port 62497
+Dynamically enable window occlusion 1
+caught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+Exiting due to channel error.
+1727792570830	geckodriver	INFO	Listening on 127.0.0.1:60532
+1727792573894	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60533" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileWptVz1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727792574917	Marionette	INFO	Marionette enabled
+1727792575248	Marionette	INFO	Listening on port 60549
+WebDriver BiDi listening on ws://127.0.0.1:60533
+Read port: 60549
+1727792575513	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+1727792762916	Marionette	INFO	Stopped listening on port 60549
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60776" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilep3dOxt"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727792738023	Marionette	INFO	Marionette enabled
+1727792738410	Marionette	INFO	Listening on port 60787
+Read port: 60787
+WebDriver BiDi listening on ws://127.0.0.1:60776
+1727792738561	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iRaz4/yS/l/rt/z0QcYXMPVY4PzOFCdkInCs0WZ_3SvbCWSOjX-g-skLCw6JGmjM7HgnoKT9orDTNjot2d2EbvfZpgzKD2UpEEEbGcWUH7iTdWbNOxjnWCFO_R4G_AL7gvmBALyITFamemC1fPv1Zg26LUF-4UtSshCDUOCUQgElicaJm8Vx-w1jY03V6Gz7TI6vjPWIQNIPYVkeONT3j9OfRBtonXsm5AEW8a9doKA_tMxBBf_jnEazexkL6QTf8qVK4Tlw0eKD-uGhQB4endYMYZ2Hwu6D30iuK04MRz8RFfa-B5dLrcmJ5HYrPM6x7U.js, line 1445: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+1727793482261	Marionette	INFO	Stopped listening on port 60787
+Dynamically enable window occlusion 1
+1727793492840	geckodriver	INFO	Listening on 127.0.0.1:50092
+1727793495881	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50093" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileGIfSb9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727793496819	Marionette	INFO	Marionette enabled
+1727793497116	Marionette	INFO	Listening on port 50100
+WebDriver BiDi listening on ws://127.0.0.1:50093
+Read port: 50100
+1727793497341	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iRaz4/yG/l/rt/z0QcYXMPVY4PzOFCdkInCs0WZ_3SvbCWSOjX-g-skLCw6JGmjM7HgnoKT9orDTNjot2d2EbvfZpgzKD2UpEEEbGcWUH7iTdWbNOxjnWCFO_R4G_AL7gvmBALyITFamemC1fPv1Zg26LUF-4UtSshCDUOCUQgElicaJm8Vx-w1jY03V6Gz7TI6vjPWIQNIPYVkeONT3j9OfRBtonXsm5AEW8a9doKA_tMxBBf_jnEazexkL6QTf8qVK4Tlw0eKD-uGhQB4endYMYZ2Hwu6D30iuK04MRz8RFfa-B5dLrcm.js, line 1445: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iRaz4/yG/l/rt/z0QcYXMPVY4PzOFCdkInCs0WZ_3SvbCWSOjX-g-skLCw6JGmjM7HgnoKT9orDTNjot2d2EbvfZpgzKD2UpEEEbGcWUH7iTdWbNOxjnWCFO_R4G_AL7gvmBALyITFamemC1fPv1Zg26LUF-4UtSshCDUOCUQgElicaJm8Vx-w1jY03V6Gzconsole.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727795096843	Marionette	INFO	Stopped listening on port 62305
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3/yL/r/jUtxoV5DYvP.js, line 224: Script terminated by timeout at:
+O/G<@https://static.cdninstagraJavaScript error: , line 0: uncaught exception: Object
+1727797307625	Marionette	INFO	Stopped listening on port 50100
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3/yL/r/jUtxoV5DYvP.js, line 71: Script terminated by timeout at:
+c@https://static.cdninstagram.com/rsrc.php/v3/yL/r/jUtxoV5DYvP.js:71:11082
+
+Dynamically enable window occlusion 1
+\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilexY6NSG"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727795113312	Marionette	INFO	Marionette enabled
+1727795113694	Marionette	INFO	Listening on port 56668
+WebDriver BiDi listening on ws://127.0.0.1:56656
+Read port: 56668
+1727795114025	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727801034170	Marionette	INFO	Stopped listening on port 56668
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55250" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileZW1jCK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727797322960	Marionette	INFO	Marionette enabled
+1727797323243	Marionette	INFO	Listening on port 55261
+WebDriver BiDi listening on ws://127.0.0.1:55250
+Read port: 55261
+1727797323450	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727803022994	Marionette	INFO	Stopped listening on port 55261
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61452" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofile9KNRSd"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727801049173	Marionette	INFO	Marionette enabled
+1727801049579	Marionette	INFO	Listening on port 61459
+WebDriver BiDi listening on ws://127.0.0.1:61452
+Read port: 61459
+1727801049847	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+1727801152828	Marionette	INFO	Stopped listening on port 61459
+Dynamically enable window occlusion 1
+1727801163793	geckodriver	INFO	Listening on 127.0.0.1:61554
+1727801166838	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61555" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofile6qkP5O"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727801167875	Marionette	INFO	Marionette enabled
+1727801168160	Marionette	INFO	Listening on port 61562
+WebDriver BiDi listening on ws://127.0.0.1:61555
+Read port: 61562
+1727801168400	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 75: Error: Could not get children of `C:\Users\danta\AppData\Local\Temp\rust_mozprofile6qkP5O\thumbnails': directory does not exist (NS_ERROR_FILE_NOT_FOUND)
+1727806985909	Marionette	INFO	Stopped listening on port 61562
+Dynamically enable window occlusion 1
+91
+WebDriver BiDi listening on ws://127.0.0.1:56482
+Read port: 56491
+1727803040474	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iRaz4/yS/l/rt/z0QcYXMPVY4PzOFCdkInCs0WZ_3SvbCWSOjX-g-skLCw6JGmjM7HgnoKT9orDTNjot2d2EbvfZpgzKD2UpEEEbGcWUH7iTdWbNOxjnWCFO_R4G_AL7gvmBALyITFamemC1fPv1Zg26LUF-4UtSshCDUOCUQgElicaJm8Vx-w1jY03V6Gz7TI6vjPWIQNIPYVkeONT3j9OfRBtonXsm5AEW8a9doKA_tMxBBf_jnEazexkL6QTf8qVK4Tlw0eKD-uGhQB4endYMYZ2Hwu6D30iuK04MRz8Ra2M5UOYkCByJ5HYrPM6x7U.js, line 1445: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iRaz4/yS/l/rt/z0QcYXMPVY4PzOFCdkInCs0WZ_3SvbCWSOjX-g-skLCw6JGmjM7HgnoKT9orDTNjot2d2EbvfZpgzKD2UpEEEbGcWUH7iTdWbNOxjnWCFO_R4G_AL7gvmBALyITFamemC1fPv1Zg26LUF-4UtSshCDUOCUQgElicaJm8Vx-w1jY03V6Gz7TI6vjPWIQNIPYVkeONT3j9OfRBtonXsm5AEW8a9doKA_tMxBBf_jnEazexkL6QTf8qVK4Tlw0eKD-uGhQB4endYMYZ2Hwu6D30iuK04MRz8Ra2M5UOYkCByJ5HYrPM6x7U.js, line 1445: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful wconsole.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBconsole.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizJavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 75: Error: Could not get children of `C:\Users\danta\AppData\Local\Temp\rust_mozprofileoA4MCf\thumbnails': directory does not exist (NS_ERROR_FILE_NOT_FOUND)
+1727808655735	Marionette	INFO	Stopped listening on port 56566
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3/yL/r/jUtxoV5DYvP.js, line 224: Script terminated by timeout at:
+O/G<@https://static.cdninstagram.com/rsrc.php/v3/yL/r/jUtxoV5DYvP.js:224:2505
+
+Dynamically enable window occlusion 1
+", "resource://gre/actors/PictureInPictureChild.sys.mjs", 1509))
+1727809287096	Marionette	INFO	Stopped listening on port 56491
+Dynamically enable window occlusion 1
+ by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727803501527	Marionette	INFO	Marionette enabled
+1727803501869	Marionette	INFO	Listening on port 57090
+WebDriver BiDi listening on ws://127.0.0.1:57077
+Read port: 57090
+1727803502142	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 75: Error: Could not get children of `C:\Users\danta\AppData\Local\Temp\rust_mozprofileiBbLxA\thumbnails': directory does not exist (NS_ERROR_FILE_NOT_FOUND)
+JavaScript error: resource://gre/modules/PromiseWorker.sys.mjs, line 75: Error: Could not get children of `C:\Users\danta\AppData\Local\Temp\rust_mozprofileiBbLxA\thumbnails': directory does not exist (NS_ERROR_FILE_NOT_FOUND)
+1727814079891	Marionette	INFO	Stopped listening on port 57090
+Dynamically enable window occlusion 1
+ion 0
+1727807003076	Marionette	INFO	Marionette enabled
+1727807003500	Marionette	INFO	Listening on port 62497
+Read port: 62497
+WebDriver BiDi listening on ws://127.0.0.1:62484
+1727807003870	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: "buildList failed: " ({})
+1727813013831	Marionette	INFO	Stopped listening on port 62497
+Dynamically enable window occlusion 1
+EMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727808672368	Marionette	INFO	Marionette enabled
+1727808672964	Marionette	INFO	Listening on port 64934
+Read port: 64934
+WebDriver BiDi listening on ws://127.0.0.1:64921
+1727808673273	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iRaz4/yF/l/rt/z0QcYXMPVY4PzOFCdkInCs0WZ_3SvbCWSt-radmC_lnJ6JGmjM7HgnoKT9orDTNjot2d2EbvfZpgzKD2UpEEEbGcWUH7iTdWbNOxjnWCFO_R4G_AL7gvmBALyITFamemC1fPv1Zg26LUF-4UtSshCDUOCUQgElicaJm8Vx-w1jY03V6G3ZEKjLWF0VVNIPYVkeONT3j9OfRBtonXsm5AEW8a9doKA_tMxBBf_jnEazexkL6QTf8qVK4Tlw0eKD-uGhQB4endYMYZ2Hwu6D30iuK04MRz8Ra2M5UOYkCBy.js, line 1436: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iRaz4/yF/l/rt/z0QcYXMPVY4PzOFCdkInCs0WZ_3SvbCWSt-radmC_lnJ6JGmjM7HgnoKT9orDTNjot2d2EbvfZpgzKD2UpEEEbGcWUH7iTdWbNOxjnWCFO_R4G_AL7gvmBALyITFamemC1fPv1Zg26LUF-4UtSshCDUOCUQgElicaJm8Vx-w1jY03V6G3ZEKjLWF0VVNIPYVkeONT3j9OfRBtonXsm5AEW8a9doKA_tMxBBf_jnEazexkL6QTf8qVK4Tlw0eKD-uGhQB4endYMYZ2Hwu6D30iuK04MRz8Ra2M5UOYkCBy.js, line 1436: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[GFX1-]: Hw video swapchain present is slow
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+console.error: CustomizableUI: 
+  TypeError: aNode is null -- resource:///modules/CustomizableUI.sys.mjs:1746
+1727813551021	Marionette	INFO	Stopped listening on port 64934
+Dynamically enable window occlusion 1
+ services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727809303984	Marionette	INFO	Marionette enabled
+1727809304541	Marionette	INFO	Listening on port 49626
+Read port: 49626
+WebDriver BiDi listening on ws://127.0.0.1:49614
+1727809304851	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iRaz4/yF/l/rt/z0QcYXMPVY4PzOFCdkInCs0WZ_3SvbCWSt-radmC_lnJ6JGmjM7HgnoKT9orDTNjot2d2EbvfZpgzKD2UpEEEbGcWUH7iTdWbNOxjnWCFO_R4G_AL7gvmBALyITFamemC1fPv1Zg26LUF-4UtSshCDUOCUQgElicaJm8Vx-w1jY03V6G3ZEKjLWF0VVNIPYVkeONT3j9OfRBtonXsm5AEW8a9doKA_tMxBBf_jnEazexkL6QTf8qVK4Tlw0eKD-uGhQB4endYMYZ2Hwu6D30iuK04MRz8Ra2M5UOYkCBy.js, line 1436: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iRaz4/yF/l/rt/z0QcYXMPVY4PzOFCdkInCs0WZ_3SvbCWSt-radmC_lnJ6JGmjM7HgnoKT9orDTNjot2d2EbvfZpgzKD2UpEEEbGcWUH7iTdWbNOxjnWCFO_R4G_AL7gvmBALyITFamemC1fPv1Zg26LUF-4UtSshCDUOCUQgElicaJm8Vx-w1jY03V6G3ZEKjLWF0VVNIPYVkeONT3j9OfRBtonXsm5AEW8a9doKA_tMxBBf_jnEazexkL6QTf8qVK4Tlw0eKD-uGhQB4endYMYZ2Hwu6D30iuK04MRz8Ra2M5UOYkCBy.js, line 1436: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: "buildList failed: " ({})
+[GFX1[-G][F[:GX [GFX1GF-C[FX1]oGX1-:mF1-] pX-]:Co1]: os-: Cmi] Copt: CmoporBsitridgoerooChild BCsomrroimtorBridpimpposegositorBrecidodCegitghiesoreChildiC BrithrivdoildegreldseBc   CrerrIhild PiieeceivcrCdves Ieive ges ecePIcs IPC close eCPC clos lose with reason=AbneowcCivrilh emalShutoiwstdsle IPC chodi l w twornrhise
+e reae with reason=Abnorasont=mschAaoe blnirnS=veohAearubssmtn oadoInlorPC close with r=AebnormalShutdownwamS
+nsah
+olunSt=hdAuobtwndnoo
+rwmna
+lShutdown
+[GFX1-]: CompositorBridgeChild receives IPC close with reason=AbnormalShutdown
+[GFX1-]: VideoBridgeParent receives IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1727813025193	geckodriver	INFO	Listening on 127.0.0.1:54894
+1727813028217	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54895" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileqIo64C"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727813030065	Marionette	INFO	Marionette enabled
+1727813030837	Marionette	INFO	Listening on port 54906
+Read port: 54906
+WebDriver BiDi listening on ws://127.0.0.1:54895
+1727813031047	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iRaz4/yM/l/rt/z0QcYXMPVY4PzOFCdkInCs0WZ_3SvbCWSt-radmC_lnJ6JGmjM7HgnoKT9orDTNjot2d2EbvfZpgzKD2UpEEEbGcWUH7iTdWbNOxjnWCFO_R4G_AL7gvmBALyITFamemC1fPv1Zg26LUF-4UtSshCDUOCUQgElicaJm8Vx-w1jY03V6G3ZEKjLWF0VVNIPYVkeONT3j9OfRBtonXsm5AEW8a9doKA_tMxBBf_jnEazexkL6QTf8qVK4Tlw0eKD-uGhQB4endYMYZ2Hwu6D30iuK04MRz8Ra2M5UOYkCByJ5HYrPM6x7U.js, line 1436: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727819229256	Marionette	INFO	Stopped listening on port 54906
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55551" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilerHG7PC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727813566664	Marionette	INFO	Marionette enabled
+1727813566984	Marionette	INFO	Listening on port 55558
+WebDriver BiDi listening on ws://127.0.0.1:55551
+Read port: 55558
+1727813567202	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727813677575	Marionette	INFO	Stopped listening on port 55558
+Dynamically enable window occlusion 1
+1727813688658	geckodriver	INFO	Listening on 127.0.0.1:55705
+1727813691737	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55706" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofile4RG5dE"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727813692272	Marionette	INFO	Marionette enabled
+1727813692608	Marionette	INFO	Listening on port 55716
+WebDriver BiDi listening on ws://127.0.0.1:55706
+Read port: 55716
+1727813692870	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727813711887	Marionette	INFO	Stopped listening on port 55716
+Dynamically enable window occlusion 1
+1727813722980	geckodriver	INFO	Listening on 127.0.0.1:55786
+1727813726064	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55787" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofile5nABxP"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727813726594	Marionette	INFO	Marionette enabled
+1727813726930	Marionette	INFO	Listening on port 55800
+WebDriver BiDi listening on ws://127.0.0.1:55787
+Read port: 55800
+1727813727226	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+1727813878745	Marionette	INFO	Stopped listening on port 55800
+Dynamically enable window occlusion 1
+1727813889359	geckodriver	INFO	Listening on 127.0.0.1:55982
+1727813892387	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55983" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofiletJrCpy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727813892948	Marionette	INFO	Marionette enabled
+1727813893247	Marionette	INFO	Listening on port 55991
+WebDriver BiDi listening on ws://127.0.0.1:55983
+Read port: 55991
+1727813893544	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727813924509	Marionette	INFO	Stopped listening on port 55991
+Dynamically enable window occlusion 1
+console.error: (new Error("Polling for changes failed: .", "resource://services-settings/remote-settings.sys.mjs", 324))
+1727813925201	addons.xpi	ERROR	System addon update list error [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 133"  data: no]
+console.error: Region.sys.mjs: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", "resource://gre/modules/Region.sys.mjs", 738))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 411))
+1727813935539	geckodriver	INFO	Listening on 127.0.0.1:56071
+1727813938584	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56072" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileaUjp47"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727813939112	Marionette	INFO	Marionette enabled
+1727813939428	Marionette	INFO	Listening on port 56082
+WebDriver BiDi listening on ws://127.0.0.1:56072
+Read port: 56082
+1727813939726	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iRaz4/yF/l/rt/z0QcYXMPVY4PzOFCdkInCs0WZ_3SvbCWSt-radmC_lnJ6JGmjM7HgnoKT9orDTNjot2d2EbvfZpgzKD2UpEEEbGcWUH7iTdWbNOxjnWCFO_R4G_AL7gvmBALyITFamemC1fPv1Zg26LUF-4UtSshCDUOCUQgElicaJm8Vx-w1jY03V6G3ZEKjLWF0VVNIPYVkeONT3j9OfRBtonXsm5AEW8a9doKA_tMxBBf_jnEazexkL6QTf8qVK4Tlw0eKD-uGhQB4endYMYZ2Hwu6D30iuK04MRz8Ra2M5UOYkCBy.js, line 1436: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iRaz4/yF/l/rt/z0QcYXMPVY4PzOFCdkInCs0WZ_3SvbCWSt-radmC_lnJ6JGmjM7HgnoKT9orDTNjot2d2EbvfZpgzKD2UpEEEbGcWUH7iTdWbNOxjnWCFO_R4G_AL7gvmBALyITFamemC1fPv1Zg26LUF-4UtSshCDUOCUQgElicaJm8Vx-w1jY03V6G3ZEKjLWF0VVNIPYVkeONT3j9OfRBtonXsm5AEW8a9doKA_tMxBBf_jnEazexkL6QTf8qVK4Tlw0eKD-uGhQB4endYMYZ2Hwu6D30iuK04MRz8Ra2M5UOYkCBy.js, line 1436: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+1727817667607	Marionette	INFO	Stopped listening on port 56082
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56314" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileXcYGUm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727814095775	Marionette	INFO	Marionette enabled
+1727814096396	Marionette	INFO	Listening on port 56324
+Read port: 56324
+WebDriver BiDi listening on ws://127.0.0.1:56314
+1727814096476	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727814191497	Marionette	INFO	Stopped listening on port 56324
+Dynamically enable window occlusion 1
+1727814202993	geckodriver	INFO	Listening on 127.0.0.1:56459
+1727814206036	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56460" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofile4pBkzh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727814207091	Marionette	INFO	Marionette enabled
+1727814207437	Marionette	INFO	Listening on port 56475
+WebDriver BiDi listening on ws://127.0.0.1:56460
+Read port: 56475
+1727814207716	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727819726081	Marionette	INFO	Stopped listening on port 56475
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62170" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilej4g8TI"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727817683390	Marionette	INFO	Marionette enabled
+1727817684125	Marionette	INFO	Listening on port 62177
+WebDriver BiDi listening on ws://127.0.0.1:62170
+Read port: 62177
+1727817684573	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727823289087	Marionette	INFO	Stopped listening on port 62177
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3/y2/r/bcBV8cvej0t.js, line 71: Script terminated by timeout at:
+c@https://static.cdninstagram.com/rsrc.php/v3/y2/r/bcBV8cvej0t.js:71:11082
+
+Dynamically enable window occlusion 1
+emp\\rust_mozprofileZG8emb"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727819244630	Marionette	INFO	Marionette enabled
+1727819244959	Marionette	INFO	Listening on port 63909
+Read port: 63909
+WebDriver BiDi listening on ws://127.0.0.1:63899
+1727819245080	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727823054387	Marionette	INFO	Stopped listening on port 63909
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3/y2/r/bcBV8cvej0t.js, line 224: Script terminated by timeout at:
+O/G<@https://static.cdninstagram.com/rsrc.php/v3/y2/r/bcBV8cvej0t.js:224:2505
+
+Dynamically enable window occlusion 1
+\rust_mozprofile3LhtPA"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727819741115	Marionette	INFO	Marionette enabled
+1727819741417	Marionette	INFO	Listening on port 64474
+Read port: 64474
+WebDriver BiDi listening on ws://127.0.0.1:64467
+1727819741537	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727819770168	Marionette	INFO	Stopped listening on port 64474
+Dynamically enable window occlusion 1
+1727819781135	geckodriver	INFO	Listening on 127.0.0.1:64547
+1727819784212	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64548" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilebIA1jd"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727819784723	Marionette	INFO	Marionette enabled
+1727819785003	Marionette	INFO	Listening on port 64557
+Read port: 64557
+WebDriver BiDi listening on ws://127.0.0.1:64548
+1727819785133	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+1727820206056	Marionette	INFO	Stopped listening on port 64557
+Dynamically enable window occlusion 1
+1727820216758	geckodriver	INFO	Listening on 127.0.0.1:65059
+1727820219805	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65060" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileGdsnHf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727820220850	Marionette	INFO	Marionette enabled
+1727820221175	Marionette	INFO	Listening on port 65071
+WebDriver BiDi listening on ws://127.0.0.1:65060
+Read port: 65071
+1727820221465	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727820326070	Marionette	INFO	Stopped listening on port 65071
+Dynamically enable window occlusion 1
+1727820337142	geckodriver	INFO	Listening on 127.0.0.1:65208
+1727820340214	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65209" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilejYW6d9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727820340651	Marionette	INFO	Marionette enabled
+1727820340940	Marionette	INFO	Listening on port 65219
+Read port: 65219
+WebDriver BiDi listening on ws://127.0.0.1:65209
+1727820341066	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript error: https://static.cdninstagram.com/rsrc.php/v3iRaz4/yS/l/rt/w0Qfr8DMBToPzOFCdkInCs0WZ_3SvbCWSNSETuOm_EngJn2tzlkhB7IKT9orDTNjot2d2EbvfZpgzKD2UpEEEbGcWUH7iTdWbNOxjnWCFO_R4G_AL7gvmBALyITFamemC1fPv1Zg26LUF-4UtSshCDUOCUQgElicaJm8Vx-w1jY03V6G3ZEKjLWF0VVNIPYVkeONT3j9OfRBtonXsm5AEW8a9doKA_tMxBBf_jnEazexkL6QTf8qVK4Tlw0eKD-uGhQB4end5uEz1ghxOwU0iuK04MRz8Ra2M5UOYkCBy.js, line 1436: Error: Minified React error #418; visit https://react.dev/errors/418?args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727826399415	Marionette	INFO	Stopped listening on port 65219
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63909" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofile7g2HF8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727823069999	Marionette	INFO	Marionette enabled
+1727823070333	Marionette	INFO	Listening on port 63917
+WebDriver BiDi listening on ws://127.0.0.1:63909
+Read port: 63917
+1727823070644	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727823165832	Marionette	INFO	Stopped listening on port 63917
+Dynamically enable window occlusion 1
+1727823177227	geckodriver	INFO	Listening on 127.0.0.1:64071
+1727823180284	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64072" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileURHcFm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727823181405	Marionette	INFO	Marionette enabled
+1727823181734	Marionette	INFO	Listening on port 64082
+WebDriver BiDi listening on ws://127.0.0.1:64072
+Read port: 64082
+1727823182000	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+1727823288960	Marionette	INFO	Stopped listening on port 64082
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3/y2/r/bcBV8cvej0t.js, line 57: Script terminated by timeout at:
+a.__d@https://static.cdninstagram.com/rsrc.php/v3/y2/r/bcBV8cvej0t.js:57:10344
+@https://static.cdninstagram.com/rsrc.php/v3idBq4/yU/l/rt/fA56LYN3xYE.js:3:4
+
+Dynamically enable window occlusion 1
+1727823301145	geckodriver	INFO	Listening on 127.0.0.1:64404
+1727823304207	mozrunner::runner	INFO	Running command: "C:\\P1727823304717	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64408" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\console.warn: services.settings: Ignoring preference overridconsole.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow byDynamically enable window occlusion 0
+1727823305273	MarioneDynamically enable window occ1727823305630	Marionette	INFO	Listening on port 64424
+WebDr1727823305840	Marionette	INFO	Listening on port 64425
+WebDriv1727823306011	RemoteAgent	WARN	TLS certificate errors will b1727823306196	RemoteAgent	WAJavaScript warning: https://static.cdninstagram.com/rsrc.phpJavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is depreconsole.warn: LoginRecipes: "Falling back to a synchronous mconsole.warn: LoginRecipes: "Falling backconsole.warn: LoginRecipes: "Falling back to a synchronous m1727823423395	Marionette	INFO	Stopped listening on port 64425
+Dynamically enable window occlusion 1
+v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727823400599	Marionette	INFO	Stopped listening on port 64424
+Dynamically enable window occlusion 1
+1727823411664	geckodriver	INFO	Listening on 127.0.0.1:64588
+1727823414740	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64589" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileQPdUow"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727823415342	Marionette	INFO	Marionette enabled
+1727823415630	Marionette	INFO	Listening on port 64599
+WebDriver BiDi listening on ws://127.0.0.1:64589
+Read port: 64599
+1727823415918	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727823508150	Marionette	INFO	Stopped listening on port 64599
+Dynamically enable window occlusion 1
+LS=1 in the environment
+Dynamically enable window occlusion 0
+1727823438129	Marionette	INFO	Marionette enabled
+1727823438535	Marionette	INFO	Listening on port 64658
+Read port: 64658
+WebDriver BiDi listening on ws://127.0.0.1:64650
+1727823438744	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+am Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64770" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilerIPP1a"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727823522818	Marionette	INFO	Marionette enabled
+1727823523093	Marionette	INFO	Listening on port 64778
+Read port: 64778
+WebDriver BiDi listening on ws://127.0.0.1:64770
+1727823523218	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous m1727823600295	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64855" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData1727823615090	Marionette	INFO	Stopped listening on port 64778
+Dynamically enable window occlusion 1
+ remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727823600949	Marionette	INFO	Marionette enabled
+1727823601312	Marionette	INFO	Listening on port 64871
+WebDriver BiDi listening on ws://127.0.0.1:64855
+Read port: 64871
+1727823601614	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727823696376	Marionette	INFO	Stopped listening on port 64871
+Dynamically enable window occlusion 1
+LS=1 in the environment
+Dynamically enable window occlusion 0
+1727823630053	Marionette	INFO	Marionette enabled
+1727823630371	Marionette	INFO	Listening on port 64955
+WebDriver BiDi listening on ws://127.0.0.1:64943
+Read port: 64955
+1727823630634	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727823723280	Marionette	INFO	Stopped listening on port 64955
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65060" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofile0orauH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727823711630	Marionette	INFO	Marionette enabled
+1727823712976	Marionette	INFO	Listening on port 65078
+WebDriver BiDi listening on ws://127.0.0.1:65060
+Read port: 65078
+1727823713111	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727823805521	Marionette	INFO	Stopped listening on port 65078
+Dynamically enable window occlusion 1
+LS=1 in the environment
+Dynamically enable window occlusion 0
+1727823738098	Marionette	INFO	Marionette enabled
+1727823738427	Marionette	INFO	Listening on port 65150
+Read port: 65150
+WebDriver BiDi listening on ws://127.0.0.1:65143
+1727823738586	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+1727823927196	Marionette	INFO	Stopped listening on port 65150
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65250" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileo6TyLB"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727823820208	Marionette	INFO	Marionette enabled
+1727823820513	Marionette	INFO	Listening on port 65258
+WebDriver BiDi listening on ws://127.0.0.1:65250
+Read port: 65258
+1727823820776	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727823913194	Marionette	INFO	Stopped listening on port 65258
+Dynamically enable window occlusion 1
+1727823924345	geckodriver	INFO	Listening on 127.0.0.1:65374
+1727823927404	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65375" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofile8ddyWV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727823928230	Marionette	INFO	Marionette enabled
+1727823928573	Marionette	INFO	Listening on port 65387
+WebDriver BiDi listening on ws://127.0.0.1:65375
+Read port: 65387
+1727823928834	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727824019623	Marionette	INFO	Stopped listening on port 65387
+Dynamically enable window occlusion 1
+LS=1 in the environment
+Dynamically enable window occlusion 0
+1727823941608	Marionette	INFO	Marionette enabled
+1727823941895	Marionette	INFO	Listening on port 65445
+WebDriver BiDi listening on ws://127.0.0.1:65436
+Read port: 65445
+1727823942119	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3ieB_4/y0/l/rt/WUH7iTdWbNO_AL7gvmBALy3ZEKjLWF0VVA_tMxBBf_jn8qVK4Tlw0eKD-uGhQB4end0iuK04MRz8RA0qQQilLi8oZgFesT2Vx2wEsQPH1cEvSLMxeXH8Qhh54xWwA24hMypOhFhZHX1UzEKf8OXQfa3-V8UTaKnle4uAarxlR8c7ElLDDmT2Xi78GO_UNNplwE91K6-N4ATj7AoYQ_SspGhA3P5j51j1H8BJAaX8qV_xSNLJ0rCY3A1UiSWOLvsWqehdEtWwbHhaAda_i25k8w9oFpyOtJ1-RfokkNf3c12LiJjUdcQGCcMX5ABpjcZCpLlkdGCSmZ.js, line 242: Script terminated by timeout at:
+d.$20@https://static.cdninstagram.com/rsrc.php/v3ieB_4/y0/l/rt/WUH7iTdWbNO_AL7gvmBALy3ZEKjLWF0VVA_tMxBBf_jn8qVK4Tlw0eKD-uGhQB4end0iuK04MRz8RA0qQQilLi8oZgFesT2Vx2wEsQPH1cEvSLMxeXH8Qhh54xWwA24hMypOhFhZHX1UzEKf8OXQfa3-V8UTaKnle4uAarxlR8c7ElLDDmT2Xi78GO_UNNplwE91K6-N4ATj7AoYQ_SspGhA3P5j51j1H8BJAaX8qV_xSNLJ0rCY3A1UiSWOLvsWqehdEtWwbHhaAda_i25k8w9oFpyOtJ1-RfokkNf3c12LiJjUdcQGCcMX5ABpjcZCpLlkdGCSmZ.js:242:4013
+d.wrapAndEnqueueItem@https://static.cdninstagram.com/rsrc.php/v3ieB_4/y0/l/rt/WUH7iTdWbNO_AL7gvmBALy3ZEKjLWF0VVA_tMxBBf_jn8qVK4Tlw0eKD-uGhQB4end0iuK04MRz8RA0qQQilLi8oZgFesT2Vx2wEsQPH1cEvSLMxeXH8Qhh54xWwA24hMypOhFhZHX1UzEKf8OXQfa3-V8UTaKnle4uAarxlR8c7ElLDDmT2Xi78GO_UNNplwE91K6-N4ATj7AoYQ_SspGhA3P5j51j1H8BJAaX8qV_xSNLJ0rCY3A1UiSWOLvsWqehdEtWwbHhaAda_i25k8w9oFpyOtJ1-RfokkNf3c12LiJjUdcQGCcMX5ABpjcZCpLlkdGCSmZ.js:242:4718
+z@https://static.cdninstagram.com/rsrc.php/v3ieB_4/y0/l/rt/WUH7iTdWbNO_AL7gvmBALy3ZEKjLWF0VVA_tMxBBf_jn8qVK4Tlw0eKD-uGhQB4end0iuK04MRz8RA0qQQilLi8oZgFesT2Vx2wEsQPH1cEvSLMxeXH8Qhh54xWwA24hMypOhFhZHX1UzEKf8OXQfa3-V8UTaKnle4uAarxlR8c7ElLDDmT2Xi78GO_UNNplwE91K6-N4ATj7AoYQ_SspGhA3P5j51j1H8BJAaX8qV_xSNLJ0rCY3A1UiSWOLvsWqehdEtWwbHhaAda_i25k8w9oFpyOtJ1-RfokkNf3c12LiJjUdcQGCcMX5ABpjcZCpLlkdGCSmZ.js:244:2281
+A@https://static.cdninstagram.com/rsrc.php/v3ieB_4/y0/l/rt/WUH7iTdWbNO_AL7gvmBALy3ZEKjLWF0VVA_tMxBBf_jn8qVK4Tlw0eKD-uGhQB4end0iuK04MRz8RA0qQQilLi8oZgFesT2Vx2wEsQPH1cEvSLMxeXH8Qhh54xWwA24hMypOhFhZHX1UzEKf8OXQfa3-V8UTaKnle4uAarxlR8c7ElLDDmT2Xi78GO_UNNplwE91K6-N4ATj7AoYQ_SspGhA3P5j51j1H8BJAaX8qV_xSNLJ0rCY3A1UiSWOLvsWqehdEtWwbHhaAda_i25k8w9oFpyOtJ1-RfokkNf3c12LiJjUdcQGCcMX5ABpjcZCpLlkdGCSmZ.js:244:2539
+logCritical@https://static.cdninstagram.com/rsrc.php/v3ieB_4/y0/l/rt/WUH7iTdWbNO_AL7gvmBALy3ZEKjLWF0VVA_tMxBBf_jn8qVK4Tlw0eKD-uGhQB4end0iuK04MRz8RA0qQQilLi8oZgFesT2Vx2wEsQPH1cEvSLMxeXH8Qhh54xWwA24hMypOhFhZHX1UzEKf8OXQfa3-V8UTaKnle4uAarxlR8c7ElLDDmT2Xi78GO_UNNplwE91K6-N4ATj7AoYQ_SspGhA3P5j51j1H8BJAaX8qV_xSNLJ0rCY3A1UiSWOLvsWqehdEtWwbHhaAda_i25k8w9oFpyOtJ1-RfokkNf3c12LiJjUdcQGCcMX5ABpjcZCpLlkdGCSmZ.js:244:3355
+o@https://static.cdninstagram.com/rsrc.php/v3ieB_4/y0/l/rt/WUH7iTdWbNO_AL7gvmBALy3ZEKjLWF0VVA_tMxBBf_jn8qVK4Tlw0eKD-uGhQB4end0iuK04MRz8RA0qQQilLi8oZgFesT2Vx2wEsQPH1cEvSLMxeXH8Qhh54xWwA24hMypOhFhZHX1UzEKf8OXQfa3-V8UTaKnle4uAarxlR8c7ElLDDmT2Xi78GO_UNNplwE91K6-N4ATj7AoYQ_SspGhA3P5j51j1H8BJAaX8qV_xSNLJ0rCY3A1UiSWOLvsWqehdEtWwbHhaAda_i25k8w9oFpyOtJ1-RfokkNf3c12LiJjUdcQGCcMX5ABpjcZCpLlkdGCSmZ.js:246:1092
+@https://static.cdninstagram.com/rsrc.php/v3ieB_4/y0/l/rt/WUH7iTdWbNO_AL7gvmBALy3ZEKjLWF0VVA_tMxBBf_jn8qVK4Tlw0eKD-uGhQB4end0iuK04MRz8RA0qQQilLi8oZgFesT2Vx2wEsQPH1cEvSLMxeXH8Qhh54xWwA24hMypOhFhZHX1UzEKf8OXQfa3-V8UTaKnle4uAarxlR8c7ElLDDmT2Xi78GO_UNNplwE91K6-N4ATj7AoYQ_SspGhA3P5j51j1H8BJAaX8qV_xSNLJ0rCY3A1UiSWOLvsWqehdEtWwbHhaAda_i25k8w9oFpyOtJ1-RfokkNf3c12LiJjUdcQGCcMX5ABpjcZCpLlkdGCSmZ.js:246:1174
+a@https://static.cdninstagram.com/rsrc.php/v3/y2/r/bcBV8cvej0t.js:230:191
+p@https://static.cdninstagram.com/rsrc.php/v3/y2/r/bcBV8cvej0t.js:232:882
+m/<@https://static.cdninstagram.com/rsrc.php/v3/y2/r/bcBV8cvej0t.js:232:407
+
+1727824022326	Marionette	INFO	Stopped listening on port 65445
+Dynamically enable window occlusion 1
+1727826411877	geckodriver	INFO	Listening on 127.0.0.1:65119
+1727826414945	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65120" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofiles2BKnF"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727826416306	Marionette	INFO	Marionette enabled
+1727826416728	Marionette	INFO	Listening on port 65127
+WebDriver BiDi listening on ws://127.0.0.1:65120
+Read port: 65127
+1727826417162	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727826511862	Marionette	INFO	Stopped listening on port 65127
+Dynamically enable window occlusion 1
+1727826523291	geckodriver	INFO	Listening on 127.0.0.1:65192
+1727826526335	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65193" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofile7tAGtV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727826527027	Marionette	INFO	Marionette enabled
+1727826527357	Marionette	INFO	Listening on port 65200
+WebDriver BiDi listening on ws://127.0.0.1:65193
+Read port: 65200
+1727826527716	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727826620759	Marionette	INFO	Stopped listening on port 65200
+Dynamically enable window occlusion 1
+1727826633755	geckodriver	INFO	Listening on 127.0.0.1:65282
+1727826636786	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65283" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileBIweSw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727826637560	Marionette	INFO	Marionette enabled
+1727826639262	Marionette	INFO	Listening on port 65290
+WebDriver BiDi listening on ws://127.0.0.1:65283
+Read port: 65290
+1727826639863	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727826735226	Marionette	INFO	Stopped listening on port 65290
+Dynamically enable window occlusion 1
+1727826746521	geckodriver	INFO	Listening on 127.0.0.1:65358
+1727826749552	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65359" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileuA0sGJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727826750177	Marionette	INFO	Marionette enabled
+1727826750601	Marionette	INFO	Listening on port 65366
+WebDriver BiDi listening on ws://127.0.0.1:65359
+Read port: 65366
+1727826750937	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i6ja4/yj/l/rt/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1727826844244	Marionette	INFO	Stopped listening on port 65366
+Dynamically enable window occlusion 1
+1727826857391	geckodriver	INFO	Listening on 127.0.0.1:65486
+1727826860463	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65487" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileCsdTSc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727826861093	Marionette	INFO	Marionette enabled
+1727826861425	Marionette	INFO	Listening on port 65494
+WebDriver BiDi listening on ws://127.0.0.1:65487
+Read port: 65494
+1727826861761	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+Exiting due to channel error.
+Exiting due to channel error.
+1727839269147	geckodriver	INFO	Listening on 127.0.0.1:63453
+1727839272178	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63454" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilexgQG9Z"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727839273790	Marionette	INFO	Marionette enabled
+1727839274228	Marionette	INFO	Listening on port 63461
+WebDriver BiDi listening on ws://127.0.0.1:63454
+Read port: 63461
+1727839274586	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yh/l/pt_BR/UPFqv7S6Jdh.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+1727839465147	Marionette	INFO	Stopped listening on port 63461
+Dynamically enable window occlusion 1
+1727839475805	geckodriver	INFO	Listening on 127.0.0.1:63547
+1727839478873	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63548" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileyxfNbr"
+1727839706667	geckodriver	INFO	Listening on 127.0.0.1:63623
+1727839709751	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63624" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileRptmq4"
+1727839750480	geckodriver	INFO	Listening on 127.0.0.1:63669
+1727839753527	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63670" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileN4joMH"
