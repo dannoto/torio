@@ -179,7 +179,7 @@ class Torio extends CI_Controller
         $response = $this->api_model->get_sms_ofertas_pendentes();
 
         // Itera sobre cada oferta e adiciona os novos campos
-        foreach ($response as &$oferta) {
+        foreach ($response as $oferta) {
             // Adiciona o campo 'oferta_conteudo' com o valor que você deseja
             $oferta['oferta_conteudo'] = $this->conta_model->get_persona($oferta->oferta_persona_id)->persona_telefone; // você pode ajustar conforme necessário
             $oferta['oferta_numero'] =  $this->conta_model->get_template($oferta->oferta_oferta_id)->oferta_conteudo; // você pode ajustar conforme necessário
