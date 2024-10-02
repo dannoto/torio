@@ -1257,7 +1257,6 @@ class Conta extends CI_Controller
                 $response = array("status" => true, "message" => "Oferta enviada com sucesso");
             } else {
 
-
                 $response = array("status" => false, "message" => "Erro ao enviar oferta");
             }
 
