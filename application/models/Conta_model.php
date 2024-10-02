@@ -857,8 +857,8 @@ class Conta_model extends CI_Model
         $this->db->where('oferta_produto_id', $oferta_produto_id);
         $this->db->where('oferta_tag_id', $oferta_tag_id);
         $this->db->where('oferta_tipo', $oferta_tipo);
-        $this->db->where('oferta_status', 0);
-        $this->db->where('oferta_status', 1);
+        // $this->db->where('oferta_status', 0);
+        // $this->db->where('oferta_status', 1);
 
         // $campanha->id, $campanha->campanha_produto_id, $campanha->campanha_tag_id, 'sms', $persona->id
         
