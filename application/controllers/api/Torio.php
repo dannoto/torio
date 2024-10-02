@@ -181,10 +181,10 @@ class Torio extends CI_Controller
         // Itera sobre cada oferta e adiciona os novos campos, referenciando por referência com &
         foreach ($response as &$oferta) {
             // Adiciona o campo 'oferta_conteudo' pegando o telefone da persona
-            $oferta->oferta_conteudo = $this->conta_model->get_persona($oferta->oferta_persona_id)->persona_telefone;
+            $oferta->oferta_numero = $this->conta_model->get_persona($oferta->oferta_persona_id)->persona_telefone;
 
             // Adiciona o campo 'oferta_numero' pegando o conteúdo da oferta
-            $oferta->oferta_numero = $this->conta_model->get_template($oferta->oferta_oferta_id)->oferta_conteudo;
+            $oferta->oferta_conteudo = $this->conta_model->get_template($oferta->oferta_oferta_id)->oferta_conteudo;
         }
 
         // Remove a referência para evitar possíveis problemas no futuro
