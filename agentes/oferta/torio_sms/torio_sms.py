@@ -29,7 +29,7 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
 
     driver.get('https://ccoanalitica.com/torio_sms/smsbox/compose')
 
-    time.sleep(8)
+    time.sleep(5)
 
 
     # Selecionar dispositivo
@@ -43,7 +43,7 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
         print('Erro selecionar dispositivo')
         return False
     
-    time.sleep(2)
+    time.sleep(1)
     
     # Digitar numero
     
@@ -59,7 +59,7 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
         print('Erro digitar numero ')
         return False
 
-    time.sleep(2)
+    time.sleep(1)
     # text area
 
     try:
@@ -72,7 +72,7 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
         print('Erro digitar conteudo ')
         return False
     
-    time.sleep(2)
+    time.sleep(1)
 
     # btn enviar
 
