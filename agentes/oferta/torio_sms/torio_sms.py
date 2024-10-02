@@ -111,6 +111,7 @@ def login_sms(driver):
 def update_oferta_status(oferta_id):
 
     url = base_url+"update_sms_oferta_status?oferta_id"+str(oferta_id)
+    print(url)
     
  
     response = requests.get(url)
@@ -178,7 +179,7 @@ if __name__ == "__main__":
 
                 send_oferta = send_sms_oferta(oferta_numero, oferta_conteudo)
 
-                if send_sms_oferta:
+                if send_oferta:
 
                     update_oferta_status(oferta['id'])    
 
