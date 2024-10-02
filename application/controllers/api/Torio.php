@@ -178,12 +178,17 @@ class Torio extends CI_Controller
         // Recupera a lista de ofertas pendentes
         $response = $this->api_model->get_sms_ofertas_pendentes();
 
-        // Itera sobre cada oferta e adiciona os novos campos
-        foreach ($response as $oferta) {
-            // Adiciona o campo 'oferta_conteudo' com o valor que você deseja
-            $oferta['oferta_conteudo'] = $this->conta_model->get_persona($oferta->oferta_persona_id)->persona_telefone; // você pode ajustar conforme necessário
-            $oferta['oferta_numero'] =  $this->conta_model->get_template($oferta->oferta_oferta_id)->oferta_conteudo; // você pode ajustar conforme necessário
+        // Itera sobre cada oferta e adiciona os novos campos, referenciando por referência com &
+        foreach ($response as &$oferta) {
+            // Adiciona o campo 'oferta_conteudo' pegando o telefone da persona
+            $oferta->oferta_conteudo = $this->conta_model->get_persona($oferta->oferta_persona_id)->persona_telefone;
+
+            // Adiciona o campo 'oferta_numero' pegando o conteúdo da oferta
+            $oferta->oferta_numero = $this->conta_model->get_template($oferta->oferta_oferta_id)->oferta_conteudo;
         }
+
+        // Remove a referência para evitar possíveis problemas no futuro
+        unset($oferta);
 
         // Retorna a lista de ofertas com os campos adicionados
         print_r(json_encode($response));

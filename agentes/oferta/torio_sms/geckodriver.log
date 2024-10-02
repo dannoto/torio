@@ -38,3 +38,6 @@ console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanali
 console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
 console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
 console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
