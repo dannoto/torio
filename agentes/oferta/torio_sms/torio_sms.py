@@ -76,15 +76,15 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
 
     # btn enviar
 
-    # try:
+    try:
 
-    element_c = driver.find_element(By.CSS_SELECTOR, 'button.btn-primary:nth-child(2)')
-    element_c.click()
+        element_c = driver.find_element(By.XPATH, '//*[@id="compose_form"]/div[3]/div/button[2]')
+        element_c.click()
 
-    # except:
+    except:
 
-    #     print('Erro btn enviar oferta ')
-    #     return False
+        print('Erro btn enviar oferta ')
+        # return False
     
     # time.sleep(5)
     
