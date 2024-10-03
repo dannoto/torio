@@ -187,7 +187,7 @@
                                                             <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_username ?>"><small class="text-uppercase"><?= $persona->persona_username ?></small></p>
                                                         </td>
                                                         <td>
-                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_email ?>"><small class="text-uppercase"><?= $persona->persona_email ?></small></p>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_email ?>"><small class="text-uppercase"><?= substr($persona->persona_email, 0, 14)."..." ?></small></p>
                                                         </td>
                                                         <td>
                                                             <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_telefone ?>"><small class="text-uppercase"><?= $persona->persona_telefone ?></small></p>

@@ -223,7 +223,7 @@ if __name__ == "__main__":
 
             print('Nenhuma oferta pendente')
 
-        time.sleep(30)
+        time.sleep(1)
 
         
 
