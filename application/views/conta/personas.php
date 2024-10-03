@@ -63,110 +63,133 @@
         </div>
       </div>
       <div class="row">
-   
-      </div>
-      
-      <div class="row">
         <div class="col-12">
-          <div class="card mb-4">
-            <div class="card-header pb-0">
-              <h6>PERSONAS <small> (<?= count($this->conta_model->get_personas()) ?>)</small></h6>
-            </div>
-            <div class="card-body px-0 pt-0 pb-2">
-              <div class="table-responsive p-0">
-                <table class="table align-items-center justify-content-center mb-0">
-                  <thead>
-                    <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">NOME</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">USERNAME</th>
+          <div class="card mb-4 p-3">
+            <div class="pb-0">
+              <form action="">
+                <div class="row">
 
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">EMAIL</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">TELEFONE</th>
+                  <div class="col-md-4">
 
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">DATA</th>
+                    <label for="">TIPO</label>
+                    <input type="text" name="persona_nome" value="<?=$this->input->get('persona_nome')?>">
+                  </div>
+                  <div class="col-md-4">
+
                    
+                  </div>
+                  <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary " style="margin-top: 30px !important;"><i class="fa fa-search"></i></button>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                      <th></th>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="card mb-4">
+          <div class="card-header pb-0">
+            <h6>PERSONAS <small> (<?= count($this->conta_model->get_personas()) ?>)</small></h6>
+          </div>
+          <div class="card-body px-0 pt-0 pb-2">
+            <div class="table-responsive p-0">
+              <table class="table align-items-center justify-content-center mb-0">
+                <thead>
+                  <tr>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">NOME</th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">USERNAME</th>
+
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">EMAIL</th>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">TELEFONE</th>
+
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">DATA</th>
+
+
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <?php foreach ($personas as $p) { ?>
+
+                    <tr>
+
+                      <td>
+                        <div class="d-flex px-2">
+                          <div>
+                            <img src="https://images.vexels.com/content/129616/preview/businessman-avatar-silhouette-ae719c.png" style="object-fit:cover" class="avatar avatar-sm rounded-circle me-2" alt="webdev">
+                          </div>
+                          <div class="my-auto">
+                            <h6 class="mb-0 text-sm" title="<?= $p->persona_nome ?>">
+
+                              <?php if (strlen($p->persona_nome) > 14) {
+                                echo substr($p->persona_nome, 0, 14) . "...";
+                              } else {
+                                echo $p->persona_nome;
+                              } ?>
+
+
+
+
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2">
+                          <h6 class="mb-0 text-sm" title="<?= $p->persona_username ?>">
+                            <?php if (strlen($p->persona_username) > 14) {
+                              echo substr($p->persona_username, 0, 14) . "...";
+                            } else {
+                              echo $p->persona_username;
+                            } ?>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2">
+                          <h6 class="mb-0 text-sm" title="<?= $p->persona_email ?>">
+                            <?php if (strlen($p->persona_email) > 14) {
+                              echo substr($p->persona_email, 0, 14) . "...";
+                            } else {
+                              echo $p->persona_email;
+                            } ?>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2">
+                          <h6 class="mb-0 text-sm" title="<?= $p->persona_telefone ?>">
+                            <?php if (strlen($p->persona_telefone) > 14) {
+                              echo substr($p->persona_telefone, 0, 14) . "...";
+                            } else {
+                              echo $p->persona_telefone;
+                            } ?>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="d-flex px-2">
+                          <h6 class="mb-0 text-sm" title="<?= $p->persona_data ?>">
+                            <?= $p->persona_data; ?>
+                        </div>
+                      </td>
+
+
+
                     </tr>
-                  </thead>
-                  <tbody>
-
-                    <?php foreach ($personas as $p) { ?>
-
-                      <tr>
-
-                        <td>
-                          <div class="d-flex px-2">
-                            <div>
-                              <img src="https://images.vexels.com/content/129616/preview/businessman-avatar-silhouette-ae719c.png" style="object-fit:cover" class="avatar avatar-sm rounded-circle me-2" alt="webdev">
-                            </div>
-                            <div class="my-auto">
-                                <h6 class="mb-0 text-sm" title="<?= $p->persona_nome ?>">
-
-                                  <?php if (strlen($p->persona_nome) > 14) {
-                                    echo substr($p->persona_nome, 0, 14) . "...";
-                                  } else {
-                                    echo $p->persona_nome;
-                                  } ?>
-                           
-
-
-
-                            </div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="d-flex px-2">
-                                <h6 class="mb-0 text-sm" title="<?= $p->persona_username ?>">
-                                  <?php if (strlen($p->persona_username) > 14) {
-                                    echo substr($p->persona_username, 0, 14) . "...";
-                                  } else {
-                                    echo $p->persona_username;
-                                  } ?>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="d-flex px-2">
-                                <h6 class="mb-0 text-sm" title="<?= $p->persona_email ?>">
-                                  <?php if (strlen($p->persona_email) > 14) {
-                                    echo substr($p->persona_email, 0, 14) . "...";
-                                  } else {
-                                    echo $p->persona_email;
-                                  } ?>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="d-flex px-2">
-                                <h6 class="mb-0 text-sm" title="<?= $p->persona_telefone ?>">
-                                  <?php if (strlen($p->persona_telefone) > 14) {
-                                    echo substr($p->persona_telefone, 0, 14) . "...";
-                                  } else {
-                                    echo $p->persona_telefone;
-                                  } ?>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="d-flex px-2">
-                                <h6 class="mb-0 text-sm" title="<?= $p->persona_data ?>">
-                                  <?= $p->persona_data; ?>
-                          </div>
-                        </td>
-                      
-                      
-
-                      </tr>
-                    <?php } ?>
-                  </tbody>
-                </table>
-                <div class="pt-5">
-                  <?php print_r($pagination); ?>
-                </div>
+                  <?php } ?>
+                </tbody>
+              </table>
+              <div class="pt-5">
+                <?php print_r($pagination); ?>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <?php $this->load->view('comp/footer'); ?>
+    </div>
+    <?php $this->load->view('comp/footer'); ?>
     </div>
   </main>
 
