@@ -184,16 +184,16 @@
                                                             <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_nome ?>"><small class="text-uppercase"><?= substr($persona->persona_nome, 0, 12) . "..." ?></small></p>
                                                         </td>
                                                         <td>
-                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_username ?>"><small class="text-uppercase"><?= $persona->persona_username ?></small></p>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_username ?>"><small class="text-uppercase"><?= substr($persona->persona_username, 0, 12)."..." ?></small></p>
                                                         </td>
                                                         <td>
-                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_email ?>"><small class="text-uppercase"><?= substr($persona->persona_email, 0, 14)."..." ?></small></p>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_email ?>"><small class="text-uppercase"><?= substr($persona->persona_email, 0, 12)."..." ?></small></p>
                                                         </td>
                                                         <td>
                                                             <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_telefone ?>"><small class="text-uppercase"><?= $persona->persona_telefone ?></small></p>
                                                         </td>
                                                         <td>
-                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_data ?>"><small class="text-uppercase"><?= $persona->persona_data ?></small></p>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_data ?>"><small class="text-uppercase"><?= substr($persona->persona_data, 0, 10) ?></small></p>
                                                         </td>
                                                         <td>
 
