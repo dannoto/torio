@@ -2663,7 +2663,7 @@ if __name__ == "__main__":
                             print("=========== 400 CONTA BANIDA :"+ str(response.status_code))
                             header_status =  False
                             
-                            update_agente_banido(agentes_data[a_index]['id'], 1)
+                            update_agente_banido(agentes_data[a_index]['id'], 0)
                             a_index = random.randint(0, len(agentes_data) - 1)
 
                             try:
@@ -2678,6 +2678,17 @@ if __name__ == "__main__":
                         
                         # winsound.Beep(1000, 1500) 
                         print("=========== PROBLEMA ALEATÓRIO: ", e)
+
+                        header_status =  False
+                            
+                        update_agente_ocupado(agentes_data[a_index]['id'], 1)
+                        a_index = random.randint(0, len(agentes_data) - 1)
+
+                        try:
+                            driver.close()
+                            print('tem driver aberto')
+                        except:
+                            print('nao tem driver aberto')
                         # header_status =  False
                         # update_agente_banido(agentes_data[a_index]['id'], 0)
                         # a_index = random.randint(0, len(agentes_data) - 1)

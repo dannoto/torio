@@ -795,14 +795,14 @@ class Conta_model extends CI_Model
     {
 
         $this->db->like('clique_data_id', date('Y-m'));
-       // Exclui registros onde o user agent seja 'facebookexternalhit/1.1'
-       $this->db->where('clique_user_agent !=', "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)");
+        // Exclui registros onde o user agent seja 'facebookexternalhit/1.1'
+        $this->db->where('clique_user_agent !=', "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)");
 
-       // Exclui registros onde o user agent contenha a palavra 'google'
-       $this->db->not_like('clique_user_agent', 'google');
+        // Exclui registros onde o user agent contenha a palavra 'google'
+        $this->db->not_like('clique_user_agent', 'google');
 
-       // Executa a consulta e retorna os resultados
-       return $this->db->get('cliques')->result();
+        // Executa a consulta e retorna os resultados
+        return $this->db->get('cliques')->result();
     }
 
     public function report_get_vendas_month()
@@ -907,81 +907,160 @@ class Conta_model extends CI_Model
 
 
 
-       // PERSONAS
-       public function add_persona($persona_data)
-       {
-           return $this->db->insert('personas', $persona_data);
-       }
-   
-       public function get_persona($persona_id)
-       {
-           $this->db->where('id', $persona_id);
-           return $this->db->get('personas')->row();
-       }
-   
-       public function get_personas($limit = null, $start = null)
-       {
-           $this->db->where('is_deleted', 0);
-           $this->db->order_by('id', 'desc');
-           $this->db->limit($limit, $start);
-           return $this->db->get('personas')->result();
-       }
-   
-       public function count_personas()
-       {
-           $this->db->where('is_deleted', 0);
-           return count($this->db->get('personas')->result());
-       }
-   
-       public function get_search_personas($f_data, $limit, $start)
-       {
-   
-           if (strlen($f_data['persona_nome']) > 0) {
-               $this->db->like('persona_nome', $f_data['persona_nome']);
-           }
-   
-           $this->db->limit($limit, $start);
-           $this->db->where('is_deleted', 0);
-   
-           return $this->db->get('personas')->result();
-       }
-   
-       public function count_search_personas($f_data)
-       {
-   
-           if (strlen($f_data['persona_nome']) > 0) {
-               $this->db->like('persona_nome', $f_data['persona_nome']);
-           }
-           $this->db->where('is_deleted', 0);
-   
-   
-           return count($this->db->get('personas')->result());
-       }
-   
-       public function update_persona($persona_id, $persona_data)
-       {
-           $this->db->where('id', $persona_id);
-   
-           return $this->db->update('personas', $persona_data);
-       }
-   
-       public function delete_persona($persona_id)
-       {
-           $this->db->where('id', $persona_id);
-           $persona_data = array(
-               'is_deleted' => 1
-           );
-           return $this->db->update('personas', $persona_data);
-       }
-   
-       public function check_persona($persona_name)
-       {
-   
-           $this->db->where('persona_name', $persona_name);
-           $this->db->where('is_deleted', 0);
-   
-           return $this->db->get('personas')->result();
-       }
-   
-       // PERSONAS
+    // PERSONAS
+    public function add_persona($persona_data)
+    {
+        return $this->db->insert('personas', $persona_data);
+    }
+
+    public function get_persona($persona_id)
+    {
+        $this->db->where('id', $persona_id);
+        return $this->db->get('personas')->row();
+    }
+
+    public function get_personas($limit = null, $start = null)
+    {
+        $this->db->where('is_deleted', 0);
+        $this->db->order_by('id', 'desc');
+        $this->db->limit($limit, $start);
+        return $this->db->get('personas')->result();
+    }
+
+    public function count_personas()
+    {
+        $this->db->where('is_deleted', 0);
+        return count($this->db->get('personas')->result());
+    }
+
+    public function get_search_personas($f_data, $limit, $start)
+    {
+
+        if (strlen($f_data['persona_nome']) > 0) {
+            $this->db->like('persona_nome', $f_data['persona_nome']);
+        }
+
+        $this->db->limit($limit, $start);
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('personas')->result();
+    }
+
+    public function count_search_personas($f_data)
+    {
+
+        if (strlen($f_data['persona_nome']) > 0) {
+            $this->db->like('persona_nome', $f_data['persona_nome']);
+        }
+        $this->db->where('is_deleted', 0);
+
+
+        return count($this->db->get('personas')->result());
+    }
+
+    public function update_persona($persona_id, $persona_data)
+    {
+        $this->db->where('id', $persona_id);
+
+        return $this->db->update('personas', $persona_data);
+    }
+
+    public function delete_persona($persona_id)
+    {
+        $this->db->where('id', $persona_id);
+        $persona_data = array(
+            'is_deleted' => 1
+        );
+        return $this->db->update('personas', $persona_data);
+    }
+
+    public function check_persona($persona_name)
+    {
+
+        $this->db->where('persona_name', $persona_name);
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('personas')->result();
+    }
+
+    // PERSONAS
+
+
+    // CLIQUES
+    public function add_clique($clique_data)
+    {
+        return $this->db->insert('cliques', $clique_data);
+    }
+
+    public function get_clique($clique_id)
+    {
+        $this->db->where('id', $clique_id);
+        return $this->db->get('cliques')->row();
+    }
+
+    public function get_cliques($limit = null, $start = null)
+    {
+        $this->db->where('is_deleted', 0);
+        $this->db->order_by('id', 'desc');
+        $this->db->limit($limit, $start);
+        return $this->db->get('cliques')->result();
+    }
+
+    public function count_cliques()
+    {
+        $this->db->where('is_deleted', 0);
+        return count($this->db->get('cliques')->result());
+    }
+
+    public function get_search_cliques($f_data, $limit, $start)
+    {
+
+        if (strlen($f_data['clique_nome']) > 0) {
+            $this->db->like('clique_nome', $f_data['clique_nome']);
+        }
+
+        $this->db->limit($limit, $start);
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('cliques')->result();
+    }
+
+    public function count_search_cliques($f_data)
+    {
+
+        if (strlen($f_data['clique_nome']) > 0) {
+            $this->db->like('clique_nome', $f_data['clique_nome']);
+        }
+        $this->db->where('is_deleted', 0);
+
+
+        return count($this->db->get('cliques')->result());
+    }
+
+    public function update_clique($clique_id, $clique_data)
+    {
+        $this->db->where('id', $clique_id);
+
+        return $this->db->update('cliques', $clique_data);
+    }
+
+    public function delete_clique($clique_id)
+    {
+        $this->db->where('id', $clique_id);
+        $clique_data = array(
+            'is_deleted' => 1
+        );
+        return $this->db->update('cliques', $clique_data);
+    }
+
+    public function check_clique($clique_name)
+    {
+
+        $this->db->where('clique_name', $clique_name);
+        $this->db->where('is_deleted', 0);
+
+        return $this->db->get('cliques')->result();
+    }
+
+    // CLIQUES
 }
