@@ -545,7 +545,7 @@ class Conta extends CI_Controller
             redirect(base_url());
         }
 
-        echo $campanha_data->campanha_tipo;
+        // echo $campanha_data->campanha_tipo;
 
 
         $config['base_url'] = base_url('conta/campanhas_leads/' . $campanha_id);
