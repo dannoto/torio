@@ -148,11 +148,7 @@
                         <td>
                           <div class="d-flex px-2">
                                 <h6 class="mb-0 text-sm" title="<?= $p->persona_data ?>">
-                                  <?php if (strlen($p->persona_data) > 14) {
-                                    echo substr($p->persona_data, 0, 14) . "...";
-                                  } else {
-                                    echo $p->persona_data;
-                                  } ?>
+                                  <?= $p->persona_data; ?>
                           </div>
                         </td>
                       
