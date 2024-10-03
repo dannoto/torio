@@ -72,7 +72,7 @@
                   <div class="col-md-4">
 
                     <label for="">NOME</label>
-                    <input type="text" name="persona_nome" value="<?=$this->input->get('persona_nome')?>">
+                    <input type="text" class="form-control" name="persona_nome" value="<?=$this->input->get('persona_nome')?>">
                   </div>
                   <div class="col-md-4">
 
