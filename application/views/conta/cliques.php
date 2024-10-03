@@ -54,40 +54,7 @@
     <?php $this->load->view('comp/sidebar'); ?>
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
         <?php $this->load->view('comp/navbar'); ?>
-        <div class="container-fluid py-4">
-            <div class="row">
-                <div class="col-md-6"></div>
-                <div class="col-md-6 d-flex justify-content-end">
-                    <!-- <button type="button" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#modal_add_produto"><i class="fa fa-plus mr-2"></i> Adicionar Produto</button> -->
-                    <button type="button" id="trigger_update_btn" style="display: none;" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#modal_update_produto">Editar Produto</button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="card mb-4 p-3">
-                        <div class="pb-0">
-                            <form action="">
-                                <div class="row">
-
-                                    <div class="col-md-4">
-
-                                        <label for="">NOME</label>
-                                        <input type="text" class="form-control" name="persona_nome" value="<?= $this->input->get('persona_nome') ?>">
-                                    </div>
-                                    <div class="col-md-4">
-
-
-                                    </div>
-                                    <div class="col-md-4">
-                                        <button type="submit" class="btn btn-primary " style="margin-top: 30px !important;"><i class="fa fa-search"></i></button>
-                                    </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+      
 
         <div class="row">
             <div class="col-12">
@@ -120,7 +87,7 @@
                                                         <img src="https://images.vexels.com/content/129616/preview/businessman-avatar-silhouette-ae719c.png" style="object-fit:cover" class="avatar avatar-sm rounded-circle me-2" alt="webdev">
                                                     </div>
                                                     <div class="my-auto">
-                                                        <a href="https://instagram.com/<?= $p->persona_username ?>" target="_blank">
+                                                        <a href="https://instagram.com/<?=$this->conta_model->get_persona($p->clique_persona_id)->persona_username ?>" target="_blank">
 
                                                             <h6 class="mb-0 text-sm" title="<?= $this->conta_model->get_persona($p->clique_persona_id)->persona_nome ?>">
 
