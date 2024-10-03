@@ -117,12 +117,7 @@
                                             <td>
 
                                                 <small class="mb-0 text-sm" title="<?= $p->clique_data_id ?>">
-
-                                                    <?php if (strlen($p->clique_data_id) > 14) {
-                                                        echo substr($p->clique_data_id, 0, 14) . "...";
-                                                    } else {
-                                                        echo $p->clique_data_id;
-                                                    } ?>
+                                                    <?=$p->clique_data_id?>
                                                 </small>
 
                                             </td>
