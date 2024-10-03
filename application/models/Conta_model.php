@@ -862,6 +862,8 @@ class Conta_model extends CI_Model
     {
 
         $this->db->where('id', $template_id);
+        $this->db->where('is_deleted', 0);
+
         return $this->db->get('campanhas_ofertas')->row();
     }
 

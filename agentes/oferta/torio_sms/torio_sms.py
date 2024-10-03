@@ -27,9 +27,9 @@ from bs4 import BeautifulSoup
 
 def send_sms_oferta(oferta_numero, oferta_conteudo):
 
-    # driver.get('https://ccoanalitica.com/torio_sms/smsbox/compose')
+    driver.get('https://ccoanalitica.com/torio_sms/smsbox/compose')
 
-    # time.sleep(5)
+    time.sleep(5)
 
 
     # Selecionar dispositivo
@@ -78,8 +78,9 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
 
     try:
 
-        element_c = driver.find_element(By.XPATH, '//*[@id="compose_form"]/div[3]/div/button[2]')
+        element_c = driver.find_element(By.CSS_SELECTOR, 'button.btn-primary:nth-child(2)')
         element_c.click()
+        time.sleep(3)
 
     except:
 
