@@ -457,3 +457,29 @@ Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1727928499126	geckodriver	INFO	Listening on 127.0.0.1:53618
+1727928502206	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53619" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileg4YzdO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727928502756	Marionette	INFO	Marionette enabled
+1727928503069	Marionette	INFO	Listening on port 53627
+WebDriver BiDi listening on ws://127.0.0.1:53619
+Read port: 53627
+1727928503393	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yX/l/pt_BR/9Qssy0ByVDq.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+1727928691426	Marionette	INFO	Stopped listening on port 53627
+Dynamically enable window occlusion 1
+1727928703049	geckodriver	INFO	Listening on 127.0.0.1:53721
+1727928706113	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53722" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilez4wsBM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727928707312	Marionette	INFO	Marionette enabled
+1727928707718	Marionette	INFO	Listening on port 53732
+WebDriver BiDi listening on ws://127.0.0.1:53722
+Read port: 53732
+1727928708013	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yX/l/pt_BR/9Qssy0ByVDq.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."

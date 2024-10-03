@@ -1002,6 +1002,10 @@ class Conta_model extends CI_Model
     {
         $this->db->where('is_deleted', 0);
         $this->db->order_by('id', 'desc');
+
+        $this->db->where('clique_user_agent !=', "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)");
+        $this->db->not_like('clique_user_agent', 'google');
+
         $this->db->limit($limit, $start);
         return $this->db->get('cliques')->result();
     }
@@ -1009,6 +1013,10 @@ class Conta_model extends CI_Model
     public function count_cliques()
     {
         $this->db->where('is_deleted', 0);
+
+        $this->db->where('clique_user_agent !=', "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)");
+        $this->db->not_like('clique_user_agent', 'google');
+
         return count($this->db->get('cliques')->result());
     }
 
@@ -1018,6 +1026,9 @@ class Conta_model extends CI_Model
         if (strlen($f_data['clique_nome']) > 0) {
             $this->db->like('clique_nome', $f_data['clique_nome']);
         }
+
+        $this->db->where('clique_user_agent !=', "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)");
+        $this->db->not_like('clique_user_agent', 'google');
 
         $this->db->limit($limit, $start);
         $this->db->where('is_deleted', 0);
@@ -1031,6 +1042,10 @@ class Conta_model extends CI_Model
         if (strlen($f_data['clique_nome']) > 0) {
             $this->db->like('clique_nome', $f_data['clique_nome']);
         }
+
+        $this->db->where('clique_user_agent !=', "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)");
+        $this->db->not_like('clique_user_agent', 'google');
+        
         $this->db->where('is_deleted', 0);
 
 
@@ -1063,4 +1078,7 @@ class Conta_model extends CI_Model
     }
 
     // CLIQUES
+
+
+    
 }
