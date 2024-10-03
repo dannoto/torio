@@ -72,11 +72,11 @@
                   <div class="col-md-4">
 
                     <label for="">NOME</label>
-                    <input type="text" class="form-control" name="persona_nome" value="<?=$this->input->get('persona_nome')?>">
+                    <input type="text" class="form-control" name="persona_nome" value="<?= $this->input->get('persona_nome') ?>">
                   </div>
                   <div class="col-md-4">
 
-                   
+
                   </div>
                   <div class="col-md-4">
                     <button type="submit" class="btn btn-primary " style="margin-top: 30px !important;"><i class="fa fa-search"></i></button>
@@ -124,13 +124,17 @@
                             <img src="https://images.vexels.com/content/129616/preview/businessman-avatar-silhouette-ae719c.png" style="object-fit:cover" class="avatar avatar-sm rounded-circle me-2" alt="webdev">
                           </div>
                           <div class="my-auto">
-                            <h6 class="mb-0 text-sm" title="<?= $p->persona_nome ?>">
+                            <a href="https://instagram.com/<?= $p->persona_username ?>" target="_blank">
 
-                              <?php if (strlen($p->persona_nome) > 14) {
-                                echo substr($p->persona_nome, 0, 14) . "...";
-                              } else {
-                                echo $p->persona_nome;
-                              } ?>
+                              <h6 class="mb-0 text-sm" title="<?= $p->persona_nome ?>">
+
+                                <?php if (strlen($p->persona_nome) > 14) {
+                                  echo substr($p->persona_nome, 0, 14) . "...";
+                                } else {
+                                  echo $p->persona_nome;
+                                } ?>
+                              </h6>
+                            </a>
 
 
 
@@ -140,12 +144,19 @@
                       </td>
                       <td>
                         <div class="d-flex px-2">
-                          <h6 class="mb-0 text-sm" title="<?= $p->persona_username ?>">
-                            <?php if (strlen($p->persona_username) > 14) {
-                              echo substr($p->persona_username, 0, 14) . "...";
-                            } else {
-                              echo $p->persona_username;
-                            } ?>
+
+                          <a href="https://instagram.com/<?= $p->persona_username ?>" target="_blank">
+
+                            <h6 class="mb-0 text-sm" title="<?= $p->persona_username ?>">
+                              <?php if (strlen($p->persona_username) > 14) {
+                                echo substr($p->persona_username, 0, 14) . "...";
+                              } else {
+                                echo $p->persona_username;
+                              } ?>
+
+                            </h6>
+                          </a>
+
                         </div>
                       </td>
                       <td>
