@@ -20,7 +20,72 @@ class Conta extends CI_Controller
 
     public function personas()
     {
-        $this->load->view('conta/tarefas');
+        if ($this->input->get()) {
+
+            $f_data = $this->input->get();
+            $base_url = base_url('conta/personas');
+            $query_string = http_build_query($f_data);
+
+            $config['base_url'] = $base_url;
+            $config['total_rows'] = $this->conta_model->count_search_personas($f_data);
+            $config['per_page'] = 10;
+            $config['uri_segment'] = 3;
+
+            $config['full_tag_open'] = '<ul class="pagination">';
+            $config['full_tag_close'] = '</ul>';
+            $config['first_link'] = 'Primeira';
+            $config['last_link'] = 'Última';
+            $config['next_link'] = '&gt;';
+            $config['prev_link'] = '&lt;';
+            $config['num_tag_open'] = '<li>';
+            $config['num_tag_close'] = '</li>';
+            $config['cur_tag_open'] = '<li class="active"><a href="#">';
+            $config['cur_tag_close'] = '</a></li>';
+
+
+
+            $this->pagination->initialize($config);
+
+            $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+
+            $data = array(
+                'personas' => $this->conta_model->get_search_personas($f_data, $config['per_page'], $page),
+                'pagination' => $this->pagination->create_links()
+            );
+
+
+            $data['pagination'] = preg_replace('/href="([^"]+)"/', 'href="$1?' . $query_string . '"', $data['pagination']);
+
+            $this->load->view('conta/personas',  $data);
+        } else {
+
+            $config['base_url'] = base_url('conta/personas');
+            $config['total_rows'] = $this->conta_model->count_personas(); // Total de registros
+            $config['per_page'] = 10; // Quantidade de imóveis por página
+            $config['uri_segment'] = 3; // Segmento da URL onde a página está indicada
+
+            $config['full_tag_open'] = '<ul class="pagination">';
+            $config['full_tag_close'] = '</ul>';
+            $config['first_link'] = 'Primeira';
+            $config['last_link'] = 'Última';
+            $config['next_link'] = '&gt;';
+            $config['prev_link'] = '&lt;';
+            $config['num_tag_open'] = '<li>';
+            $config['num_tag_close'] = '</li>';
+            $config['cur_tag_open'] = '<li class="active"><a href="#">';
+            $config['cur_tag_close'] = '</a></li>';
+
+            $this->pagination->initialize($config);
+
+            $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+
+            $data = array(
+                'personas' => $this->conta_model->get_personas($config['per_page'], $page),
+                'pagination' => $this->pagination->create_links()
+            );
+
+            $this->load->view('conta/personas',  $data);
+        }
     }
 
     public function tarefas()

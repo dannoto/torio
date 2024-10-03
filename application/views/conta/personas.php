@@ -1,590 +1,575 @@
-<!--
-=========================================================
-* Soft UI Dashboard - v1.0.7
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://www.creative-tim.com/license)
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="<?=base_url()?>assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="<?=base_url()?>assets/img/favicon.png">
-  <title>
-    Soft UI Dashboard by Creative Tim
-  </title>
-  <!--     Fonts and icons     -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-  <!-- Nucleo Icons -->
-  <link href="<?=base_url()?>assets/css/nucleo-icons.css" rel="stylesheet" />
-  <link href="<?=base_url()?>assets/css/nucleo-svg.css" rel="stylesheet" />
-  <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-  <link href="<?=base_url()?>assets/css/nucleo-svg.css" rel="stylesheet" />
-  <!-- CSS Files -->
-  <link id="pagestyle" href="<?=base_url()?>assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
-  <!-- Nepcha Analytics (nepcha.com) -->
-  <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
-  <!-- <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script> -->
+  <title>Personas - Tório </title>
+  <?php $this->load->view('comp/css'); ?>
 </head>
+<style>
+  .pagination {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    list-style: none;
+    border-radius: 10px;
+  }
+
+  .pagination a,
+  .pagination strong {
+    color: #fff;
+    background-color: #FF0080;
+    border: 1px solid #FF0080;
+    padding: 10px 15px;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .pagination a:hover {
+    background-color: #FF0080;
+    color: #fff;
+  }
+
+  .pagination strong {
+    background-color: #FF0080;
+  }
+
+  .pagination li.disabled a,
+  .pagination li.disabled strong {
+    background-color: #ccc;
+    border-color: #ccc;
+    color: #6c757d;
+    pointer-events: none;
+  }
+
+  .pagination li.active a {
+    background-color: #FF0072;
+    color: white;
+    border: 5px solid gray;
+  }
+</style>
 
 <body class="g-sidenav-show  bg-gray-100">
- <?php $this->load->view('comp/sidebar'); ?>
+  <?php $this->load->view('comp/sidebar'); ?>
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
-
-    <!-- Navbar -->
-     
     <?php $this->load->view('comp/navbar'); ?>
-
-    <!-- End Navbar -->
-     
     <div class="container-fluid py-4">
       <div class="row">
-        <div class="col-12">
-          <div class="card mb-4">
-            <div class="card-header pb-0">
-              <h6>Authors table</h6>
-            </div>
-            <div class="card-body px-0 pt-0 pb-2">
-              <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0">
-                  <thead>
-                    <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Function</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Employed</th>
-                      <th class="text-secondary opacity-7"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="<?=base_url()?>assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user1">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">John Michael</h6>
-                            <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Manager</p>
-                        <p class="text-xs text-secondary mb-0">Organization</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="<?=base_url()?>assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="user2">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Alexa Liras</h6>
-                            <p class="text-xs text-secondary mb-0">alexa@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Programator</p>
-                        <p class="text-xs text-secondary mb-0">Developer</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-secondary">Offline</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">11/01/19</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="<?=base_url()?>assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="user3">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Laurent Perrier</h6>
-                            <p class="text-xs text-secondary mb-0">laurent@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Executive</p>
-                        <p class="text-xs text-secondary mb-0">Projects</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">19/09/17</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="<?=base_url()?>assets/img/team-3.jpg" class="avatar avatar-sm me-3" alt="user4">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Michael Levi</h6>
-                            <p class="text-xs text-secondary mb-0">michael@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Programator</p>
-                        <p class="text-xs text-secondary mb-0">Developer</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">24/12/08</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="<?=base_url()?>assets/img/team-2.jpg" class="avatar avatar-sm me-3" alt="user5">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Richard Gran</h6>
-                            <p class="text-xs text-secondary mb-0">richard@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Manager</p>
-                        <p class="text-xs text-secondary mb-0">Executive</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-secondary">Offline</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">04/10/21</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="<?=base_url()?>assets/img/team-4.jpg" class="avatar avatar-sm me-3" alt="user6">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Miriam Eric</h6>
-                            <p class="text-xs text-secondary mb-0">miriam@creative-tim.com</p>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Programtor</p>
-                        <p class="text-xs text-secondary mb-0">Developer</p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-secondary">Offline</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">14/09/20</span>
-                      </td>
-                      <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-6"></div>
+        <div class="col-md-6 d-flex justify-content-end">
+          <!-- <button type="button" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#modal_add_produto"><i class="fa fa-plus mr-2"></i> Adicionar Produto</button> -->
+          <button type="button" id="trigger_update_btn" style="display: none;" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#modal_update_produto">Editar Produto</button>
         </div>
       </div>
       <div class="row">
+   
+      </div>
+      
+      <div class="row">
         <div class="col-12">
           <div class="card mb-4">
             <div class="card-header pb-0">
-              <h6>Projects table</h6>
+              <h6>OFERTAS <small> (<?= count($this->conta_model->get_personas()) ?>)</small></h6>
             </div>
             <div class="card-body px-0 pt-0 pb-2">
               <div class="table-responsive p-0">
                 <table class="table align-items-center justify-content-center mb-0">
                   <thead>
                     <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Project</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Budget</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Status</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Completion</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">NOME</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">USERNAME</th>
+
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">EMAIL</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">TELEFONE</th>
+
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">DATA</th>
+                   
+
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2">
-                          <div>
-                            <img src="<?=base_url()?>assets/img/small-logos/logo-spotify.svg" class="avatar avatar-sm rounded-circle me-2" alt="spotify">
-                          </div>
-                          <div class="my-auto">
-                            <h6 class="mb-0 text-sm">Spotify</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-sm font-weight-bold mb-0">$2,500</p>
-                      </td>
-                      <td>
-                        <span class="text-xs font-weight-bold">working</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div class="d-flex align-items-center justify-content-center">
-                          <span class="me-2 text-xs font-weight-bold">60%</span>
-                          <div>
-                            <div class="progress">
-                              <div class="progress-bar bg-gradient-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+
+                    <?php foreach ($personas as $p) { ?>
+
+                      <tr>
+
+                        <td>
+                          <div class="d-flex px-2">
+                            <div>
+                              <img src="https://images.vexels.com/content/129616/preview/businessman-avatar-silhouette-ae719c.png" style="object-fit:cover" class="avatar avatar-sm rounded-circle me-2" alt="webdev">
+                            </div>
+                            <div class="my-auto">
+                                <h6 class="mb-0 text-sm" title="<?= $p->persona_nome ?>">
+
+                                  <?php if (strlen($p->persona_nome) > 14) {
+                                    echo substr($p->persona_nome, 0, 14) . "...";
+                                  } else {
+                                    echo $p->persona_nome;
+                                  } ?>
+                           
+
+
+
                             </div>
                           </div>
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <button class="btn btn-link text-secondary mb-0">
-                          <i class="fa fa-ellipsis-v text-xs"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2">
-                          <div>
-                            <img src="<?=base_url()?>assets/img/small-logos/logo-invision.svg" class="avatar avatar-sm rounded-circle me-2" alt="invision">
+                        </td>
+                        <td>
+                          <div class="d-flex px-2">
+                                <h6 class="mb-0 text-sm" title="<?= $p->persona_username ?>">
+                                  <?php if (strlen($p->persona_username) > 14) {
+                                    echo substr($p->persona_username, 0, 14) . "...";
+                                  } else {
+                                    echo $p->persona_username;
+                                  } ?>
                           </div>
-                          <div class="my-auto">
-                            <h6 class="mb-0 text-sm">Invision</h6>
+                        </td>
+                        <td>
+                          <div class="d-flex px-2">
+                                <h6 class="mb-0 text-sm" title="<?= $p->persona_email ?>">
+                                  <?php if (strlen($p->persona_email) > 14) {
+                                    echo substr($p->persona_email, 0, 14) . "...";
+                                  } else {
+                                    echo $p->persona_email;
+                                  } ?>
                           </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-sm font-weight-bold mb-0">$5,000</p>
-                      </td>
-                      <td>
-                        <span class="text-xs font-weight-bold">done</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div class="d-flex align-items-center justify-content-center">
-                          <span class="me-2 text-xs font-weight-bold">100%</span>
-                          <div>
-                            <div class="progress">
-                              <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
-                            </div>
+                        </td>
+                        <td>
+                          <div class="d-flex px-2">
+                                <h6 class="mb-0 text-sm" title="<?= $p->persona_telefone ?>">
+                                  <?php if (strlen($p->persona_telefone) > 14) {
+                                    echo substr($p->persona_telefone, 0, 14) . "...";
+                                  } else {
+                                    echo $p->persona_telefone;
+                                  } ?>
                           </div>
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <button class="btn btn-link text-secondary mb-0" aria-haspopup="true" aria-expanded="false">
-                          <i class="fa fa-ellipsis-v text-xs"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2">
-                          <div>
-                            <img src="<?=base_url()?>assets/img/small-logos/logo-jira.svg" class="avatar avatar-sm rounded-circle me-2" alt="jira">
+                        </td>
+                        <td>
+                          <div class="d-flex px-2">
+                                <h6 class="mb-0 text-sm" title="<?= $p->persona_data ?>">
+                                  <?php if (strlen($p->persona_data) > 14) {
+                                    echo substr($p->persona_data, 0, 14) . "...";
+                                  } else {
+                                    echo $p->persona_data;
+                                  } ?>
                           </div>
-                          <div class="my-auto">
-                            <h6 class="mb-0 text-sm">Jira</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-sm font-weight-bold mb-0">$3,400</p>
-                      </td>
-                      <td>
-                        <span class="text-xs font-weight-bold">canceled</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div class="d-flex align-items-center justify-content-center">
-                          <span class="me-2 text-xs font-weight-bold">30%</span>
-                          <div>
-                            <div class="progress">
-                              <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="30" style="width: 30%;"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <button class="btn btn-link text-secondary mb-0" aria-haspopup="true" aria-expanded="false">
-                          <i class="fa fa-ellipsis-v text-xs"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2">
-                          <div>
-                            <img src="<?=base_url()?>assets/img/small-logos/logo-slack.svg" class="avatar avatar-sm rounded-circle me-2" alt="slack">
-                          </div>
-                          <div class="my-auto">
-                            <h6 class="mb-0 text-sm">Slack</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-sm font-weight-bold mb-0">$1,000</p>
-                      </td>
-                      <td>
-                        <span class="text-xs font-weight-bold">canceled</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div class="d-flex align-items-center justify-content-center">
-                          <span class="me-2 text-xs font-weight-bold">0%</span>
-                          <div>
-                            <div class="progress">
-                              <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0" style="width: 0%;"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <button class="btn btn-link text-secondary mb-0" aria-haspopup="true" aria-expanded="false">
-                          <i class="fa fa-ellipsis-v text-xs"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2">
-                          <div>
-                            <img src="<?=base_url()?>assets/img/small-logos/logo-webdev.svg" class="avatar avatar-sm rounded-circle me-2" alt="webdev">
-                          </div>
-                          <div class="my-auto">
-                            <h6 class="mb-0 text-sm">Webdev</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-sm font-weight-bold mb-0">$14,000</p>
-                      </td>
-                      <td>
-                        <span class="text-xs font-weight-bold">working</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div class="d-flex align-items-center justify-content-center">
-                          <span class="me-2 text-xs font-weight-bold">80%</span>
-                          <div>
-                            <div class="progress">
-                              <div class="progress-bar bg-gradient-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80" style="width: 80%;"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <button class="btn btn-link text-secondary mb-0" aria-haspopup="true" aria-expanded="false">
-                          <i class="fa fa-ellipsis-v text-xs"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2">
-                          <div>
-                            <img src="<?=base_url()?>assets/img/small-logos/logo-xd.svg" class="avatar avatar-sm rounded-circle me-2" alt="xd">
-                          </div>
-                          <div class="my-auto">
-                            <h6 class="mb-0 text-sm">Adobe XD</h6>
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-sm font-weight-bold mb-0">$2,300</p>
-                      </td>
-                      <td>
-                        <span class="text-xs font-weight-bold">done</span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div class="d-flex align-items-center justify-content-center">
-                          <span class="me-2 text-xs font-weight-bold">100%</span>
-                          <div>
-                            <div class="progress">
-                              <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="align-middle">
-                        <button class="btn btn-link text-secondary mb-0" aria-haspopup="true" aria-expanded="false">
-                          <i class="fa fa-ellipsis-v text-xs"></i>
-                        </button>
-                      </td>
-                    </tr>
+                        </td>
+                      
+                      
+
+                      </tr>
+                    <?php } ?>
                   </tbody>
                 </table>
+                <div class="pt-5">
+                  <?php print_r($pagination); ?>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <footer class="footer pt-3  ">
-        <div class="container-fluid">
-          <div class="row align-items-center justify-content-lg-between">
-            <div class="col-lg-6 mb-lg-0 mb-4">
-              <div class="copyright text-center text-sm text-muted text-lg-start">
-                © <script>
-                  document.write(new Date().getFullYear())
-                </script>,
-                made with <i class="fa fa-heart"></i> by
-                <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
-                for a better web.
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <ul class="nav nav-footer justify-content-center justify-content-lg-end">
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com" class="nav-link text-muted" target="_blank">Creative Tim</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted" target="_blank">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com/blog" class="nav-link text-muted" target="_blank">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-muted" target="_blank">License</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <?php $this->load->view('comp/footer'); ?>
     </div>
   </main>
-  <div class="fixed-plugin">
-    <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
-      <i class="fa fa-cog py-2"> </i>
-    </a>
-    <div class="card shadow-lg ">
-      <div class="card-header pb-0 pt-3 ">
-        <div class="float-start">
-          <h5 class="mt-3 mb-0">Soft UI Configurator</h5>
-          <p>See our dashboard options.</p>
-        </div>
-        <div class="float-end mt-4">
-          <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
-            <i class="fa fa-close"></i>
+
+  <!-- Modal Adicionar Tag -->
+  <div class="modal fade" id="modal_add_produto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Adicionar PRODUTO</h5>
+          <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <!-- End Toggle Button -->
-      </div>
-      <hr class="horizontal dark my-1">
-      <div class="card-body pt-sm-3 pt-0">
-        <!-- Sidebar Backgrounds -->
-        <div>
-          <h6 class="mb-0">Sidebar Colors</h6>
+        <div class="modal-body">
+          <form id="form_add_produto">
+
+            <label for="">NOME</label>
+            <input type="text" class="form-control" name="nome" id="nome" required>
+            <br>
+            <label for="">DESCRIÇÃO</label>
+            <textarea maxlength="200" name="descricao" required class="form-control" id="descricao"></textarea>
+            <br>
+
+            <div class="row">
+              <div class="col-md-6">
+                <label for="">PREÇO</label>
+                <input type="text" class="form-control" name="preco" id="preco" required>
+
+              </div>
+              <div class="col-md-6">
+                <label for="">PLATAFORMA</label>
+                <select name="plataforma" class="form-control" required id="plataforma">
+                  <option value="">SELECIONAR</option>
+                  <option value="hotmart">HOTMART</option>
+                  <option value="kiwify">KIWIFY</option>
+                  <option value="monetizze">MONETIZZE</option>
+                  <option value="edduz">EDUZZ</option>
+
+                </select>
+
+              </div>
+
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6">
+                <label for="">URL DA IMAGEM</label>
+                <input type="text" class="form-control" name="imagem" id="imagem" required>
+              </div>
+              <div class="col-md-6">
+                <label for="">PÁGINA DE VENDAS</label>
+                <input type="text" class="form-control" name="pagina_de_vendas" id="pagina_de_vendas" required>
+
+              </div>
+
+            </div>
+            <br>
+            <div class="row">
+
+              <div class="col-md-6">
+                <label for="">STATUS</label>
+                <select name="status" class="form-control" required id="">
+                  <option value="">SELECIONAR</option>
+                  <option value="1">ATIVO</option>
+                  <option value="0">INATIVO</option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+
         </div>
-        <a href="javascript:void(0)" class="switch-trigger background-color">
-          <div class="badge-colors my-2 text-start">
-            <span class="badge filter bg-gradient-primary active" data-color="primary" onclick="sidebarColor(this)"></span>
-            <span class="badge filter bg-gradient-dark" data-color="dark" onclick="sidebarColor(this)"></span>
-            <span class="badge filter bg-gradient-info" data-color="info" onclick="sidebarColor(this)"></span>
-            <span class="badge filter bg-gradient-success" data-color="success" onclick="sidebarColor(this)"></span>
-            <span class="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span>
-            <span class="badge filter bg-gradient-danger" data-color="danger" onclick="sidebarColor(this)"></span>
-          </div>
-        </a>
-        <!-- Sidenav Type -->
-        <div class="mt-3">
-          <h6 class="mb-0">Sidenav Type</h6>
-          <p class="text-sm">Choose between 2 different sidenav types.</p>
+        <div class="modal-footer">
+          <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">FECHAR</button>
+          <button type="submit" class="btn bg-gradient-primary">ADICIONAR</button>
+
         </div>
-        <div class="d-flex">
-          <button class="btn bg-gradient-primary w-100 px-3 mb-2 active" data-class="bg-transparent" onclick="sidebarType(this)">Transparent</button>
-          <button class="btn bg-gradient-primary w-100 px-3 mb-2 ms-2" data-class="bg-white" onclick="sidebarType(this)">White</button>
-        </div>
-        <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
-        <!-- Navbar Fixed -->
-        <div class="mt-3">
-          <h6 class="mb-0">Navbar Fixed</h6>
-        </div>
-        <div class="form-check form-switch ps-0">
-          <input class="form-check-input mt-1 ms-auto" type="checkbox" id="navbarFixed" onclick="navbarFixed(this)">
-        </div>
-        <hr class="horizontal dark my-sm-4">
-        <a class="btn bg-gradient-dark w-100" href="https://www.creative-tim.com/product/soft-ui-dashboard">Free Download</a>
-        <a class="btn btn-outline-dark w-100" href="https://www.creative-tim.com/learning-lab/bootstrap/license/soft-ui-dashboard">View documentation</a>
-        <div class="w-100 text-center">
-          <a class="github-button" href="https://github.com/creativetimofficial/soft-ui-dashboard" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star creativetimofficial/soft-ui-dashboard on GitHub">Star</a>
-          <h6 class="mt-3">Thank you for sharing!</h6>
-          <a href="https://twitter.com/intent/tweet?text=Check%20Soft%20UI%20Dashboard%20made%20by%20%40CreativeTim%20%23webdesign%20%23dashboard%20%23bootstrap5&amp;url=https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fsoft-ui-dashboard" class="btn btn-dark mb-0 me-2" target="_blank">
-            <i class="fab fa-twitter me-1" aria-hidden="true"></i> Tweet
-          </a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.creative-tim.com/product/soft-ui-dashboard" class="btn btn-dark mb-0 me-2" target="_blank">
-            <i class="fab fa-facebook-square me-1" aria-hidden="true"></i> Share
-          </a>
-        </div>
+        </form>
       </div>
     </div>
   </div>
+  <!-- Modal Adicionar Tag -->
+
+
+  <!-- Modal UPDATE Tag -->
+  <div class="modal fade" id="modal_update_produto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Atualizar PRODUTO</h5>
+          <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="form_update_produto">
+            <input type="hidden" class="form-control" name="produto_id" id="update_produto_id" required>
+
+            <label for="">NOME</label>
+            <input type="text" class="form-control" name="nome" id="update_nome" required>
+            <br>
+            <label for="">DESCRIÇÃO</label>
+            <textarea maxlength="200" name="descricao" required class="form-control" id="update_descricao"></textarea>
+            <br>
+
+            <div class="row">
+              <div class="col-md-6">
+                <label for="">PREÇO</label>
+                <input type="text" class="form-control" name="preco" id="update_preco" required>
+
+              </div>
+              <div class="col-md-6">
+                <label for="">PLATAFORMA</label>
+                <select name="plataforma" class="form-control" required id="update_plataforma">
+                  <option value="">SELECIONAR</option>
+                  <option value="hotmart">HOTMART</option>
+                  <option value="kiwify">KIWIFY</option>
+                  <option value="monetizze">MONETIZZE</option>
+                  <option value="edduz">EDUZZ</option>
+
+                </select>
+
+              </div>
+
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6">
+                <label for="">URL DA IMAGEM</label>
+                <input type="text" class="form-control" name="imagem" id="update_imagem" required>
+              </div>
+              <div class="col-md-6">
+                <label for="">PÁGINA DE VENDAS</label>
+                <input type="text" class="form-control" name="pagina_de_vendas" id="update_pagina_de_vendas" required>
+
+              </div>
+
+            </div>
+            <br>
+            <div class="row">
+
+              <div class="col-md-6">
+                <label for="">STATUS</label>
+                <select name="status" class="form-control" required id="update_status">
+                  <option value="">SELECIONAR</option>
+                  <option value="1">ATIVO</option>
+                  <option value="0">INATIVO</option>
+
+
+                </select>
+
+              </div>
+
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">FECHAR</button>
+          <button type="submit" class="btn bg-gradient-primary">ATUALIZAR</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Modal UPDATE Tag -->
+
+
   <!--   Core JS Files   -->
-  <script src="<?=base_url()?>assets/js/core/popper.min.js"></script>
-  <script src="<?=base_url()?>assets/js/core/bootstrap.min.js"></script>
-  <script src="<?=base_url()?>assets/js/plugins/perfect-scrollbar.min.js"></script>
-  <script src="<?=base_url()?>assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <?php $this->load->view('comp/js'); ?>
+
   <script>
-    var win = navigator.platform.indexOf('Win') > -1;
-    if (win && document.querySelector('#sidenav-scrollbar')) {
-      var options = {
-        damping: '0.5'
-      }
-      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    $('#form_add_produto').on('submit', function(e) {
+
+
+      e.preventDefault()
+
+      var FormData = $(this).serialize()
+
+      $.ajax({
+        url: '<?= base_url() ?>conta/act_add_produto',
+        type: 'POST',
+        data: FormData,
+        success: function(response) {
+
+          var resp = JSON.parse(response)
+
+          if (resp.status) {
+
+            swal({
+                title: 'Uhuu!',
+                text: resp.message,
+                icon: 'success',
+                confirmButtonText: 'OK'
+              })
+              .then((e) => {
+
+                location.reload()
+
+                // window.location.href = "<?= base_url() ?>conta/taf"
+              })
+
+
+          } else {
+
+
+            swal({
+              title: 'Ops!',
+              text: resp.message,
+              icon: 'warning',
+              confirmButtonText: 'OK'
+            });
+
+          }
+
+        },
+        error: function(xhr, status, error) {
+          swal({
+            title: 'Ops!',
+            text: "Houve um erro inesperado. Tente novamente",
+            icon: 'warning',
+            confirmButtonText: 'OK'
+          });
+        }
+      });
+
+    })
+
+    $('#form_update_produto').on('submit', function(e) {
+
+
+      e.preventDefault()
+
+      var FormData = $(this).serialize()
+
+      $.ajax({
+        url: '<?= base_url() ?>conta/act_update_produto',
+        type: 'POST',
+        data: FormData,
+        success: function(response) {
+
+          var resp = JSON.parse(response)
+
+          if (resp.status) {
+
+            swal({
+                title: 'Uhuu!',
+                text: resp.message,
+                icon: 'success',
+                confirmButtonText: 'OK'
+              })
+              .then((e) => {
+
+                location.reload()
+
+                // window.location.href = "<?= base_url() ?>conta/taf"
+              })
+
+
+          } else {
+
+
+            swal({
+              title: 'Ops!',
+              text: resp.message,
+              icon: 'warning',
+              confirmButtonText: 'OK'
+            });
+
+          }
+
+        },
+        error: function(xhr, status, error) {
+          swal({
+            title: 'Ops!',
+            text: "Houve um erro inesperado. Tente novamente",
+            icon: 'warning',
+            confirmButtonText: 'OK'
+          });
+        }
+      });
+
+    })
+
+    function open_modal_update_produto(produto_id) {
+
+      $.ajax({
+        url: '<?= base_url() ?>conta/act_get_produto',
+        type: 'POST',
+        data: {
+          produto_id: produto_id
+        },
+        success: function(response) {
+
+          var resp = JSON.parse(response)
+
+          if (resp.status) {
+
+            $('#update_produto_id').val(resp.response.id)
+            $('#update_nome').val(resp.response.nome)
+            $('#update_imagem').val(resp.response.imagem)
+            $('#update_preco').val(resp.response.preco)
+            $('#update_plataforma').val(resp.response.plataforma)
+            $('#update_status').val(resp.response.status)
+
+            // $('#update_categoria').val(resp.response.categoria)
+            $('#update_pagina_de_vendas').val(resp.response.pagina_de_vendas)
+            $('#update_descricao').val(resp.response.descricao)
+
+            $('#trigger_update_btn').click()
+
+
+          } else {
+
+
+            swal({
+              title: 'Ops!',
+              text: resp.message,
+              icon: 'warning',
+              confirmButtonText: 'OK'
+            });
+
+          }
+
+        },
+        error: function(xhr, status, error) {
+          swal({
+            title: 'Ops!',
+            text: "Houve um erro inesperado. Tente novamente",
+            icon: 'warning',
+            confirmButtonText: 'OK'
+          });
+        }
+      });
+
+
+    }
+
+    function delete_produto(produto_id) {
+      swal({
+          title: "Tem certeza?",
+          text: "Deseja excluir este PRODUTOS?",
+          icon: "warning",
+          buttons: true,
+          dangerMode: true,
+        })
+        .then((willDelete) => {
+
+          if (willDelete) {
+
+            $.ajax({
+              url: '<?= base_url() ?>conta/act_delete_produto',
+              type: 'POST',
+              data: {
+                produto_id: produto_id
+              },
+              success: function(response) {
+
+                var resp = JSON.parse(response)
+
+                if (resp.status) {
+
+                  location.reload()
+
+
+                } else {
+
+
+                  swal({
+                    title: 'Ops!',
+                    text: resp.message,
+                    icon: 'warning',
+                    confirmButtonText: 'OK'
+                  });
+
+                }
+
+              },
+              error: function(xhr, status, error) {
+                swal({
+                  title: 'Ops!',
+                  text: "Houve um erro inesperado. Tente novamente",
+                  icon: 'warning',
+                  confirmButtonText: 'OK'
+                });
+              }
+            });
+
+          }
+        });
+
+
+
+
     }
   </script>
-  <!-- Github buttons -->
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="<?=base_url()?>assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
+
+
 </body>
 
 </html>

@@ -82,9 +82,12 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
 
         time.sleep(2)
 
-        element_c = driver.find_element(By.CSS_SELECTOR, 'button.btn-primary:nth-child(2)')
-        element_c.click()
+        # element_c = driver.find_element(By.CSS_SELECTOR, 'button.btn-primary:nth-child(2)')
+        # element_c.click()
         # time.sleep(3)
+
+        form_element = driver.find_element(By.ID ,"compose_form")
+        form_element.submit()
 
     except:
 
@@ -92,6 +95,8 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
 
             element_c = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/section[2]/div/div[1]/div/form/div[3]/div/button[2]')
             element_c.click()
+
+            
             
 
         except:

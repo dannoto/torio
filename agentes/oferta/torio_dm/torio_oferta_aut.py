@@ -1273,6 +1273,8 @@ def temp_register_agente(driver, email, nome, senha, email_md5):
 
         try:
 
+            
+
             select_mes = driver.find_element(By.CSS_SELECTOR, "span._aav3:nth-child(1) > select:nth-child(2)")
             select_mesx = Select(select_mes)
             select_mesx.select_by_index(2) 

@@ -733,13 +733,6 @@ class Conta_model extends CI_Model
 
 
 
-    // PERSONAS
-    public function get_persona($persona_id)
-    {
-        $this->db->where('id', $persona_id);
-        return $this->db->get('personas')->row();
-    }
-    // PERSONAS
 
 
     // DASHBOARD
@@ -911,4 +904,84 @@ class Conta_model extends CI_Model
 
         return $this->db->get('campanhas_ofertas')->result();
     }
+
+
+
+       // PERSONAS
+       public function add_persona($persona_data)
+       {
+           return $this->db->insert('personas', $persona_data);
+       }
+   
+       public function get_persona($persona_id)
+       {
+           $this->db->where('id', $persona_id);
+           return $this->db->get('personas')->row();
+       }
+   
+       public function get_personas($limit = null, $start = null)
+       {
+           $this->db->where('is_deleted', 0);
+           $this->db->order_by('id', 'desc');
+           $this->db->limit($limit, $start);
+           return $this->db->get('personas')->result();
+       }
+   
+       public function count_personas()
+       {
+           $this->db->where('is_deleted', 0);
+           return count($this->db->get('personas')->result());
+       }
+   
+       public function get_search_personas($f_data, $limit, $start)
+       {
+   
+           if (strlen($f_data['persona_nome']) > 0) {
+               $this->db->like('persona_nome', $f_data['persona_nome']);
+           }
+   
+           $this->db->limit($limit, $start);
+           $this->db->where('is_deleted', 0);
+   
+           return $this->db->get('personas')->result();
+       }
+   
+       public function count_search_personas($f_data)
+       {
+   
+           if (strlen($f_data['persona_nome']) > 0) {
+               $this->db->like('persona_nome', $f_data['persona_nome']);
+           }
+           $this->db->where('is_deleted', 0);
+   
+   
+           return count($this->db->get('personas')->result());
+       }
+   
+       public function update_persona($persona_id, $persona_data)
+       {
+           $this->db->where('id', $persona_id);
+   
+           return $this->db->update('personas', $persona_data);
+       }
+   
+       public function delete_persona($persona_id)
+       {
+           $this->db->where('id', $persona_id);
+           $persona_data = array(
+               'is_deleted' => 1
+           );
+           return $this->db->update('personas', $persona_data);
+       }
+   
+       public function check_persona($persona_name)
+       {
+   
+           $this->db->where('persona_name', $persona_name);
+           $this->db->where('is_deleted', 0);
+   
+           return $this->db->get('personas')->result();
+       }
+   
+       // PERSONAS
 }
