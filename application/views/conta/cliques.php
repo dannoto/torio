@@ -89,14 +89,14 @@
                                                     <div class="my-auto">
                                                         <a href="https://instagram.com/<?=$this->conta_model->get_persona($p->clique_persona_id)->persona_username ?>" target="_blank">
 
-                                                            <h6 class="mb-0 text-sm" title="<?= $this->conta_model->get_persona($p->clique_persona_id)->persona_nome ?>">
+                                                            <small class="mb-0 text-sm" title="<?= $this->conta_model->get_persona($p->clique_persona_id)->persona_nome ?>">
 
                                                                 <?php if (strlen($this->conta_model->get_persona($p->clique_persona_id)->persona_nome) > 14) {
                                                                     echo substr($this->conta_model->get_persona($p->clique_persona_id)->persona_nome, 0, 14) . "...";
                                                                 } else {
                                                                     echo $this->conta_model->get_persona($p->clique_persona_id)->persona_nome;
                                                                 } ?>
-                                                            </h6>
+                                                            </small>
                                                         </a>
 
                                                     </div>
@@ -104,62 +104,62 @@
                                             </td>
                                             <td>
 
-                                                <h6 class="mb-0 text-sm" title="<?= $p->clique_device ?>">
+                                                <small class="mb-0 text-uppercase text-sm" title="<?= $p->clique_device ?>">
 
                                                     <?php if (strlen($p->clique_device) > 14) {
                                                         echo substr($p->clique_device, 0, 14) . "...";
                                                     } else {
                                                         echo $p->clique_device;
                                                     } ?>
-                                                </h6>
+                                                </small>
 
                                             </td>
                                             <td>
 
-                                                <h6 class="mb-0 text-sm" title="<?= $p->clique_data_id ?>">
+                                                <small class="mb-0 text-sm" title="<?= $p->clique_data_id ?>">
 
                                                     <?php if (strlen($p->clique_data_id) > 14) {
                                                         echo substr($p->clique_data_id, 0, 14) . "...";
                                                     } else {
                                                         echo $p->clique_data_id;
                                                     } ?>
-                                                </h6>
+                                                </small>
 
                                             </td>
                                             <td>
 
-                                                <h6 class="mb-0 text-sm" title="<?= $this->conta_model->get_produto($p->clique_produto_id)->nome ?>">
+                                                <small class="mb-0 text-sm" title="<?= $this->conta_model->get_produto($p->clique_produto_id)->nome ?>">
 
                                                     <?php if (strlen($this->conta_model->get_produto($p->clique_produto_id)->nome) > 14) {
                                                         echo substr($this->conta_model->get_produto($p->clique_produto_id)->nome, 0, 14) . "...";
                                                     } else {
                                                         echo $this->conta_model->get_produto($p->clique_produto_id)->nome;
                                                     } ?>
-                                                </h6>
+                                                </small>
 
                                             </td>
                                             <td>
 
-                                                <h6 class="mb-0 text-sm" title="<?= $this->conta_model->get_campanha($p->clique_campanha_id)->campanha_nome ?>">
+                                                <small class="mb-0 text-sm" title="<?= $this->conta_model->get_campanha($p->clique_campanha_id)->campanha_nome ?>">
 
                                                     <?php if (strlen($this->conta_model->get_campanha($p->clique_campanha_id)->campanha_nome) > 14) {
                                                         echo substr($this->conta_model->get_campanha($p->clique_campanha_id)->campanha_nome, 0, 14) . "...";
                                                     } else {
                                                         echo $this->conta_model->get_campanha($p->clique_campanha_id)->campanha_nome;
                                                     } ?>
-                                                </h6>
+                                                </small>
 
                                             </td>
                                             <td>
 
-                                                <h6 class="mb-0 text-sm" title="<?= $p->clique_user_agent ?>">
+                                                <small class="mb-0 text-sm" title="<?= $p->clique_user_agent ?>">
 
                                                     <?php if (strlen($p->clique_user_agent) > 14) {
                                                         echo substr($p->clique_user_agent, 0, 14) . "...";
                                                     } else {
                                                         echo $p->clique_user_agent;
                                                     } ?>
-                                                </h6>
+                                                </small>
 
                                             </td>
 
