@@ -71,7 +71,7 @@
 
                   <div class="col-md-4">
 
-                    <label for="">TIPO</label>
+                    <label for="">NOME</label>
                     <input type="text" name="persona_nome" value="<?=$this->input->get('persona_nome')?>">
                   </div>
                   <div class="col-md-4">
