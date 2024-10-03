@@ -116,18 +116,20 @@
                                             <?php if ($campanha->campanha_tipo == "instagram") { ?>
 
                                                 <tr>
-
                                                     <td>
                                                         <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_nome ?>"><small class="text-uppercase"><?= substr($persona->persona_nome, 0, 12) . "..." ?></small></p>
                                                     </td>
                                                     <td>
-                                                        <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_username ?>"><small class="text-uppercase"><?= $persona->persona_username ?></small></p>
+                                                        <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_username ?>"><small class="text-uppercase"><?= substr($persona->persona_username, 0, 12) . "..." ?></small></p>
                                                     </td>
                                                     <td>
-                                                        <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_email ?>"><small class="text-uppercase"><?= $persona->persona_email ?></small></p>
+                                                        <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_email ?>"><small class="text-uppercase"><?= substr($persona->persona_email, 0, 12) . "..." ?></small></p>
                                                     </td>
                                                     <td>
                                                         <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_telefone ?>"><small class="text-uppercase"><?= $persona->persona_telefone ?></small></p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_data ?>"><small class="text-uppercase"><?= substr($persona->persona_data, 0, 10) ?></small></p>
                                                     </td>
                                                     <td>
                                                         <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_data ?>"><small class="text-uppercase"><?= $persona->persona_data ?></small></p>
@@ -147,28 +149,28 @@
                                                             <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_nome ?>"><small class="text-uppercase"><?= substr($persona->persona_nome, 0, 12) . "..." ?></small></p>
                                                         </td>
                                                         <td>
-                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_username ?>"><small class="text-uppercase"><?= $persona->persona_username ?></small></p>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_username ?>"><small class="text-uppercase"><?= substr($persona->persona_username, 0, 12) . "..." ?></small></p>
                                                         </td>
                                                         <td>
-                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_email ?>"><small class="text-uppercase"><?= $persona->persona_email ?></small></p>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_email ?>"><small class="text-uppercase"><?= substr($persona->persona_email, 0, 12) . "..." ?></small></p>
                                                         </td>
                                                         <td>
                                                             <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_telefone ?>"><small class="text-uppercase"><?= $persona->persona_telefone ?></small></p>
                                                         </td>
                                                         <td>
-                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_data ?>"><small class="text-uppercase"><?= $persona->persona_data ?></small></p>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_data ?>"><small class="text-uppercase"><?= substr($persona->persona_data, 0, 10) ?></small></p>
                                                         </td>
                                                         <td>
 
-<?php if ($this->conta_model->check_oferta_enviada($campanha->id, $campanha->campanha_produto_id, $campanha->campanha_tag_id, 'sms', $persona->id)) { ?>
+                                                            <?php if ($this->conta_model->check_oferta_enviada($campanha->id, $campanha->campanha_produto_id, $campanha->campanha_tag_id, 'sms', $persona->id)) { ?>
 
-    <span style="color:green"><i class="fa fa-check"></i> <small>ENVIADA</small></span>
-    
-    <?php } else { ?>
-        
-        <button onclick="add_oferta('<?=$persona->id?>', '<?=$persona->persona_username?>', '<?=$campanha->id?>', '<?=$campanha->campanha_tag_id?>', '<?=$campanha->campanha_produto_id?>')" class="btn btn-primary"><small>ENVIAR</small></button>
-<?php } ?>
-</td>
+                                                                <span style="color:green"><i class="fa fa-check"></i> <small>ENVIADA</small></span>
+
+                                                            <?php } else { ?>
+
+                                                                <button onclick="add_oferta('<?= $persona->id ?>', '<?= $persona->persona_username ?>', '<?= $campanha->id ?>', '<?= $campanha->campanha_tag_id ?>', '<?= $campanha->campanha_produto_id ?>')" class="btn btn-primary"><small>ENVIAR</small></button>
+                                                            <?php } ?>
+                                                        </td>
                                                     </tr>
 
                                                 <?php } ?>
@@ -184,10 +186,10 @@
                                                             <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_nome ?>"><small class="text-uppercase"><?= substr($persona->persona_nome, 0, 12) . "..." ?></small></p>
                                                         </td>
                                                         <td>
-                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_username ?>"><small class="text-uppercase"><?= substr($persona->persona_username, 0, 12)."..." ?></small></p>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_username ?>"><small class="text-uppercase"><?= substr($persona->persona_username, 0, 12) . "..." ?></small></p>
                                                         </td>
                                                         <td>
-                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_email ?>"><small class="text-uppercase"><?= substr($persona->persona_email, 0, 12)."..." ?></small></p>
+                                                            <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_email ?>"><small class="text-uppercase"><?= substr($persona->persona_email, 0, 12) . "..." ?></small></p>
                                                         </td>
                                                         <td>
                                                             <p class="text-sm font-weight-bold mb-0" title="<?= $persona->persona_telefone ?>"><small class="text-uppercase"><?= $persona->persona_telefone ?></small></p>
@@ -200,10 +202,10 @@
                                                             <?php if ($this->conta_model->check_oferta_enviada($campanha->id, $campanha->campanha_produto_id, $campanha->campanha_tag_id, 'email', $persona->id)) { ?>
 
                                                                 <span style="color:green"><i class="fa fa-check"></i> <small>ENVIADA</small></span>
-                                                                
-                                                                <?php } else { ?>
-                                                                    
-                                                                    <button onclick="add_oferta('<?=$persona->id?>', '<?=$persona->persona_username?>', '<?=$campanha->id?>', '<?=$campanha->campanha_tag_id?>', '<?=$campanha->campanha_produto_id?>')" class="btn btn-primary"><small>ENVIAR</small></button>
+
+                                                            <?php } else { ?>
+
+                                                                <button onclick="add_oferta('<?= $persona->id ?>', '<?= $persona->persona_username ?>', '<?= $campanha->id ?>', '<?= $campanha->campanha_tag_id ?>', '<?= $campanha->campanha_produto_id ?>')" class="btn btn-primary"><small>ENVIAR</small></button>
                                                             <?php } ?>
                                                         </td>
                                                     </tr>
@@ -516,11 +518,11 @@
                 type: 'POST',
                 data: {
                     oferta_persona_id: persona_id,
-                    oferta_insta_id:persona_username,
-                    oferta_campanha_id:campanha_id,
-                    oferta_tag_id:campanha_tag_id,
-                    oferta_produto_id:campanha_produto_id,
-                    oferta_tipo:'<?=$campanha->campanha_tipo?>'
+                    oferta_insta_id: persona_username,
+                    oferta_campanha_id: campanha_id,
+                    oferta_tag_id: campanha_tag_id,
+                    oferta_produto_id: campanha_produto_id,
+                    oferta_tipo: '<?= $campanha->campanha_tipo ?>'
                 },
                 success: function(response) {
 
