@@ -52,6 +52,8 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
         element_x = driver.find_element(By.CSS_SELECTOR, '.select2-search__field')
         element_x.send_keys(oferta_numero)
 
+        time.sleep(2)
+
         element_x.send_keys(Keys.RETURN)
 
     except:
@@ -59,7 +61,7 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
         print('Erro digitar numero ')
         return False
 
-    time.sleep(1)
+    time.sleep(2)
     # text area
 
     try:
@@ -78,16 +80,30 @@ def send_sms_oferta(oferta_numero, oferta_conteudo):
 
     try:
 
+        time.sleep(2)
+
         element_c = driver.find_element(By.CSS_SELECTOR, 'button.btn-primary:nth-child(2)')
         element_c.click()
-        time.sleep(3)
+        # time.sleep(3)
 
     except:
 
-        print('Erro btn enviar oferta ')
+        try:
+
+            element_c = driver.find_element(By.XPATH, '/html/body/div[1]/div[1]/section[2]/div/div[1]/div/form/div[3]/div/button[2]')
+            element_c.click()
+            
+
+        except:
+            print('Erro BTN ENVIAR  2 tentativas')
+            return False
+
+        pass
+
+        # print('Erro btn enviar oferta ')
         # return False
     
-    # time.sleep(5)
+    time.sleep(5)
     
     return True   
 
@@ -189,7 +205,7 @@ if __name__ == "__main__":
                 print ('\n OFERTA ID: ', oferta['id'])
                 print ('\n OFERTA NUMERO: ', oferta_numero)
                 print('\n OFERTA CONTEÚDO: ', oferta_conteudo)
-                print('=======\n')
+                
 
 
                 send_oferta = send_sms_oferta(oferta_numero, oferta_conteudo)
@@ -199,13 +215,15 @@ if __name__ == "__main__":
                     update_oferta_status(oferta['id'])    
 
                 else:
-                    print('Erro ao enviar oferta.')
+                    print('\nErro ao enviar oferta.')
+                
+                print('=======\n')
                 
         else:
 
             print('Nenhuma oferta pendente')
 
-        time.sleep(1)
+        time.sleep(30)
 
         
 
