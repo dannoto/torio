@@ -321,3 +321,54 @@ Read port: 64986
 1727928105215	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yX/l/pt_BR/9Qssy0ByVDq.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+1727928127389	Marionette	INFO	Stopped listening on port 64986
+Dynamically enable window occlusion 1
+1727928140236	geckodriver	INFO	Listening on 127.0.0.1:54751
+1727928143246	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54752" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileFOxtC4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727928143770	Marionette	INFO	Marionette enabled
+1727928144100	Marionette	INFO	Listening on port 54760
+WebDriver BiDi listening on ws://127.0.0.1:54752
+Read port: 54760
+1727928144382	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yX/l/pt_BR/9Qssy0ByVDq.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+1727928163737	Marionette	INFO	Stopped listening on port 54760
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3/y0/r/9ZD4FSayyZa.js, line 224: Script terminated by timeout at:
+h.unstable_scheduleCallback@https://static.cdninstagram.com/rsrc.php/v3/y0/r/9ZD4FSayyZa.js:224:3410
+unstable_scheduleCallback@https://static.cdninstagram.com/rsrc.php/v3/y0/r/9ZD4FSayyZa.js:227:972
+scheduleDelayedCallback_DO_NOT_USE@https://static.cdninstagram.com/rsrc.php/v3/y0/r/9ZD4FSayyZa.js:228:1813
+e@https://static.cdninstagram.com/rsrc.php/v3/y0/r/9ZD4FSayyZa.js:236:572
+applyWithGuard@https://static.cdninstagram.com/rsrc.php/v3/y0/r/9ZD4FSayyZa.js:71:10628
+c@https://static.cdninstagram.com/rsrc.php/v3/y0/r/9ZD4FSayyZa.js:71:11362
+K@https://static.cdninstagram.com/rsrc.php/v3/y0/r/9ZD4FSayyZa.js:224:1972
+
+Dynamically enable window occlusion 1
+1727928176230	geckodriver	INFO	Listening on 127.0.0.1:54802
+1727928179172	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54803" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileidSAzf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727928179748	Marionette	INFO	Marionette enabled
+1727928180524	Marionette	INFO	Listening on port 54811
+WebDriver BiDi listening on ws://127.0.0.1:54803
+Read port: 54811
+1727928180943	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yX/l/pt_BR/9Qssy0ByVDq.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
+1727928205507	Marionette	INFO	Stopped listening on port 54811
+Dynamically enable window occlusion 1
+1727928217736	geckodriver	INFO	Listening on 127.0.0.1:54851
+1727928220759	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54852" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofilebiIzHq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727928221446	Marionette	INFO	Marionette enabled
+1727928221727	Marionette	INFO	Listening on port 54860
+WebDriver BiDi listening on ws://127.0.0.1:54852
+Read port: 54860
+1727928221982	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iWQl4/yX/l/pt_BR/9Qssy0ByVDq.js, line 136: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.instagram.com."
