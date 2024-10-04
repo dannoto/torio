@@ -1111,6 +1111,8 @@ class Conta_model extends CI_Model
             // echo count($duplicate_ips) . " ips duplicados;";
 
             foreach ($duplicate_ips as $ip) {
+
+                print($ip);
                 // Mantém apenas o primeiro registro e deleta os duplicados
                 $D = $this->db->query("DELETE FROM `cliques` WHERE clique_ip = '" . $ip->clique_ip . "'");
 
