@@ -1108,7 +1108,7 @@ class Conta_model extends CI_Model
 
         if (count($duplicate_ips) > 0) {
 
-            echo count($duplicate_ips) . " ips duplicados;";
+            // echo count($duplicate_ips) . " ips duplicados;";
 
             foreach ($duplicate_ips as $ip) {
                 // Mantém apenas o primeiro registro e deleta os duplicados
@@ -1122,9 +1122,9 @@ class Conta_model extends CI_Model
             }
 
             return count($duplicate_ips) . " ips duplicados;";
-            
+
         } else {
-            echo "nenhum ip duplicado;";
+            // echo "nenhum ip duplicado;";
 
             return "nenhum ip duplicado;";
         }
