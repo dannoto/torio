@@ -129,6 +129,16 @@ class api_model extends CI_Model
         return $this->db->get('demandas')->result();
     }
 
+    
+    public function add_clique_log($clique_ip){
+
+        $data = array(
+            'clique_ip' => $clique_ip
+        );
+
+        return $this->db->insert('cliques_log', $data);
+
+    }
 
     public function get_agentes_livres()
     {

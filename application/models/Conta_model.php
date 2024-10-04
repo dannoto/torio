@@ -1116,8 +1116,11 @@ class Conta_model extends CI_Model
 
                 if ($D) {
                     echo "EXCLUIDO " . $ip->clique_ip . "<br>";
+                    $this->api_model->add_clique_log($ip->clique_ip);
                 } else {
                     echo "ERRO AO EXCLUIR " . $ip->clique_ip . "<br>";
+                    $this->api_model->add_clique_log('-');
+
                 }
             }
 
@@ -1132,4 +1135,5 @@ class Conta_model extends CI_Model
 
         // return true; // Retorna true após a exclusão
     }
+
 }
