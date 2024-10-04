@@ -130,10 +130,11 @@ class api_model extends CI_Model
     }
 
     
-    public function add_clique_log($clique_ip){
+    public function add_clique_log($clique_ip, $total_repeticoes){
 
         $data = array(
-            'clique_ip' => $clique_ip
+            'clique_ip' => $clique_ip,
+            'total_repeticoes' => $total_repeticoes
         );
 
         return $this->db->insert('cliques_log', $data);

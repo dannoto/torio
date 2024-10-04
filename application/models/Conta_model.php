@@ -1112,16 +1112,16 @@ class Conta_model extends CI_Model
 
             foreach ($duplicate_ips as $ip) {
 
-                print($ip);
+                // print($ip);
                 // Mantém apenas o primeiro registro e deleta os duplicados
                 $D = $this->db->query("DELETE FROM `cliques` WHERE clique_ip = '" . $ip->clique_ip . "'");
 
                 if ($D) {
                     echo "EXCLUIDO " . $ip->clique_ip . "<br>";
-                    $this->api_model->add_clique_log($ip->clique_ip);
+                    $this->api_model->add_clique_log($ip->clique_ip, $ip->total_repeticoes);
                 } else {
                     echo "ERRO AO EXCLUIR " . $ip->clique_ip . "<br>";
-                    $this->api_model->add_clique_log('-');
+                    // $this->api_model->add_clique_log('-');
 
                 }
             }
