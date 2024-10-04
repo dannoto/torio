@@ -1045,7 +1045,7 @@ class Conta_model extends CI_Model
 
         $this->db->where('clique_user_agent !=', "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)");
         $this->db->not_like('clique_user_agent', 'google');
-        
+
         $this->db->where('is_deleted', 0);
 
 
@@ -1083,39 +1083,38 @@ class Conta_model extends CI_Model
 
 
     // Função para buscar todos os cliques ordenados por ID de forma decrescente
-    public function get_all_cliques() {
+    public function get_all_cliques()
+    {
         $this->db->order_by('id', 'DESC');
         $query = $this->db->get('cliques');
         return $query->result();
     }
 
-    // Função para deletar registros com o mesmo IP, mantendo o mais recente
-    public function delete_duplicate_ips() {
-        // Selecionar todos os registros da tabela
-        $this->db->select('id, ip_address');
-        $this->db->from('cliques');
-        $this->db->order_by('id', 'DESC');
-        $query = $this->db->get();
-        $result = $query->result();
+    public function index() {
 
-        // Array para armazenar os IPs já verificados
-        $processed_ips = [];
-
-        // Loop para verificar e deletar duplicatas
-        foreach ($result as $row) {
-            // Se o IP já foi processado, deletar o registro
-            if (in_array($row->ip_address, $processed_ips)) {
-                $this->db->where('id', $row->id);
-                $this->db->delete('cliques');
-            } else {
-                // Se não, adicionar o IP ao array de verificados
-                $processed_ips[] = $row->ip_address;
-            }
-        }
     }
 
+    // Função para deletar registros com o mesmo IP, mantendo o mais recente
+    public function delete_duplicate_ips()
+    {
+
+
+
+        
+        // Seleciona os IPs duplicados
+        $duplicate_ips = $this->db->query("SELECT clique_ip FROM cliques GROUP BY clique_ip HAVING COUNT(*) > 1;")->result();
+
+        return $duplicate_ips;
 
 
 
     
+        // foreach ($duplicate_ips as $ip) {
+        //     // Mantém apenas o primeiro registro e deleta os duplicados
+        //     $this->db->query('DELETE FROM cliques WHERE clique_ip = ? AND id NOT IN (SELECT id FROM (SELECT MIN(id) as id FROM cliques WHERE clique_ip = ?) as temp);', [$ip->clique_ip, $ip->clique_ip]);
+        // }
+        
+        // return true; // Retorna true após a exclusão
+    }
+
 }
