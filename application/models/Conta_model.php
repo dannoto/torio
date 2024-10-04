@@ -1117,7 +1117,7 @@ class Conta_model extends CI_Model
             //    $D = $this->db->query('DELETE FROM cliques WHERE clique_ip = ? AND id NOT IN (SELECT id FROM (SELECT MIN(id) as id FROM cliques WHERE clique_ip = ?) as temp);', [$ip->clique_ip, $ip->clique_ip]);
                 
             //    if ($D) {
-                    echo "EXCLUIDO ".$ip->clique_ip;
+                    echo "EXCLUIDO ".$ip->clique_ip."<br>";
             //    }
             
             }
