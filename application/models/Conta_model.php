@@ -1090,9 +1090,7 @@ class Conta_model extends CI_Model
         return $query->result();
     }
 
-    public function index() {
-
-    }
+    public function index() {}
 
     // Função para deletar registros com o mesmo IP, mantendo o mais recente
     public function delete_duplicate_ips()
@@ -1100,7 +1098,7 @@ class Conta_model extends CI_Model
 
 
 
-        
+
         // Seleciona os IPs duplicados
         $duplicate_ips = $this->db->query("SELECT clique_ip, COUNT(*) as total_repeticoes FROM cliques GROUP BY clique_ip HAVING COUNT(*) > 1 ORDER BY `total_repeticoes` DESC;")->result();
 
@@ -1108,30 +1106,25 @@ class Conta_model extends CI_Model
 
 
 
-        if (count($duplicate_ips) > 0 ) {
+        if (count($duplicate_ips) > 0) {
 
-             echo count($duplicate_ips)." ips duplicados;";
-            
+            echo count($duplicate_ips) . " ips duplicados;";
+
             foreach ($duplicate_ips as $ip) {
                 // Mantém apenas o primeiro registro e deleta os duplicados
-               $D = $this->db->query("DELETE FROM cliques WHERE clique_ip = ".$ip->clique_ip."");
-                
-               if ($D) {
-                    echo "EXCLUIDO ".$ip->clique_ip."<br>";
-               } else{
-                echo "ERRO AO EXCLUIR ".$ip->clique_ip."<br>";
+                $D = $this->db->query("DELETE FROM `cliques` WHERE clique_ip = " . $ip->clique_ip . "");
 
-               }
-            
+                if ($D) {
+                    echo "EXCLUIDO " . $ip->clique_ip . "<br>";
+                } else {
+                    echo "ERRO AO EXCLUIR " . $ip->clique_ip . "<br>";
+                }
             }
-            
-
-        } else{
+        } else {
             echo "nenhum ip duplicado;";
         }
-    
-     
+
+
         // return true; // Retorna true após a exclusão
     }
-
 }
