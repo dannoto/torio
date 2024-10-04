@@ -2571,7 +2571,7 @@ def add_person_process(user_data, campanha_data, headers, demanda):
                         'telefone': extractTelefone(None, links, user_data['result']['user']['biography'], mencoes, headers),
                     }
                 
-                print(persona)
+                # print(persona)
                 
                 add_persona(
                     campanha_data, 
@@ -2632,6 +2632,7 @@ if __name__ == "__main__":
                         elif response.status_code == 429:
 
                             print("=========== LIMITE ATINGIDO :"+ str(response.status_code))
+                            time.sleep(10)
                  
                         else:
 
