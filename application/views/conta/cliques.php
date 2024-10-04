@@ -147,12 +147,12 @@
                                             </td>
                                             <td>
 
-                                                <small class="mb-0 text-sm" title="<?= $p->clique_user_agent ?>">
+                                                <small class="mb-0 text-sm" title="<?= $p->clique_user_agent ?> | <?=$p->clique_ip?>">
 
                                                     <?php if (strlen($p->clique_user_agent) > 14) {
                                                         echo substr($p->clique_user_agent, 0, 14) . "...";
                                                     } else {
-                                                        echo $p->clique_user_agent." ".$p->clique_ip;
+                                                        echo $p->clique_user_agent;
                                                     } ?>
                                                 </small>
 
