@@ -604,3 +604,77 @@ console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanali
 console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
 1727926384822	Marionette	INFO	Stopped listening on port 62723
 Dynamically enable window occlusion 1
+1727953483866	geckodriver	INFO	Listening on 127.0.0.1:53693
+1727953486931	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53694" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileQWGeJR"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727953487938	Marionette	INFO	Marionette enabled
+1727953488280	Marionette	INFO	Listening on port 53703
+WebDriver BiDi listening on ws://127.0.0.1:53694
+Read port: 53703
+1727953488604	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ccoanalitica.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ccoanalitica.com."
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/overview?type=sent" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/overview?type=sent" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/overview?type=sent" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/overview?type=sent" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/overview?type=sent" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/compose" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/smsbox/overview?type=sent" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/dashboard" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "https://ccoanalitica.com/torio_sms/login" ({})
+1727971133922	Marionette	INFO	Stopped listening on port 53703
+Dynamically enable window occlusion 1
+1727991063642	geckodriver	INFO	Listening on 127.0.0.1:53886
+1727991066727	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53887" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\danta\\AppData\\Local\\Temp\\rust_mozprofileCPy64T"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1727991068226	Marionette	INFO	Marionette enabled
+1727991068566	Marionette	INFO	Listening on port 53895
+WebDriver BiDi listening on ws://127.0.0.1:53887
+Read port: 53895
+1727991068849	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1727991074485	Marionette	INFO	Stopped listening on port 53895
+Dynamically enable window occlusion 1

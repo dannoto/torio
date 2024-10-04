@@ -152,7 +152,7 @@
                                                     <?php if (strlen($p->clique_user_agent) > 14) {
                                                         echo substr($p->clique_user_agent, 0, 14) . "...";
                                                     } else {
-                                                        echo $p->clique_user_agent;
+                                                        echo $p->clique_user_agent." ".$p->clique_ip;
                                                     } ?>
                                                 </small>
 

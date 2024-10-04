@@ -1,6 +1,12 @@
 # proxima melhoria
 # colocar update_oferta(oferta_data['id'], 1, demanda['id']) 
 # logo após input de enviar mensagem pra evitar possiveis erros e deixar a demanda como nao-processada
+
+
+
+# header initial
+#{'Cookie': 'wd=1366x643; mid=Zv8t6AALAAHq1IyasRd3NLKsRlhU; ig_nrcb=1; datr=5S3_ZlF4yajRGeG0ayukXcPb; csrftoken=NBc2h0PX_2eGe-uKQn2Szz; ig_did=BE0FF3C7-6F9D-473C-96A5-77EF5D5E30B5', 'X-csrftoken': 'NBc2h0PX_2eGe-uKQn2Szz'}
+
 import sys
 import requests
 import tarfile

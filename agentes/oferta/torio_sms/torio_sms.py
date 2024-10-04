@@ -180,56 +180,92 @@ if __name__ == "__main__":
 
     base_url = "https://ccoanalitica.com/torio/api/torio/"
 
-    driver = webdriver.Firefox()
+    # driver = webdriver.Firefox()
 
-    login =  login_sms(driver)
+    # login =  login_sms(driver)
 
-    if login:
+    # if login:
 
-        print('Logado')
-        driver.get('https://ccoanalitica.com/torio_sms/smsbox/compose')
-        time.sleep(5)
+    #     print('Logado')
+    #     driver.get('https://ccoanalitica.com/torio_sms/smsbox/compose')
+    #     time.sleep(5)
 
         
 
+    url = "https://sms.witi.me/sms/send.aspx?chave=436a2980-e216-4152-aeb9-c31567bff943"
+    headers = {
+        'Content-Type': 'application/json',
+        'Cookie': 'ASP.NET_SessionId=gml5xhtaqljpzjzmrfe3n1xc'
+    }
 
     while True:
-
         sms_ofertas_pendentes = get_sms_ofertas_pendentes()
 
-        if (len(sms_ofertas_pendentes) > 0 ):
+        if len(sms_ofertas_pendentes) > 0:
+            print('Ofertas Encontradas: ' + str(len(sms_ofertas_pendentes)))
 
-            print('Ofertas Encontradas: '+str(len(sms_ofertas_pendentes)))
+            mensagens = []
 
             for oferta in sms_ofertas_pendentes:
 
                 oferta_numero = oferta['oferta_numero']
                 oferta_conteudo = oferta['oferta_conteudo']
+                oferta_id = oferta['id']  # Supondo que o ID da oferta está em oferta['id']
 
                 print('=========\n')
-                print ('\n OFERTA ID: ', oferta['id'])
-                print ('\n OFERTA NUMERO: ', oferta_numero)
+                print('\n OFERTA ID: ', oferta_id)
+                print('\n OFERTA NUMERO: ', oferta_numero)
                 print('\n OFERTA CONTEÚDO: ', oferta_conteudo)
-                
+
+                mensagens.append({
+                    "numero": oferta_numero,
+                    "mensagem": oferta_conteudo,
+                    "DataAgendamento": "2024-10-03 17:10:00",  # Use a data atual ou o que você precisar
+                    "Codigo_cliente": str(oferta_id)  # Converte o ID para string
+                })
+
+            # Prepara o payload para envio
+            payload = json.dumps({
+                "tipo_envio": "common",
+                "referencia": "TÓRIO PROCESSAMENTO ",
+                "rota": "1364",
+                "mensagens": mensagens
+            })
 
 
-                send_oferta = send_sms_oferta(oferta_numero, oferta_conteudo)
+            print(payload)
+            print('TOTAL: ', len(mensagens))
 
-                if send_oferta:
+            
+            # # Envia as mensagens
+            response = requests.post(url, headers=headers, data=payload)
 
-                    update_oferta_status(oferta['id'])    
+            # # Verifica o código de retorno
+            
+            if response.status_code == 200:
 
+                response_json = response.json()
+
+                # Verifica o valor de CodigoResultado
+                if response_json['Resultado']['CodigoResultado'] == 0:
+                    print(response_json['Resultado']['Mensagem'])  # Exibe a mensagem de sucesso
+
+                    # Itera sobre as ofertas pendentes e atualiza o status se tudo deu certo
+                    for oferta in sms_ofertas_pendentes:
+                        update_oferta_status(oferta['id'])
                 else:
-                    print('\nErro ao enviar oferta.')
-                
-                print('=======\n')
-                
-        else:
+                    print('\nErro: Código de resultado não é 0.')
+                    print('Código de resultado:', response_json['Resultado']['CodigoResultado'])
+                    print('Mensagem:', response_json['Resultado']['Mensagem'])
 
+            else:
+                print('\nErro ao enviar ofertas. Código de status:', response.status_code)
+                print(response.text)
+
+            print('=======\n')
+        else:
             print('Nenhuma oferta pendente')
 
-        time.sleep(1)
+        time.sleep(30)
 
-        
-
-   
+    
