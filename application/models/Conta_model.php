@@ -1120,8 +1120,13 @@ class Conta_model extends CI_Model
                     echo "ERRO AO EXCLUIR " . $ip->clique_ip . "<br>";
                 }
             }
+
+            return count($duplicate_ips) . " ips duplicados;";
+            
         } else {
             echo "nenhum ip duplicado;";
+
+            return "nenhum ip duplicado;";
         }
 
 
