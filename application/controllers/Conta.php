@@ -967,7 +967,7 @@ class Conta extends CI_Controller
         $data['categoria'] = htmlspecialchars($this->input->post('categoria'));
         
         $data['pagina_de_vendas'] = $this->input->post('pagina_de_vendas');
-        // $data['pagina_de_vendas'] =  html_entity_decode($data['pagina_de_vendas']); // Converte &amp; de volta para &
+        $data['pagina_de_vendas'] =  html_entity_decode($data['pagina_de_vendas']); // Converte &amp; de volta para &
 
         $data['descricao'] = htmlspecialchars($this->input->post('descricao'));
         $data['data'] = date('Y-m-d H:i:s');
