@@ -2632,7 +2632,7 @@ if __name__ == "__main__":
                         elif response.status_code == 429:
 
                             print("=========== LIMITE ATINGIDO :"+ str(response.status_code))
-                            time.sleep(10)
+                            time.sleep(20)
                  
                         else:
 
