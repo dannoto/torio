@@ -547,8 +547,8 @@
 
                     if (resp.status) {
 
-                        $('.div_vai_' + oferta_persona_id).css('display', 'none')
-                        $('.div_foi_' + oferta_persona_id).css('display', 'block')
+                        $('.div_vai_' + persona_id).css('display', 'none')
+                        $('.div_foi_' + persona_id).css('display', 'block')
 
                         // location.reload()
 
