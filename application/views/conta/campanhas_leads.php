@@ -205,7 +205,15 @@
 
                                                             <?php } else { ?>
 
-                                                                <button onclick="add_oferta('<?= $persona->id ?>', '<?= $persona->persona_username ?>', '<?= $campanha->id ?>', '<?= $campanha->campanha_tag_id ?>', '<?= $campanha->campanha_produto_id ?>')" class="btn btn-primary"><small>ENVIAR</small></button>
+                                                                <div style="display:none" class="div_foi_<?=$persona->id?>">
+
+                                                                </div>
+                                                                <div  class="div_vai_<?=$persona->id?>">
+
+                                                                    <button onclick="add_oferta('<?= $persona->id ?>', '<?= $persona->persona_username ?>', '<?= $campanha->id ?>', '<?= $campanha->campanha_tag_id ?>', '<?= $campanha->campanha_produto_id ?>')" class="btn btn-primary"><small>ENVIAR</small></button>
+
+                                                                </div>
+
                                                             <?php } ?>
                                                         </td>
                                                     </tr>
@@ -530,7 +538,10 @@
 
                     if (resp.status) {
 
-                        location.reload()
+                        $('.div_vai_'+oferta_persona_id).css('display','none')
+                        $('.div_foi_'+oferta_persona_id).css('display','block')
+
+                        // location.reload()
 
 
                     } else {
