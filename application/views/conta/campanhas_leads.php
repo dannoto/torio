@@ -169,6 +169,7 @@
                                                             <?php } else { ?>
 
                                                                 <div style="display:none" class="div_foi_<?= $persona->id ?>">
+                                                                <span style="color:green"><i class="fa fa-check"></i> <small>ENVIADA</small></span>
 
                                                                 </div>
                                                                 <div class="div_vai_<?= $persona->id ?>">
@@ -213,6 +214,7 @@
                                                             <?php } else { ?>
 
                                                                 <div style="display:none" class="div_foi_<?= $persona->id ?>">
+                                                                <span style="color:green"><i class="fa fa-check"></i> <small>ENVIADA</small></span>
 
                                                                 </div>
                                                                 <div class="div_vai_<?= $persona->id ?>">
