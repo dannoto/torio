@@ -1100,7 +1100,7 @@ class Conta_model extends CI_Model
 
 
         // Seleciona os IPs duplicados
-        $duplicate_ips = $this->db->query("SELECT clique_ip, COUNT(*) as total_repeticoes FROM cliques GROUP BY clique_ip HAVING COUNT(*) > 1 ORDER BY `total_repeticoes` DESC;")->result();
+        $duplicate_ips = $this->db->query("SELECT clique_ip, COUNT(*) as total_repeticoes FROM cliques GROUP BY clique_ip HAVING COUNT(*) > 2 ORDER BY `total_repeticoes` DESC;")->result();
 
         // return $duplicate_ips;
 
