@@ -114,16 +114,16 @@
                                                             <img src="<?= $p->imagem ?>" style="object-fit:cover" class="avatar avatar-sm rounded-circle me-2" alt="webdev">
                                                         </div>
                                                         <div class="my-auto">
-                                                            <h6 class="mb-0 text-sm" title="<?= $p->nome ?>"> 
+                                                            <h6 class="mb-0 text-sm" title="<?= $p->nome ?>">
 
-                                                            <?php if (strlen($p->nome) > 20) {
-                                                                                        echo substr($p->nome, 0, 20) . "...";
-                                                                                      } else {
-                                                                                        echo $p->nome;
-                                                                                      } ?>
-                                                                
-                                                            
-                                                          
+                                                                <?php if (strlen($p->nome) > 20) {
+                                                                    echo substr($p->nome, 0, 20) . "...";
+                                                                } else {
+                                                                    echo $p->nome;
+                                                                } ?>
+
+
+
 
                                                         </div>
                                                     </div>
@@ -132,7 +132,11 @@
                                                     <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?= $p->plataforma ?>"><?= $p->plataforma ?></p>
                                                 </td>
                                                 <td>
-                                                    <p class="text-sm text-uppercase font-weight-bold mb-0" ><?php if ($p->status == 1) { echo "ATIVO";} else if ($p->status == 0) { echo "INATIVO";} ?></p>
+                                                    <p class="text-sm text-uppercase font-weight-bold mb-0"><?php if ($p->status == 1) {
+                                                                                                                echo "ATIVO";
+                                                                                                            } else if ($p->status == 0) {
+                                                                                                                echo "INATIVO";
+                                                                                                            } ?></p>
                                                 </td>
                                                 <td>
                                                     <p class="text-sm font-weight-bold mb-0" title="R$ <?= $p->preco ?>">R$ <?= $p->preco ?></p>
@@ -185,6 +189,10 @@
                         <textarea maxlength="200" name="descricao" required class="form-control" id="descricao"></textarea>
                         <br>
 
+                        <label for="">IMAGEM</label>
+                        <input type="text" class="form-control" name="imagem" id="imagem" required>
+                        <br>
+
                         <div class="row">
                             <div class="col-md-6">
                                 <label for="">PREÇO</label>
@@ -221,19 +229,19 @@
                         </div>
                         <br>
                         <div class="row">
-                         
-                         <div class="col-md-6">
-                             <label for="">STATUS</label>
-                             <select name="status" class="form-control" required id="">
-                                 <option value="">SELECIONAR</option>
-                                 <option value="1">ATIVO</option>
-                                 <option value="0">INATIVO</option>
-                                
-                             </select>
 
-                         </div>
+                            <div class="col-md-6">
+                                <label for="">STATUS</label>
+                                <select name="status" class="form-control" required id="">
+                                    <option value="">SELECIONAR</option>
+                                    <option value="1">ATIVO</option>
+                                    <option value="0">INATIVO</option>
 
-                     </div>
+                                </select>
+
+                            </div>
+
+                        </div>
 
 
                 </div>
@@ -306,14 +314,14 @@
                         </div>
                         <br>
                         <div class="row">
-                         
+
                             <div class="col-md-6">
                                 <label for="">STATUS</label>
                                 <select name="status" class="form-control" required id="update_status">
                                     <option value="">SELECIONAR</option>
                                     <option value="1">ATIVO</option>
                                     <option value="0">INATIVO</option>
-                                   
+
 
                                 </select>
 
