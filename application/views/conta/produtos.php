@@ -189,9 +189,9 @@
                         <textarea maxlength="200" name="descricao" required class="form-control" id="descricao"></textarea>
                         <br>
 
-                        <label for="">IMAGEM</label>
+                        <!-- <label for="">IMAGEM</label>
                         <input type="text" class="form-control" name="imagem" id="imagem" required>
-                        <br>
+                        <br> -->
 
                         <div class="row">
                             <div class="col-md-6">
