@@ -183,7 +183,6 @@ def get_campanha_ofertas(campanha_id):
         
     response = requests.get(url)
 
-    # print(response.content)
     if response.status_code == 200:
             
         data = json.loads(response.content)

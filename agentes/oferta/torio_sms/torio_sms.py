@@ -23,6 +23,8 @@ import datetime
 import random
 import winsound
 from bs4 import BeautifulSoup
+from datetime import datetime
+
 
 
 def send_sms_oferta(oferta_numero, oferta_conteudo):
@@ -224,11 +226,13 @@ if __name__ == "__main__":
                     "Codigo_cliente": str(oferta_id)  # Converte o ID para string
                 })
 
+            data_atual = datetime.now().strftime("%d-%m-%Y")
+
             # Prepara o payload para envio
             payload = json.dumps({
                 "tipo_envio": "common",
-                "referencia": "TÓRIO PROCESSAMENTO ",
-                "rota": "1364",
+                "referencia": f"TÓRIO {data_atual}",
+                "rota": "1369",
                 "mensagens": mensagens
             })
 
