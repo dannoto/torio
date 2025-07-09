@@ -200,7 +200,7 @@
                           <p class="text-sm font-weight-bold mb-0" title="<?= $p->oferta_status ?>"><small><?= $p->oferta_status == 1 ? "ENVIADA" : "PENDENTE"; ?></small></p>
                         </td>
                         <td>
-                         
+
                           <!-- Ícone de copiar -->
                           <button onclick="setEnviado('<?= $p->id ?>')" style="cursor: pointer; background-color:rgb(244, 11, 11);width:90%;color:#FFF;border:1px solid rgb(244, 11, 11)" title="Copiar oferta">
                             CONCLUÍDO
@@ -735,43 +735,43 @@
 
     function setEnviado(oferta_id) {
 
-        $.ajax({
-              url: '<?= base_url() ?>conta/act_update_oferta_status',
-              type: 'POST',
-              data: {
-                oferta_id: oferta_id
-              },
-              success: function(response) {
+      $.ajax({
+        url: '<?= base_url() ?>conta/act_update_oferta_status',
+        type: 'POST',
+        data: {
+          oferta_id: oferta_id
+        },
+        success: function(response) {
 
-                var resp = JSON.parse(response)
+          var resp = JSON.parse(response)
 
-                if (resp.status) {
+          if (resp.status) {
 
-                  location.reload()
-
-
-                } else {
+            location.reload()
 
 
-                  swal({
-                    title: 'Ops!',
-                    text: resp.message,
-                    icon: 'warning',
-                    confirmButtonText: 'OK'
-                  });
+          } else {
 
-                }
 
-              },
-              error: function(xhr, status, error) {
-                swal({
-                  title: 'Ops!',
-                  text: "Houve um erro inesperado. Tente novamente",
-                  icon: 'warning',
-                  confirmButtonText: 'OK'
-                });
-              }
+            swal({
+              title: 'Ops!',
+              text: resp.message,
+              icon: 'warning',
+              confirmButtonText: 'OK'
             });
+
+          }
+
+        },
+        error: function(xhr, status, error) {
+          swal({
+            title: 'Ops!',
+            text: "Houve um erro inesperado. Tente novamente",
+            icon: 'warning',
+            confirmButtonText: 'OK'
+          });
+        }
+      });
 
     }
   </script>

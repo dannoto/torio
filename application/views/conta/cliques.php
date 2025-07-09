@@ -54,7 +54,7 @@
     <?php $this->load->view('comp/sidebar'); ?>
     <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
         <?php $this->load->view('comp/navbar'); ?>
-      
+
 
         <div class="row">
             <div class="col-12">
@@ -71,7 +71,7 @@
                                         <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">DISPOSITIVO</th>
                                         <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">HORA</th>
                                         <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">PRODUTO</th>
-                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">CAMPANHA</th>
+                                        <!-- <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">CAMPANHA</th> -->
                                         <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">U_AGENTE</th>
                                     </tr>
                                 </thead>
@@ -87,7 +87,7 @@
                                                         <img src="https://images.vexels.com/content/129616/preview/businessman-avatar-silhouette-ae719c.png" style="object-fit:cover" class="avatar avatar-sm rounded-circle me-2" alt="webdev">
                                                     </div>
                                                     <div class="my-auto">
-                                                        <a href="https://instagram.com/<?=$this->conta_model->get_persona($p->clique_persona_id)->persona_username ?>" target="_blank">
+                                                        <a href="https://instagram.com/<?= $this->conta_model->get_persona($p->clique_persona_id)->persona_username ?>" target="_blank">
 
                                                             <small class="mb-0 text-sm" title="<?= $this->conta_model->get_persona($p->clique_persona_id)->persona_nome ?>">
 
@@ -117,37 +117,25 @@
                                             <td>
 
                                                 <small class="mb-0 text-sm" title="<?= $p->clique_data_id ?>">
-                                                    <?=$p->clique_data_id?>
+                                                    <?= $p->clique_data_id ?>
                                                 </small>
 
                                             </td>
-                                            <td>
+                                            <td style="display:flex">
 
-                                                <small class="mb-0 text-sm" title="<?= $this->conta_model->get_produto($p->clique_produto_id)->nome ?>">
+                                                <img src="<?= $this->conta_model->get_produto($p->oferta_produto_id)->imagem ?>" width="40" height="40" alt="">
+                                                <p style="margin-left:3px" class="text-sm text-uppercase font-weight-bold mb-0 ml-2" title="<?= $this->conta_model->get_produto($p->oferta_produto_id)->nome ?>"> <small>
 
-                                                    <?php if (strlen($this->conta_model->get_produto($p->clique_produto_id)->nome) > 14) {
-                                                        echo substr($this->conta_model->get_produto($p->clique_produto_id)->nome, 0, 14) . "...";
-                                                    } else {
-                                                        echo $this->conta_model->get_produto($p->clique_produto_id)->nome;
-                                                    } ?>
-                                                </small>
-
+                                                        <?php if (strlen($this->conta_model->get_produto($p->oferta_produto_id)->nome) > 35) {
+                                                            echo substr($this->conta_model->get_produto($p->oferta_produto_id)->nome, 0, 35) . "...";
+                                                        } else {
+                                                            echo $this->conta_model->get_produto($p->oferta_produto_id)->nome;
+                                                        } ?></small></p>
                                             </td>
+
                                             <td>
 
-                                                <small class="mb-0 text-sm" title="<?= $this->conta_model->get_campanha($p->clique_campanha_id)->campanha_nome ?>">
-
-                                                    <?php if (strlen($this->conta_model->get_campanha($p->clique_campanha_id)->campanha_nome) > 14) {
-                                                        echo substr($this->conta_model->get_campanha($p->clique_campanha_id)->campanha_nome, 0, 14) . "...";
-                                                    } else {
-                                                        echo $this->conta_model->get_campanha($p->clique_campanha_id)->campanha_nome;
-                                                    } ?>
-                                                </small>
-
-                                            </td>
-                                            <td>
-
-                                                <small class="mb-0 text-sm" title="<?= $p->clique_user_agent ?> | <?=$p->clique_ip?>">
+                                                <small class="mb-0 text-sm" title="<?= $p->clique_user_agent ?> | <?= $p->clique_ip ?>">
 
                                                     <?php if (strlen($p->clique_user_agent) > 14) {
                                                         echo substr($p->clique_user_agent, 0, 14) . "...";
