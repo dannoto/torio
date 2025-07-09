@@ -561,7 +561,7 @@
 
     })
 
-    $('#modal_add_persona').on('submit', function(e) {
+    $('#form_add_persona').on('submit', function(e) {
 
 
       e.preventDefault()
