@@ -450,7 +450,7 @@ class Conta extends CI_Controller
 
             $config['base_url'] = $base_url;
             $config['total_rows'] = $this->conta_model->count_search_ofertas($f_data);
-            $config['per_page'] = 10;
+            $config['per_page'] = 30;
             $config['uri_segment'] = 3;
 
             $config['full_tag_open'] = '<ul class="pagination">';
