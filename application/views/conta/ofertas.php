@@ -103,7 +103,7 @@
                       <th></th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody style="display:block">
 
                     <?php foreach ($ofertas as $p) { ?>
 
