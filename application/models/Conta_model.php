@@ -1011,7 +1011,7 @@ class Conta_model extends CI_Model
         $this->db->order_by('id', 'desc');
 
         $this->db->where('clique_user_agent !=', "whatsapp");
-        // $this->db->not_like('clique_user_agent', 'google');
+        // $this->db->not_like('clique_user_agent', 'whatsapp');
 
         $this->db->limit($limit, $start);
         return $this->db->get('cliques')->result();
@@ -1022,7 +1022,7 @@ class Conta_model extends CI_Model
         $this->db->where('is_deleted', 0);
 
         $this->db->where('clique_user_agent !=', "whatsapp");
-        // $this->db->not_like('clique_user_agent', 'google');
+        $this->db->not_like('clique_user_agent', 'whatsapp');
 
         return count($this->db->get('cliques')->result());
     }
@@ -1035,7 +1035,7 @@ class Conta_model extends CI_Model
         }
 
         $this->db->where('clique_user_agent !=', "whatsapp");
-        // $this->db->not_like('clique_user_agent', 'google');
+        $this->db->not_like('clique_user_agent', 'whatsapp');
 
         $this->db->limit($limit, $start);
         $this->db->where('is_deleted', 0);
@@ -1051,7 +1051,7 @@ class Conta_model extends CI_Model
         }
 
         $this->db->where('clique_user_agent !=', "whatsapp");
-        // $this->db->not_like('clique_user_agent', 'google');
+        $this->db->not_like('clique_user_agent', 'whatsapp');
 
         $this->db->where('is_deleted', 0);
 
