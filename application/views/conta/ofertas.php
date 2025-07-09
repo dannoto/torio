@@ -166,7 +166,7 @@
                         <td>
                         <td>
                           <?php
-                          $ofertaTexto = $this->conta_model->get_persona($p->oferta_persona_id)->persona_telefone ?>;
+                          $ofertaTexto = $this->conta_model->get_persona($p->oferta_persona_id)->persona_telefone ;
                           $ofertaId = 'oferta_' . $p->id; // garantir um ID único
                           ?>
 
