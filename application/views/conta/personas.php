@@ -55,6 +55,15 @@
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
     <?php $this->load->view('comp/navbar'); ?>
     <div class="container-fluid py-4">
+
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6 d-flex justify-content-end">
+          <button type="button" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#modal_add_persona"><i class="fa fa-plus mr-2"></i> Adicionar Persona</button>
+          <button type="button" id="trigger_update_btn_persona" style="display: none;" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#modal_update_persona">Editar Persona</button>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col-md-6"></div>
         <div class="col-md-6 d-flex justify-content-end">
@@ -87,6 +96,7 @@
         </div>
       </div>
     </div>
+
 
 
     <div class="row">
@@ -368,6 +378,102 @@
     </div>
   </div>
   <!-- Modal UPDATE Tag -->
+
+
+    <!-- Modal Adicionar Persona -->
+  <div class="modal fade" id="modal_add_persona" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Adicionar PERSONA</h5>
+          <button type="button" class="btn-close text-dark" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="form_add_produto">
+
+            <label for="">NOME</label>
+            <input type="text" class="form-control" name="persona_nome" id="persona_nome" required>
+            <br>
+             <label for="">USERNAME</label>
+            <input type="text" class="form-control" name="persona_username" id="persona_username" required>
+            <br>
+             <label for="">E-MAIL</label>
+            <input type="text" class="form-control" name="persona_email" id="persona_email" required>
+            <br>
+             <label for="">TELEFONE</label>
+            <input type="text" class="form-control" name="persona_telefone" id="persona_telefone" required>
+            <br>
+
+            <!-- <label for="">DESCRIÇÃO</label>
+            <textarea maxlength="200" name="descricao" required class="form-control" id="descricao"></textarea>
+            <br>
+
+            <div class="row">
+              <div class="col-md-6">
+                <label for="">PREÇO</label>
+                <input type="text" class="form-control" name="preco" id="preco" required>
+
+              </div>
+              <div class="col-md-6">
+                <label for="">PLATAFORMA</label>
+                <select name="plataforma" class="form-control" required id="plataforma">
+                  <option value="">SELECIONAR</option>
+                  <option value="hotmart">HOTMART</option>
+                  <option value="kiwify">KIWIFY</option>
+                  <option value="monetizze">MONETIZZE</option>
+                  <option value="edduz">EDUZZ</option>
+
+                </select>
+
+              </div>
+
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-6">
+                <label for="">URL DA IMAGEM</label>
+                <input type="text" class="form-control" name="imagem" id="imagem" required>
+              </div>
+              <div class="col-md-6">
+                <label for="">PÁGINA DE VENDAS</label>
+                <input type="text" class="form-control" name="pagina_de_vendas" id="pagina_de_vendas" required>
+
+              </div>
+
+            </div>
+            <br>
+            <div class="row">
+
+              <div class="col-md-6">
+                <label for="">STATUS</label>
+                <select name="status" class="form-control" required id="">
+                  <option value="">SELECIONAR</option>
+                  <option value="1">ATIVO</option>
+                  <option value="0">INATIVO</option>
+
+                </select>
+
+              </div>
+
+            </div> -->
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">FECHAR</button>
+          <button type="submit" class="btn bg-gradient-primary">ADICIONAR</button>
+
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Adicionar Persona -->
+
+
+
 
 
   <!--   Core JS Files   -->
