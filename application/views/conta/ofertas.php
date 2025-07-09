@@ -117,7 +117,7 @@
                               <img src="https://images.vexels.com/content/129616/preview/businessman-avatar-silhouette-ae719c.png" style="object-fit:cover" class="avatar avatar-sm rounded-circle me-2" alt="webdev">
                             </div>
                             <div class="my-auto">
-                              <a target="_blank" href="instragram.com/<?= $this->conta_model->get_persona($p->oferta_persona_id)->persona_username ?>">
+                              <a target="_blank" href="https://instagram.com/<?= $this->conta_model->get_persona($p->oferta_persona_id)->persona_username ?>">
                                 <h6 class="mb-0 text-sm" title="<?= $this->conta_model->get_persona($p->oferta_persona_id)->persona_nome ?>">
 
                                   <?php if (strlen($this->conta_model->get_persona($p->oferta_persona_id)->persona_nome) > 14) {
