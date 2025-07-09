@@ -148,16 +148,37 @@
                         </td>
 
                         <td>
+                          <?php
+                          $ofertaTexto = $this->conta_model->get_produto($p->oferta_produto_id)->oferta;
+                          $ofertaId = 'oferta_' . $p->id; // garantir um ID único
+                          ?>
 
-                        <i></i>
+                          <!-- Ícone de copiar -->
+                          <i onclick="copiarOferta('<?= $ofertaId ?>')" style="cursor: pointer; color: #007bff;" title="Copiar oferta">
+                            📋
+                          </i>
 
-                        <p><?=$this->conta_model->get_produto($p->oferta_produto_id)->oferta;?></p>
-                          <!-- <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?= $this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome ?>"> <small><?php if (strlen($this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome) > 14) {
-                                                                                                                                                                                        echo substr($this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome, 0, 14) . "...";
-                                                                                                                                                                                      } else {
-                                                                                                                                                                                        echo $this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome;
-                                                                                                                                                                                      } ?></small></p> -->
+                          <!-- Texto da oferta (oculto para leitura via JS) -->
+                          <p id="<?= $ofertaId ?>" style="display: inline; margin-left: 8px;"><?= $ofertaTexto ?></p>
+
+                          <!-- Mensagem de copiado -->
+                          <div id="msg_<?= $ofertaId ?>" style="font-size: 12px; color: green; display: none;">Copiado com sucesso</div>
+
+                          <!-- Script de copiar -->
+                          <script>
+                            function copiarOferta(id) {
+                              const texto = document.getElementById(id).textContent;
+                              navigator.clipboard.writeText(texto).then(function() {
+                                const msg = document.getElementById('msg_' + id);
+                                msg.style.display = 'block';
+                                setTimeout(() => {
+                                  msg.style.display = 'none';
+                                }, 2000);
+                              });
+                            }
+                          </script>
                         </td>
+
                         <td>
                           <p><small><?= $p->oferta_data ?> <?= $p->oferta_time ?> </small></p>
                         </td>
@@ -352,6 +373,8 @@
 
   <!--   Core JS Files   -->
   <?php $this->load->view('comp/js'); ?>
+
+
 
   <script>
     $('#form_add_produto').on('submit', function(e) {
