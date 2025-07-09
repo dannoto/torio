@@ -167,7 +167,7 @@
                         <td>
                           <?php
                           $ofertaNumero = $this->conta_model->get_persona($p->oferta_persona_id)->persona_telefone;
-                          $ofertaIdNumero = 'oferta_' . $p->id; // garantir um ID único
+                          $ofertaIdNumero = 'ofertaun_' . $p->id; // garantir um ID único
                           ?>
 
                           <!-- Ícone de copiar -->
