@@ -202,7 +202,7 @@
                         <td>
                          
                           <!-- Ícone de copiar -->
-                          <button onclick="setEnviado('<?= $P->ID ?>')" style="cursor: pointer; background-color:rgb(244, 11, 11);width:90%;color:#FFF;border:1px solid rgb(244, 11, 11)" title="Copiar oferta">
+                          <button onclick="setEnviado('<?= $P->id ?>')" style="cursor: pointer; background-color:rgb(244, 11, 11);width:90%;color:#FFF;border:1px solid rgb(244, 11, 11)" title="Copiar oferta">
                             CONCLUÍDO
                           </button>
 
