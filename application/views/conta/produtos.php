@@ -149,7 +149,7 @@
                                                         <i style="color:black" class="fa fa-pen text-xs"></i>
                                                     </button>
 
-                                                    <button style="background-color:black" onclick="delete_produto(<?= $p->id ?>)" class="btn btn-link  mb-0">
+                                                    <button style="background-color:red" onclick="delete_produto(<?= $p->id ?>)" class="btn btn-link  mb-0">
                                                         <i style="color:black" class="fa fa-close text-lg" style="color:red"></i>
                                                     </button>
                                                 </td>
