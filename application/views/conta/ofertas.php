@@ -167,11 +167,11 @@
                           <img src="<?= $this->conta_model->get_produto($p->oferta_produto_id)->imagem ?>" width="40" height="40" alt="">
                           <p style="margin-left:3px" class="text-sm text-uppercase font-weight-bold mb-0 ml-2" title="<?= $this->conta_model->get_produto($p->oferta_produto_id)->nome ?>"> <small>
 
-                              <?php if (strlen($this->conta_model->get_produto($p->oferta_produto_id)->nome) > 20) {
-                                echo substr($this->conta_model->get_produto($p->oferta_produto_id)->nome, 0, 20) . "...";
-                              } else {
+                              <?php 
                                 echo $this->conta_model->get_produto($p->oferta_produto_id)->nome;
-                              } ?></small></p>
+                               ?>
+                              </small>
+                              </p>
                         </td>
 
                         <td>
