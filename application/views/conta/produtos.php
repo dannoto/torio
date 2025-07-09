@@ -189,9 +189,10 @@
                         <textarea maxlength="200" name="descricao" required class="form-control" id="descricao"></textarea>
                         <br>
 
-                        <!-- <label for="">IMAGEM</label>
-                        <input type="text" class="form-control" name="imagem" id="imagem" required>
-                        <br> -->
+                        <label for="">OFERTA</label>
+                        <textarea maxlength="200" name="oferta" required class="form-control" id="oferta"></textarea>
+                        <br>
+
 
                         <div class="row">
                             <div class="col-md-6">
@@ -280,6 +281,9 @@
                         <br>
                         <label for="">DESCRIÇÃO</label>
                         <textarea maxlength="200" name="descricao" required class="form-control" id="update_descricao"></textarea>
+                        <br>
+                         <label for="">OFERTA</label>
+                        <textarea maxlength="200" name="oferta" required class="form-control" id="update_oferta"></textarea>
                         <br>
 
                         <div class="row">
@@ -489,6 +493,7 @@
                         // $('#update_categoria').val(resp.response.categoria)
                         $('#update_pagina_de_vendas').val(resp.response.pagina_de_vendas)
                         $('#update_descricao').val(resp.response.descricao)
+                        $('#update_oferta').val(resp.response.oferta)
 
                         $('#trigger_update_btn').click()
 

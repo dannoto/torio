@@ -959,6 +959,8 @@ class Conta extends CI_Controller
     {
         $data['nome'] =  htmlspecialchars($this->input->post('nome'));
         $data['descricao'] = htmlspecialchars($this->input->post('descricao'));
+        $data['oferta'] = htmlspecialchars($this->input->post('oferta'));
+
         $data['imagem'] = htmlspecialchars($this->input->post('imagem'));
         $data['preco'] = htmlspecialchars($this->input->post('preco'));
         $data['plataforma'] = htmlspecialchars($this->input->post('plataforma'));
@@ -991,6 +993,8 @@ class Conta extends CI_Controller
         $produto_id = htmlspecialchars($this->input->post('produto_id'));
         $data['nome'] =  htmlspecialchars($this->input->post('nome'));
         $data['descricao'] = htmlspecialchars($this->input->post('descricao'));
+        $data['oferta'] = htmlspecialchars($this->input->post('oferta'));
+
         $data['imagem'] = htmlspecialchars($this->input->post('imagem'));
         $data['preco'] = htmlspecialchars($this->input->post('preco'));
         $data['plataforma'] = htmlspecialchars($this->input->post('plataforma'));
@@ -1462,7 +1466,7 @@ class Conta extends CI_Controller
         return print_r(json_encode($response));
     }
 
-        public function act_delete_persona()
+    public function act_delete_persona()
     {
 
         $persona_id = htmlspecialchars($this->input->post('persona_id'));
@@ -1478,7 +1482,7 @@ class Conta extends CI_Controller
         return print_r(json_encode($response));
     }
 
-       public function act_delete_oferta()
+    public function act_delete_oferta()
     {
 
         $oferta_id = htmlspecialchars($this->input->post('oferta_id'));
