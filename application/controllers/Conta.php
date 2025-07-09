@@ -965,7 +965,7 @@ class Conta extends CI_Controller
         $data['status'] = htmlspecialchars($this->input->post('status'));
 
         $data['categoria'] = htmlspecialchars($this->input->post('categoria'));
-        
+
         $data['pagina_de_vendas'] = htmlspecialchars($this->input->post('pagina_de_vendas'));
 
         $data['descricao'] = htmlspecialchars($this->input->post('descricao'));
@@ -1405,5 +1405,60 @@ class Conta extends CI_Controller
 
             return print_r(json_encode($response));
         }
+    }
+
+
+
+    public function act_add_persona()
+    {
+        $persona_data['persona_nome'] =  htmlspecialchars($this->input->post('persona_nome'));
+        $persona_data['persona_email'] = htmlspecialchars($this->input->post('persona_email'));
+        $persona_data['persona_telefone'] = htmlspecialchars($this->input->post('persona_telefone'));
+        $persona_data['persona_username'] = htmlspecialchars($this->input->post('persona_username'));
+        $persona_data['persona_data'] = date('Y-m-d H:i:s');
+        $persona_data['is_deleted'] = 0;
+
+
+        $produto_id = htmlspecialchars($this->input->post('persona_produto'));
+
+
+        //  adicionar persona
+        $persona_id = $this->conta_model->add_persona_mercadolivre($persona_data);
+
+
+        // adicionar oferta
+        $data['oferta_status'] = 0;
+        $data['oferta_persona_id'] =  $persona_id;
+        $data['oferta_insta_id'] = $persona_data['persona_username'];
+        $data['oferta_campanha_id'] = 0;
+        $data['oferta_oferta_id'] = 0;
+        $data['oferta_tag_id'] = 0;
+        $data['oferta_produto_id'] = $produto_id;
+        $data['oferta_tipo'] = 'whatsapp';
+
+        $data['oferta_data'] = date('Y-m-d');
+
+        $data['oferta_data_creation'] = date('Y-m-d H:i:s');
+        $data['oferta_key'] = $this->get_oferta_key($persona_id, $produto_id);
+
+        $data['oferta_time'] = date('H:i:s');
+        $data['oferta_agente_id'] = 'api';
+        $data['is_deleted'] = 0;
+
+
+        $this->api_model->add_oferta($data);
+
+
+        $response = array();
+
+
+        // if ($this->conta_model->add_produto($data)) {
+        $response = array("status" => true, "message" => "Produto adicionada com sucesso");
+        // } else {
+        //     $response = array("status" => false, "message" => "Erro ao adicionar Produto");
+        // }
+
+
+        return print_r(json_encode($response));
     }
 }

@@ -913,6 +913,13 @@ class Conta_model extends CI_Model
         return $this->db->insert('personas', $persona_data);
     }
 
+    public function add_persona_mercadolivre($persona_data)
+    {
+        $this->db->insert('personas', $persona_data);
+        return $this->db->insert_id(); // Retorna o ID da última inserção
+    }
+
+
     public function get_persona($persona_id)
     {
         $this->db->where('id', $persona_id);
@@ -1127,7 +1134,6 @@ class Conta_model extends CI_Model
             }
 
             return count($duplicate_ips) . " ips duplicados;";
-
         } else {
             // echo "nenhum ip duplicado;";
 
@@ -1137,5 +1143,4 @@ class Conta_model extends CI_Model
 
         // return true; // Retorna true após a exclusão
     }
-
 }

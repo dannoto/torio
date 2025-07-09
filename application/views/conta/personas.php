@@ -391,7 +391,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form id="form_add_produto">
+          <form id="form_add_persona">
 
             <div class="row">
               <div class="col-md-6">
@@ -422,18 +422,13 @@
 
             <div class="col-md-12">
               <label for="">PRODUTO</label>
-              <select name="plataforma" class="form-control" required id="plataforma">
+              <select name="persona_produto" class="form-control" required id="persona_produto">
                 <option value="">SELECIONAR</option>
                 <?php foreach ($this->conta_model->get_produtos() as $p) { ?>
                   <option value="<?= $p->id ?>"><?= $p->nome ?></option>
                 <?php } ?>
               </select>
             </div>
-
-
-         
-
-
         </div>
         <div class="modal-footer">
           <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">FECHAR</button>
@@ -519,6 +514,62 @@
 
       $.ajax({
         url: '<?= base_url() ?>conta/act_update_produto',
+        type: 'POST',
+        data: FormData,
+        success: function(response) {
+
+          var resp = JSON.parse(response)
+
+          if (resp.status) {
+
+            swal({
+                title: 'Uhuu!',
+                text: resp.message,
+                icon: 'success',
+                confirmButtonText: 'OK'
+              })
+              .then((e) => {
+
+                location.reload()
+
+                // window.location.href = "<?= base_url() ?>conta/taf"
+              })
+
+
+          } else {
+
+
+            swal({
+              title: 'Ops!',
+              text: resp.message,
+              icon: 'warning',
+              confirmButtonText: 'OK'
+            });
+
+          }
+
+        },
+        error: function(xhr, status, error) {
+          swal({
+            title: 'Ops!',
+            text: "Houve um erro inesperado. Tente novamente",
+            icon: 'warning',
+            confirmButtonText: 'OK'
+          });
+        }
+      });
+
+    })
+
+    $('#modal_add_persona').on('submit', function(e) {
+
+
+      e.preventDefault()
+
+      var FormData = $(this).serialize()
+
+      $.ajax({
+        url: '<?= base_url() ?>conta/act_add_persona',
         type: 'POST',
         data: FormData,
         success: function(response) {
