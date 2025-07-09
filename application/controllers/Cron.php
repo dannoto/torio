@@ -15,7 +15,7 @@ class Cron extends CI_Controller
 
     public function delete_duplicate_ips()
     {
-        print_r($this->conta_model->delete_duplicate_ips());
+        // print_r($this->conta_model->delete_duplicate_ips());
 
         
     }

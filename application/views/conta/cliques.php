@@ -115,7 +115,6 @@
 
                                             </td>
                                             <td>
-
                                                 <small class="mb-0 text-sm" title="<?= $p->clique_data_id ?>">
                                                     <?= $p->clique_data_id ?>
                                                 </small>
@@ -132,7 +131,6 @@
                                                             echo $this->conta_model->get_produto($p->clique_produto_id)->nome;
                                                         } ?></small></p>
                                             </td>
-
                                             <td>
 
                                                 <small class="mb-0 text-sm" title="<?= $p->clique_user_agent ?> | <?= $p->clique_ip ?>">
@@ -145,7 +143,6 @@
                                                 </small>
 
                                             </td>
-
                                         </tr>
                                     <?php } ?>
                                 </tbody>
