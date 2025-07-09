@@ -79,71 +79,74 @@
 
                                     <?php foreach ($cliques as $p) { ?>
 
-                                        <tr>
+                                        <?php if (strpos("whatsapp", $p->clique_user_agent) !== FALSE) { ?>
+                                        <?php } else { ?>
+                                            <tr>
 
-                                            <td>
-                                                <div class="d-flex px-2">
-                                                    <div>
-                                                        <img src="https://images.vexels.com/content/129616/preview/businessman-avatar-silhouette-ae719c.png" style="object-fit:cover" class="avatar avatar-sm rounded-circle me-2" alt="webdev">
+                                                <td>
+                                                    <div class="d-flex px-2">
+                                                        <div>
+                                                            <img src="https://images.vexels.com/content/129616/preview/businessman-avatar-silhouette-ae719c.png" style="object-fit:cover" class="avatar avatar-sm rounded-circle me-2" alt="webdev">
+                                                        </div>
+                                                        <div class="my-auto">
+                                                            <a href="https://instagram.com/<?= $this->conta_model->get_persona($p->clique_persona_id)->persona_username ?>" target="_blank">
+
+                                                                <small class="mb-0 text-sm" title="<?= $this->conta_model->get_persona($p->clique_persona_id)->persona_nome ?>">
+
+                                                                    <?php if (strlen($this->conta_model->get_persona($p->clique_persona_id)->persona_nome) > 14) {
+                                                                        echo substr($this->conta_model->get_persona($p->clique_persona_id)->persona_nome, 0, 14) . "...";
+                                                                    } else {
+                                                                        echo $this->conta_model->get_persona($p->clique_persona_id)->persona_nome;
+                                                                    } ?>
+                                                                </small>
+                                                            </a>
+
+                                                        </div>
                                                     </div>
-                                                    <div class="my-auto">
-                                                        <a href="https://instagram.com/<?= $this->conta_model->get_persona($p->clique_persona_id)->persona_username ?>" target="_blank">
+                                                </td>
+                                                <td>
 
-                                                            <small class="mb-0 text-sm" title="<?= $this->conta_model->get_persona($p->clique_persona_id)->persona_nome ?>">
+                                                    <small class="mb-0 text-uppercase text-sm" title="<?= $p->clique_device ?>">
 
-                                                                <?php if (strlen($this->conta_model->get_persona($p->clique_persona_id)->persona_nome) > 14) {
-                                                                    echo substr($this->conta_model->get_persona($p->clique_persona_id)->persona_nome, 0, 14) . "...";
-                                                                } else {
-                                                                    echo $this->conta_model->get_persona($p->clique_persona_id)->persona_nome;
-                                                                } ?>
-                                                            </small>
-                                                        </a>
-
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-
-                                                <small class="mb-0 text-uppercase text-sm" title="<?= $p->clique_device ?>">
-
-                                                    <?php if (strlen($p->clique_device) > 14) {
-                                                        echo substr($p->clique_device, 0, 14) . "...";
-                                                    } else {
-                                                        echo $p->clique_device;
-                                                    } ?>
-                                                </small>
-
-                                            </td>
-                                            <td>
-                                                <small class="mb-0 text-sm" title="<?= $p->clique_data_id ?>">
-                                                    <?= $p->clique_data_id ?>
-                                                </small>
-
-                                            </td>
-                                            <td style="display:flex">
-
-                                                <img src="<?= $this->conta_model->get_produto($p->clique_produto_id)->imagem ?>" width="40" height="40" alt="">
-                                                <p style="margin-left:3px" class="text-sm text-uppercase font-weight-bold mb-0 ml-2" title="<?= $this->conta_model->get_produto($p->clique_produto_id)->nome ?>"> <small>
-
-                                                        <?php if (strlen($this->conta_model->get_produto($p->clique_produto_id)->nome) > 35) {
-                                                            echo substr($this->conta_model->get_produto($p->clique_produto_id)->nome, 0, 35) . "...";
+                                                        <?php if (strlen($p->clique_device) > 14) {
+                                                            echo substr($p->clique_device, 0, 14) . "...";
                                                         } else {
-                                                            echo $this->conta_model->get_produto($p->clique_produto_id)->nome;
-                                                        } ?></small></p>
-                                            </td>
-                                            <td>
+                                                            echo $p->clique_device;
+                                                        } ?>
+                                                    </small>
 
-                                                <small class="mb-0 text-sm" title="<?= $p->clique_user_agent ?> | <?= $p->clique_ip ?>">
+                                                </td>
+                                                <td>
+                                                    <small class="mb-0 text-sm" title="<?= $p->clique_data_id ?>">
+                                                        <?= $p->clique_data_id ?>
+                                                    </small>
 
-                                                    <?php if (strlen($p->clique_user_agent) > 14) {
-                                                        echo substr($p->clique_user_agent, 0, 14) . "...";
-                                                    } else {
-                                                        echo $p->clique_user_agent;
-                                                    } ?>
-                                                </small>
+                                                </td>
+                                                <td style="display:flex">
 
-                                            </td>
-                                        </tr>
+                                                    <img src="<?= $this->conta_model->get_produto($p->clique_produto_id)->imagem ?>" width="40" height="40" alt="">
+                                                    <p style="margin-left:3px" class="text-sm text-uppercase font-weight-bold mb-0 ml-2" title="<?= $this->conta_model->get_produto($p->clique_produto_id)->nome ?>"> <small>
+
+                                                            <?php if (strlen($this->conta_model->get_produto($p->clique_produto_id)->nome) > 35) {
+                                                                echo substr($this->conta_model->get_produto($p->clique_produto_id)->nome, 0, 35) . "...";
+                                                            } else {
+                                                                echo $this->conta_model->get_produto($p->clique_produto_id)->nome;
+                                                            } ?></small></p>
+                                                </td>
+                                                <td>
+
+                                                    <small class="mb-0 text-sm" title="<?= $p->clique_user_agent ?> | <?= $p->clique_ip ?>">
+
+                                                        <?php if (strlen($p->clique_user_agent) > 14) {
+                                                            echo substr($p->clique_user_agent, 0, 14) . "...";
+                                                        } else {
+                                                            echo $p->clique_user_agent;
+                                                        } ?>
+                                                    </small>
+
+                                                </td>
+                                            </tr>
+                                        <?php } ?>
                                     <?php } ?>
                                 </tbody>
                             </table>
