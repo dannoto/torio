@@ -123,13 +123,13 @@
                                             </td>
                                             <td style="display:flex">
 
-                                                <img src="<?= $this->conta_model->get_produto($p->oferta_produto_id)->imagem ?>" width="40" height="40" alt="">
-                                                <p style="margin-left:3px" class="text-sm text-uppercase font-weight-bold mb-0 ml-2" title="<?= $this->conta_model->get_produto($p->oferta_produto_id)->nome ?>"> <small>
+                                                <img src="<?= $this->conta_model->get_produto($p->clique_produto_id)->imagem ?>" width="40" height="40" alt="">
+                                                <p style="margin-left:3px" class="text-sm text-uppercase font-weight-bold mb-0 ml-2" title="<?= $this->conta_model->get_produto($p->clique_produto_id)->nome ?>"> <small>
 
-                                                        <?php if (strlen($this->conta_model->get_produto($p->oferta_produto_id)->nome) > 35) {
-                                                            echo substr($this->conta_model->get_produto($p->oferta_produto_id)->nome, 0, 35) . "...";
+                                                        <?php if (strlen($this->conta_model->get_produto($p->clique_produto_id)->nome) > 35) {
+                                                            echo substr($this->conta_model->get_produto($p->clique_produto_id)->nome, 0, 35) . "...";
                                                         } else {
-                                                            echo $this->conta_model->get_produto($p->oferta_produto_id)->nome;
+                                                            echo $this->conta_model->get_produto($p->clique_produto_id)->nome;
                                                         } ?></small></p>
                                             </td>
 
