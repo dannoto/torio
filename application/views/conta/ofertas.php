@@ -140,7 +140,11 @@
                           <p class="text-sm font-weight-bold mb-0" title="<?= $p->oferta_tipo ?>"><small class="text-uppercase"><?= $p->oferta_tipo ?></small></p>
                         </td>
                         <td>
-                          <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?= $this->conta_model->get_produto($p->oferta_produto_id)->nome ?>"> <small><?php if (strlen($this->conta_model->get_produto($p->oferta_produto_id)->nome) > 14) {
+
+                        <img src="<?=$this->conta_model->get_produto($p->oferta_produto_id)->iamgem?>" width="40" height="40" alt="">
+                          <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?= $this->conta_model->get_produto($p->oferta_produto_id)->nome ?>"> <small>
+                            
+                            <?php if (strlen($this->conta_model->get_produto($p->oferta_produto_id)->nome) > 14) {
                                                                                                                                                                         echo substr($this->conta_model->get_produto($p->oferta_produto_id)->nome, 0, 14) . "...";
                                                                                                                                                                       } else {
                                                                                                                                                                         echo $this->conta_model->get_produto($p->oferta_produto_id)->nome;
