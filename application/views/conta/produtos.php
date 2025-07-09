@@ -146,11 +146,11 @@
                                                 </td>
                                                 <td class="align-middle">
                                                     <button onclick="open_modal_update_produto(<?= $p->id ?>)" class="btn btn-link text-secondary mb-0">
-                                                        <i class="fa fa-pen text-xs"></i>
+                                                        <i style="color:black" class="fa fa-pen text-xs"></i>
                                                     </button>
 
                                                     <button onclick="delete_produto(<?= $p->id ?>)" class="btn btn-link text-secondary mb-0">
-                                                        <i class="fa fa-close text-lg" style="color:red"></i>
+                                                        <i style="color:black" class="fa fa-close text-lg" style="color:red"></i>
                                                     </button>
                                                 </td>
                                             </tr>
