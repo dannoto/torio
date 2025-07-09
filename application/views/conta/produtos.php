@@ -203,6 +203,10 @@
                                 <label for="">PLATAFORMA</label>
                                 <select name="plataforma" class="form-control" required id="plataforma">
                                     <option value="">SELECIONAR</option>
+                                     <option value="mercadolivre">MERCADO LIVRE</option>
+                                      <option value="shopee">SHOPEE</option>
+                                       <option value="amazon">AMAZON</option>
+                                        <option value="magazineluiza">MAGAZINE LUIZA</option>
                                     <option value="hotmart">HOTMART</option>
                                     <option value="kiwify">KIWIFY</option>
                                     <option value="monetizze">MONETIZZE</option>
