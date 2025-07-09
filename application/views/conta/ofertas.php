@@ -50,6 +50,33 @@
   }
 </style>
 
+<style>
+  @media (max-width: 768px) {
+    table thead {
+      display: none; /* Esconde os cabeçalhos */
+    }
+
+    table tbody {
+      display: block;
+      width: 100%;
+    }
+
+    table tr {
+      display: block;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    table td {
+      display: block;
+      text-align: left;
+      width: 100%;
+    }
+  }
+</style>
+
+
 <body class="g-sidenav-show  bg-gray-100">
   <?php $this->load->view('comp/sidebar'); ?>
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
