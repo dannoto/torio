@@ -1485,7 +1485,7 @@ class Conta extends CI_Controller
 
         $response = array();
 
-        if ($this->conta_model->delete_persona($oferta_id)) {
+        if ($this->conta_model->delete_oferta($oferta_id)) {
             $response = array("status" => true, "message" => "Oferta excluida com sucesso");
         } else {
             $response = array("status" => false, "message" => "Erro ao excluir Oferta");

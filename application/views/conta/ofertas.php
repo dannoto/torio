@@ -608,7 +608,7 @@
 
                 if (resp.status) {
 
-                  // location.reload()
+                  location.reload()
 
 
                 } else {
