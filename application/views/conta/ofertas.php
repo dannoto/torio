@@ -182,7 +182,7 @@
 
                           <!-- Ícone de copiar -->
                           <button onclick="copiarOferta('<?= $ofertaId ?>')" style="cursor: pointer; background-color: #007bff;width:90%;color:#FFF;border:1px solid #007bff" title="Copiar oferta">
-                             CC
+                             CC OFERTA
                           </button>
 
                           <!-- Texto da oferta (oculto para leitura via JS) -->
