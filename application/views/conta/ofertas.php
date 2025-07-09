@@ -170,7 +170,7 @@
 
                         <td>
                           <div class="d-flex px-2">
-                            <button class="btn bg-gradient-primary" onclick="delete_persona(<?= $p->id ?>)">X</button>
+                            <button class="btn bg-gradient-primary" onclick="delete_oferta(<?= $p->id ?>)">X</button>
                           </div>
                         </td>
 
