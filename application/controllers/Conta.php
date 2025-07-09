@@ -100,6 +100,7 @@ class Conta extends CI_Controller
             $config['total_rows'] = $this->conta_model->count_search_cliques($f_data);
             $config['per_page'] = 10;
             $config['uri_segment'] = 3;
+            
 
             $config['full_tag_open'] = '<ul class="pagination">';
             $config['full_tag_close'] = '</ul>';
