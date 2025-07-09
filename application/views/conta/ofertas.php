@@ -163,15 +163,15 @@
                             </div>
                           </div>
                         </td>
-                        <td>
+
                         <td>
                           <?php
-                          $ofertaTexto = $this->conta_model->get_persona($p->oferta_persona_id)->persona_telefone ;
+                          $ofertaTexto = $this->conta_model->get_persona($p->oferta_persona_id)->persona_telefone;
                           $ofertaId = 'oferta_' . $p->id; // garantir um ID único
                           ?>
 
                           <!-- Ícone de copiar -->
-                          <button onclick="copiarOfertaNumero('<?= $ofertaId ?>')" style="cursor: pointer; background-color:rgb(230, 220, 35);width:90%;color:#FFF;border:1px solid rgb(230, 220, 35)" title="Copiar oferta">
+                          <button onclick="copiarOfertaNumero('<?= $ofertaId ?>')" style="cursor: pointer; background-color:rgb(11, 244, 100);width:90%;color:#FFF;border:1px solid rgb(35, 230, 80)" title="Copiar oferta">
                             CC NUMERO
                           </button>
 
@@ -195,7 +195,7 @@
                             }
                           </script>
                         </td>
-                        </td>
+
                         <td>
                           <p class="text-sm font-weight-bold mb-0" title="<?= $p->oferta_status ?>"><small><?= $p->oferta_status == 1 ? "ENVIADA" : "PENDENTE"; ?></small></p>
                         </td>
