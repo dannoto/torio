@@ -97,7 +97,7 @@
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">STATUS</th>
 
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">PRODUTO</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">TEMPLATE</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">OFERTA</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">DATA</th>
 
                       <th></th>
@@ -134,7 +134,7 @@
                         <td>
                           <p class="text-sm font-weight-bold mb-0" title="<?= $p->oferta_status ?>"><small><?= $p->oferta_status == 1 ? "ENVIADA" : "PENDENTE"; ?></small></p>
                         </td>
-                     
+
                         <td style="display:flex">
 
                           <img src="<?= $this->conta_model->get_produto($p->oferta_produto_id)->imagem ?>" width="40" height="40" alt="">
@@ -146,13 +146,17 @@
                                 echo $this->conta_model->get_produto($p->oferta_produto_id)->nome;
                               } ?></small></p>
                         </td>
-                       
+
                         <td>
-                          <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?= $this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome ?>"> <small><?php if (strlen($this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome) > 14) {
+
+                        <i></i>
+
+                        <p><?=$this->conta_model->get_produto($p->oferta_produto_id)->oferta;?></p>
+                          <!-- <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?= $this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome ?>"> <small><?php if (strlen($this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome) > 14) {
                                                                                                                                                                                         echo substr($this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome, 0, 14) . "...";
                                                                                                                                                                                       } else {
                                                                                                                                                                                         echo $this->conta_model->get_campanha_ofertas($p->oferta_oferta_id)->oferta_nome;
-                                                                                                                                                                                      } ?></small></p>
+                                                                                                                                                                                      } ?></small></p> -->
                         </td>
                         <td>
                           <p><small><?= $p->oferta_data ?> <?= $p->oferta_time ?> </small></p>
