@@ -53,7 +53,8 @@
 <style>
   @media (max-width: 768px) {
     table thead {
-      display: none; /* Esconde os cabeçalhos */
+      display: none;
+      /* Esconde os cabeçalhos */
     }
 
     table tbody {
@@ -134,7 +135,11 @@
 
                     <?php foreach ($ofertas as $p) { ?>
 
-                      <tr style="<?php if ($p->oferta_status == "ENVIADA") { echo "background-color:#58ea0763";} else { echo "background-color:#ff00001f";} ?>">
+                      <tr style="<?php if ($p->oferta_status == "ENVIADA") {
+                                    echo "background-color:#58ea0763";
+                                  } else {
+                                    echo "background-color:#ff00001f";
+                                  } ?>">
 
                         <td>
                           <div class="d-flex px-2">
@@ -157,6 +162,39 @@
 
                             </div>
                           </div>
+                        </td>
+                        <td>
+                        <td>
+                          <?php
+                          $ofertaTexto = $this->conta_model->get_produto($p->oferta_produto_id)->numero;
+                          $ofertaId = 'oferta_' . $p->id; // garantir um ID único
+                          ?>
+
+                          <!-- Ícone de copiar -->
+                          <button onclick="copiarOfertaNumero('<?= $ofertaId ?>')" style="cursor: pointer; background-color:rgb(230, 220, 35);width:90%;color:#FFF;border:1px solid rgb(230, 220, 35)" title="Copiar oferta">
+                            CC NUMERO
+                          </button>
+
+                          <!-- Texto da oferta (oculto para leitura via JS) -->
+                          <p id="<?= $ofertaId ?>" style="display: none; margin-left: 8px;"><?= $ofertaTexto ?></p>
+
+                          <!-- Mensagem de copiado -->
+                          <div id="msg_<?= $ofertaId ?>" style="font-size: 12px; color: green; display: none;">Numero copiado!</div>
+
+                          <!-- Script de copiar -->
+                          <script>
+                            function copiarOfertaNumero(id) {
+                              const texto = document.getElementById(id).textContent;
+                              navigator.clipboard.writeText(texto).then(function() {
+                                const msg = document.getElementById('msg_' + id);
+                                msg.style.display = 'block';
+                                setTimeout(() => {
+                                  msg.style.display = 'none';
+                                }, 2000);
+                              });
+                            }
+                          </script>
+                        </td>
                         </td>
                         <td>
                           <p class="text-sm font-weight-bold mb-0" title="<?= $p->oferta_status ?>"><small><?= $p->oferta_status == 1 ? "ENVIADA" : "PENDENTE"; ?></small></p>
@@ -182,7 +220,7 @@
 
                           <!-- Ícone de copiar -->
                           <button onclick="copiarOferta('<?= $ofertaId ?>')" style="cursor: pointer; background-color: #007bff;width:90%;color:#FFF;border:1px solid #007bff" title="Copiar oferta">
-                             CC OFERTA
+                            CC OFERTA
                           </button>
 
                           <!-- Texto da oferta (oculto para leitura via JS) -->
@@ -212,7 +250,7 @@
 
                         <td>
                           <div class="d-flex px-2">
-                            <button class="btn bg-gradient-primary"  onclick="delete_oferta(<?= $p->id ?>)">X</button>
+                            <button class="btn bg-gradient-primary" onclick="delete_oferta(<?= $p->id ?>)">X</button>
                           </div>
                         </td>
 
