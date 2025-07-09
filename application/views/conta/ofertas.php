@@ -135,7 +135,7 @@
 
                     <?php foreach ($ofertas as $p) { ?>
 
-                      <tr style="<?php if ($p->oferta_status == "ENVIADA") {
+                      <tr style="<?php if ($p->oferta_status == 1) {
                                     echo "background-color:#58ea0763";
                                   } else {
                                     echo "background-color:#ff00001f";
@@ -730,6 +730,48 @@
 
 
 
+
+    }
+
+    function setEnviado(oferta_id) {
+
+        $.ajax({
+              url: '<?= base_url() ?>conta/act_update_oferta_status',
+              type: 'POST',
+              data: {
+                oferta_id: oferta_id
+              },
+              success: function(response) {
+
+                var resp = JSON.parse(response)
+
+                if (resp.status) {
+
+                  location.reload()
+
+
+                } else {
+
+
+                  swal({
+                    title: 'Ops!',
+                    text: resp.message,
+                    icon: 'warning',
+                    confirmButtonText: 'OK'
+                  });
+
+                }
+
+              },
+              error: function(xhr, status, error) {
+                swal({
+                  title: 'Ops!',
+                  text: "Houve um erro inesperado. Tente novamente",
+                  icon: 'warning',
+                  confirmButtonText: 'OK'
+                });
+              }
+            });
 
     }
   </script>

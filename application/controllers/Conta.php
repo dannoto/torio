@@ -1314,6 +1314,27 @@ class Conta extends CI_Controller
 
         return print_r(json_encode($response));
     }
+
+
+       public function act_update_oferta_Status()
+    {
+
+        $oferta_id = htmlspecialchars($this->input->post('oferta_id'));
+
+        $response = array();
+
+        $oferta_data = array(
+            'oferta_status' => 1
+        );
+
+        if ($this->conta_model->update_oferta($oferta_id, $oferta_data)) {
+            $response = array("status" => true, "message" => "Campanha excluida com sucesso");
+        } else {
+            $response = array("status" => false, "message" => "Erro ao excluir Campanha");
+        }
+
+        return print_r(json_encode($response));
+    }
     // CAMPANHA OFERTA
 
 
