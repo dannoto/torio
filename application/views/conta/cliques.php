@@ -79,7 +79,7 @@
 
                                     <?php foreach ($cliques as $p) { ?>
 
-                                        <?php if (strpos($p->clique_user_agent,"whatsapp") !== FALSE) { ?>
+                                        <?php if (strpos($p->clique_user_agent, "WhatsApp") !== FALSE) { ?>
 
 
                                         <?php } else { ?>
