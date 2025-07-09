@@ -380,7 +380,7 @@
   <!-- Modal UPDATE Tag -->
 
 
-    <!-- Modal Adicionar Persona -->
+  <!-- Modal Adicionar Persona -->
   <div class="modal fade" id="modal_add_persona" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
@@ -393,18 +393,39 @@
         <div class="modal-body">
           <form id="form_add_produto">
 
-            <label for="">NOME</label>
-            <input type="text" class="form-control" name="persona_nome" id="persona_nome" required>
+            <div class="row">
+              <div class="col-md-6">
+                <label for="">NOME</label>
+                <input type="text" class="form-control" name="persona_nome" id="persona_nome" required>
+              </div>
+              <div class="col-md-6">
+                <label for="">USERNAME</label>
+                <input type="text" class="form-control" name="persona_username" id="persona_username" required>
+
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label for="">E-MAIL</label>
+                <input type="text" class="form-control" name="persona_email" id="persona_email" required>
+              </div>
+              <div class="col-md-6">
+                <label for="">TELEFONE</label>
+                <input type="text" class="form-control" name="persona_telefone" id="persona_telefone" required>
+
+              </div>
+
+            </div>
+
+
+            <!-- <br>
+
             <br>
-             <label for="">USERNAME</label>
-            <input type="text" class="form-control" name="persona_username" id="persona_username" required>
+
             <br>
-             <label for="">E-MAIL</label>
-            <input type="text" class="form-control" name="persona_email" id="persona_email" required>
-            <br>
-             <label for="">TELEFONE</label>
-            <input type="text" class="form-control" name="persona_telefone" id="persona_telefone" required>
-            <br>
+
+            <br> -->
 
             <!-- <label for="">DESCRIÇÃO</label>
             <textarea maxlength="200" name="descricao" required class="form-control" id="descricao"></textarea>
