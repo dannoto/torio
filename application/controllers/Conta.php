@@ -1453,7 +1453,7 @@ class Conta extends CI_Controller
 
 
         // if ($this->conta_model->add_produto($data)) {
-        $response = array("status" => true, "message" => "Produto adicionada com sucesso");
+        $response = array("status" => true, "message" => "Persona adicionada com sucesso");
         // } else {
         //     $response = array("status" => false, "message" => "Erro ao adicionar Produto");
         // }

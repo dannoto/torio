@@ -196,6 +196,14 @@
                         </div>
                       </td>
 
+                      <td>
+                        <div class="d-flex px-2">
+                          <button class="btn-danger" onclick="delete_persona(<?=$p->id?>)" >X</button>
+                        </div>
+                      </td>
+
+                      
+
 
 
                     </tr>
@@ -688,6 +696,64 @@
               type: 'POST',
               data: {
                 produto_id: produto_id
+              },
+              success: function(response) {
+
+                var resp = JSON.parse(response)
+
+                if (resp.status) {
+
+                  location.reload()
+
+
+                } else {
+
+
+                  swal({
+                    title: 'Ops!',
+                    text: resp.message,
+                    icon: 'warning',
+                    confirmButtonText: 'OK'
+                  });
+
+                }
+
+              },
+              error: function(xhr, status, error) {
+                swal({
+                  title: 'Ops!',
+                  text: "Houve um erro inesperado. Tente novamente",
+                  icon: 'warning',
+                  confirmButtonText: 'OK'
+                });
+              }
+            });
+
+          }
+        });
+
+
+
+
+    }
+
+    function delete_persona(persona_id) {
+      swal({
+          title: "Tem certeza?",
+          text: "Deseja excluir esta persona?",
+          icon: "warning",
+          buttons: true,
+          dangerMode: true,
+        })
+        .then((willDelete) => {
+
+          if (willDelete) {
+
+            $.ajax({
+              url: '<?= base_url() ?>conta/act_delete_persona',
+              type: 'POST',
+              data: {
+                persona_id: persona_id
               },
               success: function(response) {
 
