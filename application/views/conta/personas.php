@@ -431,66 +431,7 @@
             </div>
 
 
-            <!-- <br>
-
-            <br>
-
-            <br>
-
-            <br> -->
-
-            <!-- <label for="">DESCRIÇÃO</label>
-            <textarea maxlength="200" name="descricao" required class="form-control" id="descricao"></textarea>
-            <br>
-
-            <div class="row">
-              <div class="col-md-6">
-                <label for="">PREÇO</label>
-                <input type="text" class="form-control" name="preco" id="preco" required>
-
-              </div>
-              <div class="col-md-6">
-                <label for="">PLATAFORMA</label>
-                <select name="plataforma" class="form-control" required id="plataforma">
-                  <option value="">SELECIONAR</option>
-                  <option value="hotmart">HOTMART</option>
-                  <option value="kiwify">KIWIFY</option>
-                  <option value="monetizze">MONETIZZE</option>
-                  <option value="edduz">EDUZZ</option>
-
-                </select>
-
-              </div>
-
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-md-6">
-                <label for="">URL DA IMAGEM</label>
-                <input type="text" class="form-control" name="imagem" id="imagem" required>
-              </div>
-              <div class="col-md-6">
-                <label for="">PÁGINA DE VENDAS</label>
-                <input type="text" class="form-control" name="pagina_de_vendas" id="pagina_de_vendas" required>
-
-              </div>
-
-            </div>
-            <br>
-            <div class="row">
-
-              <div class="col-md-6">
-                <label for="">STATUS</label>
-                <select name="status" class="form-control" required id="">
-                  <option value="">SELECIONAR</option>
-                  <option value="1">ATIVO</option>
-                  <option value="0">INATIVO</option>
-
-                </select>
-
-              </div>
-
-            </div> -->
+         
 
 
         </div>
