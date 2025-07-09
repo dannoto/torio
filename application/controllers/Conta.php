@@ -1461,4 +1461,20 @@ class Conta extends CI_Controller
 
         return print_r(json_encode($response));
     }
+
+        public function act_delete_persona()
+    {
+
+        $persona_id = htmlspecialchars($this->input->post('persona_id'));
+
+        $response = array();
+
+        if ($this->conta_model->delete_persona($persona_id)) {
+            $response = array("status" => true, "message" => "Persona excluida com sucesso");
+        } else {
+            $response = array("status" => false, "message" => "Erro ao excluir Persona");
+        }
+
+        return print_r(json_encode($response));
+    }
 }
