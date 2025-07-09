@@ -154,7 +154,7 @@
                           ?>
 
                           <!-- Ícone de copiar -->
-                          <i onclick="copiarOferta('<?= $ofertaId ?>')" style="cursor: pointer; color: #007bff;" title="Copiar oferta">
+                          <button onclick="copiarOferta('<?= $ofertaId ?>')" style="cursor: pointer; color: #007bff;" title="Copiar oferta">
                             <svg width="50px" height="50px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <title>document</title>
                               <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -168,7 +168,7 @@
                                 </g>
                               </g>
                             </svg>
-                          </i>
+                          </button>
 
                           <!-- Texto da oferta (oculto para leitura via JS) -->
                           <p id="<?= $ofertaId ?>" style="display: none; margin-left: 8px;"><?= $ofertaTexto ?></p>
