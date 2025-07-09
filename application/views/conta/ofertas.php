@@ -159,7 +159,7 @@
                           </i>
 
                           <!-- Texto da oferta (oculto para leitura via JS) -->
-                          <p id="<?= $ofertaId ?>" style="display: inline; margin-left: 8px;"><?= $ofertaTexto ?></p>
+                          <p id="<?= $ofertaId ?>" style="display: none; margin-left: 8px;"><?= $ofertaTexto ?></p>
 
                           <!-- Mensagem de copiado -->
                           <div id="msg_<?= $ofertaId ?>" style="font-size: 12px; color: green; display: none;">Copiado com sucesso</div>
