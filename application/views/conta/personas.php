@@ -408,7 +408,7 @@
               </div>
               <div class="col-md-6">
                 <label for="">USERNAME</label>
-                <input type="text" class="form-control" name="persona_username" id="persona_username" required>
+                <input type="text" class="form-control" name="persona_username" id="persona_username" >
 
               </div>
 
@@ -416,7 +416,7 @@
             <div class="row">
               <div class="col-md-6">
                 <label for="">E-MAIL</label>
-                <input type="text" class="form-control" name="persona_email" id="persona_email" required>
+                <input type="text" class="form-control" name="persona_email" id="persona_email" >
               </div>
               <div class="col-md-6">
                 <label for="">TELEFONE</label>
