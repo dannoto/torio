@@ -223,7 +223,7 @@
 
                         <td>
                           <?php
-                          $ofertaTexto = $this->conta_model->get_produto($p->oferta_produto_id)->oferta;
+                          $ofertaTexto = $this->conta_model->get_produto($p->oferta_produto_id)->oferta."%0A https://ofertas.run/".$p->oferta_key;
                           $ofertaId = 'oferta_' . $p->id; // garantir um ID único
                           ?>
 
