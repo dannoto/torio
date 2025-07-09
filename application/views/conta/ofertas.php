@@ -179,14 +179,14 @@
                           <p id="<?= $ofertaId ?>" style="display: none; margin-left: 8px;"><?= $ofertaTexto ?></p>
 
                           <!-- Mensagem de copiado -->
-                          <div id="msg_<?= $ofertaId ?>" style="font-size: 12px; color: green; display: none;">Numero copiado!</div>
+                          <div id="num_<?= $ofertaId ?>" style="font-size: 12px; color: green; display: none;">Numero copiado!</div>
 
                           <!-- Script de copiar -->
                           <script>
                             function copiarOfertaNumero(id) {
                               const texto = document.getElementById(id).textContent;
                               navigator.clipboard.writeText(texto).then(function() {
-                                const msg = document.getElementById('msg_' + id);
+                                const msg = document.getElementById('num_' + id);
                                 msg.style.display = 'block';
                                 setTimeout(() => {
                                   msg.style.display = 'none';
