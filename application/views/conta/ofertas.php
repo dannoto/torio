@@ -166,20 +166,20 @@
 
                         <td>
                           <?php
-                          $ofertaTexto = $this->conta_model->get_persona($p->oferta_persona_id)->persona_telefone;
-                          $ofertaId = 'oferta_' . $p->id; // garantir um ID único
+                          $ofertaNumero = $this->conta_model->get_persona($p->oferta_persona_id)->persona_telefone;
+                          $ofertaIdNumero = 'oferta_' . $p->id; // garantir um ID único
                           ?>
 
                           <!-- Ícone de copiar -->
-                          <button onclick="copiarOfertaNumero('<?= $ofertaId ?>')" style="cursor: pointer; background-color:rgb(11, 244, 100);width:90%;color:#FFF;border:1px solid rgb(35, 230, 80)" title="Copiar oferta">
+                          <button onclick="copiarOfertaNumero('<?= $ofertaIdNumero ?>')" style="cursor: pointer; background-color:rgb(11, 244, 100);width:90%;color:#FFF;border:1px solid rgb(35, 230, 80)" title="Copiar oferta">
                             CC NUMERO
                           </button>
 
                           <!-- Texto da oferta (oculto para leitura via JS) -->
-                          <p id="<?= $ofertaId ?>" style="display: none; margin-left: 8px;"><?= $ofertaTexto ?></p>
+                          <p id="<?= $ofertaIdNumero ?>" style="display: none; margin-left: 8px;"><?= $ofertaNumero ?></p>
 
                           <!-- Mensagem de copiado -->
-                          <div id="num_<?= $ofertaId ?>" style="font-size: 12px; color: green; display: none;">Numero copiado!</div>
+                          <div id="num_<?= $ofertaIdNumero ?>" style="font-size: 12px; color: green; display: none;">Numero copiado!</div>
 
                           <!-- Script de copiar -->
                           <script>
