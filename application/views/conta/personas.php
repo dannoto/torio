@@ -420,11 +420,11 @@
 
             <hr>
 
-            <div class="col-md-6">
+            <div class="col-md-12">
               <label for="">PRODUTO</label>
               <select name="plataforma" class="form-control" required id="plataforma">
                 <option value="">SELECIONAR</option>
-                <?php foreach ($produtos as $p) { ?>
+                <?php foreach ($this->conta_model->get_produtos() as $p) { ?>
                   <option value="<?= $p->id ?>"><?= $p->nome ?></option>
                 <?php } ?>
               </select>
