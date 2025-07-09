@@ -77,6 +77,14 @@ class Torio extends CI_Controller
         print_r(json_encode($response));
     }
 
+    public function get_produtos()
+    {
+
+        $response = $this->conta_model->get_produtos();
+        print_r(json_encode($response));
+        
+    }
+
     public function add_instalead_demanda()
     {
         $data['tarefa_id'] = htmlspecialchars($this->input->post('tarefa_id'));
@@ -184,7 +192,7 @@ class Torio extends CI_Controller
             $oferta->oferta_numero = $this->conta_model->get_persona($oferta->oferta_persona_id)->persona_telefone;
 
             // Adiciona o campo 'oferta_numero' pegando o conteúdo da oferta
-            $oferta->oferta_conteudo = $this->conta_model->get_template($oferta->oferta_oferta_id)->oferta_conteudo." https://oferta.run/".$oferta->oferta_key;
+            $oferta->oferta_conteudo = $this->conta_model->get_template($oferta->oferta_oferta_id)->oferta_conteudo . " https://oferta.run/" . $oferta->oferta_key;
         }
 
         // Remove a referência para evitar possíveis problemas no futuro
