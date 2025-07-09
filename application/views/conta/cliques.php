@@ -79,7 +79,9 @@
 
                                     <?php foreach ($cliques as $p) { ?>
 
-                                        <?php if (strpos("whatsapp", $p->clique_user_agent) !== FALSE) { ?>
+                                        <?php if (strpos($p->clique_user_agent,"whatsapp") !== FALSE) { ?>
+
+
                                         <?php } else { ?>
                                             <tr>
 
