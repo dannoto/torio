@@ -155,9 +155,9 @@
 
                           <!-- Ícone de copiar -->
                           <button onclick="copiarOferta('<?= $ofertaId ?>')" style="cursor: pointer; color: #007bff;" title="Copiar oferta">
-                            <svg width="50px" height="50px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <svg width="35px" height="35px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                               <title>document</title>
-                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <g stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd">
                                 <g transform="translate(-1870.000000, -591.000000)" fill="#FFFFFF" fill-rule="nonzero">
                                   <g transform="translate(1716.000000, 291.000000)">
                                     <g transform="translate(154.000000, 300.000000)">
