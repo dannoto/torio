@@ -81,7 +81,7 @@
           </div> -->
         <!-- </div> -->
       </div>
-      
+
       <div class="row">
         <div class="col-12">
           <div class="card mb-4">
@@ -141,14 +141,14 @@
                         </td>
                         <td style="display:flex">
 
-                        <img src="<?=$this->conta_model->get_produto($p->oferta_produto_id)->imagem?>" width="40" height="40" alt="">
+                          <img src="<?= $this->conta_model->get_produto($p->oferta_produto_id)->imagem ?>" width="40" height="40" alt="">
                           <p style="margin-left:3px" class="text-sm text-uppercase font-weight-bold mb-0 ml-2" title="<?= $this->conta_model->get_produto($p->oferta_produto_id)->nome ?>"> <small>
-                            
-                            <?php if (strlen($this->conta_model->get_produto($p->oferta_produto_id)->nome) > 14) {
-                                                                                                                                                                        echo substr($this->conta_model->get_produto($p->oferta_produto_id)->nome, 0, 14) . "...";
-                                                                                                                                                                      } else {
-                                                                                                                                                                        echo $this->conta_model->get_produto($p->oferta_produto_id)->nome;
-                                                                                                                                                                      } ?></small></p>
+
+                              <?php if (strlen($this->conta_model->get_produto($p->oferta_produto_id)->nome) > 14) {
+                                echo substr($this->conta_model->get_produto($p->oferta_produto_id)->nome, 0, 14) . "...";
+                              } else {
+                                echo $this->conta_model->get_produto($p->oferta_produto_id)->nome;
+                              } ?></small></p>
                         </td>
                         <td>
                           <p class="text-sm text-uppercase font-weight-bold mb-0" title="<?= $this->conta_model->get_campanha($p->oferta_campanha_id)->campanha_nome ?>"><small> <?php if (strlen($this->conta_model->get_campanha($p->oferta_campanha_id)->campanha_nome) > 14) {
@@ -166,6 +166,12 @@
                         </td>
                         <td>
                           <p><small><?= $p->oferta_data ?> <?= $p->oferta_time ?> </small></p>
+                        </td>
+
+                        <td>
+                          <div class="d-flex px-2">
+                            <button class="btn bg-gradient-primary" onclick="delete_persona(<?= $p->id ?>)">X</button>
+                          </div>
                         </td>
 
                       </tr>
@@ -537,6 +543,64 @@
               type: 'POST',
               data: {
                 produto_id: produto_id
+              },
+              success: function(response) {
+
+                var resp = JSON.parse(response)
+
+                if (resp.status) {
+
+                  location.reload()
+
+
+                } else {
+
+
+                  swal({
+                    title: 'Ops!',
+                    text: resp.message,
+                    icon: 'warning',
+                    confirmButtonText: 'OK'
+                  });
+
+                }
+
+              },
+              error: function(xhr, status, error) {
+                swal({
+                  title: 'Ops!',
+                  text: "Houve um erro inesperado. Tente novamente",
+                  icon: 'warning',
+                  confirmButtonText: 'OK'
+                });
+              }
+            });
+
+          }
+        });
+
+
+
+
+    }
+
+    function delete_oferta(oferta_id) {
+      swal({
+          title: "Tem certeza?",
+          text: "Deseja excluir esta oferta?",
+          icon: "warning",
+          buttons: true,
+          dangerMode: true,
+        })
+        .then((willDelete) => {
+
+          if (willDelete) {
+
+            $.ajax({
+              url: '<?= base_url() ?>conta/act_delete_oferta',
+              type: 'POST',
+              data: {
+                oferta_id: oferta_id
               },
               success: function(response) {
 

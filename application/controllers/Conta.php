@@ -1477,4 +1477,20 @@ class Conta extends CI_Controller
 
         return print_r(json_encode($response));
     }
+
+       public function act_delete_oferta()
+    {
+
+        $oferta_id = htmlspecialchars($this->input->post('oferta_id'));
+
+        $response = array();
+
+        if ($this->conta_model->delete_persona($oferta_id)) {
+            $response = array("status" => true, "message" => "Oferta excluida com sucesso");
+        } else {
+            $response = array("status" => false, "message" => "Erro ao excluir Oferta");
+        }
+
+        return print_r(json_encode($response));
+    }
 }
