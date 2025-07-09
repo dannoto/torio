@@ -134,7 +134,7 @@
 
                     <?php foreach ($ofertas as $p) { ?>
 
-                      <tr style="<?php if ($p->oferta_status == "ENVIADA") { echo "background-color:green";} else { echo "background-color:red";} ?>">
+                      <tr style="<?php if ($p->oferta_status == "ENVIADA") { echo "background-color:#58ea0763";} else { echo "background-color:#ff00001f";} ?>">
 
                         <td>
                           <div class="d-flex px-2">
